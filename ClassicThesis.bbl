@@ -1,0 +1,60 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Besag(1975)]{Besag75}
+Julian Besag.
+\newblock Statistical analysis of non-lattice data.
+\newblock \emph{The statistician}, pages 179--195, 1975.
+
+\bibitem[Chalmond(1989)]{Chalmond89}
+Bernard Chalmond.
+\newblock An iterative gibbsian technique for reconstruction of< i> m</i>-ary
+  images.
+\newblock \emph{Pattern recognition}, 22\penalty0 (6):\penalty0 747--761, 1989.
+
+\bibitem[Dang and Govaert(1998)]{Dang98}
+M.~Dang and G.~Govaert.
+\newblock Spatial fuzzy clustering using {EM} and markov random fields.
+\newblock \emph{International Journal of System Research and Information
+  Science}, 8\penalty0 (4):\penalty0 183--202, 1998.
+
+\bibitem[McLachlan and Peel(2004)]{Mclachlan04}
+Geoffrey McLachlan and David Peel.
+\newblock \emph{Finite mixture models}.
+\newblock Wiley. com, 2004.
+
+\bibitem[Schwarz(1978)]{Schwarz78}
+Gideon Schwarz.
+\newblock Estimating the dimension of a model.
+\newblock \emph{The annals of statistics}, 6\penalty0 (2):\penalty0 461--464,
+  1978.
+
+\bibitem[Tomer et~al.(2010)Tomer, Denes, Tessmar-Raible, and Arendt]{Tomer10}
+Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
+\newblock Profiling by image registration reveals common origin of annelid
+  mushroom bodies and vertebrate pallium.
+\newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
+
+\bibitem[Wu(1982)]{Wu82}
+Fa-Yueh Wu.
+\newblock The potts model.
+\newblock \emph{Reviews of modern physics}, 54\penalty0 (1):\penalty0 235,
+  1982.
+
+\bibitem[Yuille(1990)]{Yuille90}
+Alan~L Yuille.
+\newblock Generalized deformable models, statistical physics, and matching
+  problems.
+\newblock \emph{Neural Computation}, 2\penalty0 (1):\penalty0 1--24, 1990.
+
+\bibitem[Zhang(1992)]{Zhang92}
+Jun Zhang.
+\newblock The mean field theory in em procedures for markov random fields.
+\newblock \emph{Signal Processing, IEEE Transactions on}, 40\penalty0
+  (10):\penalty0 2570--2583, 1992.
+
+\end{thebibliography}
