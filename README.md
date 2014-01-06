@@ -1,16 +1,38 @@
 ##I] Capturing gene expression in Platynereis dumerilii's brain
 ####  1/ Platynereis dumerilii, an ideal organism of brain development studies
 ######     i) General description
-- test
+    - Marine annelid
+    - Place in evolution 
+    - Link between fast evolving models (drosophila) and vertebrates
+    - Phases of development : larvae and adult
+    - Larvae and adult behavior
+
+ 
 ######     ii) Synchronous development of the larvae
-######     iii) Spatial organization of complex biological tissues like the brain
+    - Producing Platynereis in the lab
+    - Stereotypical development of the lavae brain 
+    - FIG 1 : two slices of the same region at 48hpf in 2 different individuals
 
 ####  2/ Gene expression in Platynereis' developing brain
 ######     i) Mechanisms of gene expression
-######     ii) Brain development and cell differentiation
+    - Generalities about gene expression
+    - Genes, transcription factors, all cells have the same genome expression differs
+
+######     ii) Platynereis' brain development
+    - General development pattern (symmetries, eyes, mushroom)
+    - LOOK for a paper summing that up
+    - State of the brain at 48hpf because we'll use it later
+
+######     iii) Spatial organization of complex biological tissues like the brain
+    - Some tissues will be spatially well defined others will be scattered
+    - Example with the pancreas ?
+    - Introducing the idea of the spacial coherency heterogeneity
 
 ####  3/ Capturing gene expression in the laboratory
 ######     i) In-situ hybridization assays
+    - FIG 2 : In situ hybridization principles
+    - Explanations about the technique 
+
 ######     ii) Building a referenced library of gene expression for Platynereis
          - Stereotypical development allows one gene to be considered as reference
 ######     iii) RNA sequencing
