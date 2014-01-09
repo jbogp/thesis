@@ -1,10 +1,62 @@
 %*****************************************
-\chapter{Analysing complex biological tissues, their expression in a spatial visualization}\label{ch:visualization}
+\chapter{From tissue to single cell transcriptomics, a paradigm shift}\label{ch:singlecell}
 %*****************************************
-\section{From tissue to single cell, a paradigm shift}
-\section{Clustering cells into tissues is an essential step in the analysis}
-\section{Existing methods and limitations}
-\section{3D visualization and bioWeb3D}
+\section{Spatially referenced single cell-like in-situ hybridization data}
+  \subsection*{Dividing images into "cells"}
+    - Images with a good enough resolution can determine expression at the single cell level.
+    - But every cell is different in terms of shape and size => need for a cell model
+    - in-situ hybridization keeps the spatial information of every cell
+    - Present possibilities for cell model with membrane markers etc... but to start with, a simple mode is possible => next paragraph
+
+  \subsection*{A simple cell model, the "cube" data}
+    - FIG 4 : From images to luminiscence cube data
+    - Present the cube cell model, and its assumptions
+    - cells have roughly the same size 
+    - cells are roughly cubical
+    - Present the choice of size for the cubes (3um or 6 um)
+    - This model introduces errors (cells divided or several cells in one cube, empty cubes between cells)
+    - => When working on this data we will need methods that are able to smooth those mistakes over.
+
+\section{Singe cell RNA sequencing, building a map of the full transcriptome}
+  \subsection*{Sequencing single cell RNA contents}
+    - Same as tissue sequencing but with a lot less starting material
+    - Present the main techniques used (see with Luis) : Microfluidics and others
+    - We obtain the full transcriptome of every cell sequenced
+
+  \subsection*{Mapping back gene expression to a spatial reference}
+    - Single cell RNA-seq at the moment does not allow to track cell localization
+    - Need to map the transcriptome back to a spatial reference
+    - Use in-situ hybridization results as reference
+
+
+\section{About the quantitative trait of single cell expression data}
+  \subsection*{Light contamination in in-situ hybridization data}
+    - FIG 5 : show light intensity across one slice
+    - Explain problem of scale and light contamination
+
+  \subsection*{Technical noise in single cell RNA-seq data}
+    - FIG 6 : show "typical" correlation plot from single cell RNA-seq with the noise increasing when reducing starting material
+    - Both methods are currently unreliable quantitatively => need to binarize
+
+\section{Binarizing gene expression datasets}
+  \subsection*{Binarizing in-situ hybrdization datasets}
+    - With biological knowledge and a limited number of genes
+    - Possibility to compare spatially the resulting binary expression patterns to microscope data and adjust for each gene the threshold manually
+  \subsection*{Binarizing whole transcriptomes}
+    - Manual curation no longer possible
+    - Thresholding ideally with density peaks
+    - Problems that may occur and possible solutions (figure?)
+
+\section{Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}
+  \subsection*{Single cell RNA-seq in Platynereis' brain}
+    - Present the data (number of cell)
+    - Present the method used (to dissolve the brain, to capture the cells, to sequence the cells
+  \subsection*{Mapping back RNA-seq data back to PrimR in-situ hybridization assays}
+    - Select the overlapping genes
+    - Present mapping method (Nuno's pipeline)
+    - Present simple mapping technique and why it is not satisfactory
+    - Present John's method  
+    - FIG 6: find a nice way to show a few good examples of mapping
 
 %*****************************************
 %*****************************************
