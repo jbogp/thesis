@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,16 +22,100 @@ M.~Dang and G.~Govaert.
 \newblock \emph{International Journal of System Research and Information
   Science}, 8\penalty0 (4):\penalty0 183--202, 1998.
 
+\bibitem[Denes et~al.(2007)Denes, J{\'e}kely, Steinmetz, Raible, Snyman,
+  Prud'homme, Ferrier, Balavoine, and Arendt]{denes07}
+Alexandru~S Denes, G{\'a}sp{\'a}r J{\'e}kely, Patrick~RH Steinmetz, Florian
+  Raible, Heidi Snyman, Benjamin Prud'homme, David~EK Ferrier, Guillaume
+  Balavoine, and Detlev Arendt.
+\newblock Molecular architecture of annelid nerve cord supports common origin
+  of nervous system centralization in bilateria.
+\newblock \emph{Cell}, 129\penalty0 (2):\penalty0 277--288, 2007.
+
+\bibitem[Dorresteijn(1990)]{dorresteijn90}
+Adriaan~WC Dorresteijn.
+\newblock Quantitative analysis of cellular differentiation during early
+  embryogenesis ofplatynereis dumerilii.
+\newblock \emph{Roux's archives of developmental biology}, 199\penalty0
+  (1):\penalty0 14--30, 1990.
+
+\bibitem[Fischer and Dorresteijn(2004)]{fischer04}
+Albrecht Fischer and Adriaan Dorresteijn.
+\newblock The polychaete platynereis dumerilii (annelida): a laboratory animal
+  with spiralian cleavage, lifelong segment proliferation and a mixed
+  benthic/pelagic life cycle.
+\newblock \emph{Bioessays}, 26\penalty0 (3):\penalty0 314--325, 2004.
+
+\bibitem[Fischer et~al.(2010)Fischer, Henrich, and Arendt]{Fischer10}
+Antje Fischer, Thorsten Henrich, and Detlev Arendt.
+\newblock The normal development of platynereis dumerilii (nereididae,
+  annelida).
+\newblock \emph{Frontiers in zoology}, 7\penalty0 (1):\penalty0 31, 2010.
+
+\bibitem[H{\"a}cker(1898)]{hacker98}
+Valentin H{\"a}cker.
+\newblock \emph{Die pelagischen Polychaeten-und Achaetenlarven der
+  Plankton-expedition...}
+\newblock Lipsius \& Tischer, 1898.
+
+\bibitem[Hardege(1999)]{hardege99}
+J{\"o}rg~D Hardege.
+\newblock Nereidid polychaetes as model organisms for marine chemical ecology.
+\newblock \emph{Hydrobiologia}, 402:\penalty0 145--161, 1999.
+
+\bibitem[Hauenschild et~al.(1969)Hauenschild, Czihak, Fischer, and
+  Siewing]{hauenschild69}
+Carl Hauenschild, G~Czihak, A~Fischer, and R~Siewing.
+\newblock \emph{Platynereis dumerilii: mikroskopische Anatomie, Fortpflanzung,
+  Entwicklung}.
+\newblock Fischer, 1969.
+
+\bibitem[Hutchinson et~al.(1995)Hutchinson, Jha, and Dixon]{hutchinson95}
+Thomas~H Hutchinson, Awadhesh~N Jha, and David~R Dixon.
+\newblock The polychaete platynereis dumerilii (audouin and milne-edwards): a
+  new species for assessing the hazardous potential of chemicals in the marine
+  environment.
+\newblock \emph{Ecotoxicology and environmental safety}, 31\penalty0
+  (3):\penalty0 271--281, 1995.
+
 \bibitem[McLachlan and Peel(2004)]{Mclachlan04}
 Geoffrey McLachlan and David Peel.
 \newblock \emph{Finite mixture models}.
 \newblock Wiley. com, 2004.
+
+\bibitem[Nielsen(2004)]{nielsen04}
+Claus Nielsen.
+\newblock Trochophora larvae: Cell-lineages, ciliary bands, and body regions.
+  1. annelida and mollusca.
+\newblock \emph{Journal of Experimental Zoology Part B: Molecular and
+  Developmental Evolution}, 302\penalty0 (1):\penalty0 35--68, 2004.
+
+\bibitem[Rouse(1999)]{rouse99}
+Greg~W Rouse.
+\newblock Trochophore concepts: ciliary bands and the evolution of larvae in
+  spiralian metazoa.
+\newblock \emph{Biological Journal of the Linnean Society}, 66\penalty0
+  (4):\penalty0 411--464, 1999.
 
 \bibitem[Schwarz(1978)]{Schwarz78}
 Gideon Schwarz.
 \newblock Estimating the dimension of a model.
 \newblock \emph{The annals of statistics}, 6\penalty0 (2):\penalty0 461--464,
   1978.
+
+\bibitem[Tessmar-Raible and Arendt(2003)]{tessmar03}
+Kristin Tessmar-Raible and Detlev Arendt.
+\newblock Emerging systems: between vertebrates and arthropods, the
+  lophotrochozoa.
+\newblock \emph{Current opinion in genetics \& development}, 13\penalty0
+  (4):\penalty0 331--340, 2003.
+
+\bibitem[Tessmar-Raible et~al.(2007)Tessmar-Raible, Raible, Christodoulou, Guy,
+  Rembold, Hausen, and Arendt]{tessmar07}
+Kristin Tessmar-Raible, Florian Raible, Foteini Christodoulou, Keren Guy,
+  Martina Rembold, Harald Hausen, and Detlev Arendt.
+\newblock Conserved sensory-neurosecretory cell types in annelid and fish
+  forebrain: insights into hypothalamus evolution.
+\newblock \emph{Cell}, 129\penalty0 (7):\penalty0 1389--1400, 2007.
 
 \bibitem[Tomer et~al.(2010)Tomer, Denes, Tessmar-Raible, and Arendt]{Tomer10}
 Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
@@ -50,6 +134,13 @@ Alan~L Yuille.
 \newblock Generalized deformable models, statistical physics, and matching
   problems.
 \newblock \emph{Neural Computation}, 2\penalty0 (1):\penalty0 1--24, 1990.
+
+\bibitem[Zeeck et~al.(1998)Zeeck, Harder, and Beckmann]{zeeck98}
+Erich Zeeck, Tilman Harder, and Manfred Beckmann.
+\newblock Uric acid: the sperm-release pheromone of the marine polychaete
+  platynereis dumerilii.
+\newblock \emph{Journal of Chemical Ecology}, 24\penalty0 (1):\penalty0 13--22,
+  1998.
 
 \bibitem[Zhang(1992)]{Zhang92}
 Jun Zhang.

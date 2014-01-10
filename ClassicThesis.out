@@ -1,28 +1,41 @@
-\BOOKMARK [1][-]{Dedication.1}{Dedication}{}% 1
-\BOOKMARK [1][-]{Abstract.1}{Abstract}{}% 2
-\BOOKMARK [1][-]{publications.1}{Publications}{}% 3
-\BOOKMARK [1][-]{acknowledgments.1}{Acknowledgments}{}% 4
-\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}% 5
-\BOOKMARK [1][-]{lof.1}{List of Figures}{}% 6
-\BOOKMARK [1][-]{lot.1}{List of Tables}{}% 7
-\BOOKMARK [1][-]{lol.1}{Listings}{}% 8
-\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}% 9
-\BOOKMARK [-1][]{part.1}{Spatial analysis of complex biological tissues from single cell gene expression data}{}% 10
-\BOOKMARK [0][]{chapter.1}{1 Introduction}{part.1}% 11
-\BOOKMARK [0][]{chapter.2}{2 Analysing complex biological tissues, their expression in a spatial visualization}{part.1}% 12
-\BOOKMARK [1][-]{section.2.1}{2.1 From tissue to single cell, a paradigm shift}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.2}{2.2 Clustering cells into tissues is an essential step in the analysis}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.3}{2.3 Existing methods and limitations}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{2.4 3D visualization and bioWeb3D}{chapter.2}% 16
-\BOOKMARK [0][]{chapter.3}{3 Hidden Markov Random Field based clustering for single cell gene expression data}{part.1}% 17
-\BOOKMARK [1][-]{section.3.1}{3.1 Markov Random Field prior distribution}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{3.2 Hidden Markov model}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{3.3 Parameter estimation using the EM algorithm}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{3.4 Mean field approximations}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.5}{3.5 Maximization}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.6}{3.6 Estimating K}{chapter.3}% 23
-\BOOKMARK [-1][]{part.2}{Appendix}{}% 24
-\BOOKMARK [0][]{appendix.A}{A Appendix}{part.2}% 25
-\BOOKMARK [0][]{dummy.7}{Bibliography}{part.2}% 26
-\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}% 27
-\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}% 28
+\BOOKMARK [1][-]{Dedication.1}{Dedication}{}
+\BOOKMARK [1][-]{Abstract.1}{Abstract}{}
+\BOOKMARK [1][-]{publications.1}{Publications}{}
+\BOOKMARK [1][-]{acknowledgments.1}{Acknowledgments}{}
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}
+\BOOKMARK [1][-]{lof.1}{List of Figures}{}
+\BOOKMARK [1][-]{lot.1}{List of Tables}{}
+\BOOKMARK [1][-]{lol.1}{Listings}{}
+\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}
+\BOOKMARK [-1][]{part.1}{Spatial analysis of complex biological tissues from single cell gene expression data}{}
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{part.1}
+\BOOKMARK [0][]{chapter.2}{2 Capturing gene expression in Platynereis dumerillii's brain}{part.1}
+\BOOKMARK [1][-]{section.2.1}{2.1 Platynereis dumerilii, an ideal organism of brain development studies}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 General description}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Larval development}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{2.2 Gene expression in Platynereis' developing brain}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Mechanisms of gene expression}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Platynereis' brain development}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Spatial organization of complex biological tissues like the brain}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{2.3 Capturing gene expression in the laboratory}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 In-situ hybridization assays}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Building a referenced library of gene expression for Platynereis}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 RNA sequencing}{section.2.3}
+\BOOKMARK [0][]{chapter.3}{3 From tissue to single cell transcriptomics, a paradigm shift}{part.1}
+\BOOKMARK [1][-]{section.3.1}{3.1 Spatially referenced single cell-like in-situ hybridization data}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{3.2 Singe cell RNA sequencing, building a map of the full transcriptome}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{3.3 About the quantitative trait of single cell expression data}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{3.4 Binarizing gene expression datasets}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{3.5 Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{chapter.3}
+\BOOKMARK [0][]{chapter.4}{4 Hidden Markov Random Field based clustering for single cell gene expression data}{part.1}
+\BOOKMARK [1][-]{section.4.1}{4.1 Markov Random Field prior distribution}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{4.2 Hidden Markov model}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{4.3 Parameter estimation using the EM algorithm}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{4.4 Mean field approximations}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{4.5 Maximization}{chapter.4}
+\BOOKMARK [1][-]{section.4.6}{4.6 Estimating K}{chapter.4}
+\BOOKMARK [-1][]{part.2}{Appendix}{}
+\BOOKMARK [0][]{appendix.A}{A Appendix}{part.2}
+\BOOKMARK [0][]{dummy.7}{Bibliography}{part.2}
+\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}
+\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}
