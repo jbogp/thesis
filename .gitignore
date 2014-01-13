@@ -1,4 +1,10 @@
 *.sty
+*.aux
+*.lol
+*.lof
+*.lot
+*.gz
+*.toc
 
 #################
 ## Eclipse
