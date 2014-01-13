@@ -17,44 +17,44 @@ The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
-You've used 22 entries,
+You've used 28 entries,
             2774 wiz_defined-function locations,
-            767 strings with 9171 characters,
-and the built_in function-call counts, 9751 in all, are:
-= -- 891
-> -- 512
-< -- 16
-+ -- 178
-- -- 156
-* -- 768
-:= -- 1534
-add.period$ -- 66
-call.type$ -- 22
-change.case$ -- 93
-chr.to.int$ -- 22
-cite$ -- 44
-duplicate$ -- 434
-empty$ -- 832
-format.name$ -- 186
-if$ -- 2034
+            810 strings with 10318 characters,
+and the built_in function-call counts, 12896 in all, are:
+= -- 1174
+> -- 725
+< -- 19
++ -- 250
+- -- 222
+* -- 1045
+:= -- 2031
+add.period$ -- 84
+call.type$ -- 28
+change.case$ -- 126
+chr.to.int$ -- 28
+cite$ -- 56
+duplicate$ -- 551
+empty$ -- 1068
+format.name$ -- 262
+if$ -- 2681
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 25
-newline$ -- 118
-num.names$ -- 88
-pop$ -- 220
+missing$ -- 31
+newline$ -- 148
+num.names$ -- 112
+pop$ -- 287
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 101
 quote$ -- 0
-skip$ -- 312
+skip$ -- 404
 stack$ -- 0
-substring$ -- 472
-swap$ -- 31
+substring$ -- 630
+swap$ -- 37
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 227
+type$ -- 293
 warning$ -- 0
-while$ -- 102
+while$ -- 131
 width$ -- 0
-write$ -- 290
+write$ -- 368

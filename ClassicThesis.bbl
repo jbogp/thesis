@@ -1,9 +1,15 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Balmer and Blomhoff(2002)]{balmer02}
+James~E Balmer and Rune Blomhoff.
+\newblock Gene expression regulation by retinoic acid.
+\newblock \emph{Journal of lipid research}, 43\penalty0 (11):\penalty0
+  1773--1808, 2002.
 
 \bibitem[Besag(1975)]{Besag75}
 Julian Besag.
@@ -38,6 +44,13 @@ Adriaan~WC Dorresteijn.
 \newblock \emph{Roux's archives of developmental biology}, 199\penalty0
   (1):\penalty0 14--30, 1990.
 
+\bibitem[Feingold et~al.(2004)Feingold, Good, Guyer, Kamholz, Liefer,
+  Wetterstrand, Collins, Gingeras, Kampa, Sekinger, et~al.]{feingold04}
+EA~Feingold, PJ~Good, MS~Guyer, S~Kamholz, L~Liefer, K~Wetterstrand,
+  FS~Collins, TR~Gingeras, D~Kampa, EA~Sekinger, et~al.
+\newblock The encode (encyclopedia of dna elements) project.
+\newblock \emph{Science}, 306\penalty0 (5696):\penalty0 636--640, 2004.
+
 \bibitem[Fischer and Dorresteijn(2004)]{fischer04}
 Albrecht Fischer and Adriaan Dorresteijn.
 \newblock The polychaete platynereis dumerilii (annelida): a laboratory animal
@@ -50,6 +63,20 @@ Antje Fischer, Thorsten Henrich, and Detlev Arendt.
 \newblock The normal development of platynereis dumerilii (nereididae,
   annelida).
 \newblock \emph{Frontiers in zoology}, 7\penalty0 (1):\penalty0 31, 2010.
+
+\bibitem[Fuqua et~al.(2001)Fuqua, Parsek, and Greenberg]{fuqua01}
+Clay Fuqua, Matthew~R Parsek, and E~Peter Greenberg.
+\newblock Regulation of gene expression by cell-to-cell communication:
+  acyl-homoserine lactone quorum sensing.
+\newblock \emph{Annual review of genetics}, 35\penalty0 (1):\penalty0 439--468,
+  2001.
+
+\bibitem[Gossen and Bujard(1992)]{gossen92}
+Manfred Gossen and Hermann Bujard.
+\newblock Tight control of gene expression in mammalian cells by
+  tetracycline-responsive promoters.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 89\penalty0
+  (12):\penalty0 5547--5551, 1992.
 
 \bibitem[H{\"a}cker(1898)]{hacker98}
 Valentin H{\"a}cker.
@@ -82,6 +109,11 @@ Geoffrey McLachlan and David Peel.
 \newblock \emph{Finite mixture models}.
 \newblock Wiley. com, 2004.
 
+\bibitem[Mendel(1866)]{mendel66}
+G~Mendel.
+\newblock Versuche ber pflanzen-hybriden. verh.
+\newblock \emph{Naturforsch. Ver. Brnn}, 4:\penalty0 347, 1866.
+
 \bibitem[Nielsen(2004)]{nielsen04}
 Claus Nielsen.
 \newblock Trochophora larvae: Cell-lineages, ciliary bands, and body regions.
@@ -101,6 +133,14 @@ Gideon Schwarz.
 \newblock Estimating the dimension of a model.
 \newblock \emph{The annals of statistics}, 6\penalty0 (2):\penalty0 461--464,
   1978.
+
+\bibitem[Shinozaki et~al.(2003)Shinozaki, Yamaguchi-Shinozaki, and
+  Seki]{shinozaki03}
+Kazuo Shinozaki, Kazuko Yamaguchi-Shinozaki, and Motoaki Seki.
+\newblock Regulatory network of gene expression in the drought and cold stress
+  responses.
+\newblock \emph{Current opinion in plant biology}, 6\penalty0 (5):\penalty0
+  410--417, 2003.
 
 \bibitem[Tessmar-Raible and Arendt(2003)]{tessmar03}
 Kristin Tessmar-Raible and Detlev Arendt.
