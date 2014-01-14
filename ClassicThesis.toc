@@ -7,28 +7,28 @@
 \contentsline {section}{\numberline {2.1}Platynereis dumerilii, an ideal organism of brain development studies}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}General description}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Larval development}{6}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Gene expression in Platynereis' developing brain}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Generalities about gene expression and development}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Platynereis' brain development}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Spatial organization of complex biological tissues like the brain}{9}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Capturing gene expression in the laboratory}{9}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}In-situ hybridization assays}{9}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Building a referenced library of gene expression for Platynereis}{9}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}RNA sequencing}{9}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spatially referenced single cell-like in-situ hybridization data}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Singe cell RNA sequencing, building a map of the full transcriptome}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}About the quantitative trait of single cell expression data}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Binarizing gene expression datasets}{12}{section.3.4}
-\contentsline {section}{\numberline {3.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{12}{section.3.5}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Markov Random Field prior distribution}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hidden Markov model}{14}{section.4.2}
-\contentsline {section}{\numberline {4.3}Parameter estimation using the EM algorithm}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Mean field approximations}{16}{section.4.4}
-\contentsline {section}{\numberline {4.5}Maximization}{17}{section.4.5}
-\contentsline {section}{\numberline {4.6}Estimating K}{17}{section.4.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{19}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{21}{appendix.A}
+\contentsline {section}{\numberline {2.2}Gene expression in Platynereis' developing brain}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Platynereis' nervous development until 48hpf}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Spatial organization of complex biological tissues like the brain}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Generalities about gene expression and development}{9}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Capturing gene expression in the laboratory}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}In-situ hybridization assays}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Building a referenced library of gene expression for Platynereis}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}RNA sequencing}{11}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spatially referenced single cell-like in-situ hybridization data}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Singe cell RNA sequencing, building a map of the full transcriptome}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}About the quantitative trait of single cell expression data}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Binarizing gene expression datasets}{14}{section.3.4}
+\contentsline {section}{\numberline {3.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{14}{section.3.5}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Markov Random Field prior distribution}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hidden Markov model}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Parameter estimation using the EM algorithm}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Mean field approximations}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Maximization}{19}{section.4.5}
+\contentsline {section}{\numberline {4.6}Estimating K}{19}{section.4.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{21}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{23}{appendix.A}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{23}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}
