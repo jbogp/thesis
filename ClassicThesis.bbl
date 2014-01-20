@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -104,6 +104,20 @@ Thomas~H Hutchinson, Awadhesh~N Jha, and David~R Dixon.
 \newblock \emph{Ecotoxicology and environmental safety}, 31\penalty0
   (3):\penalty0 271--281, 1995.
 
+\bibitem[John et~al.(1969)John, Birnstiel, and Jones]{john69}
+HA~John, ML~Birnstiel, and KW~Jones.
+\newblock Rna-dna hybrids at the cytological level.
+\newblock \emph{Nature}, 223\penalty0 (5206):\penalty0 582, 1969.
+
+\bibitem[Landegent et~al.(1984)Landegent, Wal, In, Baan, Hoeijmakers, and Van
+  Der~Ploeg]{landegent84}
+JE~Landegent, De~Wal, N~Jansen In, RA~Baan, JHJ Hoeijmakers, and M~Van
+  Der~Ploeg.
+\newblock 2-acetylaminofluorene-modified probes for the indirect
+  hybridocytochemical detection of specific nucleic acid sequences.
+\newblock \emph{Experimental cell research}, 153\penalty0 (1):\penalty0 61--72,
+  1984.
+
 \bibitem[McLachlan and Peel(2004)]{Mclachlan04}
 Geoffrey McLachlan and David Peel.
 \newblock \emph{Finite mixture models}.
@@ -114,12 +128,44 @@ G~Mendel.
 \newblock Versuche ber pflanzen-hybriden. verh.
 \newblock \emph{Naturforsch. Ver. Brnn}, 4:\penalty0 347, 1866.
 
+\bibitem[Morin et~al.(2008)Morin, Bainbridge, Fejes, Hirst, Krzywinski, Pugh,
+  McDonald, Varhol, Jones, and Marra]{morin08}
+Ryan~D Morin, Matthew Bainbridge, Anthony Fejes, Martin Hirst, Martin
+  Krzywinski, Trevor~J Pugh, Helen McDonald, Richard Varhol, Steven~JM Jones,
+  and Marco~A Marra.
+\newblock Profiling the hela s3 transcriptome using randomly primed cdna and
+  massively parallel short-read sequencing.
+\newblock \emph{Biotechniques}, 45\penalty0 (1):\penalty0 81, 2008.
+
+\bibitem[Nederlof et~al.(1989)Nederlof, Robinson, Abuknesha, Wiegant, Hopman,
+  Tanke, and Raap]{nederlof89}
+PM~Nederlof, D~Robinson, R~Abuknesha, J~Wiegant, AHN Hopman, HJ~Tanke, and
+  AK~Raap.
+\newblock Three-color fluorescence in situ hybridization for the simultaneous
+  detection of multiple nucleic acid sequences.
+\newblock \emph{Cytometry}, 10\penalty0 (1):\penalty0 20--27, 1989.
+
 \bibitem[Nielsen(2004)]{nielsen04}
 Claus Nielsen.
 \newblock Trochophora larvae: Cell-lineages, ciliary bands, and body regions.
   1. annelida and mollusca.
 \newblock \emph{Journal of Experimental Zoology Part B: Molecular and
   Developmental Evolution}, 302\penalty0 (1):\penalty0 35--68, 2004.
+
+\bibitem[Pardue and Gall(1969)]{pardue69}
+Mary~Lou Pardue and Joseph~G Gall.
+\newblock Molecular hybridization of radioactive dna to the dna of cytological
+  preparations.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 64\penalty0
+  (2):\penalty0 600--604, 1969.
+
+\bibitem[Pinkel et~al.(1988)Pinkel, Landegent, Collins, Fuscoe, Segraves,
+  Lucas, and Gray]{pinkel88}
+D~Pinkel, J~Landegent, C~Collins, J~Fuscoe, R~Segraves, J~Lucas, and J~Gray.
+\newblock Fluorescence in situ hybridization with human chromosome-specific
+  libraries: detection of trisomy 21 and translocations of chromosome 4.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 85\penalty0
+  (23):\penalty0 9138--9142, 1988.
 
 \bibitem[Rouse(1999)]{rouse99}
 Greg~W Rouse.
@@ -142,6 +188,12 @@ Kazuo Shinozaki, Kazuko Yamaguchi-Shinozaki, and Motoaki Seki.
 \newblock \emph{Current opinion in plant biology}, 6\penalty0 (5):\penalty0
   410--417, 2003.
 
+\bibitem[SWIGER and TUCKER(1996)]{swiger96}
+RR~SWIGER and JD~TUCKER.
+\newblock Fluorescence in situ hybridization: A brief review.
+\newblock \emph{Environmental and molecular mutagenesis}, 27\penalty0
+  (4):\penalty0 245--254, 1996.
+
 \bibitem[Tessmar-Raible and Arendt(2003)]{tessmar03}
 Kristin Tessmar-Raible and Detlev Arendt.
 \newblock Emerging systems: between vertebrates and arthropods, the
@@ -162,6 +214,12 @@ Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
 \newblock Profiling by image registration reveals common origin of annelid
   mushroom bodies and vertebrate pallium.
 \newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
+
+\bibitem[Wang et~al.(2009)Wang, Gerstein, and Snyder]{wang09}
+Zhong Wang, Mark Gerstein, and Michael Snyder.
+\newblock Rna-seq: a revolutionary tool for transcriptomics.
+\newblock \emph{Nature Reviews Genetics}, 10\penalty0 (1):\penalty0 57--63,
+  2009.
 
 \bibitem[Wu(1982)]{Wu82}
 Fa-Yueh Wu.

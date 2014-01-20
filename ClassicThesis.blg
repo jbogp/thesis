@@ -10,3 +10,8 @@ The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
+Repeated entry---line 753 of file Bibliography.bib
+ : @article{Wang09
+ :                , title={3D Genome Tuner: Compare Multiple Circular Genomes in a 3D Context}, volume={7}, number={3}, journal={Genomics Proteomics Bioinformatics}, publisher={Beijing Genomics Institute}, author={Wang, Qi and Liang, Qun and Zhang, Xiuqing}, year={2009}, pages={143--146}}
+I'm skipping whatever remains of this entry
+(There was 1 error message)
