@@ -1,7 +1,7 @@
 %
 \chapter{Capturing gene expression in \platyfull{}'s brain}\label{ch:background}
 %
-\section{Platynereis dumerilii, an ideal organism of brain development studies}
+\section{Platynereis dumerilii, an ideal organism of brain development studies}\label{sec:platynereis}
      \subsection{General description}
      \platy{} is a marine annelid of the class Polychaeta, it has been established as one of the main marine animal models in the fields of evolutionary, developmental and neurobiological biology as well as ecology and toxicology \cite{hutchinson95,tessmar03,hardege99,dorresteijn90,fischer04,Fischer10}. As a member of the bilateria \platy{} has a defined bilateral symmetry.\\
      
@@ -48,7 +48,7 @@
 
 	 Describing the entire development of \platy{} does not fall within the scope of this thesis. Indeed, we will only be interested in the brain of \platy{}'s larvae at 48hpf. Therefore, it is important to have an anatomical idea of what the brain looks like at this time in development and what inherent characteristics will be the most interesting to investigate.
 
-\section{Gene expression in Platynereis' developing brain}
+\section{Gene expression in Platynereis' developing brain}\label{sec:gene_expression_background}
      \subsection{Platynereis' nervous development until 48hpf}
      The main purpose of this thesis is not to fully understand the patterns of development in \platy{}'s larval brain. Therefore we will only give a brief summary of what the main component of the brain are at 48hpf, the time point we will be interested in in the next chapters. \platy{}'s larval brain development is detailed in \cite{Fischer10}.\\
      From the early trochophore (24-26hpf) neural system development starts taking place. The apical ganglion forms at the apical tuft. It contains one sertonergic cell and a few neurons that link to the nerve of the ciliary band of the larva called the prototroch (see figure \ref{fig:platynereis_larvae_scheme} for better understanding). This allows the first movements of the larve thanks to the cialited cells of the prototroch.\\
@@ -85,7 +85,7 @@
 	As described, gene expression is the key factor during tissue development. The ability to study gene expression patterns has revolutionized the fields of developmental biology. Technological innovation has been the main driving factor of this revolution. In the next section we will present two methods to capture gene expression.
 
 
-\section{Capturing gene expression in the laboratory}
+\section{Capturing gene expression in the laboratory}\label{sec:gene_expression_lab}
      \subsection{In-situ hybridization assays}
      In-situ hybridization (ISH) is an experimental technique where the practitioner is able to determine in which cells of the tissue under study a particular RNA is expressed. As opposed to Southern blotting, ISH assays not only allow to know whether a gene is expressed or not, but also where in the tissue it is expressed. First proposed in 1969 by Pardue \cite{pardue69} and John \cite{john69} independently, in-situ hybridization (ISH) used radioactive tritium labelled probes on a photographic emulsion to reveal on which chromosome particular genomic components were located. With the development of fluorescent labelling techniques \cite{landegent84,pinkel88} allowing for faster, more sensitive and of course safer hybridization assays \cite{swiger96} compared to radioactive probes, Fluorescent in-situ hybridization (FiSH) quickly became the standard technique to study gene expression in the spatial context of the biological tissue. Importantly, using multiple fluorescent probes of different colours allowed the simultaneous localization of several RNA fragments in the tissues \cite{nederlof89}.
      
@@ -105,13 +105,21 @@
 	However useful and practical fluorescent in-situ hybridization may be, such assays are limited in terms the quantity of gene one is able to study. Indeed, each individual larvae only provides the expression of two genes, one being the reference. Crucial developments in sequencing technologies have brought a way to study the expression of the whole transciptome landscape in a single assay, RNA sequencing.
 
      \subsection{RNA sequencing}
-     Whole Transcriptome Shotgun Sequencing (WTSS) also called RNA sequencing (RNA-seq) \cite{morin08,wang09} has developed alongside Next Generation Sequencing (NGS) technique used to retrieve the genome (DNA). Instead, when preparing the starting material, only the RNAs are selected using magnetic beads and a using the polyA tail on the 3' side of messenger RNAs (RNAm).
-    - FIG 3 : about RNA sequencing for tissues
-    - Explanations about the technique
-    - Obtaining the full transcriptome at once
-    - Necessity of having the genome to map to or a list of known genes (primR) 
-    - Discuss the starting RNA quantity 
-    - Discuss the fact that gene expression is averaged over the tissue losing spatial information.
+     Whole Transcriptome Shotgun Sequencing (WTSS) also called RNA sequencing (RNA-seq) \cite{morin08,wang09} has developed alongside Next Generation Sequencing (NGS) technique used to retrieve the genome (DNA). Instead, when preparing the starting material, only the RNAs are extracted. If interested in protein coding messenger RNA, they are separated from the rest by targeting the polyadenylated 3' tail, specific to protein coding transcripts. Most current technique use magnetic beads to achieve this separation \cite{mortazavi08,morin08}.\\
+     
+    Once isolated from a population of cells, transcripts undergo fragmentation to obtain an average length of 200-300. The next step is then reverse transcription, which will create a complementary DNA (cDNA) library using a viral reverse transcriptase enzymes. After amplification using quantitative Polymerase Chain Reaction (qPCR), the cDNA library is ready to be sequenced by NGS technology.\\
+    
+    This will generate a large dataset of small reads, that need to be mapped back onto the reference genome of the considered species, providing this genome is available. In that case the resulting dataset will reflect a snapshot of the whole transciptome in the studied cell population. However, in the case of \platy{}, this reference genome is not fully available yet, an alternative option being to map the reads back to a list of known gene sequences, for instance the 169 genes studied by \cite{Tomer10} (PrimR genes). The obtain dataset will represent a quantitative image of the considered genes in the cell population at one point in time.\\
+    
+    Because of technical limitations in this sequencing protocol, until very recently the starting quantity of RNA had to be relatively important. This is why most of the published RNA sequencing studies use a population of cell as a starting point. This however, means that the gene expression landscape obtained as an output will represent an averaged expression over all the cells used as an input.\\
+    
+    Importantly, when comparing RNA-seq the the previously described in-situ hybridization technique, if the methodological burden to analyse the expression of a lot of genes at the same time is greatly reduced, the spatial localisation of the cells is lost during the protocol.\\
+    
+\section{Conclusions}
+     
+     In this chapter we have presented \platyfull{} and the advantageous traits it exhibits for developmental biologists especially in the field of neural development. We have discussed the fact that anatomical traits are not sufficient to fully comprehend the deep heterogeneous patterns of functionality inside a complex organ such as the brain. In order go push this understanding further we need to take an interest in what defines the life of tissues and sub-tissues, gene expression. We have also described two methods that allow practitioners to capture gene expression from a biological tissue, and how an image library  of gene expression for 169 gene was generated by \cite{Tomer10} in the full brain of \platy{}.\\
+     
+	So far, our scale of study has been the tissue, or the sub-tissue. However, as mentioned in the introduction \ref{ch:introduction}, the heterogeneity of complex biological tissues does not stop at this scale of study. In fact, with a top-down approach looking at big tissue and then separating them in smaller sub-tissues until ``true" functional tissues are defined is an extremely complicated approach. A solution to this problem would be to actually reverse the approach from a top-down to a bottom-up mindset. This mean reducing the scale of study to the smallest biological unit we can work with, the single cell, define the heterogeneity of gene expression at the single cell level and work our way up to the functional tissue level. Instead of a fragmentation problem, we would have a clustering problem, attaching single cells to a certain number of categories. In order to implement such an approach, what we need is single cell gene expression data.
 
 %
 %

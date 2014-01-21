@@ -54,6 +54,7 @@
 \newcommand*\platyfull{\species{{P}latynereis dumerillii}}
 \newcommand*\platy{\species{{P}. dumerillii}}
 \newcommand*\todo[1]{\textcolor{BurntOrange}{#1}}
+\newcommand*\microm[1]{\emph{$\mu m^{#1}$}}
 
 %********************************************************************
 % Hyphenation
@@ -76,7 +77,7 @@
 % Frontmatter
 %*******************************************************
 %\include{FrontBackmatter/DirtyTitlepage}
-%\include{FrontBackmatter/Titlepage}
+\include{FrontBackmatter/Titlepage}
 %\include{FrontBackmatter/Titleback}
 %\cleardoublepage\include{FrontBackmatter/Dedication}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
@@ -93,11 +94,11 @@
 % use \cleardoublepage here to avoid problems with pdfbookmark
 \cleardoublepage
 \part{\myTitle}
-\include{Chapters/Introduction}
+%\include{Chapters/Introduction}
 \include{Chapters/Chapter01}
 \include{Chapters/Chapter02}
 %\addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
-\include{Chapters/Chapter03}
+%\include{Chapters/Chapter03}
 %\include{multiToC} % <--- just debug stuff, ignore for your documents
 % ********************************************************************
 % Backmatter
