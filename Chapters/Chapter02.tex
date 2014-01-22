@@ -16,11 +16,14 @@
   
   Every slice of \platy{}'s brain being aligned onto the reference gene scaffold (see section \ref{sec:gene_expression_lab}) for all 169 genes, the ``cube" model simply consists in dividing each image into square approximately the size of an average cell. In our dataset, the size chosen was 3 \microm{2}. Importantly, this is actually smaller than the average cell size in \platy{}'s brain. each slice of the brain being approximately 3 \microm{} thick, the resulting dataset, referenced on a 3-dimensional axis, will contain 3 \microm{3} cubes, each of those attached to the luminescence data for 169 genes.\\
   
-  Of course this cell model is far from perfect, it assumes that every cell in the brain are roughly the same size and cubical, which is clearly not the case. Consequently, the ``cube" model will introduce errors in the dataset. Keeping in mind that 3 \microm{3} is smaller than the average cell, some cubes will fall on areas that may be artificially empty. Indeed, transcription in the cells mainly happens in the nucleus and even though RNAm go out of the nucleus to be translated, a ``cube" centred on a peripheral cytoplasmic of a large cell, may record no or few gene expression in a cell that actually contains a lot of transcripts.\\
+  Of course this cell model is far from perfect, it assumes that every cell in the brain are roughly the same size and cubical, which is clearly not the case. Consequently, the ``cube" model will introduce errors in the dataset. The first type of error occurs within areas where the genes under study are highly expressed. In that case, the florescence my contaminate the cubes around that do not necessarily express the same gene see figure \ref{fig:cubeserrors}A. The second type of error is introduced by the choice of 3 \microm{3} cubes. As they are smaller than the average cell, some cubes will fall on areas that may be artificially empty. Indeed, transcription in the cells mainly happens in the nucleus, mRNA then travel in the cytoplasm to be translated but they are not evenly distributed across the cell, in particular for some large cells, parts of the cytoplasm may record no expression in a cell that actually contains a lot of transcripts, see figure \ref{fig:cubeserrors}B.\\
   
   Hence the data will tend to show some discontinuity and inconsistency spatially. With that fact in mind, any method hat we develop using this data, will have to take into account this spatial discontinuity and try as much as possible to smooth over those potential expression gaps.\\
   
-  \todo{figure image -> single cell + figure how noise can be created}
+    \begin{figure}[bth]
+\centerline{\includegraphics[width=0.9\linewidth]{gfx/chapter2/cubeserrors.png}}
+\caption{Errors introduced by the ``cube" cell model. Path A shows how regions with highly expressed genes can introduce errors through light contamination. Path B shows how .}\label{fig:cubeserrors}
+	\end{figure}
 
 \section{Singe cell RNA sequencing, building a map of the full transcriptome}
   \subsection*{Sequencing single cell RNA contents}
