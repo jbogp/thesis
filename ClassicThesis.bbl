@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,10 +26,16 @@ Alexandru~S Denes, G{\'a}sp{\'a}r J{\'e}kely, Patrick~RH Steinmetz, Florian
   of nervous system centralization in bilateria.
 \newblock \emph{Cell}, 129\penalty0 (2):\penalty0 277--288, 2007.
 
+\bibitem[Deng et~al.(2014)Deng, Ramsk{\"o}ld, Reinius, and Sandberg]{deng14}
+Qiaolin Deng, Daniel Ramsk{\"o}ld, Bj{\"o}rn Reinius, and Rickard Sandberg.
+\newblock Single-cell rna-seq reveals dynamic, random monoallelic gene
+  expression in mammalian cells.
+\newblock \emph{Science}, 343\penalty0 (6167):\penalty0 193--196, 2014.
+
 \bibitem[Dorresteijn(1990)]{dorresteijn90}
 Adriaan~WC Dorresteijn.
 \newblock Quantitative analysis of cellular differentiation during early
-  embryogenesis ofplatynereis dumerilii.
+  embryogenesis of platynereis dumerilii.
 \newblock \emph{Roux's archives of developmental biology}, 199\penalty0
   (1):\penalty0 14--30, 1990.
 
@@ -100,6 +106,30 @@ Thomas~H Hutchinson, Awadhesh~N Jha, and David~R Dixon.
 \newblock \emph{Ecotoxicology and environmental safety}, 31\penalty0
   (3):\penalty0 271--281, 1995.
 
+\bibitem[Iscove et~al.(2002)Iscove, Barbara, Gu, Gibson, Modi, and
+  Winegarden]{iscove02}
+Norman~N Iscove, Mary Barbara, Marie Gu, Meredith Gibson, Carolyn Modi, and
+  Neil Winegarden.
+\newblock Representation is faithfully preserved in global cdna amplified
+  exponentially from sub-picogram quantities of mrna.
+\newblock \emph{Nature biotechnology}, 20\penalty0 (9):\penalty0 940--943,
+  2002.
+
+\bibitem[Islam et~al.(2011)Islam, Kj{\"a}llquist, Moliner, Zajac, Fan,
+  L{\"o}nnerberg, and Linnarsson]{islam11}
+Saiful Islam, Una Kj{\"a}llquist, Annalena Moliner, Pawel Zajac, Jian-Bing Fan,
+  Peter L{\"o}nnerberg, and Sten Linnarsson.
+\newblock Characterization of the single-cell transcriptional landscape by
+  highly multiplex rna-seq.
+\newblock \emph{Genome research}, 21\penalty0 (7):\penalty0 1160--1167, 2011.
+
+\bibitem[Islam et~al.(2013)Islam, Zeisel, Joost, La~Manno, Zajac, Kasper,
+  L{\"o}nnerberg, and Linnarsson]{islam13}
+Saiful Islam, Amit Zeisel, Simon Joost, Gioele La~Manno, Pawel Zajac, Maria
+  Kasper, Peter L{\"o}nnerberg, and Sten Linnarsson.
+\newblock Quantitative single-cell rna-seq with unique molecular identifiers.
+\newblock \emph{Nature methods}, 2013.
+
 \bibitem[John et~al.(1969)John, Birnstiel, and Jones]{john69}
 HA~John, ML~Birnstiel, and KW~Jones.
 \newblock Rna-dna hybrids at the cytological level.
@@ -119,6 +149,14 @@ Hui Li, BS~Manjunath, and Sanjit~K Mitra.
 \newblock A contour-based approach to multisensor image registration.
 \newblock \emph{Image Processing, IEEE Transactions on}, 4\penalty0
   (3):\penalty0 320--334, 1995.
+
+\bibitem[Marinov et~al.(2013)Marinov, Williams, McCue, Schroth, Gertz, Myers,
+  and Wold]{marinov13}
+Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
+  Richard~M Myers, and Barbara~J Wold.
+\newblock From single-cell to cell-pool transcriptomes: stochasticity in gene
+  expression and rna splicing.
+\newblock \emph{Genome research}, pages gr--161034, 2013.
 
 \bibitem[Mendel(1866)]{mendel66}
 G~Mendel.
@@ -156,6 +194,12 @@ Claus Nielsen.
 \newblock \emph{Journal of Experimental Zoology Part B: Molecular and
   Developmental Evolution}, 302\penalty0 (1):\penalty0 35--68, 2004.
 
+\bibitem[Ozsolak and Milos(2010)]{ozsolak10}
+Fatih Ozsolak and Patrice~M Milos.
+\newblock Rna sequencing: advances, challenges and opportunities.
+\newblock \emph{Nature Reviews Genetics}, 12\penalty0 (2):\penalty0 87--98,
+  2010.
+
 \bibitem[Pardue and Gall(1969)]{pardue69}
 Mary~Lou Pardue and Joseph~G Gall.
 \newblock Molecular hybridization of radioactive dna to the dna of cytological
@@ -178,6 +222,16 @@ Lars~K Poulsen, Gwyn Ballard, and David~A Stahl.
 \newblock \emph{Applied and Environmental Microbiology}, 59\penalty0
   (5):\penalty0 1354--1360, 1993.
 
+\bibitem[Ramsk{\"o}ld et~al.(2012)Ramsk{\"o}ld, Luo, Wang, Li, Deng, Faridani,
+  Daniels, Khrebtukova, Loring, Laurent, et~al.]{ramskold12}
+Daniel Ramsk{\"o}ld, Shujun Luo, Yu-Chieh Wang, Robin Li, Qiaolin Deng, Omid~R
+  Faridani, Gregory~A Daniels, Irina Khrebtukova, Jeanne~F Loring, Louise~C
+  Laurent, et~al.
+\newblock Full-length mrna-seq from single-cell levels of rna and individual
+  circulating tumor cells.
+\newblock \emph{Nature biotechnology}, 30\penalty0 (8):\penalty0 777--782,
+  2012.
+
 \bibitem[Rouse(1999)]{rouse99}
 Greg~W Rouse.
 \newblock Trochophore concepts: ciliary bands and the evolution of larvae in
@@ -193,11 +247,25 @@ Kazuo Shinozaki, Kazuko Yamaguchi-Shinozaki, and Motoaki Seki.
 \newblock \emph{Current opinion in plant biology}, 6\penalty0 (5):\penalty0
   410--417, 2003.
 
+\bibitem[St{\aa}hlberg et~al.(2013)St{\aa}hlberg, Rusnakova, and
+  Kubista]{staahlberg13}
+Anders St{\aa}hlberg, Vendula Rusnakova, and Mikael Kubista.
+\newblock The added value of single-cell gene expression profiling.
+\newblock \emph{Briefings in functional genomics}, 12\penalty0 (2):\penalty0
+  81--89, 2013.
+
 \bibitem[SWIGER and TUCKER(1996)]{swiger96}
 RR~SWIGER and JD~TUCKER.
 \newblock Fluorescence in situ hybridization: A brief review.
 \newblock \emph{Environmental and molecular mutagenesis}, 27\penalty0
   (4):\penalty0 245--254, 1996.
+
+\bibitem[Tang et~al.(2009)Tang, Barbacioru, Wang, Nordman, Lee, Xu, Wang,
+  Bodeau, Tuch, Siddiqui, et~al.]{tang09}
+Fuchou Tang, Catalin Barbacioru, Yangzhou Wang, Ellen Nordman, Clarence Lee,
+  Nanlan Xu, Xiaohui Wang, John Bodeau, Brian~B Tuch, Asim Siddiqui, et~al.
+\newblock mrna-seq whole-transcriptome analysis of a single cell.
+\newblock \emph{Nature methods}, 6\penalty0 (5):\penalty0 377--382, 2009.
 
 \bibitem[Tautz and Pfeifle(1989)]{tautz89}
 Diethard Tautz and Christine Pfeifle.
@@ -232,6 +300,14 @@ Zhong Wang, Mark Gerstein, and Michael Snyder.
 \newblock Rna-seq: a revolutionary tool for transcriptomics.
 \newblock \emph{Nature Reviews Genetics}, 10\penalty0 (1):\penalty0 57--63,
   2009.
+
+\bibitem[Yan et~al.(2013)Yan, Yang, Guo, Yang, Wu, Li, Liu, Lian, Zheng, Yan,
+  et~al.]{yan13}
+Liying Yan, Mingyu Yang, Hongshan Guo, Lu~Yang, Jun Wu, Rong Li, Ping Liu, Ying
+  Lian, Xiaoying Zheng, Jie Yan, et~al.
+\newblock Single-cell rna-seq profiling of human preimplantation embryos and
+  embryonic stem cells.
+\newblock \emph{Nature structural \& molecular biology}, 2013.
 
 \bibitem[Zeeck et~al.(1998)Zeeck, Harder, and Beckmann]{zeeck98}
 Erich Zeeck, Tilman Harder, and Manfred Beckmann.

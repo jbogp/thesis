@@ -9,3 +9,8 @@ The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
+Repeated entry---line 802 of file Bibliography.bib
+ : @article{Tang09
+ :                ,
+I'm skipping whatever remains of this entry
+(There was 1 error message)

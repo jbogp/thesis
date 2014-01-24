@@ -18,10 +18,10 @@
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Spatially referenced single cell-like in-situ hybridization data}{13}{section.2.1}
 \contentsline {section}{\numberline {2.2}Singe cell RNA sequencing, building a map of the full transcriptome}{15}{section.2.2}
-\contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{16}{section.2.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{17}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{19}{appendix.A}
+\contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{16}{section.2.3}
+\contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{17}{section.2.4}
+\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{19}{section.2.5}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{21}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{23}{appendix.A}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{21}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}
