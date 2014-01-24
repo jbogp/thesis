@@ -20,8 +20,10 @@
 \contentsline {section}{\numberline {2.2}Singe cell RNA sequencing, building a map of the full transcriptome}{15}{section.2.2}
 \contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{16}{section.2.3}
 \contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{17}{section.2.4}
-\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{19}{section.2.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{21}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{23}{appendix.A}
+\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{20}{section.2.5}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Markov Random Field prior distribution}{23}{section.3.1}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{25}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{27}{appendix.A}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{29}{dummy.6}
