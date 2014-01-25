@@ -19,14 +19,24 @@
 \BOOKMARK [1][-]{section.1.4}{1.4 Conclusions}{chapter.1}% 19
 \BOOKMARK [0][]{chapter.2}{2 From tissue to single cell transcriptomics, a paradigm shift}{part.1}% 20
 \BOOKMARK [1][-]{section.2.1}{2.1 Spatially referenced single cell-like in-situ hybridization data}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.2}{2.2 Singe cell RNA sequencing, building a map of the full transcriptome}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.3}{2.3 About the quantitative trait of single cell expression data}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.4}{2.4 Binarizing gene expression datasets}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.5}{2.5 Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{chapter.2}% 25
-\BOOKMARK [0][]{chapter.3}{3 Hidden Markov Random Field based clustering for single cell gene expression data}{part.1}% 26
-\BOOKMARK [1][-]{section.3.1}{3.1 Markov Random Field prior distribution}{chapter.3}% 27
-\BOOKMARK [-1][]{part.2}{Appendix}{}% 28
-\BOOKMARK [0][]{appendix.A}{A Appendix}{part.2}% 29
-\BOOKMARK [0][]{dummy.6}{Bibliography}{part.2}% 30
-\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}% 31
-\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}% 32
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Dividing images into "cells"}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 A simple cell model, the "cube" data}{section.2.1}% 23
+\BOOKMARK [1][-]{section.2.2}{2.2 Singe cell RNA sequencing, building a map of the full transcriptome}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Sequencing single cell RNA contents}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Mapping back gene expression to a spatial reference}{section.2.2}% 26
+\BOOKMARK [1][-]{section.2.3}{2.3 About the quantitative trait of single cell expression data}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Light contamination in in-situ hybridization data}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Technical noise in single cell RNA-seq data}{section.2.3}% 29
+\BOOKMARK [1][-]{section.2.4}{2.4 Binarizing gene expression datasets}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Binarizing in-situ hybrdization datasets}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Binarizing whole transcriptomes}{section.2.4}% 32
+\BOOKMARK [1][-]{section.2.5}{2.5 Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Single cell RNA-seq in Platynereis' brain}{section.2.5}% 34
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{section.2.5}% 35
+\BOOKMARK [0][]{chapter.3}{3 Hidden Markov Random Field based clustering for single cell gene expression data}{part.1}% 36
+\BOOKMARK [1][-]{section.3.1}{3.1 Markov Random Field prior distribution}{chapter.3}% 37
+\BOOKMARK [-1][]{part.2}{Appendix}{}% 38
+\BOOKMARK [0][]{appendix.A}{A Appendix}{part.2}% 39
+\BOOKMARK [0][]{dummy.6}{Bibliography}{part.2}% 40
+\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}% 41
+\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}% 42
