@@ -25,15 +25,17 @@
 \contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{16}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Light contamination in in-situ hybridization data}{16}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Technical noise in single cell RNA-seq data}{16}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{17}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Binarizing in-situ hybrdization datasets}{17}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Binarizing whole transcriptomes}{19}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{20}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Single cell RNA-seq in Platynereis' brain}{20}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{21}{subsection.2.5.2}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Markov Random Field prior distribution}{25}{section.3.1}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{27}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{29}{appendix.A}
+\contentsline {subsection}{\numberline {2.3.3}Conclusions}{17}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Binarizing in-situ hybrdization datasets}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Binarizing whole transcriptomes}{20}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Preliminary results on mapping single cell RNA-seq data in from Platynereis' brain}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Single cell RNA-seq in Platynereis' brain}{21}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{22}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Conclusions}{24}{section.2.6}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Markov Random Field prior distribution}{27}{section.3.1}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{29}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{31}{appendix.A}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{31}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.6}

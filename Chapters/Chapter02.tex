@@ -57,11 +57,29 @@
 
 
   \subsection{Technical noise in single cell RNA-seq data}
-  Single cell RNA-seq is also a method prone to high levels of noise. This technical noise is caused by the minute amounts of starting material of RNA. A study lead by Brennecke \cite{brennecke13} proposes a statistical method to overcome this high noise level and distinguish between biological variation and technical variation in the gene expression levels.\\
+  Single cell RNA-seq is also a method prone to high levels of noise. This technical noise is caused by the minute amounts of starting material of RNA. A study lead by Philip Brennecke1, Simon Anders and Jong Kyoung Kim \cite{brennecke13}, proposes a statistical method to overcome this high noise level and distinguish between biological variation and technical variation in the gene expression levels.\\
+  
+  TO illustrate the dramatic increase in noise level, they used series of dilution assays, reducing step by step (5000 pg, 500 pg, 50 pg, 10 pg) the input quantity of RNA to sequence extracted from \species{Arabidobsis thaliana} with two technical replicates each time using the Tang protocol \cite{tang10}. The authors of the study let us analyse this data, and we were able after normalizing by the size factor using the Bioconductor package DESeq \cite{anders10} to generate the scatter plots shown on figure \ref{fig:dilutions}. \\
+  
+  It is clear from these dilution assays that the noise level is correlated with the input quantity. Even though highly expressed genes are consistently well quantified even with 10 pg input material, for most of the genes, with less than 50 pg input RNA it seems dangerous to assume the results of single cell RNA-seq as quantitative with the current technological capabilities.
+  
+\begin{figure}[bth]
+        \myfloatalign
+        \subfloat[500 0pg input RNA.]
+        {\includegraphics[width=.45\linewidth]{gfx/chapter2/5000pg.png}} \quad
+        \subfloat[500 pg input RNA.]
+        {\includegraphics[width=.45\linewidth]{gfx/chapter2/500pg.png}} \\
+        \subfloat[50 pg input RNA.]
+        {\includegraphics[width=.45\linewidth]{gfx/chapter2/50pg.png}} \quad
+        \subfloat[10 pg input RNA.]
+        {\includegraphics[width=.45\linewidth]{gfx/chapter2/10pg.png}}
+        \caption{Dilution series of total A. thaliana RNA}\label{fig:dilutions}
+\end{figure}
 
-  This study 
-    - FIG 6 : show "typical" correlation plot from single cell RNA-seq with the noise increasing when reducing starting material
-    - Both methods are currently unreliable quantitatively => need to binarize
+	\subsection{Conclusions}
+	The paragraphs above have shown that neither in-situ hybridization nor RNA-seq data can be safely assumed as quantitative when the scale is lowered at the single cell level. TO avoid nonsensical conclusions linked to the noise level in the rest of the study, a solution was to binarize any single cell dataset that we were dealing with. However, binarization is not a trivial problem as discussed in the following section.
+
+
 
 \section{Binarizing gene expression datasets}\label{sec:binarizing}
   \subsection{Binarizing in-situ hybrdization datasets}
@@ -119,7 +137,7 @@
 \begin{eqnarray*}
 	r_{m,c} &= \frac{D_{m,c}.\left\|M\right\|}{\sum_{a \in C}D_{m,a}}
 \end{eqnarray*}
-By looking for each cell, at the genes with the highest ratio we can define the what genes are the most specifically expressed in  this cell compared to the other cells sequenced. On the one hand, this mapping method has the inconvenient of using the average expression level across all considered cells to compute the ratio $r$. This means that the mapping quality of each cell will depend on the overall sequencing quality. Furthermore, this method performance relies on the assumption that we do have in fact a collection of cells from different cell types, given the experimental protocol described above, this seems to be an acceptable hypothesis. On the other hand, this mapping method has the advantage of not being sensible to technical noise in the RNA-seq protocol, providing the technical noise between cells remains at a constant level.\\
+By looking for each cell, at the genes with the highest ratio we can define the what genes are the most specifically expressed in  this cell compared to the other cells sequenced. On the one hand, this mapping method has the inconvenient of using the average expression level across all considered cells to compute the ratio $r$. This means that the mapping quality of each cell will depend on the overall sequencing quality. Furthermore, this method performance relies on the assumption that we do have in fact a collection of cells from different cell types, given the experimental protocol described above, this seems to be an acceptable hypothesis. On the other hand, this mapping method has the advantage of not being sensible to technical noise in the RNA-seq protocol, providing the technical noise between cells remains at a constant level. This explains the use of the read counts in a quantitative way and not a binarized dataset.\\
 
 	The goals of this study were to validate the protocol used in order to obtain single cell RNA-seq results in \platy{}'s brain and to establish a methodological proof-of-concept on spatially mapping RNA-seq results onto in-situ hybridization data. We will present here a few examples of sequenced cells, their most specifically expressed genes and their resulting potential original location in the brain as well as the probable cell type they belong to.\\
 	
@@ -154,6 +172,16 @@ By looking for each cell, at the genes with the highest ratio we can define the 
         {\includegraphics[width=.45\linewidth]{gfx/chapter2/cell4.png}}
         \caption{Regions defined by the expression overlap of the top 3 scoring genes in \cite{Tomer10} binarized in-situ hybridization data. The red colour shows the co-expression of the three considered genes, the blue areas are those where one or more of the three considrered genes are expressed but not all, in grey are the areas where none of the considered genes are expressed. The 4 figures are from a apical view with the dorsal side on top.}\label{fig:cell_localization}
 \end{figure}
+
+
+\section{Conclusions}
+In this chapter we presented how the scale of gene expression studies has shifted form the tissue level to the single cell level. For two experimental protocols we have described how such data can be obtained and why at the time of writing, it is still not safe to assume the single cell datasets as quantitative. To avoid that problem, turning those datasets into binary gene expression is an attractive solution. However the binarization process is not trivial and we have presented ways to obtain a high confidence dataset.\\
+
+One big advantage of in-situ hybridization assays is the fact that the spatial information stays attached to each gene expression fingerprint. Using this information, we were able to replace single cell RNA-seq data in a spatial context, using the most specifically expressed genes in every cell. To our best knowledge an a posteriori localization of single cell RNA-seq data had never been presented before.\\
+
+As mentioned previously \ref{ch:background}, if the ability to study the heterogeneity of cell populations at the single cell level is offers incredible possibilities for the future of developmental biology of cancer research, development of new statistical methods adapted to this single cell scale allowing conclusions at the tissue level to be drawn is crucial.\\
+
+The work presented thereafter in this thesis was done to answer simple but important questions: can we define and localize the known functional tissues, or the cell types of a complex organ like the brain, from single gene expression data? Can we detect unknown regions in such a complex tissue and finally can we hypothesize the functional role of those unknown regions based on the single cell expression data.
 
 
 	
