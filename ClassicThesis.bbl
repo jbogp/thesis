@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -24,6 +24,20 @@ James~E Balmer and Rune Blomhoff.
 \newblock \emph{Journal of lipid research}, 43\penalty0 (11):\penalty0
   1773--1808, 2002.
 
+\bibitem[Bartlett and Banker(1984)]{bartlett84}
+WILLIAM~P Bartlett and GARY~A Banker.
+\newblock An electron microscopic study of the development of axons and
+  dendrites by hippocampal neurons in culture. i. cells which develop without
+  intercellular contacts.
+\newblock \emph{The Journal of neuroscience}, 4\penalty0 (8):\penalty0
+  1944--1953, 1984.
+
+\bibitem[Boyer(1997)]{boyer97}
+Paul~D Boyer.
+\newblock The atp synthase-a splendid molecular machine.
+\newblock \emph{Annual review of biochemistry}, 66\penalty0 (1):\penalty0
+  717--749, 1997.
+
 \bibitem[Brennecke et~al.(2013)Brennecke, Anders, Kim, Ko{\l}odziejczyk, Zhang,
   Proserpio, Baying, Benes, Teichmann, Marioni, et~al.]{brennecke13}
 Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
@@ -31,6 +45,12 @@ Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
   Teichmann, John~C Marioni, et~al.
 \newblock Accounting for technical noise in single-cell rna-seq experiments.
 \newblock \emph{Nature methods}, 2013.
+
+\bibitem[Colello and Guillery(1990)]{colello90}
+RJ~Colello and RW~Guillery.
+\newblock The early development of retinal ganglion cells with uncrossed axons
+  in the mouse: retinal position and axonal course.
+\newblock \emph{Development}, 108\penalty0 (3):\penalty0 515--523, 1990.
 
 \bibitem[Denes et~al.(2007)Denes, J{\'e}kely, Steinmetz, Raible, Snyman,
   Prud'homme, Ferrier, Balavoine, and Arendt]{denes07}
@@ -156,6 +176,11 @@ HA~John, ML~Birnstiel, and KW~Jones.
 \newblock Rna-dna hybrids at the cytological level.
 \newblock \emph{Nature}, 223\penalty0 (5206):\penalty0 582, 1969.
 
+\bibitem[Kaiser and Kezdy(1984)]{kaiser84}
+ET~Kaiser and FJ~Kezdy.
+\newblock Amphiphilic secondary structure: design of peptide hormones.
+\newblock \emph{Science}, 223\penalty0 (4633):\penalty0 249--255, 1984.
+
 \bibitem[Kozmik et~al.(2008)Kozmik, Ruzickova, Jonasova, Matsumoto, Vopalensky,
   Kozmikova, Strnad, Kawamura, Piatigorsky, Paces, et~al.]{kozmik08}
 Zbynek Kozmik, Jana Ruzickova, Kristyna Jonasova, Yoshifumi Matsumoto, Pavel
@@ -193,6 +218,12 @@ Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
 G~Mendel.
 \newblock Versuche ber pflanzen-hybriden. verh.
 \newblock \emph{Naturforsch. Ver. Brnn}, 4:\penalty0 347, 1866.
+
+\bibitem[Mitchell and Tjian(1989)]{mitchell89}
+Pamela~J Mitchell and Robert Tjian.
+\newblock Transcriptional regulation in mammalian cells by sequence-specific
+  dna binding proteins.
+\newblock \emph{Science}, 245\penalty0 (4916):\penalty0 371--378, 1989.
 
 \bibitem[Morin et~al.(2008)Morin, Bainbridge, Fejes, Hirst, Krzywinski, Pugh,
   McDonald, Varhol, Jones, and Marra]{morin08}

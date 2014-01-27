@@ -10,9 +10,10 @@ The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
-Repeated entry---line 839 of file Bibliography.bib
+Repeated entry---line 894 of file Bibliography.bib
  : @article{Tang09
  :                ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "tang10"
 Warning--empty journal in guy08
 (There was 1 error message)

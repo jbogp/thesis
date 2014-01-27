@@ -12,20 +12,20 @@
 \contentsline {subsection}{\numberline {1.2.3}Generalities about gene expression and development}{7}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}Capturing gene expression in the laboratory}{9}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}In-situ hybridization assays}{9}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Building a image library of gene expression for Platynereis}{9}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}RNA sequencing}{11}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Conclusions}{11}{section.1.4}
+\contentsline {subsection}{\numberline {1.3.2}Building a image library of gene expression for Platynereis}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}RNA sequencing}{10}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Conclusions}{12}{section.1.4}
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Spatially referenced single cell-like in-situ hybridization data}{13}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Dividing images into "cells"}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}A simple cell model, the "cube" data}{13}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Singe cell RNA sequencing, building a map of the full transcriptome}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Sequencing single cell RNA contents}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.1.2}A simple cell model, the "cube" data}{14}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Singe cell RNA sequencing, building a map of the full transcriptome}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Sequencing single cell RNA contents}{14}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Mapping back gene expression to a spatial reference}{15}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{16}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Light contamination in in-situ hybridization data}{16}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Technical noise in single cell RNA-seq data}{16}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Conclusions}{17}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Technical noise in single cell RNA-seq data}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Conclusions}{18}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{18}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Binarizing in-situ hybrdization datasets}{18}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Binarizing whole transcriptomes}{20}{subsection.2.4.2}
