@@ -33,9 +33,35 @@
 \contentsline {subsection}{\numberline {2.5.1}Single cell RNA-seq in Platynereis' brain}{21}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{22}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Conclusions}{24}{section.2.6}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hidden Markov Random Field based clustering for single cell gene expression data}}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Markov Random Field prior distribution}{27}{section.3.1}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{29}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{31}{appendix.A}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Clustering tissues from single cell expression data and visualizing them in a 3D space}}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Elements of clustering for biological tissues}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Why cluster?}{27}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}General considerations about clustering}{27}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Visualizing clustering results in 3D with bioWeb3D}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Background}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Implementation}{28}{subsection.3.2.2}
+\contentsline {paragraph}{technological overview}{28}{subsection.3.2.2}
+\contentsline {paragraph}{Defining the input files formats}{29}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Dataset files specification}{29}{subsubsection.3.2.2.1}
+\contentsline {paragraph}{JSON format}{29}{subsubsection.3.2.2.1}
+\contentsline {paragraph}{CSV format}{29}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Information layer file specification}{30}{subsubsection.3.2.2.2}
+\contentsline {paragraph}{JSON format}{30}{subsubsection.3.2.2.2}
+\contentsline {paragraph}{CSV format}{30}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Results and Discussion}{30}{subsection.3.2.3}
+\contentsline {paragraph}{Basic usage}{30}{subsection.3.2.3}
+\contentsline {paragraph}{bioWeb3D and local software}{31}{subsection.3.2.3}
+\contentsline {paragraph}{bioWeb3D and Java Applets}{31}{subsection.3.2.3}
+\contentsline {paragraph}{Current limitations}{31}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Conclusions}{32}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Availability and requirements}{32}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Non spatial clustering methods}{32}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Hierarchical clustering}{32}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Independent mixture models}{32}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Discussion}{32}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Spatial clustering techniques (hierarchical, model based)}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Method chosen}{33}{subsection.3.4.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{35}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{37}{appendix.A}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{39}{dummy.6}
