@@ -4,43 +4,32 @@ A level-1 auxiliary file: FrontBackmatter/Contents.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
 A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
-Case mismatch error between cite keys Wang09 and wang09
----line 7 of file Chapters/Chapter03.aux
- : \citation{Wang09
- :                 }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Wang09 and wang09
----line 42 of file Chapters/Chapter03.aux
- : \citation{Wang09
- :                 }
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: Chapters/Chapter0A.aux
+A level-1 auxiliary file: Chapters/supp_figures.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
-Repeated entry---line 905 of file Bibliography.bib
- : @article{Tang09
- :                ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "three" isn't style-file defined
---line 1019 of file Bibliography.bib
+--line 1021 of file Bibliography.bib
 Warning--entry type for "webgl" isn't style-file defined
---line 1024 of file Bibliography.bib
+--line 1026 of file Bibliography.bib
 Warning--entry type for "github" isn't style-file defined
---line 1029 of file Bibliography.bib
+--line 1031 of file Bibliography.bib
 Warning--entry type for "bioweb3D" isn't style-file defined
---line 1034 of file Bibliography.bib
+--line 1036 of file Bibliography.bib
 Warning--entry type for "security" isn't style-file defined
---line 1039 of file Bibliography.bib
+--line 1041 of file Bibliography.bib
 Warning--entry type for "caniuse" isn't style-file defined
---line 1044 of file Bibliography.bib
+--line 1046 of file Bibliography.bib
+Warning--entry type for "xmlref" isn't style-file defined
+--line 1051 of file Bibliography.bib
+Warning--to sort, need author or key in xmlref
 Warning--to sort, need author or key in three
 Warning--to sort, need author or key in webgl
+Warning--to sort, need author or key in github
 Warning--to sort, need author or key in security
 Warning--to sort, need author or key in caniuse
-Warning--to sort, need author or key in github
 Warning--to sort, need author or key in bioWeb3D
 Warning--empty year in bioWeb3D
 Warning--empty year in caniuse
@@ -48,5 +37,6 @@ Warning--empty year in github
 Warning--empty year in security
 Warning--empty year in three
 Warning--empty year in webgl
+Warning--empty year in xmlref
 Warning--empty journal in guy08
-(There were 3 error messages)
+(There were 22 warnings)

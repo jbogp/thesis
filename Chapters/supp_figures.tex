@@ -1,0 +1,195 @@
+%********************************************************************
+% Appendix
+%*******************************************************
+% If problems with the headers: get headings in appendix etc. right
+%\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
+\chapter{Input file formats for bioWeb3D}\label{sup:bioweb3d}
+
+
+\section{Dataset file specification}
+When the user adds a new {\it{Dataset}} file, a new Dataset section is created in the ``Data" panel of the application. Each dataset file contains one dataset.\\
+	\subsection{JSON format}
+The {\it{dataset}} file should have a root object called ``dataset" which contains: \begin{itemize}
+\item{The ``name" property of the dataset (\textit{e.g.}, ``my dataset");}
+\item{The ``chain" parameter, which should be set to \textit{true} if the points are connected (the default value is \textit{false}) - the data will be considered sequentially, with each point connected by a solid line to the previous and next point according to its order in the dataset file;}
+\item{The ``points" property, which is a two dimensional array representing a list of (x,y,z) vectors that define the co-ordinates of the points.}
+\end{itemize}
+
+Listing \ref{sup:jsondataset} is an example of a minimal 3 points dataset file.
+
+\begin{lstlisting}[float,caption=Json dataset file,label=sup:jsondataset]
+{ "dataset" : {
+      "name" : "my superb dataset",
+      "chain" : true,
+       "points" :
+        [
+          [
+            0.5,
+            100,
+            -50.5
+          ],
+          [
+            200,
+            10,
+            0.0
+          ],
+          [
+            3,
+            250.15,
+            15
+          ]
+        ]
+     }
+}
+\end{lstlisting}
+
+		\subsection{XML format}
+The {\it{dataset}} XML format used is very similar to the previously defined JSON format. The file must have a root object called ``\textless dataset\textgreater " which contains: \begin{itemize}
+\item{The ``\textless name\textgreater " property of the dataset (\textit{e.g.}, ``my dataset");}
+\item{The ``\textless chain\textgreater " parameter, which should be set to \textit{true} if the points are linked (the default value is \textit{false}) - the data will be considered sequentially, with each point connected by a solid line to the previous and next point according to its order in the dataset file;}
+\item{The ``\textless points\textgreater " property, which contains all the single ``\textless point\textgreater " elements that define the dataset. Each ``\textless point\textgreater " has three properties to define its spatial location, namely ``\textless x\textgreater ", ``\textless y\textgreater " and ``\textless z\textgreater ".}
+\end{itemize}
+
+Listing \ref{sup:xmldataset} contains the same minimal dataset as Listing \ref{sup:jsondataset} but formatted in XML.
+
+\begin{lstlisting}[float,caption=XML dataset file,label=sup:xmldataset]
+<?xml version="1.0" ?>
+<dataset>
+	<name>my superb dataset</name>	
+	<chain>true</chain>
+	<points>
+		<point>
+			<x>0.5</x>
+			<y>100</y>
+			<z>-50.5</z>
+		</point>
+
+		<point>
+			<x>200</x>
+			<y>10</y>
+			<z>0.0</z>
+		</point>
+
+		<point>
+			<x>3</x>
+			<y>250.15</y>
+			<z>15</z>
+		</point>
+	</points>
+</dataset>
+
+\end{lstlisting}
+
+		\subsection{CSV format}
+Each line represents a point and the three coordinates on each line must be separated by ``comma" characters.\\
+As an example, listing \ref{sup:csvdataset} carries the same information as the JSON file in Listing \ref{sup:jsondataset}. We note that although the spatial information remains the same it is not possible to set a name or to connect the points within a CSV file input.
+
+\begin{lstlisting}[float,caption=CSV dataset file,label=sup:csvdataset]
+0.5,100,-50.5
+200,10,0.0
+3,250.15,15
+\end{lstlisting}
+
+
+
+
+\section{Information layer file specification}
+
+The {\it{Information layer}} file contains information about the points described in the Dataset file. The information in this file has to be given in the same order as the points defined in the Dataset file.
+
+		\subsection{JSON format}
+The {\it{information layer}} files must have a root element named  ``information". Since one information file can define multiple information sets, the structure below ``information" is a list. Each element of the list is structured as follows:
+\begin{itemize}
+\item{The ``name" property (optional);}
+\item{The ``numClass" property, which indicates the number of different classes the data will be assigned to;}
+\item{The ``labels" property, which defines a list of names for the ``numClass" classes previously defined (optional);}
+\item{The ``values" property, which defines the class of each point in the dataset. As points do not have single IDs, this property must be in the same order and have the same length as the points defined in the {\it{dataset}} file.}
+\end{itemize}
+
+For example coming back to the 3 points defined in Listing \ref{sup:jsondataset}, two information layers could correspond to: 
+\begin{itemize}
+
+\item{one clustering algorithm that puts the first two points together in class one and the third point alone in a second class}
+\item{a second clustering algorithm that puts each point in a separate class}
+\end{itemize}
+
+In this case the Information layer file would look like Listing \ref{sup:jsoninfo}.
+
+\begin{lstlisting}[float,caption=JSON information layer file,label=sup:jsoninfo]
+{ "information" :
+  [
+    {
+      "name": "clustering algo 1",
+      "numClass": "2",
+      "labels" : [
+        "Category 1",
+        "Category 2"
+      ],
+      "values": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "clustering algo 2",
+      "numClass": "3",
+      "values": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}
+\end{lstlisting}
+
+		\subsection{XML format}
+The {\it{information layer}} XML format used is very similar to the previously defined JSON format. The {\it{information layer}} files must have a root element named  ``\textless information\textgreater ". Since one information file can define multiple information sets, the structure below ``\textless information\textgreater " is a list of ``\textless set\textgreater " elements. Each ``\textless set\textgreater " element is structured as follows:
+\begin{itemize}
+\item{The ``\textless name\textgreater " property (optional);}
+\item{The ``\textless numClass\textgreater " property, which indicates the number of different classes the data will be assigned to;}
+\item{The ``\textless labels\textgreater " property, which contains as many individual ``\textless label\textgreater " properties as the number of different classes. Each ``\textless label\textgreater " defines the names for one class (optional);}
+\item{The ``\textless values\textgreater " property, which contains all the single ``\textless value\textgreater " properties, each one defining the class of each point in the dataset. As points do not have single IDs, the ``\textless value\textgreater " properties must be in the same order and have the same length as the points defined in the {\it{dataset}} file.}
+\end{itemize}
+Listing \ref{sup:xmlinfo}, carries the exact same information as Listing \ref{sup:jsoninfo}.
+
+\begin{lstlisting}[float,caption=XML information layer file,label=sup:xmlinfo]
+<?xml version="1.0" ?>
+<information>
+	<set>
+		<name>clustering algo 1</name>
+		<numClass>2</numClass>
+		<labels>
+			<label>Category 1</label>
+			<label>Category 2</label>
+		</labels>
+		<values>
+			<value>1</value>
+			<value>1</value>
+			<value>2</value>
+		</values>
+	</set>
+	<set>
+		<name>clustering algo 2</name>
+		<numClass>3</numClass>
+		<values>
+			<value>1</value>
+			<value>2</value>
+			<value>3</value>
+		</values>
+	</set>
+</information>
+
+\end{lstlisting}
+
+
+		\paragraph{CSV format}
+Each column represents the class to which a point belongs. The separation character between columns must be a ``comma". Listing \ref{sup:csvinfo}, carries the same information as Listing \ref{sup:jsoninfo}. Note that it is not possible to use the ``labels" or ``name" properties available in Listing \ref{sup:jsoninfo} within a CSV information layer file. 
+
+
+\begin{lstlisting}[float,caption=CSV information layer file,label=sup:csvinfo]
+1,1
+1,2
+2,3
+\end{lstlisting}

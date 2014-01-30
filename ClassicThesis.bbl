@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -28,6 +28,10 @@ Three.js - javascript 3d library.
 \bibitem[web()]{webgl}
 Webgl 1.0 specification.
 \newblock URL \url{https://www.khronos.org/registry/webgl/specs/1.0/}.
+
+\bibitem[xml()]{xmlref}
+Xml applications and initiatives.
+\newblock URL \url{http://xml.coverpages.org/xmlApplications.html}.
 
 \bibitem[Anders and Huber(2010)]{anders10}
 Simon Anders and Wolfgang Huber.
@@ -361,6 +365,20 @@ G.~A. Pavlopoulos, S.~I. O'Donoghue, V.~P. Satagopam, T.~G. Soldatos,
 \newblock {{A}rena3{D}: visualization of biological networks in 3{D}}.
 \newblock \emph{BMC Syst Biol}, 2:\penalty0 104, 2008.
 
+\bibitem[Peng et~al.(2010)Peng, Ruan, Long, Simpson, and Myers]{Peng10}
+Hanchuan Peng, Zongcai Ruan, Fuhui Long, Julie~H Simpson, and Eugene~W Myers.
+\newblock V3d enables real-time 3d visualization and quantitative analysis of
+  large-scale biological image data sets.
+\newblock \emph{Nature Biotechnology}, 28\penalty0 (4):\penalty0 348--353,
+  2010.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=pmcentrez&rendertype=abstract}.
+
+\bibitem[Pettit and Marioni(2013)]{Pettit13}
+Jean-Baptiste Pettit and John~C Marioni.
+\newblock bioweb3d: an online webgl 3d data visualisation tool.
+\newblock \emph{BMC bioinformatics}, 14\penalty0 (1):\penalty0 185, 2013.
+
 \bibitem[Pinkel et~al.(1988)Pinkel, Landegent, Collins, Fuscoe, Segraves,
   Lucas, and Gray]{pinkel88}
 D~Pinkel, J~Landegent, C~Collins, J~Fuscoe, R~Segraves, J~Lucas, and J~Gray.
@@ -433,6 +451,11 @@ Anders St{\aa}hlberg, Vendula Rusnakova, and Mikael Kubista.
 \newblock \emph{Briefings in functional genomics}, 12\penalty0 (2):\penalty0
   81--89, 2013.
 
+\bibitem[Stalling et~al.(2005)Stalling, Westerhoff, Hege, et~al.]{Stalling05}
+Detlev Stalling, Malte Westerhoff, Hans-Christian Hege, et~al.
+\newblock Amira: A highly interactive system for visual data analysis.
+\newblock \emph{The visualization handbook}, 38:\penalty0 749--67, 2005.
+
 \bibitem[SWIGER and TUCKER(1996)]{swiger96}
 RR~SWIGER and JD~TUCKER.
 \newblock Fluorescence in situ hybridization: A brief review.
@@ -474,11 +497,17 @@ Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
   mushroom bodies and vertebrate pallium.
 \newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
 
-\bibitem[Wang et~al.(2009)Wang, Gerstein, and Snyder]{wang09}
+\bibitem[Wang et~al.(2009{\natexlab{a}})Wang, Liang, and Zhang]{Wang093D}
+Qi~Wang, Qun Liang, and Xiuqing Zhang.
+\newblock 3d genome tuner: Compare multiple circular genomes in a 3d context.
+\newblock \emph{Genomics Proteomics Bioinformatics}, 7\penalty0 (3):\penalty0
+  143--146, 2009{\natexlab{a}}.
+
+\bibitem[Wang et~al.(2009{\natexlab{b}})Wang, Gerstein, and Snyder]{wang09}
 Zhong Wang, Mark Gerstein, and Michael Snyder.
 \newblock Rna-seq: a revolutionary tool for transcriptomics.
 \newblock \emph{Nature Reviews Genetics}, 10\penalty0 (1):\penalty0 57--63,
-  2009.
+  2009{\natexlab{b}}.
 
 \bibitem[Wilde(2007)]{Wilde07}
 Erik Wilde.
