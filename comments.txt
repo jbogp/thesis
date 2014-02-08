@@ -1,0 +1,14 @@
+Ch1 :
+Define cell type properly
+Also discussion
+
+ch2:
+reference figure about empty cluster when describing errors introduced by the cube cell model
+
+RNA present in cell "up to a 100pg"
+
+Figure showing 2 very different genes in single cell RNA seq data (for the binarization part)	
+
+Ask Kaia for pictures of fraction of the brain captures by size to convince that this is different cells bein captured
+
+send back-mapping figure to john
