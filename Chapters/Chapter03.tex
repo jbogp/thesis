@@ -84,22 +84,32 @@ bioWeb3D is designed to be a simple and quick way to view 3D data with a specifi
 The full source code is available on the Github page of the project \cite{github}. A live version of the software is online \cite{bioWeb3D}. You will require a graphical card and a browser with WebGL capabilities to run bioWeb3D.
 
 \section{Non spatial clustering methods}
+Being able to visualize clustering results will be key in analysing any method's output from a biological perspective. Of course the next step is to actually develop a clustering method that would be able to cluster binarized single cell gene expression data. I will describe here a existing methods that are able to cluster single cells together based solely on the gene expression patterns without considering the spatial structure of the data.
 	\subsection{Hierarchical clustering}
-    - General description of the method
-    - Computing distance matrix on binary expression data
-    - Hclust method to use (full or partial)
-    - Discuss the choosing the K with hClust (dendrogram is not informative)
+	The first method I took an interest in was hierarchical clustering (hClust) \cite{johnson67}. Indeed, in the field of molecular biology and biology in general, this clustering method is extremely popular mainly because it is relatively straight forward to use, and because the obtained dendrogram helps the downstream analysis of the data.\\
+	
+	hClust relies on the computation of a distance matrix, considering the matrix $D$ of the in-situ hybridization data, with $86$ columns corresponding to the 86 genes in consideration and $32.203$ row corresponding to every cell in the dataset. The computation of the distance matrix was performed using the ``dist" function in R with the ``euclidean" metrics (or`Manhattan" which is equivalent for a binary dataset) in order to compute the $32.203 \times 32.203$ matrix of distances between rows.\\
+	
+	It is interesting to note that this step, in addition to being computationally expensive, creates a very large object in memory making it a limiting factor for very large datasets. Based on this distance matrix, the hierarchical clustering can take place using the ``hclust" function in R. With the ``complete" option turned on, the resulting object will be a dendrogram  representing the hierarchical classification of all $32.203$ cells as shown on figure \todo{add figure dendrogram}.\\
+	
+	Importantly, once this dendrogram is outputted, the hClust method gives no indication on where to ``cut" the dendrogram to output the actual clustering results. This highlights a very important issue in all clustering methods that is identifying the optimal number of clusters needed for a certain dataset when there is no prior information. For the rest of this thesis the number this crucial parameter will be referred to as $K$.\\
+	
+	After choosing $K$, the dendrogram is cut so as to allocate each cell to one of the $K$ clusters. Interestingly, the resulting partition obtained with this method does not give any direct information regarding the genes defining each requiring more steps to be able to generate biological hypothesis about the cells in each cluster.
+
  
-	\subsection{Independent mixture models}
-    - General statistical framework
-    - Present the model
-    - Gene independence hypothesis (this will be discussed further in the next chapter)
-    - Likelihood of the model
-    - EM algorithm to maximize the parameters (theta)
-    - Choosing K with the BIC
+	\subsection{Other clustering methods adapted to gene expression data}
+	There are several other clustering methods that could be applied in order to create a partition of gene expression data. They include but are not limited to K-means clustering \cit{macqueen67} and independent mixture models \cite{dempster77}. Those methods are well suited to cluster gene expression data. However, they all fail to take into account the spatial information linked to the gene expression dataset.
+
 
 \section{Discussion}
 	\subsection{Spatial clustering techniques (hierarchical, model based)}
+	Using a clustering method that would in addition to the gene expression pattern of each cell, take into account its spatial localization, that is the context of each cell regarding the other cells around it, could theoretically improve the clustering performances for several reasons.\\
+	
+	As mentioned in chapter \ref{ch:background}, the way development in complex organisms operates, from asymmetrical cell divisions leads to a highly structured spatial organization of complex biological tissue. In those circumstances and without any other prior knowledge, not taking into account the spatial localization of each cell into the clustering scheme would seem to be an unexploited potentially important information. \\
+	
+	Furthermore, as discussed in chapter \ref{ch:singlecell}, single cell gene expression datasets whether they are generated from in-situ hybridization (see details on figure \ref{fig:cubeserrors}) or single cell RNA-seq (figure \ref{fig:dilutions}), are prone to errors and incoherency. A clustering method that would be able to compensate ``erroneous" data points by taking into account the spatial context of each cell, could potentially dramatically decrease the effect of noise level into the clustering results. Additionally, from a downstream analysis perspective, as far as general hypothesis about clusters are concerned, ``smoother"/less scattered clusters are easier to interpret from a direct visualization of the results.\\
+	
+	
     - Limits of non spatial methods on noisy data (cite the "cell model of chapter 1" paragraph)
     - Not using the spatial data seems silly when we do have it (playing chess blind comparison ?)
     - Some clustering methods are able to take into account the spatial localization of the data points as well as the expression data

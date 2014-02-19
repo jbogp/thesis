@@ -1,37 +1,9 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[bio()]{bioWeb3D}
-bioweb3d online.
-\newblock URL \url{http://www.ebi.ac.uk/~jbpettit/bioWeb3D}.
-
-\bibitem[can()]{caniuse}
-Compatibility table for webgl.
-\newblock URL \url{http://caniuse.com/webgl}.
-
-\bibitem[git()]{github}
-bioweb3d on github.
-\newblock URL \url{http://github.com/jbogp/bioWeb3D}.
-
-\bibitem[sec()]{security}
-United states computer emergency readiness team.
-\newblock URL \url{http://www.kb.cert.org/vuls/id/636312}.
-
-\bibitem[thr()]{three}
-Three.js - javascript 3d library.
-\newblock URL \url{http://mrdoob.github.com/three.js/}.
-
-\bibitem[web()]{webgl}
-Webgl 1.0 specification.
-\newblock URL \url{https://www.khronos.org/registry/webgl/specs/1.0/}.
-
-\bibitem[xml()]{xmlref}
-Xml applications and initiatives.
-\newblock URL \url{http://xml.coverpages.org/xmlApplications.html}.
 
 \bibitem[Anders and Huber(2010)]{anders10}
 Simon Anders and Wolfgang Huber.
@@ -129,16 +101,6 @@ Antje Fischer, Thorsten Henrich, and Detlev Arendt.
   annelida).
 \newblock \emph{Frontiers in zoology}, 7\penalty0 (1):\penalty0 31, 2010.
 
-\bibitem[Freeman et~al.(2007)Freeman, Goldovsky, Brosch, Van~Dongen,
-  Mazi{\`e}re, Grocock, Freilich, Thornton, and Enright]{Freeman07}
-Tom~C Freeman, Leon Goldovsky, Markus Brosch, Stijn Van~Dongen, Pierre
-  Mazi{\`e}re, Russell~J Grocock, Shiri Freilich, Janet Thornton, and Anton~J
-  Enright.
-\newblock Construction, visualisation, and clustering of transcription networks
-  from microarray expression data.
-\newblock \emph{PLoS computational biology}, 3\penalty0 (10):\penalty0 e206,
-  2007.
-
 \bibitem[Fuqua et~al.(2001)Fuqua, Parsek, and Greenberg]{fuqua01}
 Clay Fuqua, Matthew~R Parsek, and E~Peter Greenberg.
 \newblock Regulation of gene expression by cell-to-cell communication:
@@ -169,13 +131,6 @@ Valentin H{\"a}cker.
 J{\"o}rg~D Hardege.
 \newblock Nereidid polychaetes as model organisms for marine chemical ecology.
 \newblock \emph{Hydrobiologia}, 402:\penalty0 145--161, 1999.
-
-\bibitem[Hartshorn(2002)]{Hartshorn02}
-M.~J. Hartshorn.
-\newblock {{A}stex{V}iewer: a visualisation aid for structure-based drug
-  design}.
-\newblock \emph{J. Comput. Aided Mol. Des.}, 16\penalty0 (12):\penalty0
-  871--881, Dec 2002.
 
 \bibitem[Hauenschild et~al.(1969)Hauenschild, Czihak, Fischer, and
   Siewing]{hauenschild69}
@@ -236,15 +191,6 @@ Zbynek Kozmik, Jana Ruzickova, Kristyna Jonasova, Yoshifumi Matsumoto, Pavel
 \newblock \emph{Proceedings of the National Academy of Sciences}, 105\penalty0
   (26):\penalty0 8989--8993, 2008.
 
-\bibitem[Kulkarni et~al.(2012)Kulkarni, Doijade, Devrukhkar, Zilpe, and
-  Surana]{Dinesh12}
-Dinesh~B. Kulkarni, Mahesh~M. Doijade, Chetan~S. Devrukhkar, Ganesh~R. Zilpe,
-  and Rajesh~R. Surana.
-\newblock Article: Netraris - a web based dicom viewer.
-\newblock \emph{International Journal of Computer Applications}, 48\penalty0
-  (24):\penalty0 40--44, June 2012.
-\newblock Published by Foundation of Computer Science, New York, USA.
-
 \bibitem[Landegent et~al.(1984)Landegent, Wal, In, Baan, Hoeijmakers, and Van
   Der~Ploeg]{landegent84}
 JE~Landegent, De~Wal, N~Jansen In, RA~Baan, JHJ Hoeijmakers, and M~Van
@@ -253,41 +199,6 @@ JE~Landegent, De~Wal, N~Jansen In, RA~Baan, JHJ Hoeijmakers, and M~Van
   hybridocytochemical detection of specific nucleic acid sequences.
 \newblock \emph{Experimental cell research}, 153\penalty0 (1):\penalty0 61--72,
   1984.
-
-\bibitem[Lein et~al.(2007)Lein, Hawrylycz, Ao, Ayres, Bensinger, Bernard, Boe,
-  Boguski, Brockway, Byrnes, Chen, Chen, Chen, Chin, Chong, Crook, Czaplinska,
-  Dang, Datta, Dee, Desaki, Desta, Diep, Dolbeare, Donelan, Dong, Dougherty,
-  Duncan, Ebbert, Eichele, Estin, Faber, Facer, Fields, Fischer, Fliss,
-  Frensley, Gates, Glattfelder, Halverson, Hart, Hohmann, Howell, Jeung,
-  Johnson, Karr, Kawal, Kidney, Knapik, Kuan, Lake, Laramee, Larsen, Lau,
-  Lemon, Liang, Liu, Luong, Michaels, Morgan, Morgan, Mortrud, Mosqueda, Ng,
-  Ng, Orta, Overly, Pak, Parry, Pathak, Pearson, Puchalski, Riley, Rockett,
-  Rowland, Royall, Ruiz, Sarno, Schaffnit, Shapovalova, Sivisay, Slaughterbeck,
-  Smith, Smith, Smith, Sodt, Stewart, Stumpf, Sunkin, Sutram, Tam, Teemer,
-  Thaller, Thompson, Varnam, Visel, Whitlock, Wohnoutka, Wolkey, Wong, Wood,
-  Yaylaoglu, Young, Youngstrom, Yuan, Zhang, Zwingman, and Jones]{Lein07}
-E.~S. Lein, M.~J. Hawrylycz, N.~Ao, M.~Ayres, A.~Bensinger, A.~Bernard, A.~F.
-  Boe, M.~S. Boguski, K.~S. Brockway, E.~J. Byrnes, L.~Chen, L.~Chen, T.~M.
-  Chen, M.~C. Chin, J.~Chong, B.~E. Crook, A.~Czaplinska, C.~N. Dang, S.~Datta,
-  N.~R. Dee, A.~L. Desaki, T.~Desta, E.~Diep, T.~A. Dolbeare, M.~J. Donelan,
-  H.~W. Dong, J.~G. Dougherty, B.~J. Duncan, A.~J. Ebbert, G.~Eichele, L.~K.
-  Estin, C.~Faber, B.~A. Facer, R.~Fields, S.~R. Fischer, T.~P. Fliss,
-  C.~Frensley, S.~N. Gates, K.~J. Glattfelder, K.~R. Halverson, M.~R. Hart,
-  J.~G. Hohmann, M.~P. Howell, D.~P. Jeung, R.~A. Johnson, P.~T. Karr,
-  R.~Kawal, J.~M. Kidney, R.~H. Knapik, C.~L. Kuan, J.~H. Lake, A.~R. Laramee,
-  K.~D. Larsen, C.~Lau, T.~A. Lemon, A.~J. Liang, Y.~Liu, L.~T. Luong,
-  J.~Michaels, J.~J. Morgan, R.~J. Morgan, M.~T. Mortrud, N.~F. Mosqueda, L.~L.
-  Ng, R.~Ng, G.~J. Orta, C.~C. Overly, T.~H. Pak, S.~E. Parry, S.~D. Pathak,
-  O.~C. Pearson, R.~B. Puchalski, Z.~L. Riley, H.~R. Rockett, S.~A. Rowland,
-  J.~J. Royall, M.~J. Ruiz, N.~R. Sarno, K.~Schaffnit, N.~V. Shapovalova,
-  T.~Sivisay, C.~R. Slaughterbeck, S.~C. Smith, K.~A. Smith, B.~I. Smith, A.~J.
-  Sodt, N.~N. Stewart, K.~R. Stumpf, S.~M. Sunkin, M.~Sutram, A.~Tam, C.~D.
-  Teemer, C.~Thaller, C.~L. Thompson, L.~R. Varnam, A.~Visel, R.~M. Whitlock,
-  P.~E. Wohnoutka, C.~K. Wolkey, V.~Y. Wong, M.~Wood, M.~B. Yaylaoglu, R.~C.
-  Young, B.~L. Youngstrom, X.~F. Yuan, B.~Zhang, T.~A. Zwingman, and A.~R.
-  Jones.
-\newblock {{G}enome-wide atlas of gene expression in the adult mouse brain}.
-\newblock \emph{Nature}, 445\penalty0 (7124):\penalty0 168--176, Jan 2007.
 
 \bibitem[Li et~al.(1995)Li, Manjunath, and Mitra]{li95}
 Hui Li, BS~Manjunath, and Sanjit~K Mitra.
@@ -358,27 +269,6 @@ Mary~Lou Pardue and Joseph~G Gall.
 \newblock \emph{Proceedings of the National Academy of Sciences}, 64\penalty0
   (2):\penalty0 600--604, 1969.
 
-\bibitem[Pavlopoulos et~al.(2008)Pavlopoulos, O'Donoghue, Satagopam, Soldatos,
-  Pafilis, and Schneider]{Pavlopoulos08}
-G.~A. Pavlopoulos, S.~I. O'Donoghue, V.~P. Satagopam, T.~G. Soldatos,
-  E.~Pafilis, and R.~Schneider.
-\newblock {{A}rena3{D}: visualization of biological networks in 3{D}}.
-\newblock \emph{BMC Syst Biol}, 2:\penalty0 104, 2008.
-
-\bibitem[Peng et~al.(2010)Peng, Ruan, Long, Simpson, and Myers]{Peng10}
-Hanchuan Peng, Zongcai Ruan, Fuhui Long, Julie~H Simpson, and Eugene~W Myers.
-\newblock V3d enables real-time 3d visualization and quantitative analysis of
-  large-scale biological image data sets.
-\newblock \emph{Nature Biotechnology}, 28\penalty0 (4):\penalty0 348--353,
-  2010.
-\newblock URL
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=pmcentrez&rendertype=abstract}.
-
-\bibitem[Pettit and Marioni(2013)]{Pettit13}
-Jean-Baptiste Pettit and John~C Marioni.
-\newblock bioweb3d: an online webgl 3d data visualisation tool.
-\newblock \emph{BMC bioinformatics}, 14\penalty0 (1):\penalty0 185, 2013.
-
 \bibitem[Pinkel et~al.(1988)Pinkel, Landegent, Collins, Fuscoe, Segraves,
   Lucas, and Gray]{pinkel88}
 D~Pinkel, J~Landegent, C~Collins, J~Fuscoe, R~Segraves, J~Lucas, and J~Gray.
@@ -411,24 +301,6 @@ Greg~W Rouse.
 \newblock \emph{Biological Journal of the Linnean Society}, 66\penalty0
   (4):\penalty0 411--464, 1999.
 
-\bibitem[Rubel et~al.(2010)Rubel, Weber, Huang, Bethel, Biggin, Fowlkes,
-  Luengo~Hendriks, Keranen, Eisen, Knowles, Malik, Hagen, and Hamann]{Rubel10}
-O.~Rubel, G.~H. Weber, M.~Y. Huang, E.~W. Bethel, M.~D. Biggin, C.~C. Fowlkes,
-  C.~L. Luengo~Hendriks, S.~V. Keranen, M.~B. Eisen, D.~W. Knowles, J.~Malik,
-  H.~Hagen, and B.~Hamann.
-\newblock {{I}ntegrating data clustering and visualization for the analysis of
-  3{D} gene expression data}.
-\newblock \emph{IEEE/ACM Trans Comput Biol Bioinform}, 7\penalty0 (1):\penalty0
-  64--79, 2010.
-
-\bibitem[Shannon et~al.(2003)Shannon, Markiel, Ozier, Baliga, Wang, Ramage,
-  Amin, Schwikowski, and Ideker]{Shannon03}
-Paul Shannon, Andrew Markiel, Owen Ozier, Nitin~S Baliga, Jonathan~T Wang,
-  Daniel Ramage, Nada Amin, Benno Schwikowski, and Trey Ideker.
-\newblock Cytoscape: a software environment for integrated models of
-  biomolecular interaction networks.
-\newblock \emph{Genome Research}, 13:\penalty0 2498--504, 2003.
-
 \bibitem[Shinozaki et~al.(2003)Shinozaki, Yamaguchi-Shinozaki, and
   Seki]{shinozaki03}
 Kazuo Shinozaki, Kazuko Yamaguchi-Shinozaki, and Motoaki Seki.
@@ -450,11 +322,6 @@ Anders St{\aa}hlberg, Vendula Rusnakova, and Mikael Kubista.
 \newblock The added value of single-cell gene expression profiling.
 \newblock \emph{Briefings in functional genomics}, 12\penalty0 (2):\penalty0
   81--89, 2013.
-
-\bibitem[Stalling et~al.(2005)Stalling, Westerhoff, Hege, et~al.]{Stalling05}
-Detlev Stalling, Malte Westerhoff, Hans-Christian Hege, et~al.
-\newblock Amira: A highly interactive system for visual data analysis.
-\newblock \emph{The visualization handbook}, 38:\penalty0 749--67, 2005.
 
 \bibitem[SWIGER and TUCKER(1996)]{swiger96}
 RR~SWIGER and JD~TUCKER.
@@ -497,22 +364,11 @@ Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
   mushroom bodies and vertebrate pallium.
 \newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
 
-\bibitem[Wang et~al.(2009{\natexlab{a}})Wang, Liang, and Zhang]{Wang093D}
-Qi~Wang, Qun Liang, and Xiuqing Zhang.
-\newblock 3d genome tuner: Compare multiple circular genomes in a 3d context.
-\newblock \emph{Genomics Proteomics Bioinformatics}, 7\penalty0 (3):\penalty0
-  143--146, 2009{\natexlab{a}}.
-
-\bibitem[Wang et~al.(2009{\natexlab{b}})Wang, Gerstein, and Snyder]{wang09}
+\bibitem[Wang et~al.(2009)Wang, Gerstein, and Snyder]{wang09}
 Zhong Wang, Mark Gerstein, and Michael Snyder.
 \newblock Rna-seq: a revolutionary tool for transcriptomics.
 \newblock \emph{Nature Reviews Genetics}, 10\penalty0 (1):\penalty0 57--63,
-  2009{\natexlab{b}}.
-
-\bibitem[Wilde(2007)]{Wilde07}
-Erik Wilde.
-\newblock Putting things to rest.
-\newblock \emph{Transport}, 15\penalty0 (November):\penalty0 567--583, 2007.
+  2009.
 
 \bibitem[Yan et~al.(2013)Yan, Yang, Guo, Yang, Wu, Li, Liu, Lian, Zheng, Yan,
   et~al.]{yan13}
