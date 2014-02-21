@@ -14,7 +14,7 @@
 	
 	In my case, the number of tissues in the brain of \platy{} is unknown and there is no previous classification or a strong enough biological knowledge of each and every cell to opt for a directed classification. Therefore the methods presented hereafter will be clustering methods with respect to the machine learning definition of the word.\\
 	
-	As a general consideration about clustering, it is interesting to note that unless working on simple enough datasets, there is no perfect method, This is especially true when dealing with biological data, where the inner complexity and the noise level (see \ref{sec:quantitative_single_cell}} tend to be extremely high. \\
+	As a general consideration about clustering, it is interesting to note that unless working on simple enough datasets, there is no perfect method, This is especially true when dealing with biological data, where the inner complexity and the noise level (see \ref{sec:quantitative_single_cell}) tend to be extremely high. \\
 	
 	To illustrate that notion, for the single cell expression data in \platy{}'s brain, the question of the finding the ``true" number of tissues is extremely complicated. Without any prior knowledge, the statistical methods to determine the number of clusters presented in this thesis will yield indications about what the optimal number ``tissues" is given the data, which does not necessarily means that this number is biologically true.\\
 	
@@ -88,9 +88,9 @@ Being able to visualize clustering results will be key in analysing any method's
 	\subsection{Hierarchical clustering}
 	The first method I took an interest in was hierarchical clustering (hClust) \cite{johnson67}. Indeed, in the field of molecular biology and biology in general, this clustering method is extremely popular mainly because it is relatively straight forward to use, and because the obtained dendrogram helps the downstream analysis of the data.\\
 	
-	hClust relies on the computation of a distance matrix, considering the matrix $D$ of the in-situ hybridization data, with $86$ columns corresponding to the 86 genes in consideration and $32.203$ row corresponding to every cell in the dataset. The computation of the distance matrix was performed using the ``dist" function in R with the ``euclidean" metrics (or`Manhattan" which is equivalent for a binary dataset) in order to compute the $32.203 \times 32.203$ matrix of distances between rows.\\
+	hClust relies on the computation of a distance matrix, considering the matrix $D$ of the in-situ hybridization data, with $86$ columns corresponding to the 86 genes in consideration and $32,203$ row corresponding to every cell in the dataset. The computation of the distance matrix was performed using the ``dist" function in R with the ``euclidean" metrics (or`Manhattan" which is equivalent for a binary dataset) in order to compute the $32,203 \times 32,203$ matrix of distances between rows.\\
 	
-	It is interesting to note that this step, in addition to being computationally expensive, creates a very large object in memory making it a limiting factor for very large datasets. Based on this distance matrix, the hierarchical clustering can take place using the ``hclust" function in R. With the ``complete" option turned on, the resulting object will be a dendrogram  representing the hierarchical classification of all $32.203$ cells as shown on figure \todo{add figure dendrogram}.\\
+	It is interesting to note that this step, in addition to being computationally expensive, creates a very large object in memory making it a limiting factor for very large datasets. Based on this distance matrix, the hierarchical clustering can take place using the ``hclust" function in R. With the ``complete" option turned on, the resulting object will be a dendrogram  representing the hierarchical classification of all $32,203$ cells as shown on figure \todo{add figure dendrogram}.\\
 	
 	Importantly, once this dendrogram is outputted, the hClust method gives no indication on where to ``cut" the dendrogram to output the actual clustering results. This highlights a very important issue in all clustering methods that is identifying the optimal number of clusters needed for a certain dataset when there is no prior information. For the rest of this thesis the number this crucial parameter will be referred to as $K$.\\
 	
@@ -98,7 +98,7 @@ Being able to visualize clustering results will be key in analysing any method's
 
  
 	\subsection{Other clustering methods adapted to gene expression data}
-	There are several other clustering methods that could be applied in order to create a partition of gene expression data. They include but are not limited to K-means clustering \cit{macqueen67} and independent mixture models \cite{dempster77}. Those methods are well suited to cluster gene expression data. However, they all fail to take into account the spatial information linked to the gene expression dataset.
+	There are several other clustering methods that could be applied in order to create a partition of gene expression data. They include but are not limited to K-means clustering \cite{macqueen67} and independent mixture models \cite{dempster77}. Those methods are well suited to cluster gene expression data. However, they all fail to take into account the spatial information linked to the gene expression dataset.
 
 
 \section{Discussion}
@@ -108,15 +108,14 @@ Being able to visualize clustering results will be key in analysing any method's
 	As mentioned in chapter \ref{ch:background}, the way development in complex organisms operates, from asymmetrical cell divisions leads to a highly structured spatial organization of complex biological tissue. In those circumstances and without any other prior knowledge, not taking into account the spatial localization of each cell into the clustering scheme would seem to be an unexploited potentially important information. \\
 	
 	Furthermore, as discussed in chapter \ref{ch:singlecell}, single cell gene expression datasets whether they are generated from in-situ hybridization (see details on figure \ref{fig:cubeserrors}) or single cell RNA-seq (figure \ref{fig:dilutions}), are prone to errors and incoherency. A clustering method that would be able to compensate ``erroneous" data points by taking into account the spatial context of each cell, could potentially dramatically decrease the effect of noise level into the clustering results. Additionally, from a downstream analysis perspective, as far as general hypothesis about clusters are concerned, ``smoother"/less scattered clusters are easier to interpret from a direct visualization of the results.\\
-	
-	
-    - Limits of non spatial methods on noisy data (cite the "cell model of chapter 1" paragraph)
-    - Not using the spatial data seems silly when we do have it (playing chess blind comparison ?)
-    - Some clustering methods are able to take into account the spatial localization of the data points as well as the expression data
-    - Quickly present spatial methods (spatial hclust), Mixture with a spatial component
+
 
 	\subsection{Method chosen}
-    - MRF because theta parameters are informative, easy to compute a likelihood and to choose K
+In order to utilise both the spatial and the gene expression information, it was decided to extend a graph theoretical approach developed for image segmentation to reconstruct noisy or blurred images \cite{Dang98}, a method that finds its roots in the field of statistical mechanics as the Ising model \cite{Ising25} and its generalization, the Potts model \cite{Wu82}. The core concept of this method is to use an Expectation-Maximization (EM) procedure to estimate the parameters of a Markov Random Field based model using mean-field approximations to estimate intractable values as described in \cite{Celeux01}.\\
+
+This approach exhibits several important advantages as will be described in details in the next sections. Indeed, in addition to providing a way to take into account the spatial information in the clustering results, it also offers some nice features in terms of downstream analysis through the analysis of the optimal parameters upon convergence.\\
+
+In the next three sections, I will first describe the theoretical framework and the equations used in this model followed by a assessment of the method's performances compared to other non spatial clustering method on simulated data, finally I will show and analyse the clustering results obtained through the developed method on the single cell in-situ gene expression data in \platy{}'s brain described in \ref{ch:singlecell}.
 
 
 

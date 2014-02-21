@@ -3,11 +3,42 @@ A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
 A level-1 auxiliary file: FrontBackmatter/Contents.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
 A level-1 auxiliary file: Chapters/Chapter02.aux
+A level-1 auxiliary file: Chapters/Chapter03.aux
 A level-1 auxiliary file: Chapters/supp_figures.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography.bib
+Warning--entry type for "three" isn't style-file defined
+--line 1065 of file Bibliography.bib
+Warning--entry type for "webgl" isn't style-file defined
+--line 1070 of file Bibliography.bib
+Warning--entry type for "github" isn't style-file defined
+--line 1075 of file Bibliography.bib
+Warning--entry type for "bioweb3D" isn't style-file defined
+--line 1080 of file Bibliography.bib
+Warning--entry type for "security" isn't style-file defined
+--line 1085 of file Bibliography.bib
+Warning--entry type for "caniuse" isn't style-file defined
+--line 1090 of file Bibliography.bib
+Warning--entry type for "xmlref" isn't style-file defined
+--line 1095 of file Bibliography.bib
+Warning--I didn't find a database entry for "Tomer"
+Warning--to sort, need author or key in xmlref
+Warning--to sort, need author or key in three
+Warning--to sort, need author or key in webgl
+Warning--to sort, need author or key in github
+Warning--to sort, need author or key in security
+Warning--to sort, need author or key in caniuse
+Warning--to sort, need author or key in bioWeb3D
+Warning--empty year in bioWeb3D
+Warning--empty year in caniuse
+Warning--empty year in github
+Warning--empty year in security
+Warning--empty year in three
+Warning--empty year in webgl
+Warning--empty year in xmlref
 Warning--empty journal in guy08
-(There was 1 warning)
+Warning--can't use both volume and number fields in macqueen67
+(There were 24 warnings)
