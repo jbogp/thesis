@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{87}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -60,6 +60,11 @@ WILLIAM~P Bartlett and GARY~A Banker.
 \newblock \emph{The Journal of neuroscience}, 4\penalty0 (8):\penalty0
   1944--1953, 1984.
 
+\bibitem[Besag(1975)]{Besag75}
+Julian Besag.
+\newblock Statistical analysis of non-lattice data.
+\newblock \emph{The statistician}, pages 179--195, 1975.
+
 \bibitem[Boyer(1997)]{boyer97}
 Paul~D Boyer.
 \newblock The atp synthase-a splendid molecular machine.
@@ -78,6 +83,11 @@ Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
 Gilles Celeux, Florence Forbes, and Nathalie Peyrard.
 \newblock Em procedures using mean field-like approximations for markov
   model-based image segmentation, 2001.
+
+\bibitem[CHALMOND(1989)]{Chalmond89}
+B~CHALMOND.
+\newblock An iterative gibbsian technique for reconstruction of m-ary images.
+\newblock \emph{Pattern recognition}, 22\penalty0 (6):\penalty0 747--761, 1989.
 
 \bibitem[Colello and Guillery(1990)]{colello90}
 RJ~Colello and RW~Guillery.
@@ -341,6 +351,11 @@ Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
   expression and rna splicing.
 \newblock \emph{Genome research}, pages gr--161034, 2013.
 
+\bibitem[McLachlan and Peel(2004)]{Mclachlan04}
+Geoffrey McLachlan and David Peel.
+\newblock \emph{Finite mixture models}.
+\newblock Wiley. com, 2004.
+
 \bibitem[Mendel(1866)]{mendel66}
 G~Mendel.
 \newblock Versuche ber pflanzen-hybriden. verh.
@@ -494,6 +509,12 @@ Detlev Stalling, Malte Westerhoff, Hans-Christian Hege, et~al.
 \newblock Amira: A highly interactive system for visual data analysis.
 \newblock \emph{The visualization handbook}, 38:\penalty0 749--67, 2005.
 
+\bibitem[Subudhi et~al.(2014)Subudhi, Bovolo, Ghosh, and Bruzzone]{subudhi14}
+Badri~Narayan Subudhi, Francesca Bovolo, Ashish Ghosh, and Lorenzo Bruzzone.
+\newblock Spatio-contextual fuzzy clustering with markov random field model for
+  change detection in remotely sensed images.
+\newblock \emph{Optics \& Laser Technology}, 57:\penalty0 284--292, 2014.
+
 \bibitem[SWIGER and TUCKER(1996)]{swiger96}
 RR~SWIGER and JD~TUCKER.
 \newblock Fluorescence in situ hybridization: A brief review.
@@ -566,11 +587,30 @@ Liying Yan, Mingyu Yang, Hongshan Guo, Lu~Yang, Jun Wu, Rong Li, Ping Liu, Ying
   embryonic stem cells.
 \newblock \emph{Nature structural \& molecular biology}, 2013.
 
+\bibitem[Yuille(1990)]{Yuille90}
+Alan~L Yuille.
+\newblock Generalized deformable models, statistical physics, and matching
+  problems.
+\newblock \emph{Neural Computation}, 2\penalty0 (1):\penalty0 1--24, 1990.
+
 \bibitem[Zeeck et~al.(1998)Zeeck, Harder, and Beckmann]{zeeck98}
 Erich Zeeck, Tilman Harder, and Manfred Beckmann.
 \newblock Uric acid: the sperm-release pheromone of the marine polychaete
   platynereis dumerilii.
 \newblock \emph{Journal of Chemical Ecology}, 24\penalty0 (1):\penalty0 13--22,
   1998.
+
+\bibitem[Zhang et~al.(2014)Zhang, Shi, Wang, Hao, and Miao]{zhang14}
+Hua Zhang, Wenzhong Shi, Yunjia Wang, Ming Hao, and Zelang Miao.
+\newblock Spatial-attraction-based markov random field approach for
+  classification of high spatial resolution multispectral imagery.
+\newblock \emph{Geoscience and Remote Sensing Letters, IEEE}, 11\penalty0
+  (2):\penalty0 489--493, 2014.
+
+\bibitem[Zhang(1992)]{Zhang92}
+Jun Zhang.
+\newblock The mean field theory in em procedures for markov random fields.
+\newblock \emph{Signal Processing, IEEE Transactions on}, 40\penalty0
+  (10):\penalty0 2570--2583, 1992.
 
 \end{thebibliography}
