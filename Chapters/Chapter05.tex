@@ -5,15 +5,20 @@
 \section{Simulating data with a spatial component }
 Simulating data with a spatial component is a non-trivial problem. Existing methods rely on MCMC approaches as described in \cite{Chalmond89}. However, in this case with a relatively large number of nodes in the graph ($\sim 34,000$), this is computationally expensive. To overcome this problem, I exploited the fact that the {\it{Platynereis}} dataset already possesses a spatial component. As outlined in Figure \ref{fig:simulationScheme}, the simulation starts by clustering the gene expression data using different values of $K$ and by storing the resulting parameter estimates with the HRMF method described in chapter \ref{ch:HMRF}. Subsequently, I use the values of the estimated parameter $\boldsymbol{\Theta}$ to simulate binarised gene expression data from $K$ clusters where, for cluster $h$, the expression of gene $m$ is simulated from a Bernoulli distribution with parameter $\theta_{m,h}$ as described in \ref{subsec:simul_non_spatial}. This non spatial simulated data is then reintroduced in the spatial context of the biological data \ref{subsec:simul_spatial} leading to a simulated dataset with all parameters being fully determined. In the next paragraphs, I will describe each step of this simulation scheme.
 
-	\begin{figure}[h]
-\centerline{\includegraphics[width=\linewidth]{gfx/chapter5/simulation_scheme.png}}
+	\begin{figure}[H]
+\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/simulation_scheme.png}}
 \caption{{\bf Simulation scheme used to generate gene expression data with a spatial component and known parameters.} The values of $\Theta$ are used to generate a dataset of clusters with the same gene expression profile as the reference. Each simulated cell is then assigned to its corresponding spatial localization so that the simulated data keeps the spatial compenent of the biological data.}
 \label{fig:simulationScheme}
 	\end{figure}
 	
 	\subsection{Simulating non spatial gene expression data}\label{subsec:simul_non_spatial}
+	The first step of the simulation scheme is to simulate binary gene expression data for $S=32,203$ sites and $M=86$ genes belonging to $K$ clusters. Each cluster will be assigned $N_h$ sites with $h \in [1,K]$. Given the emission model described in chapter \ref{ch:HMRF}, for each gene and each cluster, a $K \times M$ matrix $Theta$ is needed where each $\theta_{h,m}$ represents a Bernoulli parameter or the probability for each site in cluster $h$ to express gene $m$.\\
+	
+	In order to generate biologically coherent $\Theta$ matrix, the clustering method is applied to the biological data for $K$ clusters and the resulting final $\Theta$ matrix is kept to simulate the data. The clustering on the biological data also gives the number of cells per cluster $N_h, \forall h \in K$.\\
+	
+	Once the parameters values are available it is easy to simulate $N_h$ sites per cluster following the Bernoulli distributions thus defined resulting in $S=32,203$ sites with known $\Theta$ parameters.
 	\subsection{Introducing a known spatial context}\label{subsec:simul_spatial}
-	We assign each simulated ``cube" the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. We can then cluster these simulated datasets using the method outlined above and determine how accurately we can estimate the parameters ($\mathbf{\beta}, \mathbf{\Theta}$) and choose the correct number of clusters, $K$.\\ 
+	Each simulated is then assigned to the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. can then cluster these simulated datasets using the method outlined above and determine how accurately we can estimate the parameters ($\mathbf{\beta}, \mathbf{\Theta}$) and choose the correct number of clusters, $K$.\\ 
 	\subsection{Expected results}\label{subsec:expected_simul_results}
 
 \section{Aligning clustering results }

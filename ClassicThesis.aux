@@ -1,18 +1,24 @@
 \relax 
+\providecommand\hyper@newdestlabel[2]{}
 \catcode`"\active
-\ifx\hyper@anchor\@undefined
-\global \let \oldcontentsline\contentsline
-\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global \let \oldnewlabel\newlabel
-\gdef \newlabel#1#2{\newlabelxx{#1}#2}
-\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\let \contentsline\oldcontentsline
-\let \newlabel\oldnewlabel}
-\else
-\global \let \hyper@last\relax 
-\fi
-
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
 \@input{FrontBackmatter/Titlepage.aux}
+\reset@newl@bel
 \select@language{american}
 \@writefile{toc}{\select@language{american}}
 \@writefile{lof}{\select@language{american}}
@@ -36,7 +42,6 @@
 \@input{Chapters/Chapter03.aux}
 \@input{Chapters/Chapter04.aux}
 \@input{Chapters/Chapter05.aux}
-\mph@setcol{ii:74}{\mph@nr}
 \@writefile{toc}{\contentsline {part}{ii\hspace  {1em}\spacedlowsmallcaps  {Appendix}}{75}{part.2}}
 \mph@setcol{ii:75}{\mph@nr}
 \mph@setcol{ii:76}{\mph@nr}
@@ -48,3 +53,4 @@
 \@input{FrontBackmatter/Declaration.aux}
 \gdef\mph@lastpage{98}
 \csname mph@do@warn\endcsname
+\global\@altsecnumformattrue

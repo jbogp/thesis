@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {2.4}Binarizing gene expression datasets}{32}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Binarizing in-situ hybrdization datasets}{32}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Binarizing whole transcriptomes}{35}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Preliminary results on single cell RNA-seq spatial back-mapping}{36}{section.2.5}
+\contentsline {section}{\numberline {2.5}Preliminary results on single cell RNA-seq spatial back-mapping }{36}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Single cell RNA-seq in Platynereis' brain}{36}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{37}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Conclusions}{39}{section.2.6}
@@ -40,13 +40,13 @@
 \contentsline {section}{\numberline {3.2}Visualizing clustering results in 3D with bioWeb3D}{45}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Background}{45}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Implementation}{46}{subsection.3.2.2}
-\contentsline {paragraph}{Technological overview}{47}{figure.3.12}
+\contentsline {paragraph}{Technological overview}{47}{figure.caption.18}
 \contentsline {subsection}{\numberline {3.2.3}Results and Discussion}{48}{subsection.3.2.3}
 \contentsline {paragraph}{Basic usage}{48}{subsection.3.2.3}
-\contentsline {paragraph}{bioWeb3D and local software}{49}{figure.3.14}
-\contentsline {paragraph}{bioWeb3D and Java Applets}{50}{figure.3.14}
-\contentsline {paragraph}{Current limitations}{50}{figure.3.14}
-\contentsline {paragraph}{Open source and collaborative development}{50}{figure.3.14}
+\contentsline {paragraph}{bioWeb3D and local software}{49}{figure.caption.20}
+\contentsline {paragraph}{bioWeb3D and Java Applets}{50}{figure.caption.20}
+\contentsline {paragraph}{Current limitations}{50}{figure.caption.20}
+\contentsline {paragraph}{Open source and collaborative development}{50}{figure.caption.20}
 \contentsline {subsection}{\numberline {3.2.4}Conclusions}{50}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Availability and requirements}{51}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}Non spatial clustering methods}{51}{section.3.3}
@@ -71,22 +71,22 @@
 \contentsline {section}{\numberline {4.7}Summary}{63}{section.4.7}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Method validation and performance analysis on simulated data}}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulating data with a spatial component }{65}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Simulating non spatial gene expression data}{65}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Introducing a known spatial context}{65}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Expected results}{66}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Aligning clustering results }{66}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Theoretical problem in comparing clustering results}{66}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{66}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{66}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Estimation of beta}{66}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Estimation of theta}{67}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Choosing K}{68}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Method performance and initialization}{68}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Shortcomings of the EM principle}{68}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{68}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{68}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Results of comparison}{68}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Discussion}{68}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.1.1}Simulating non spatial gene expression data}{66}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Introducing a known spatial context}{67}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Expected results}{67}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Aligning clustering results }{67}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Theoretical problem in comparing clustering results}{67}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{67}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{67}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Estimation of beta}{67}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Estimation of theta}{68}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Choosing K}{69}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Method performance and initialization}{69}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Shortcomings of the EM principle}{69}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{69}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{70}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Results of comparison}{70}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Discussion}{70}{subsection.5.5.2}
 \contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{75}{part.2}
 \contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{77}{appendix.A}
 \contentsline {section}{\numberline {A.1}Dataset file specification}{77}{section.A.1}
@@ -96,6 +96,6 @@
 \contentsline {section}{\numberline {A.2}Information layer file specification}{80}{section.A.2}
 \contentsline {subsection}{\numberline {A.2.1}JSON format}{80}{subsection.A.2.1}
 \contentsline {subsection}{\numberline {A.2.2}XML format}{81}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{82}{lstnumber.A.5.26}
+\contentsline {paragraph}{CSV format}{82}{lstnumber.5.26}
 \vspace {\beforebibskip }
 \contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{85}{dummy.6}
