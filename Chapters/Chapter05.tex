@@ -12,22 +12,41 @@ Simulating data with a spatial component is a non-trivial problem. Existing meth
 	\end{figure}
 	
 	\subsection{Simulating non spatial gene expression data}\label{subsec:simul_non_spatial}
-	The first step of the simulation scheme is to simulate binary gene expression data for $S=32,203$ sites and $M=86$ genes belonging to $K$ clusters. Each cluster will be assigned $N_h$ sites with $h \in [1,K]$. Given the emission model described in chapter \ref{ch:HMRF}, for each gene and each cluster, a $K \times M$ matrix $Theta$ is needed where each $\theta_{h,m}$ represents a Bernoulli parameter or the probability for each site in cluster $h$ to express gene $m$.\\
+	The first step of the simulation scheme is to simulate binary gene expression data for $S=32,203$ sites and $M=86$ genes belonging to $K$ clusters. Each cluster will be assigned $N_h$ sites with $h \in [1,K]$. Given the emission model described in chapter \ref{ch:HMRF}, for each gene and each cluster, a $K \times M$ matrix $\boldsymbol{Theta}$ is needed where each $\theta_{h,m}$ represents a Bernoulli parameter or the probability for each site in cluster $h$ to express gene $m$.\\
 	
-	In order to generate biologically coherent $\Theta$ matrix, the clustering method is applied to the biological data for $K$ clusters and the resulting final $\Theta$ matrix is kept to simulate the data. The clustering on the biological data also gives the number of cells per cluster $N_h, \forall h \in K$.\\
+	In order to generate biologically coherent $\boldsymbol{\Theta}$ matrix, the clustering method is applied to the biological data for $K$ clusters and the resulting final $\boldsymbol{\Theta}$ matrix is kept to simulate the data. The clustering on the biological data also gives the number of cells per cluster $N_h, \forall h \in K$.\\
 	
-	Once the parameters values are available it is easy to simulate $N_h$ sites per cluster following the Bernoulli distributions thus defined resulting in $S=32,203$ sites with known $\Theta$ parameters.
+	Once the parameters values are available it is relatively straight forward to simulate $N_h$ sites per cluster following the Bernoulli distributions thus defined resulting in $S=32,203$ sites with known $\boldsymbol{\Theta}$ parameters \todo{Appendix with R script}.
 	\subsection{Introducing a known spatial context}\label{subsec:simul_spatial}
-	Each simulated is then assigned to the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. can then cluster these simulated datasets using the method outlined above and determine how accurately we can estimate the parameters ($\mathbf{\beta}, \mathbf{\Theta}$) and choose the correct number of clusters, $K$.\\ 
+	Each simulated is then assigned to the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. The rationale behind this simulation scheme is to allow the model to validate itself. By replacing simulated gene expression data equivalent to the biological one in the same spatial context, the set of parameters $\boldsymbol{\beta}$ will stay relatively stable when the simulated data is clustered.
 	\subsection{Expected results}\label{subsec:expected_simul_results}
+	Given this simulation scheme, the expected results after clustering the simulated data, is to find a strong conservation for the all the parameter $\boldsymbol{\psi} = \{\boldsymbol{\Theta},\boldsymbol{\beta}\}$ between the ``true" values $\hat{\boldsymbol{\psi}}$ obtained from clustering the biological data and the estimated values $\widetilde{\boldsymbol{\psi}}$ obtained after clustering the simulated data.
 
-\section{Aligning clustering results }
+\section{Comparing clustering results using the Jaccard similarity coefficient}
 	\subsection{Theoretical problem in comparing clustering results}
+To compare MRF clustering to other clustering methods, we used the Jaccard coefficient \cite{jaccard1901} to need to compute the distance between the ``true" simulated clusters and the clusters obtained after applying different clustering methods. Specifically, for two clusters, $A$ and $B$, the Jaccard coefficient is defined as: 
+\begin{align*}
+J(A,B) = \frac{|A \cap B|}{|A \cup B|}
+\end{align*}
+
+
 	\subsection{Alignment via similarity-specificity matric}
+To compute this coefficient for each ``true" cluster, we need to align the inferred clusters with the ``true" clusters. To do this we computed a ``similarity/specificity" matrix $H$ for two sets of clusters $z$ and $z'$ with $K$ clusters each so that $z = \bigcup_{h \in [0,K]} c_h $ and $z' = \bigcup_{h \in [0,K]} c'_h$ such that :
+\begin{align*}
+D &= \left( \begin{array} {ccc}
+|c_1 = c'_1| & \ldots  & |c_1 = c'_K|\\
+\vdots & \ddots & \vdots\\
+|c_K = c'_1| & \ldots & |c_K = c'_K| \end{array} \right)\\
+\text{and}\\
+H_{ij} &= \frac{D_{ij}}{\sum_{a} D_{aj} \sum_{b} D_{ib}} 
+\end{align*}
+
+
+
 
 \section{Validation of parameters estimation and model choosing}
 
-	\subsection{Estimation of beta}
+	\subsection{Estimation of beta}\label{subsec:beta_estimation}
 	As well as directly comparing the clusters, we can also determine how accurately the $\mathbf{\beta}$ parameters are estimated. To this end, in Figure \ref{fig:beta_validation} we compare the true and inferred mean values of $\mathbf{\beta}$ for different values of $K$. The values of $\mathbf{\beta}$ increase with $K$, which is to be expected since more clusters implies the existence of more transition areas, thus making an increase of $\mathbf{\beta}$ necessary to maintain the optimal spatial coherency of the model. Figure \ref{fig:beta_validation} also shows a slight but consistent underestimation of $\mathbf{\beta}$. This can be explained by noting that the simulation scheme used may reduce the spatial coherency within clusters. Specifically, as illustrated in Figure \ref{fig:beta_error}, clusters may not display homogeneous expression of a given gene: instead, depending upon the value of $\theta$, a gene will be expressed only in a fraction of cells. In reality, the cells in which such genes are expressed may have a coherent spatial structure within the cluster that is lost in the simulation, thus explaining the consistently smaller value for $\mathbf{\beta}$ that are estimated. To confirm this, we performed a second simulation using the parameter values estimated from the first simulation as a reference. In this context we did not expect any further loss of spatial coherency, which was indeed confirmed as shown by the blue curve in Figure \ref{fig:beta_validation}.\\
 	
 	\begin{figure}[h]
