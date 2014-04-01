@@ -79,14 +79,14 @@
 \contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{68}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{69}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Estimation of $\boldsymbol {\Theta }$}{69}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Estimation of beta}{70}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Choosing K}{71}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Method performance and initialization}{72}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Shortcomings of the EM principle}{72}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{72}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{72}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Results of comparison}{72}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Discussion}{72}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.3.2}Estimation of beta}{69}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Choosing K}{72}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Method performance and initialization}{73}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}The EM principle and local maximum}{73}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{74}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{74}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Results of comparison}{74}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Discussion}{75}{subsection.5.5.2}
 \contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{77}{part.2}
 \contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{79}{appendix.A}
 \contentsline {section}{\numberline {A.1}Dataset file specification}{79}{section.A.1}

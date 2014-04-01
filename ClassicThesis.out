@@ -78,7 +78,7 @@
 \BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Estimation of beta}{section.5.3}% 78
 \BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Choosing K}{section.5.3}% 79
 \BOOKMARK [1][-]{section.5.4}{5.4 Method performance and initialization}{chapter.5}% 80
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Shortcomings of the EM principle}{section.5.4}% 81
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 The EM principle and local maximum}{section.5.4}% 81
 \BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Random initialization vs Hclust initialization}{section.5.4}% 82
 \BOOKMARK [1][-]{section.5.5}{5.5 Method performance compared to Hclust and independent mixture models}{chapter.5}% 83
 \BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Results of comparison}{section.5.5}% 84
