@@ -75,7 +75,7 @@ p(\boldsymbol{y} \mid \boldsymbol{z} ; \Theta) &= \prod_{i \in S} p(y_i \mid z_i
 &= \prod_{i \in S} f_{z_i} (y_i \mid z_i ; \Theta)
 \end{align}
 
-Equation \ref{eq:independence} defines one unknown parameter per cluster: $\Theta = (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})$. It is interesting to note that this part of the model is equivalent to an independent mixture model \cite{Mclachlan04}. Indeed, hidden Markov models can be viewed as independent mixture models where $Z$ is a set of independent, identically distributed random variables, which happens when $\beta = 0$.\\
+Equation \ref{eq:independence} defines one unknown parameter per cluster: $\Theta = (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})$. It is interesting to note that this part of the model is equivalent to an independent mixture model \cite{mclachlan04}. Indeed, hidden Markov models can be viewed as independent mixture models where $Z$ is a set of independent, identically distributed random variables, which happens when $\beta = 0$.\\
 
 Given a particular cluster $h \in [1,K]$ and M the set of considered genes, gene expression for each gene $m \in M$ in each cluster is modelled a Bernoulli distribution with parameter $\theta_{h,m}$. This leads to one unknown Bernoulli parameter per gene per cluster so that :
 

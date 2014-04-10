@@ -1,4 +1,4 @@
-\begin{thebibliography}{87}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,6 +46,12 @@ Pablo Arbelaez, Michael Maire, Charless Fowlkes, and Jitendra Malik.
 \newblock \emph{Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 33\penalty0 (5):\penalty0 898--916, 2011.
 
+\bibitem[Arendt()]{arendt124}
+Detlev Arendt.
+\newblock Platynereis dumerilii: a "living fossil" elucidating the evolution of
+  genomes and of the {CNS}.
+\newblock \emph{Theory in Biosciences}, 124:\penalty0 185--197.
+
 \bibitem[Balmer and Blomhoff(2002)]{balmer02}
 James~E Balmer and Rune Blomhoff.
 \newblock Gene expression regulation by retinoic acid.
@@ -65,6 +71,13 @@ Julian Besag.
 \newblock Statistical analysis of non-lattice data.
 \newblock \emph{The statistician}, pages 179--195, 1975.
 
+\bibitem[Biernacki et~al.(2003)Biernacki, Celeux, and Govaert]{biernacki03}
+Christophe Biernacki, Gilles Celeux, and G{\'e}rard Govaert.
+\newblock Choosing starting values for the {EM} algorithm for getting the
+  highest likelihood in multivariate gaussian mixture models.
+\newblock \emph{Computational {S}tatistics \& {D}ata {A}nalysis}, 41\penalty0
+  (3):\penalty0 561--575, 2003.
+
 \bibitem[Boyer(1997)]{boyer97}
 Paul~D Boyer.
 \newblock The atp synthase-a splendid molecular machine.
@@ -78,6 +91,14 @@ Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
   Teichmann, John~C Marioni, et~al.
 \newblock Accounting for technical noise in single-cell rna-seq experiments.
 \newblock \emph{Nature methods}, 2013.
+
+\bibitem[Burges et~al.(2005)Burges, Shaked, Renshaw, Lazier, Deeds, Hamilton,
+  and Hullender]{burges2005}
+Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole
+  Hamilton, and Greg Hullender.
+\newblock Learning to rank using gradient descent.
+\newblock In \emph{Proceedings of the 22nd international conference on Machine
+  learning}, pages 89--96. ACM, 2005.
 
 \bibitem[Celeux et~al.(2001)Celeux, Forbes, and Peyrard]{Celeux01}
 Gilles Celeux, Florence Forbes, and Nathalie Peyrard.
@@ -252,6 +273,12 @@ Saiful Islam, Amit Zeisel, Simon Joost, Gioele La~Manno, Pawel Zajac, Maria
 \newblock Quantitative single-cell rna-seq with unique molecular identifiers.
 \newblock \emph{Nature methods}, 2013.
 
+\bibitem[Jaccard(1901)]{jaccard1901}
+Paul Jaccard.
+\newblock \emph{Etude comparative de la distribution florale dans une portion
+  des Alpes et du Jura}.
+\newblock Impr. Corbaz, 1901.
+
 \bibitem[John et~al.(1969)John, Birnstiel, and Jones]{john69}
 HA~John, ML~Birnstiel, and KW~Jones.
 \newblock Rna-dna hybrids at the cytological level.
@@ -266,6 +293,12 @@ Stephen~C Johnson.
 ET~Kaiser and FJ~Kezdy.
 \newblock Amphiphilic secondary structure: design of peptide hormones.
 \newblock \emph{Science}, 223\penalty0 (4633):\penalty0 249--255, 1984.
+
+\bibitem[Karlis and Xekalaki(2003)]{karlis03}
+Dimitris Karlis and Evdokia Xekalaki.
+\newblock Choosing initial values for the {EM} algorithm for finite mixtures.
+\newblock \emph{Computational {S}tatistics \& {D}ata {A}nalysis}, 41\penalty0
+  (3):\penalty0 577--590, 2003.
 
 \bibitem[Kozmik et~al.(2008)Kozmik, Ruzickova, Jonasova, Matsumoto, Vopalensky,
   Kozmikova, Strnad, Kawamura, Piatigorsky, Paces, et~al.]{kozmik08}
@@ -351,10 +384,10 @@ Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
   expression and rna splicing.
 \newblock \emph{Genome research}, pages gr--161034, 2013.
 
-\bibitem[McLachlan and Peel(2004)]{Mclachlan04}
+\bibitem[McLachlan and Peel(2004)]{mclachlan04}
 Geoffrey McLachlan and David Peel.
 \newblock \emph{Finite mixture models}.
-\newblock Wiley. com, 2004.
+\newblock John Wiley \& Sons, 2004.
 
 \bibitem[Mendel(1866)]{mendel66}
 G~Mendel.

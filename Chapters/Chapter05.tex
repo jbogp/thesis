@@ -1,7 +1,7 @@
 %************************************************
 \chapter{Method validation and performance analysis on simulated data}\label{ch:simulations} 
 %************************************************
-\todo{Complete all the stuff that is missing. Separate the initiailization and method comparison analysis. Rewrite because this is copy paste from paper, check the references, try to fit figures in the text}
+
 \section{Simulating data with a spatial component }
 Simulating data with a spatial component is a non-trivial problem. Existing methods rely on MCMC approaches as described in \cite{Chalmond89}. However, in this case with a relatively large number of nodes in the graph ($\sim 34,000$), this is computationally expensive. To overcome this problem, I exploited the fact that the {\it{Platynereis}} dataset already possesses a spatial component. As outlined in Figure \ref{fig:simulationScheme}, the simulation starts by clustering the gene expression data using different values of $K$ with the HRMF method described in chapter \ref{ch:HMRF} and by storing the resulting parameter estimates. Subsequently, I use the values of the estimated parameter $\boldsymbol{\Theta}$ to simulate binarised gene expression data from $K$ clusters where, for cluster $h$, the expression of gene $m$ is simulated from a Bernoulli distribution with parameter $\theta_{m,h}$ as described in \ref{subsec:simul_non_spatial}. This non spatial simulated data is then reintroduced in the spatial context of the biological data \ref{subsec:simul_spatial} leading to a simulated dataset with all parameters being fully determined. In the next paragraphs, I will describe each step of this simulation scheme.
 
@@ -18,21 +18,19 @@ Simulating data with a spatial component is a non-trivial problem. Existing meth
 	
 	Once the parameters values are available it is relatively straight forward to simulate $N_h$ sites per cluster following the Bernoulli distributions thus defined resulting in $S=32,203$ sites with known $\boldsymbol{\Theta}$ parameters \todo{Appendix with R script}.
 	\subsection{Introducing a known spatial context}\label{subsec:simul_spatial}
-	Each simulated is then assigned to the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. The rationale behind this simulation scheme is to allow the model to validate itself. By replacing simulated gene expression data equivalent to the biological one in the same spatial context, the hypothesis is that the set of parameters $\boldsymbol{\beta}$ will stay relatively stable when the simulated data is clustered.
+	Each simulated data point is then assigned to the same spatial location as the corresponding ``cube" in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. The rationale behind this simulation scheme is to allow the model to validate itself. By replacing simulated gene expression data equivalent to the biological one in the same spatial context, the hypothesis is that the set of parameters $\boldsymbol{\beta}$ will stay relatively stable when the simulated data is clustered.
 	\subsection{Expected results}\label{subsec:expected_simul_results}
 	Given this simulation scheme, the expected results after clustering the simulated data, is to find a strong conservation for the all the parameter $\boldsymbol{\psi} = \{\boldsymbol{\Theta},\boldsymbol{\beta}\}$ between the ``true" values $\hat{\boldsymbol{\psi}}$ obtained from clustering the biological data and the estimated values $\widetilde{\boldsymbol{\psi}}$ obtained after clustering the simulated data.\\
-	
-	Importantly, when clustering the simulated data with the HMRF method, a different random initialization than the one used to cluster the biological data in the first place was used in order to avoid any bias.
 
 \section{Comparing clustering results using the Jaccard similarity coefficient}
 	\subsection{Theoretical problem in comparing clustering results}
-To compare clustering results, a lot of metrics exist to estimate the similarity between two lists of clusters. One of the widely used ones is the Jaccard coefficient \cite{jaccard1901}. For two clustering results, $A$ and $B$, the Jaccard coefficient is defined as: 
+To compare clustering results, several metrics exist to estimate the similarity between two lists of clusters. One of the widely used ones is the Jaccard coefficient \cite{jaccard1901}. For two clustering results, $A$ and $B$, the Jaccard coefficient is defined as: 
 \begin{align*}
 J(A,B) = \frac{|A \cap B|}{|A \cup B|}
 \end{align*}
-Although theoretically very simple, in practice computing this metric is not trivial. Indeed, depending on the clustering method used and on the initialization used for clustering methods that require an initialization step like the independent mixture models or the HRMF method presented in chapter \ref{ch:HMRF}, even if the clustering results are 100\% identical, they are going to be misaligned.\\
+Although theoretically very simple, in practice computing this metric is not trivial. Indeed, depending on the clustering method used and on the initialization, even if the clustering results are 100\% identical, they may be misaligned.\\
 
-This means that for method $A$ \emph{cluster 1} could for example be \emph{cluster 5} in method $B$. In order to compute the Jaccard coefficient and compare clustering results, it is necessary to be able to align partitions. To this end I used a similarity specificity matrix approach as described in the next paragraph.
+This means that for method $A$ \emph{cluster~1} could for example be \emph{cluster~5} in method $B$. In order to compute the Jaccard coefficient and compare clustering results, it is necessary to be able to align different sets. To this end I used a similarity specificity matrix approach as described in the next paragraph.
 
 
 	\subsection{Alignment via similarity-specificity matric}
@@ -45,20 +43,20 @@ D &= \left( \begin{array} {ccc}
 \text{and}\\
 H_{ij} &= \frac{D_{ij}}{\sum_{a} D_{aj} \sum_{b} D_{ib}} 
 \end{align*}
-With $z$ the set of reference clusters, the ones other clustering results will be aligned to (in the case of the simulation study, $z$ is the set of ``true" clusters obtained after clustering the biological data), for each row of the matrix $H$, the column with the highest value is then select as the corresponding cluster.\\
+With $z$ the set of reference clusters (in the case of the simulation study, $z$ is the set of ``true" clusters obtained after clustering the biological data), for each row of the matrix $H$, the column with the highest value is select as the corresponding cluster.\\
 
-In the case of two sets of clusters being extremely similar this approach will align the cluster sets. However some errors may arise if the two cluster sets are quite different. For example if one cluster $h_{z_1}$ in $z$ is split into two clusters $h_{z'_4},h_{z'_5}$ in $z'$, they will both be assigned to $h_{z_1}$ after alignment meaning that, because $K$ is the same for $z$ and $z'$ one cluster in $z$ will have no corresponding clusters in $z'$.\\
+In the case of two sets of clusters being extremely similar the alignment is successful and no information is lost. However some errors may arise if the two cluster sets are quite different. For example if one cluster $h_{z_1}$ in $z$ is split into two clusters $h_{z'_4},h_{z'_5}$ in $z'$, the alignment process will assign then both to $h_{z_1}$, meaning that, because $K$ is the same for $z$ and $z'$ one cluster in $z$ will have no corresponding clusters in $z'$. In such cases, some information will be lost during the alignment process.\\
 
-This sort of error is central to clustering results analysis and unfortunately unavoidable. Therefore, the resulting Jaccard coefficient will not necessarily be linearly correlated with the similarity between the reference clusters and the clusters under study, instead it will have a tendency to worsen faster than the similarity due to the biases created in this alignment step. It remains however a good indication of the divergence between clustering sets. An example of aligning the clusters is shown through the values of $\boldsymbol{\Theta}$ by comparing  figures \ref{fig:theta_valid_non_aligned} and \ref{fig:theta_valid_aligned}.\\
+This sort of error is very hard to avoid without controlling the initialization of the clustering, which would bias the results. Therefore, the Jaccard coefficient will not necessarily be linearly correlated with the similarity between the reference clusters and the clusters under study, instead it will have a tendency to worsen faster than the dissimilarity due to the alignment step. It remains however a good indicator of the divergence between clustering sets. An example of cluster alignment is shown through the values of $\boldsymbol{\Theta}$ by comparing  figures \ref{fig:theta_valid_non_aligned} and \ref{fig:theta_valid_aligned}.\\
 
-The first thing I need to do now is to validate the correct estimation of the model's parameters. I will describe this essential step in the next section.
+Now that I have established a method to compare cluster sets, I need to validate the correct estimation of the model's parameters, as described in the next section.
 
 
 \section{Validation of parameters estimation and model choosing}
 	\subsection{Estimation of $\boldsymbol{\Theta}$}
 	To validate the consistency in estimating the values of $\boldsymbol{\Theta}$, it is important to compare the ``true" values used to simulate the data to the ones obtained after clustering the simulated data.
-	A simple example with $K=6$ is presented in figure 
-	
+	A simple example with $K=6$ is presented in Figure \ref{fig:theta_valid}: each cell of the heatmaps $HM_{h,h'}$ with $\{h,h'\} \in K^2$ represents the mean of the pairwise difference $\theta_{h,m} - \theta_{h',m}$. Figure \ref{fig:theta_valid_non_aligned} shows these values before alignment and Figure \ref{fig:theta_valid_aligned} after. As expected, after alignment the small values are aligned in the diagonal showing that each cluster $h'$ exhibit highly similar values of $\boldsymbol{\Theta}$ compared to its corresponding cluster $h$ in the reference.\\
+	 
 \begin{figure}[bth]
         \myfloatalign
         \subfloat[``Proximity" between values of $\boldsymbol{\Theta}$ before alignment]
@@ -73,8 +71,8 @@ The first thing I need to do now is to validate the correct estimation of the mo
 	It is also interesting to note that comparing the similarity between the inferred and true clusters with the Jaccard coefficient also implicitly assesses the accuracy of the estimation of $\boldsymbol{\Theta}$: if the inferred and true clusters are identical, the estimates of $\boldsymbol{\Theta}$ must be equal to the true values. In practice, a Jaccard coefficient of 1 implies perfect agreement. Figure \ref{fig:methodComparison} shows the value of the Jaccard coefficient for several clustering methods including the HRMF (red points). The very high value of the Jaccard coefficient confirms that the values of $\boldsymbol{\Theta}$ are consistently estimated for $K \in [4,80]$ (see \ref{sec:method_comparison} for the full description of figure \ref{fig:methodComparison})\\
 	
 
-	\subsection{Estimation of beta}\label{subsec:beta_estimation}
-	To determine how accurately the $\boldsymbol{\beta}$ parameters are estimated, as shown in Figure \ref{fig:beta_validation} it is possible compare the true and inferred mean values of $\boldsymbol{\beta}$ for different values of $K$. The values of $\boldsymbol{\beta}$ increase with $K$, which is to be expected since more clusters implies the existence of more transition areas, thus making an increase of $\boldsymbol{\beta}$ necessary to maintain the optimal spatial coherency of the model.\\
+	\subsection{Estimation of $\beta$}\label{subsec:beta_estimation}
+	To determine how accurately the values of $\boldsymbol{\beta}$ are estimated, it is possible compare the true and inferred mean values of $\boldsymbol{\beta}$ for different values of $K$, as shown in Figure \ref{fig:beta_validation} (red and green dots). The values of $\boldsymbol{\beta}$ increase with $K$, which is to be expected since more clusters implies the existence of more transition areas, thus making an increase of $\boldsymbol{\beta}$ necessary to maintain the optimal spatial coherency of the model.\\
 	
 	Interestingly, Figure \ref{fig:beta_validation} also shows a slight but consistent underestimation of $\boldsymbol{\beta}$. This can be explained by noting that the simulation scheme used may reduce the spatial coherency within clusters. Specifically, as illustrated in Figure \ref{fig:beta_error}, clusters may not display homogeneous expression of a given gene: instead, depending upon the value of $\theta$, a gene will be expressed only in a fraction of cells. In reality, the cells in which such genes are expressed may have a coherent spatial structure within the biological cluster that is lost in the simulation, thus explaining the consistently smaller value for $\boldsymbol{\beta}$ that are estimated.\\
 	
@@ -92,49 +90,65 @@ The first thing I need to do now is to validate the correct estimation of the mo
 \label{fig:beta_error}
 	\end{figure}
 
-To validate further our estimation of $\boldsymbol{\beta}$, I randomized the coordinates of the simulated ``cubes" to lose any spatial component before re-clustering the data. As expected, we observed that the estimates of $\boldsymbol{\beta}$ were very close to $0$ for all clusters (Figure \ref{fig:beta_validation}), as well as there being very similar Jaccard coefficient values (relative to the true values) for the independent mixture and the MRF model as shown in figure \ref{fig:methodComparison}. Both of these observations provide confidence in our assertion that the spatial component plays an important role in the fit.\\
+To validate further our estimation of $\boldsymbol{\beta}$, I randomized the coordinates of the simulated ``cubes" to lose any spatial component before re-clustering the data. As expected, we observed that the estimates of $\boldsymbol{\beta}$ were very close to $0$ for all clusters (Figure \ref{fig:beta_validation}, brown dots) , as well as there being very similar Jaccard coefficient values (relative to the true values) for the independent mixture and the MRF model as shown in figure \ref{fig:methodComparison}B. Both of these observations provide confidence in our assertion that the model is able to consistently estimate the values of $\boldsymbol{\beta}$ and that the spatial component of the model plays an important role in the fit.\\
 	
 	\subsection{Choosing K}
 	
-Finally, assessing the ability of the model to choose the correct number of clusters, $K$ is crucial. To do this, the ``true" number of clusters underlying the simulated data $\hat{K}$ was compared to the the chosen value, $\widetilde{K}$ obtained after applying the BIC method (see \ref{ch:HMRF}). The results for two representative choices of $K$ are shown in Figure \ref{fig:simulatedK} and demonstrate that our clustering approach, in conjunction with the BIC, is able to accurately determine the optimal number of clusters.\\
+Finally, assessing the ability of the model to choose the correct number of clusters, $K$ is crucial. To this end, the ``true" number of clusters underlying the simulated data $\hat{K}$ was compared to the the chosen value, $\widetilde{K}$ obtained after applying the BIC method (see \ref{ch:HMRF}). The results for two representative choices of $K$ are shown in Figure \ref{fig:simulatedK} and demonstrate that our clustering approach, in conjunction with the BIC, is able to accurately determine the optimal number of clusters.\\
 
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/simulated_k.png}}
-\caption{{\bf Jaccard coefficient between ``true" and resulting clusters on the simulated data with different methods and initializations.} Panel A compares the performance of the MRF method with a randomly initialization with an independent mixture model also with a random initialization, the MRF method initialized with the hClust classification and hClust alone on data simulated with a spatial component. Panel B shows the Jaccard coefficient for the MRF method and independent mixture model both with a random initialization; in this case both methods are applied to simulated data that lacks a spatial component.}
+\caption{{\bf Estimating the BIC from the simulated data.} The BIC is plotted on the y-axis for different values of K on the x-axis. The red and the grey points correspond to the BIC estimated when the underlying data have 17 and 7 clusters, respectively. The minimum BIC value is 18 and 7, respectively, suggesting that the MRF approach in conjunction with the BIC well estimates the optimal number of clusters.}
 \label{fig:simulatedK}
 	\end{figure}
 
 \section{Method performance and initialization}\label{sec:method_comparison}
-As pointed out in the above paragraph for this method initialization is a key step of the HMRF clustering, working on the simulated data allows comparing the results of the clustering with a variety of initialization schemes.
+As pointed out previously, initialization is a key step of the HMRF clustering, working on the simulated data allows comparing the results of the clustering with a variety of initialization schemes.
 	\subsection{The EM principle and local maximum}
-As explained in chapter \ref{ch:HMRF}, the HMRF clustering relies on Maximum Posterior Marginal (MPM) approach, and the EM algorithm is used to estimate the unknown parameter values. The likelihood function that needs to be maximised possesses many stationary points of different natures. Thus, convergence to the global maximum with the EM algorithm, depends strongly on the parameters initialisation. To overcome this problem, different initialisation strategies have been proposed and investigated (see for instance \cite{biernacki03,karlis03,mclachlan04}).\\
+As explained in chapter \ref{ch:HMRF}, the HMRF clustering I developed relies on a Maximum Posterior Marginal (MPM) approach, and the EM algorithm is used to estimate the unknown parameter values. The likelihood function that needs to be maximised may possess many stationary points of different natures. Thus, convergence to the global maximum with the EM algorithm, depends strongly on the parameters initialisation. To overcome this problem, different initialisation strategies have been proposed and investigated (see for instance \cite{biernacki03,karlis03,mclachlan04}).\\
 
 Indeed, if the procedure is initialized with a set of clusters that are close to a local maximum in the likelihood function, the EM algorithm will converge to this local maximum and will never reach the global maximum of the model.
 
 	\subsection{Random initialization vs Hclust initialization}
 	To shed some light on the initialization scheme issue I decided to compare two theoretically opposed initialization schemes :
 \begin{itemize}
-	\item A random approach: 10.000 random initialization were generated for $K \in [4,70]$ and for each one the initial likelihood of the model was computed, the random initialization with the highest initial likelihood was selected to apply the EM algorithm.
-	\item A directed approach: the data was clustered using the non-spatial hClust method described in chapter \ref{ch:non_spatial_clustering_visualization} and used the resulting set of cluster to initialize the EM algorithm
+	\item A random approach: 10.000 random initialization were generated for $K \in [4,70]$ and for each, the initial likelihood of the model was computed. The initialization with the highest initial likelihood was selected to start the EM algorithm.
+	\item A directed approach: the data were clustered using the non-spatial hClust method described in chapter \ref{ch:non_spatial_clustering_visualization} and the resulting set of clusters were used to initialize the EM algorithm.
 \end{itemize}
 
-The results are shown in figure \ref{fig:methodComparison} (black and green dots on panel A). Looking at the effect of the initialization scheme on the quality of the resulting clusters through the Jaccard coefficient for $K \in [4,70]$ it is clear that, unsurprisingly considering the problem of the EM clustering not guaranteeing to reach the global maximum of the likelihood function, the random initialization scheme performs a lot better than the directed initialization scheme with hClust. Indeed, for the HMRF randomly initialized, the average Jaccard coefficient is around $0.8$ when it averages $0.7$ only when initialized with hClust.\\
+The results are shown in figure \ref{fig:methodComparison} (black and green dots on panel A). Looking at the effect of the initialization scheme on the quality of the resulting clusters through the Jaccard coefficient for $K \in [4,70]$ it is clear that, unsurprisingly, considering that the EM does not guarantee to reach the global maximum, the random initialization scheme performs a lot better than the directed initialization scheme. Indeed, for the HMRF randomly initialized, the average Jaccard coefficient is around $0.8$ when it averages $0.6$ only when initialized with hClust.\\
 
-Following this observation, for the rest of this thesis and especially in chapter \todo{ref chapter biological analysis}, the HMRF method will be randomly initialized.
+	\begin{figure}[h]
+\centerline{\includegraphics[width=0.9\linewidth]{gfx/chapter5/method_comparison.png}}
+\caption{{\bf Jaccard coefficient between ``true" and resulting clusters on the simulated data with different methods and initializations.} Panel A compares the performance of the MRF method with a randomly initialization with an independent mixture model also with a random initialization, the MRF method initialized with the hClust classification and hClust alone on data simulated with a spatial component. Panel B shows the Jaccard coefficient for the MRF method and independent mixture model both with a random initialization; in this case both methods are applied to simulated data that lacks a spatial component.}
+\label{fig:methodComparison}
+	\end{figure}
+
+Following this observation, for the rest of this thesis and especially in chapter \todo{ref chapter6}, the HMRF method will be randomly initialized.
 
 \section{Method performance compared to Hclust and independent mixture models}
  Because the simulated data provides a clear set of ``true" clusters and parameter values, it allows the HRMF clustering to be compared to other clustering methods in terms of clustering quality through the Jaccard coefficient. Additionally, computing time being a key factor for large dataset, I provide in this section some key figures about the execution time of the different methods.
 	\subsection{Quality of the clustering results}
 	
-	The resulting Jaccard coefficients obtained by comparing the ``true" clusters and the clusters generated by different clustering methods are shown in Figure \ref{fig:methodComparison} for $\tilde{K} \in [4,70]$. The HRMF method, when used with a random initialization scheme, has an average Jaccard coefficient of $0.8$, and clearly demonstrates better performance than the other methods. The second best performing method is the independent mixture model with a random initialization, which has an average Jaccard coefficient of $0.7$. Since the independent mixture approach is equivalent to the MRF with all the $\beta$ parameters set equal to 0 (i.e., without a spatial component) this suggests that accounting for the spatial aspect yields improved results.  Given this, it is perhaps unsurprising that hClust also performs relatively poorly.\\
+	The resulting Jaccard coefficients obtained by comparing the ``true" clusters and the clusters generated by different clustering methods are shown in Figure \ref{fig:methodComparison} for $\tilde{K} \in [4,70]$. The HRMF method, when used with a random initialization scheme, has an average Jaccard coefficient of $0.8$, and clearly demonstrates better performance than the other methods. The second best performing method is the independent mixture model with a random initialization, which has an average Jaccard coefficient of $0.7$. Since the independent mixture approach is equivalent to the MRF with all the $\beta$ parameters set equal to 0 (i.e., without a spatial component) this suggests that accounting for the spatial aspect yields improved results.  Given this, it is perhaps unsurprising that hClust also performs relatively poorly with an average Jaccard coefficient around $0.4$.\\
 	
-	Although as mentioned previously, the Jaccard coefficient may not be linearly correlated with the quality of the clustering results because of the alignment step which can create biases, it is still a good indicator of the methods' performances and it would seem that the HMRF consistently outperforms the other methods tested.
+	Although as mentioned previously, the Jaccard coefficient may not be linearly correlated with the quality of the clustering results because of the alignment step which can create biases, this simulation study seems to show that the HMRF consistently outperforms the other methods tested.
+	
+	
+	\subsection{Computing time}
+	As seen in the previous paragraph, I have assessed that the developed HRMF clustering method yields better results in terms of clustering than the other tested method. However, the fact that the method takes into consideration the spatial dependencies between data points, mean that it is will be computationally more expensive than non spatial methods when the number of sites increases.\\
+	
+	The number of clusters $K$ also has an important influence on the computing time. Given number of sites $S=32.203$, I ran the HRMF, and the mixture model methods on simulated datasets for $K \in [4,60]$ and have obtained on the same machine, the computing times shown in Figure \ref{fig:computing_time}.\\
+	
+	Because of the necessity to estimate the values of $\boldsymbol{\beta}$ at every step through a gradient ascent algorithm (see Chapter \ref{ch:HMRF}), and the increased complexity of computing the likelihood of the model when $K$ increases, it is unsurprising to see that the HMRF approach necessary computing time follows an exponential evolution with $K$. On the other hand, the independent mixture model approach does not need to perform these calculations and exhibits a linear evolution. However, as seen in the previous paragraph, the spatial component of the model seems to improve significantly the clustering quality. Consequently, the HMRF approach might prove useful when $K$ is relatively low. Indeed, until $K=30$ the required computing time required for the HRMF is not dramatically higher compared to the mixture model approach.\\
+	
+	The computing time required for hClust is quite high as shown is Figure \ref{fig:computing_time} (blue line), but is constant for any number of clusters $K \in [2,S]$. Indeed, once the dendrogram is computed (see Chapter \ref{ch:non_spatial_clustering_visualization}), cutting the clustering tree to any number of clusters is trivial. It is also interesting to note that the clustering results for all values of $K$ are computed in one run with hClust when the other methods need a full run for each value of $K$.
+	
 	\begin{figure}[h]
-\centerline{\includegraphics[width=\linewidth]{gfx/chapter5/method_comparison.png}}
-\caption{{\bf Jaccard coefficient between ``true" and resulting clusters on the simulated data with different methods and initializations.} Panel A compares the performance of the MRF method with a randomly initialization with an independent mixture model also with a random initialization, the MRF method initialized with the hClust classification and hClust alone on data simulated with a spatial component. Panel B shows the Jaccard coefficient for the MRF method and independent mixture model both with a random initialization; in this case both methods are applied to simulated data that lacks a spatial component.}
-\label{fig:methodComparison}
+\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/exec_time.png}}
+\caption{{\bf Computing time required by different clustering methods for $K \in [4,60]$} On the x axis is shown the value of $K$ used to cluster the $32.203$ data points. The red dots represent the computing time required by the HRMF method, the green dots by an independent mixture model approach and the blue line for hClust.}
+\label{fig:computing_time}
 	\end{figure}
-	\subsection{Discussion}
 
 
 

@@ -2,25 +2,25 @@
 \vspace {-\cftbeforepartskip }
 \select@language {american}
 \contentsline {part}{i\hspace {1em}\spacedlowsmallcaps {Spatial analysis of complex biological tissues from single cell gene expression data\xspace }}{13}{part.1}
-\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Capturing gene expression in \emph {{P}latynereis dumerillii}{}'s brain}}{15}{chapter.1}
-\contentsline {section}{\numberline {1.1}Platynereis dumerilii, an ideal organism of brain development studies}{15}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}General description}{15}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Larval development}{16}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Gene expression in Platynereis' developing brain}{18}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Platynereis' nervous development until 48hpf}{18}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Spatial organization of complex biological tissues like the brain}{19}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Generalities about gene expression and development}{20}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Capturing gene expression in the laboratory}{22}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}In-situ hybridization assays}{22}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Building a image library of gene expression for Platynereis}{23}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}RNA sequencing}{24}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Conclusions}{25}{section.1.4}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{15}{chapter.1}
+\contentsline {section}{\numberline {1.1}Gene expression in complex tissues}{15}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Spatial organization of complex biological tissues like the brain}{15}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Generalities about gene expression and development}{16}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Capturing gene expression in the laboratory}{18}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}In-situ hybridization assays}{18}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}RNA sequencing}{18}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Platynereis dumerilii, an ideal organism for studying brain evolution}{19}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}General description}{19}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Larval development}{21}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Platynereis' nervous development until 48hpf}{22}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Building a image library of gene expression for Platynereis}{24}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Summary}{25}{section.1.4}
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{27}{chapter.2}
 \contentsline {section}{\numberline {2.1}Spatially referenced single cell-like in-situ hybridization data}{27}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Dividing images into "cells"}{27}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}A simple cell model, the "cube" data}{28}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Singe cell RNA sequencing, building a map of the full transcriptome}{29}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Sequencing single cell RNA contents}{29}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}Single cell RNA sequencing, building a map of the full transcriptome}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Single cell RNA sequencing}{29}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Mapping back gene expression to a spatial reference}{30}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{30}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Light contamination in in-situ hybridization data}{30}{subsection.2.3.1}
@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Binarizing whole transcriptomes}{35}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Preliminary results on single cell RNA-seq spatial back-mapping }{36}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Single cell RNA-seq in Platynereis' brain}{36}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{37}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Mapping RNA-seq data back to PrimR in-situ hybridization assays}{37}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Conclusions}{39}{section.2.6}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Clustering and visualizing tissues from 3D single cell expression data}}{43}{chapter.3}
 \contentsline {section}{\numberline {3.1}Elements of clustering for biological tissues}{43}{section.3.1}
@@ -40,13 +40,13 @@
 \contentsline {section}{\numberline {3.2}Visualizing clustering results in 3D with bioWeb3D}{45}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Background}{45}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Implementation}{46}{subsection.3.2.2}
-\contentsline {paragraph}{Technological overview}{47}{figure.3.12}
+\contentsline {paragraph}{Technological overview}{47}{figure.caption.18}
 \contentsline {subsection}{\numberline {3.2.3}Results and Discussion}{48}{subsection.3.2.3}
 \contentsline {paragraph}{Basic usage}{48}{subsection.3.2.3}
-\contentsline {paragraph}{bioWeb3D and local software}{49}{figure.3.14}
-\contentsline {paragraph}{bioWeb3D and Java Applets}{50}{figure.3.14}
-\contentsline {paragraph}{Current limitations}{50}{figure.3.14}
-\contentsline {paragraph}{Open source and collaborative development}{50}{figure.3.14}
+\contentsline {paragraph}{bioWeb3D and local software}{49}{figure.caption.20}
+\contentsline {paragraph}{bioWeb3D and Java Applets}{50}{figure.caption.20}
+\contentsline {paragraph}{Current limitations}{50}{figure.caption.20}
+\contentsline {paragraph}{Open source and collaborative development}{50}{figure.caption.20}
 \contentsline {subsection}{\numberline {3.2.4}Conclusions}{50}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Availability and requirements}{51}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}Non spatial clustering methods}{51}{section.3.3}
@@ -78,23 +78,24 @@
 \contentsline {subsection}{\numberline {5.2.1}Theoretical problem in comparing clustering results}{67}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{68}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{69}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.2}Estimation of beta}{70}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.1}Estimation of $\boldsymbol {\Theta }$}{69}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Estimation of $\beta $}{69}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Choosing K}{72}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}Method performance and initialization}{73}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}The EM principle and local maximum}{73}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{74}{subsection.5.4.2}
 \contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{74}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Quality of the clustering results}{75}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Discussion}{75}{subsection.5.5.2}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{77}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{79}{appendix.A}
-\contentsline {section}{\numberline {A.1}Dataset file specification}{79}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}JSON format}{79}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}XML format}{79}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}CSV format}{81}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Information layer file specification}{82}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}JSON format}{82}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}XML format}{83}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{84}{lstnumber.A.5.26}
+\contentsline {subsection}{\numberline {5.5.2}Computing time}{76}{subsection.5.5.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{79}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{81}{appendix.A}
+\contentsline {section}{\numberline {A.1}Dataset file specification}{81}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}JSON format}{81}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}XML format}{81}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}CSV format}{83}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Information layer file specification}{84}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}JSON format}{84}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}XML format}{85}{subsection.A.2.2}
+\contentsline {paragraph}{CSV format}{86}{lstnumber.5.26}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{87}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{89}{dummy.6}

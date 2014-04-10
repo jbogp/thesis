@@ -6,35 +6,26 @@ A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
 A level-1 auxiliary file: Chapters/Chapter04.aux
 A level-1 auxiliary file: Chapters/Chapter05.aux
-Case mismatch error between cite keys mclachlan04 and Mclachlan04
----line 26 of file Chapters/Chapter05.aux
- : \citation{biernacki03,karlis03,mclachlan04
- :                                           }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/supp_figures.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
-Database file #1: Bibliography.bib
+Database file #1: Bibliography_2.bib
 Warning--entry type for "three" isn't style-file defined
---line 1065 of file Bibliography.bib
+--line 1109 of file Bibliography_2.bib
 Warning--entry type for "webgl" isn't style-file defined
---line 1070 of file Bibliography.bib
+--line 1114 of file Bibliography_2.bib
 Warning--entry type for "github" isn't style-file defined
---line 1075 of file Bibliography.bib
+--line 1119 of file Bibliography_2.bib
 Warning--entry type for "bioweb3D" isn't style-file defined
---line 1080 of file Bibliography.bib
+--line 1124 of file Bibliography_2.bib
 Warning--entry type for "security" isn't style-file defined
---line 1085 of file Bibliography.bib
+--line 1129 of file Bibliography_2.bib
 Warning--entry type for "caniuse" isn't style-file defined
---line 1090 of file Bibliography.bib
+--line 1134 of file Bibliography_2.bib
 Warning--entry type for "xmlref" isn't style-file defined
---line 1095 of file Bibliography.bib
-Warning--I didn't find a database entry for "Tomer"
-Warning--I didn't find a database entry for "burges2005"
-Warning--I didn't find a database entry for "biernacki03"
-Warning--I didn't find a database entry for "karlis03"
+--line 1139 of file Bibliography_2.bib
 Warning--to sort, need author or key in xmlref
 Warning--to sort, need author or key in three
 Warning--to sort, need author or key in webgl
@@ -49,6 +40,8 @@ Warning--empty year in security
 Warning--empty year in three
 Warning--empty year in webgl
 Warning--empty year in xmlref
+Warning--empty year in arendt124
+Warning--empty year in arendt124
 Warning--empty journal in guy08
 Warning--can't use both volume and number fields in macqueen67
-(There was 1 error message)
+(There were 25 warnings)

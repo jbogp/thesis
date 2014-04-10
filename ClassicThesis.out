@@ -1,96 +1,97 @@
-\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}
-\BOOKMARK [1][-]{lof.1}{List of Figures}{}
-\BOOKMARK [1][-]{lot.1}{List of Tables}{}
-\BOOKMARK [1][-]{lol.1}{Listings}{}
-\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}
-\BOOKMARK [-1][]{part.1}{Spatial analysis of complex biological tissues from single cell gene expression data}{}
-\BOOKMARK [0][]{chapter.1}{1 Capturing gene expression in Platynereis dumerillii's brain}{part.1}
-\BOOKMARK [1][-]{section.1.1}{1.1 Platynereis dumerilii, an ideal organism of brain development studies}{chapter.1}
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 General description}{section.1.1}
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Larval development}{section.1.1}
-\BOOKMARK [1][-]{section.1.2}{1.2 Gene expression in Platynereis' developing brain}{chapter.1}
-\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Platynereis' nervous development until 48hpf}{section.1.2}
-\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Spatial organization of complex biological tissues like the brain}{section.1.2}
-\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Generalities about gene expression and development}{section.1.2}
-\BOOKMARK [1][-]{section.1.3}{1.3 Capturing gene expression in the laboratory}{chapter.1}
-\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 In-situ hybridization assays}{section.1.3}
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Building a image library of gene expression for Platynereis}{section.1.3}
-\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 RNA sequencing}{section.1.3}
-\BOOKMARK [1][-]{section.1.4}{1.4 Conclusions}{chapter.1}
-\BOOKMARK [0][]{chapter.2}{2 From tissue to single cell transcriptomics, a paradigm shift}{part.1}
-\BOOKMARK [1][-]{section.2.1}{2.1 Spatially referenced single cell-like in-situ hybridization data}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Dividing images into "cells"}{section.2.1}
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 A simple cell model, the "cube" data}{section.2.1}
-\BOOKMARK [1][-]{section.2.2}{2.2 Singe cell RNA sequencing, building a map of the full transcriptome}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Sequencing single cell RNA contents}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Mapping back gene expression to a spatial reference}{section.2.2}
-\BOOKMARK [1][-]{section.2.3}{2.3 About the quantitative trait of single cell expression data}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Light contamination in in-situ hybridization data}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Technical noise in single cell RNA-seq data}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Conclusions}{section.2.3}
-\BOOKMARK [1][-]{section.2.4}{2.4 Binarizing gene expression datasets}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Binarizing in-situ hybrdization datasets}{section.2.4}
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Binarizing whole transcriptomes}{section.2.4}
-\BOOKMARK [1][-]{section.2.5}{2.5 Preliminary results on single cell RNA-seq spatial back-mapping }{chapter.2}
-\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Single cell RNA-seq in Platynereis' brain}{section.2.5}
-\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Mapping back RNA-seq data back to PrimR in-situ hybridization assays}{section.2.5}
-\BOOKMARK [1][-]{section.2.6}{2.6 Conclusions}{chapter.2}
-\BOOKMARK [0][]{chapter.3}{3 Clustering and visualizing tissues from 3D single cell expression data}{part.1}
-\BOOKMARK [1][-]{section.3.1}{3.1 Elements of clustering for biological tissues}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Motivations}{section.3.1}
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 General considerations about clustering}{section.3.1}
-\BOOKMARK [1][-]{section.3.2}{3.2 Visualizing clustering results in 3D with bioWeb3D}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Background}{section.3.2}
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Implementation}{section.3.2}
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Results and Discussion}{section.3.2}
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Conclusions}{section.3.2}
-\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Availability and requirements}{section.3.2}
-\BOOKMARK [1][-]{section.3.3}{3.3 Non spatial clustering methods}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Hierarchical clustering}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Other clustering methods adapted to gene expression data}{section.3.3}
-\BOOKMARK [1][-]{section.3.4}{3.4 Discussion}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Spatial clustering techniques \(hierarchical, model based\)}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Method chosen}{section.3.4}
-\BOOKMARK [0][]{chapter.4}{4 Hidden Markov Random fields for biological data clustering}{part.1}
-\BOOKMARK [1][-]{section.4.1}{4.1 Markov random fields}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Neighbourhood systems}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Gibbsian prior distribution}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Single and multiple beta models in a biological context}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Summary of the prior distribution parameters}{section.4.1}
-\BOOKMARK [1][-]{section.4.2}{4.2 The emission model}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Conditional independence in the observed data}{section.4.2}
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Full likelihood of the Hidden Markov random field model}{section.4.2}
-\BOOKMARK [1][-]{section.4.3}{4.3 Parameter estimation using the EM algorithm}{chapter.4}
-\BOOKMARK [1][-]{section.4.4}{4.4 Mean field approximations}{chapter.4}
-\BOOKMARK [1][-]{section.4.5}{4.5 Maximization}{chapter.4}
-\BOOKMARK [1][-]{section.4.6}{4.6 Estimating K}{chapter.4}
-\BOOKMARK [1][-]{section.4.7}{4.7 Summary}{chapter.4}
-\BOOKMARK [0][]{chapter.5}{5 Method validation and performance analysis on simulated data}{part.1}
-\BOOKMARK [1][-]{section.5.1}{5.1 Simulating data with a spatial component }{chapter.5}
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Simulating non spatial gene expression data}{section.5.1}
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Introducing a known spatial context}{section.5.1}
-\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Expected results}{section.5.1}
-\BOOKMARK [1][-]{section.5.2}{5.2 Comparing clustering results using the Jaccard similarity coefficient}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theoretical problem in comparing clustering results}{section.5.2}
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Alignment via similarity-specificity matric}{section.5.2}
-\BOOKMARK [1][-]{section.5.3}{5.3 Validation of parameters estimation and model choosing}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Estimation of beta}{section.5.3}
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Choosing K}{section.5.3}
-\BOOKMARK [1][-]{section.5.4}{5.4 Method performance and initialization}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 The EM principle and local maximum}{section.5.4}
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Random initialization vs Hclust initialization}{section.5.4}
-\BOOKMARK [1][-]{section.5.5}{5.5 Method performance compared to Hclust and independent mixture models}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Quality of the clustering results}{section.5.5}
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Discussion}{section.5.5}
-\BOOKMARK [-1][]{part.2}{Appendix}{}
-\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}
-\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}
-\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}
-\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}
-\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}
-\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}
-\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}
-\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}
-\BOOKMARK [0][]{dummy.6}{Bibliography}{part.2}
-\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}
-\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}% 1
+\BOOKMARK [1][-]{lof.1}{List of Figures}{}% 2
+\BOOKMARK [1][-]{lot.1}{List of Tables}{}% 3
+\BOOKMARK [1][-]{lol.1}{Listings}{}% 4
+\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}% 5
+\BOOKMARK [-1][]{part.1}{Spatial analysis of complex biological tissues from single cell gene expression data}{}% 6
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{part.1}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1 Gene expression in complex tissues}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Spatial organization of complex biological tissues like the brain}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Generalities about gene expression and development}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 Capturing gene expression in the laboratory}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 In-situ hybridization assays}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 RNA sequencing}{section.1.2}% 13
+\BOOKMARK [1][-]{section.1.3}{1.3 Platynereis dumerilii, an ideal organism for studying brain evolution}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 General description}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Larval development}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Platynereis' nervous development until 48hpf}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Building a image library of gene expression for Platynereis}{section.1.3}% 18
+\BOOKMARK [1][-]{section.1.4}{1.4 Summary}{chapter.1}% 19
+\BOOKMARK [0][]{chapter.2}{2 From tissue to single cell transcriptomics, a paradigm shift}{part.1}% 20
+\BOOKMARK [1][-]{section.2.1}{2.1 Spatially referenced single cell-like in-situ hybridization data}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Dividing images into "cells"}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 A simple cell model, the "cube" data}{section.2.1}% 23
+\BOOKMARK [1][-]{section.2.2}{2.2 Single cell RNA sequencing, building a map of the full transcriptome}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Single cell RNA sequencing}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Mapping back gene expression to a spatial reference}{section.2.2}% 26
+\BOOKMARK [1][-]{section.2.3}{2.3 About the quantitative trait of single cell expression data}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Light contamination in in-situ hybridization data}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Technical noise in single cell RNA-seq data}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Conclusions}{section.2.3}% 30
+\BOOKMARK [1][-]{section.2.4}{2.4 Binarizing gene expression datasets}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Binarizing in-situ hybrdization datasets}{section.2.4}% 32
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Binarizing whole transcriptomes}{section.2.4}% 33
+\BOOKMARK [1][-]{section.2.5}{2.5 Preliminary results on single cell RNA-seq spatial back-mapping }{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Single cell RNA-seq in Platynereis' brain}{section.2.5}% 35
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Mapping RNA-seq data back to PrimR in-situ hybridization assays}{section.2.5}% 36
+\BOOKMARK [1][-]{section.2.6}{2.6 Conclusions}{chapter.2}% 37
+\BOOKMARK [0][]{chapter.3}{3 Clustering and visualizing tissues from 3D single cell expression data}{part.1}% 38
+\BOOKMARK [1][-]{section.3.1}{3.1 Elements of clustering for biological tissues}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Motivations}{section.3.1}% 40
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 General considerations about clustering}{section.3.1}% 41
+\BOOKMARK [1][-]{section.3.2}{3.2 Visualizing clustering results in 3D with bioWeb3D}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Background}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Implementation}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Results and Discussion}{section.3.2}% 45
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Conclusions}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Availability and requirements}{section.3.2}% 47
+\BOOKMARK [1][-]{section.3.3}{3.3 Non spatial clustering methods}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Hierarchical clustering}{section.3.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Other clustering methods adapted to gene expression data}{section.3.3}% 50
+\BOOKMARK [1][-]{section.3.4}{3.4 Discussion}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Spatial clustering techniques \(hierarchical, model based\)}{section.3.4}% 52
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Method chosen}{section.3.4}% 53
+\BOOKMARK [0][]{chapter.4}{4 Hidden Markov Random fields for biological data clustering}{part.1}% 54
+\BOOKMARK [1][-]{section.4.1}{4.1 Markov random fields}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Neighbourhood systems}{section.4.1}% 56
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Gibbsian prior distribution}{section.4.1}% 57
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Single and multiple beta models in a biological context}{section.4.1}% 58
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Summary of the prior distribution parameters}{section.4.1}% 59
+\BOOKMARK [1][-]{section.4.2}{4.2 The emission model}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Conditional independence in the observed data}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Full likelihood of the Hidden Markov random field model}{section.4.2}% 62
+\BOOKMARK [1][-]{section.4.3}{4.3 Parameter estimation using the EM algorithm}{chapter.4}% 63
+\BOOKMARK [1][-]{section.4.4}{4.4 Mean field approximations}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.5}{4.5 Maximization}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.6}{4.6 Estimating K}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.7}{4.7 Summary}{chapter.4}% 67
+\BOOKMARK [0][]{chapter.5}{5 Method validation and performance analysis on simulated data}{part.1}% 68
+\BOOKMARK [1][-]{section.5.1}{5.1 Simulating data with a spatial component }{chapter.5}% 69
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Simulating non spatial gene expression data}{section.5.1}% 70
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Introducing a known spatial context}{section.5.1}% 71
+\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Expected results}{section.5.1}% 72
+\BOOKMARK [1][-]{section.5.2}{5.2 Comparing clustering results using the Jaccard similarity coefficient}{chapter.5}% 73
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theoretical problem in comparing clustering results}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Alignment via similarity-specificity matric}{section.5.2}% 75
+\BOOKMARK [1][-]{section.5.3}{5.3 Validation of parameters estimation and model choosing}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Estimation of bold0mu mumu head}{section.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Estimation of }{section.5.3}% 78
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Choosing K}{section.5.3}% 79
+\BOOKMARK [1][-]{section.5.4}{5.4 Method performance and initialization}{chapter.5}% 80
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 The EM principle and local maximum}{section.5.4}% 81
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Random initialization vs Hclust initialization}{section.5.4}% 82
+\BOOKMARK [1][-]{section.5.5}{5.5 Method performance compared to Hclust and independent mixture models}{chapter.5}% 83
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Quality of the clustering results}{section.5.5}% 84
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Computing time}{section.5.5}% 85
+\BOOKMARK [-1][]{part.2}{Appendix}{}% 86
+\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}% 87
+\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}% 88
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}% 89
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}% 90
+\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}% 91
+\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}% 92
+\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}% 93
+\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}% 94
+\BOOKMARK [0][]{dummy.6}{Bibliography}{part.2}% 95
+\BOOKMARK [0][]{colophon.0}{Colophon}{part.2}% 96
+\BOOKMARK [0][]{declaration.0}{Declaration}{part.2}% 97
