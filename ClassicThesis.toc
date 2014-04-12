@@ -87,15 +87,28 @@
 \contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{74}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Quality of the clustering results}{75}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Computing time}{76}{subsection.5.5.2}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{79}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{81}{appendix.A}
-\contentsline {section}{\numberline {A.1}Dataset file specification}{81}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}JSON format}{81}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}XML format}{81}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}CSV format}{83}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Information layer file specification}{84}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}JSON format}{84}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}XML format}{85}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{86}{lstnumber.5.26}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {HMRF clustering in the brain of \emph {{P}latynereis dumerillii}{}}}{79}{chapter.6}
+\contentsline {section}{\numberline {6.1}Downstream analysis opportunities offered by the model}{79}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Signification of Theta}{79}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Cluster specific gene scoring}{79}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Choosing K with the BIC on biological data}{79}{section.6.2}
+\contentsline {section}{\numberline {6.3}Finding known biological structures to validate the method}{80}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}\emph {{P}. dumerillii}{}'s eyes}{81}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Mushroom bodies}{81}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Motor regions}{82}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Generating functional hypothesis about unknown biological tissues}{82}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{83}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Validity of the model's independence hypothesis}{83}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Shortcomings of the method}{84}{subsection.6.5.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{85}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{87}{appendix.A}
+\contentsline {section}{\numberline {A.1}Dataset file specification}{87}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}JSON format}{87}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}XML format}{87}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}CSV format}{89}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Information layer file specification}{90}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}JSON format}{90}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}XML format}{91}{subsection.A.2.2}
+\contentsline {paragraph}{CSV format}{92}{lstnumber.5.26}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{89}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{95}{dummy.6}
