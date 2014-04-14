@@ -6,7 +6,7 @@
 Simulating data with a spatial component is a non-trivial problem. Existing methods rely on MCMC approaches as described in \cite{Chalmond89}. However, in this case with a relatively large number of nodes in the graph ($\sim 34,000$), this is computationally expensive. To overcome this problem, I exploited the fact that the {\it{Platynereis}} dataset already possesses a spatial component. As outlined in Figure \ref{fig:simulationScheme}, the simulation starts by clustering the gene expression data using different values of $K$ with the HRMF method described in chapter \ref{ch:HMRF} and by storing the resulting parameter estimates. Subsequently, I use the values of the estimated parameter $\boldsymbol{\Theta}$ to simulate binarised gene expression data from $K$ clusters where, for cluster $h$, the expression of gene $m$ is simulated from a Bernoulli distribution with parameter $\theta_{m,h}$ as described in \ref{subsec:simul_non_spatial}. This non spatial simulated data is then reintroduced in the spatial context of the biological data \ref{subsec:simul_spatial} leading to a simulated dataset with all parameters being fully determined. In the next paragraphs, I will describe each step of this simulation scheme.
 
 	\begin{figure}[H]
-\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/simulation_scheme.png}}
+\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/simulation_scheme.png}}
 \caption{{\bf Simulation scheme used to generate gene expression data with a spatial component and known parameters.} The values of $\Theta$ are used to generate a dataset of clusters with the same gene expression profile as the reference. Each simulated cell is then assigned to its corresponding spatial localization so that the simulated data keeps the spatial compenent of the biological data.}
 \label{fig:simulationScheme}
 	\end{figure}
@@ -79,13 +79,13 @@ Now that I have established a method to compare cluster sets, I need to validate
 	 To confirm this explanation, I performed a second simulation using the parameter values estimated from the first simulation as a reference. In this context no further loss of spatial coherency was expected, which was indeed confirmed as shown by the blue curve in Figure \ref{fig:beta_validation}.\\
 	
 	\begin{figure}[H]
-\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/beta_valid.png}}
+\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/beta_valid.png}}
 \caption{{\bf Validating the estimation of beta.} This figure shows the evolution for $K \in [4,80]$ of the mean value of $\beta$ across all the clusters. The red dots represent the biological data clustering (i.e the reference in our simulations scheme). The green dots represent the results obtained after clustering simulated data, which shows an underestimation of $\beta$. To confirm that this underestimation come from the simulation scheme and not the clustering method, the simulated data was used as the reference to generate a ``second generation" of simulated data, suppressing the simulation scheme bias (see Figure \ref{fig:beta_error}). The results of this re-simulation are shown by the blue dots, which exhibit no underestimation of $\beta$. Finally the brown dots represent the mean value of $\beta$ on the same simulated data but spatially randomized, as expected the $\beta$ are now estimated to $0$.}
 \label{fig:beta_validation}
 	\end{figure}
 	
 	\begin{figure}[H]
-\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/beta_error.png}}
+\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/beta_error.png}}
 \caption{{\bf Decrease in spatial coherency due to the simulation scheme.} For an example cluster $h$, gene $m$ may only be expressed in half of the cells. This will yield $\theta_{h,m} = 0.5$. However, in the biological data, the cells expressing gene $m$ may be spatially coherent (i.e., located close to one another), leading to a reduced area of expression discontinuity (the green line). By contrast, in the simulated data the expression of such a gene will lose its spatial coherency, leading to an increased area of expression discontinuity. The number of cells having a neighbour with some differences in the gene expression pattern is directly linked to the value of $\beta_h$ through the energy function described in chapter \ref{ch:HMRF}. This explains the underestimation of $\boldsymbol{\beta}$ observed in Figure \ref{fig:beta_validation}.}
 \label{fig:beta_error}
 	\end{figure}
@@ -97,7 +97,7 @@ To validate further our estimation of $\boldsymbol{\beta}$, I randomized the coo
 Finally, assessing the ability of the model to choose the correct number of clusters, $K$ is crucial. To this end, the ``true" number of clusters underlying the simulated data $\hat{K}$ was compared to the the chosen value, $\widetilde{K}$ obtained after applying the BIC method (see \ref{ch:HMRF}). The results for two representative choices of $K$ are shown in Figure \ref{fig:simulatedK} and demonstrate that our clustering approach, in conjunction with the BIC, is able to accurately determine the optimal number of clusters.\\
 
 	\begin{figure}[H]
-\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/simulated_k.png}}
+\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/simulated_k.png}}
 \caption{{\bf Estimating the BIC from the simulated data.} The BIC is plotted on the y-axis for different values of K on the x-axis. The red and the grey points correspond to the BIC estimated when the underlying data have 17 and 7 clusters, respectively. The minimum BIC value is 18 and 7, respectively, suggesting that the MRF approach in conjunction with the BIC well estimates the optimal number of clusters.}
 \label{fig:simulatedK}
 	\end{figure}
@@ -142,16 +142,18 @@ Following this observation, for the rest of this thesis and especially in chapte
 	
 	Because of the necessity to estimate the values of $\boldsymbol{\beta}$ at every step through a gradient ascent algorithm (see Chapter \ref{ch:HMRF}), and the increased complexity of computing the likelihood of the model when $K$ increases, it is unsurprising to see that the HMRF approach necessary computing time follows an exponential evolution with $K$. On the other hand, the independent mixture model approach does not need to perform these calculations and exhibits a linear evolution. However, as seen in the previous paragraph, the spatial component of the model seems to improve significantly the clustering quality. Consequently, the HMRF approach might prove useful when $K$ is relatively low. Indeed, until $K=30$ the required computing time required for the HRMF is not dramatically higher compared to the mixture model approach.\\
 	
-	The computing time required for hClust is quite high as shown is Figure \ref{fig:computing_time} (blue line), but is constant for any number of clusters $K \in [2,S]$. Indeed, once the dendrogram is computed (see Chapter \ref{ch:non_spatial_clustering_visualization}), cutting the clustering tree to any number of clusters is trivial. It is also interesting to note that the clustering results for all values of $K$ are computed in one run with hClust when the other methods need a full run for each value of $K$.
+	The computing time required for hClust is quite high as shown is Figure \ref{fig:computing_time} (blue line), but is constant for any number of clusters $K \in [2,S]$. Indeed, once the dendrogram is computed (see Chapter \ref{ch:non_spatial_clustering_visualization}), cutting the clustering tree to any number of clusters is trivial. It is also interesting to note that the clustering results for all values of $K$ are computed in one run with hClust when the other methods need a full run for each value of $K$. Although I have shown in Figure \ref{fig:methodComparison} that the clustering performances of hClust are clearly below those of the HMRF and the independent mixture models methods, the fact that the results for all values of $K$ are obtained at once, regardless of the relatively high computing time, might be advantageous in some cases. 
 	
 	\begin{figure}[h]
-\centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter5/exec_time.png}}
+\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/exec_time.png}}
 \caption{{\bf Computing time required by different clustering methods for $K \in [4,60]$} On the x axis is shown the value of $K$ used to cluster the $32.203$ data points. The red dots represent the computing time required by the HRMF method, the green dots by an independent mixture model approach and the blue line for hClust.}
 \label{fig:computing_time}
 	\end{figure}
+	
+\section{summary}
+In this chapter I have presented the simulation study conducted to evaluate the performances of the HMRF clustering method described in Chapter \ref{ch:HMRF}. Firstly, I have described the method used to simulate data with known spatial characteristics . Subsequently, I validated that all the parameters of the model were estimated correctly and consistently by the EM algorithm. I then discussed the performance of the method regarding the initialization scheme, and concluded that a selected random initialization yielded the best results. Finally I used the simulated data to compare the performances of the HMRF method compared to other clustering methods, the result of which was that even though the method is quite costly in terms of computing time when the number of clusters increases, it clearly outperforms both the independent mixture model and the hClust clustering methods in terms of accuracy.\\
 
-
-
+The method validated, I will present in the next chapter the results obtained when the HMRF clustering was applied to the single cell in-situ hybridization data described in Chapter \ref{ch:singlecell}.
 
 
 %*****************************************
