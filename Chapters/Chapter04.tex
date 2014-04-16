@@ -1,18 +1,18 @@
 %************************************************
 \chapter{Hidden Markov Random fields for biological data clustering}\label{ch:HMRF} 
 %************************************************
-This chapter gives a theoretical overview of a Hidden Markov Random Field based approach aimed to be applied to cluster single cell in-situ hybridization gene expression data ``cubes" as described in chapter \ref{ch:singlecell} into $K$ clusters ($K \in [2,\infty[$). Subsequently, we will describe our approach for estimating $K$.
+This chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in chapter \ref{ch:singlecell}, into $K$ clusters ($K \in [2,\infty[$). Subsequently, we will describe our approach for estimating $K$.
 
 \section{Markov random fields}
 
 	\subsection{Neighbourhood systems}\label{sec:neighbours}
-Let $S$ be a finite set of sites, each of which represents one ``cube" of data. Given the 3D coordinates of each site, the first challenge to be able to use the spatial characteristics of the data in the clustering scheme will be to express the data and their spatial relationship in mathematically formal manner. To that end, stating from the spatial coordinates in 3D of each ``cube", instead of a list of isolated measurements, it is possible to build a connecting graph representing the same data and the spatial dependence between the `cubes". In the case of this study, each node of the graph will represent a ``cube" in the singe cell expression data. Nodes that are linked together by an edge will be spatially dependent upon each other.\\
+Let $S$ be a finite set of sites, each of which represents one ``cube" of data. Given the 3D coordinates of each site, the first challenge that needs to be overcome in order to use the spatial characteristics of the data in the clustering scheme is to express the data and their spatial relationship in mathematically formal manner. To this end, starting from the spatial coordinates in 3D of each ``cube", instead of a list of isolated measurements, it is possible to build a connecting graph representing the same data and the spatial dependence between the ``cubes". In the context of this study, each node of the graph will represent a ``cube" in the single cell expression data. Nodes that are linked together by an edge will be spatially dependent upon each other.\\
 
-With prior biological data, one can manually create the spatial dependency graph by linking nodes together that are known to be functionality similar. In the case of this study however, no such prior knowledge being available, it is necessary to define the spatial dependences in a different way.\\
+With prior biological data, one can manually create the spatial dependency graph by linking nodes together that are known to be functionally similar. In the case of this study however, no such prior knowledge being available, it is necessary to define the spatial dependences in a different way.\\
 
-The central hypothesis while developing this method is to assume that ``cubes" that are close to one another are more likely to belong to the same cell type (i.e cluster), the spatial dependencies connecting graph will then consist in a \emph{neighbouring graph} where  ``cubes" close to each other will be joined be edges.\\
+The central hypothesis while developing this method is to assume that ``cubes" that are close to one another are more likely to belong to the same cell type (i.e cluster). Consequently, these spatial dependencies will be incorporated into a \emph{neighbouring graph} where  ``cubes" close to each other will be joined be edges.\\
 
-As shown on figure \ref{fig:graph}, it was decided to use a first order neighbouring graph called $G$, i.e the 6 closest sites, to represent $S$.  using a first order neighbourhood system, i.e the 6 closest sites.\\
+There are several ways to translate the spatial relationship into a neighbouring graphs depending on the number of neighbours considered for each point. As shown in Figure \ref{fig:graph}, I decided to use a first order neighbouring graph, $G$.\\
 
 	\begin{figure}[h]
 \centerline{\includegraphics[width=0.5\linewidth]{gfx/chapter4/graph.jpg}}
