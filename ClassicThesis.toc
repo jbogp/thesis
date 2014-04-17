@@ -58,56 +58,56 @@
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Hidden Markov Random fields for biological data clustering}}{57}{chapter.4}
 \contentsline {section}{\numberline {4.1}Markov random fields}{57}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Neighbourhood systems}{57}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Gibbsian prior distribution}{58}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Field distribution}{58}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Single and multiple beta models in a biological context}{59}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Summary of the prior distribution parameters}{60}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}The emission model}{60}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Conditional independence in the observed data}{60}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.1.4}Field parameters}{60}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}The emission model}{61}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Conditional independence in the observed data}{61}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Full likelihood of the Hidden Markov random field model}{61}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Parameter estimation using the EM algorithm}{62}{section.4.3}
-\contentsline {section}{\numberline {4.4}Mean field approximations}{63}{section.4.4}
+\contentsline {section}{\numberline {4.4}Mean field approximations}{64}{section.4.4}
 \contentsline {section}{\numberline {4.5}Maximization}{64}{section.4.5}
 \contentsline {section}{\numberline {4.6}Estimating K}{65}{section.4.6}
-\contentsline {section}{\numberline {4.7}Summary}{65}{section.4.7}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Method validation and performance analysis on simulated data}}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Simulating data with a spatial component }{67}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Simulating non spatial gene expression data}{68}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Introducing a known spatial context}{69}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Expected results}{69}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Comparing clustering results using the Jaccard similarity coefficient}{69}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Theoretical problem in comparing clustering results}{69}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{70}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{71}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Estimation of $\boldsymbol {\Theta }$}{71}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Estimation of $\beta $}{72}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Choosing K}{74}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Method performance and initialization}{75}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}The EM principle and local maximum}{75}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{76}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{77}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Quality of the clustering results}{77}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Computing time}{78}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}summary}{80}{section.5.6}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {HMRF clustering in the brain of \emph {{P}latynereis dumerillii}{}}}{81}{chapter.6}
-\contentsline {section}{\numberline {6.1}Choosing K with the BIC on biological data}{81}{section.6.1}
-\contentsline {section}{\numberline {6.2}Downstream analysis opportunities offered by the model}{82}{section.6.2}
-\contentsline {section}{\numberline {6.3}Finding known biological structures to validate the method}{83}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}\emph {{P}. dumerillii}{}'s eyes}{83}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Mushroom bodies}{83}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Motor regions}{84}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Generating functional hypothesis about unknown biological tissues}{85}{section.6.4}
-\contentsline {section}{\numberline {6.5}Discussion}{86}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Validity of the model's independence hypothesis}{86}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Shortcomings of the method}{87}{subsection.6.5.2}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{89}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{91}{appendix.A}
-\contentsline {section}{\numberline {A.1}Dataset file specification}{91}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}JSON format}{91}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}XML format}{91}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}CSV format}{93}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Information layer file specification}{94}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}JSON format}{94}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}XML format}{95}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{96}{lstnumber.5.26}
+\contentsline {section}{\numberline {4.7}Summary}{66}{section.4.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Method validation and performance analysis on simulated data}}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}Simulating data with a spatial component }{69}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Simulating non spatial gene expression data}{70}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Introducing a known spatial context}{71}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Expected results}{71}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Comparing clustering results using the Jaccard similarity coefficient}{71}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Theoretical problem in comparing clustering results}{71}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Alignment via similarity-specificity matric}{72}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Validation of parameters estimation and model choosing}{73}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Estimation of $\boldsymbol {\Theta }$}{73}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Estimation of $\beta $}{74}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Choosing K}{76}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Method performance and initialization}{77}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}The EM principle and local maximum}{77}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Random initialization vs Hclust initialization}{78}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Method performance compared to Hclust and independent mixture models}{79}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Quality of the clustering results}{79}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Computing time}{80}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}summary}{82}{section.5.6}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {HMRF clustering in the brain of \emph {{P}latynereis dumerillii}{}}}{83}{chapter.6}
+\contentsline {section}{\numberline {6.1}Choosing K with the BIC on biological data}{83}{section.6.1}
+\contentsline {section}{\numberline {6.2}Downstream analysis opportunities offered by the model}{84}{section.6.2}
+\contentsline {section}{\numberline {6.3}Finding known biological structures to validate the method}{85}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}\emph {{P}. dumerillii}{}'s eyes}{85}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Mushroom bodies}{85}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Motor regions}{86}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Generating functional hypothesis about unknown biological tissues}{87}{section.6.4}
+\contentsline {section}{\numberline {6.5}Discussion}{88}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Validity of the model's independence hypothesis}{88}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Shortcomings of the method}{89}{subsection.6.5.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{91}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{93}{appendix.A}
+\contentsline {section}{\numberline {A.1}Dataset file specification}{93}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}JSON format}{93}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}XML format}{93}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}CSV format}{95}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Information layer file specification}{96}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}JSON format}{96}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}XML format}{97}{subsection.A.2.2}
+\contentsline {paragraph}{CSV format}{98}{lstnumber.5.26}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{99}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{101}{dummy.6}
