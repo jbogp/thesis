@@ -6,6 +6,7 @@ A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
 A level-1 auxiliary file: Chapters/Chapter04.aux
 A level-1 auxiliary file: Chapters/Chapter05.aux
+A level-1 auxiliary file: Chapters/Chapter06.aux
 A level-1 auxiliary file: Chapters/supp_figures.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
@@ -13,19 +14,23 @@ A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 Database file #1: Bibliography_2.bib
 Warning--entry type for "three" isn't style-file defined
---line 1109 of file Bibliography_2.bib
+--line 1158 of file Bibliography_2.bib
 Warning--entry type for "webgl" isn't style-file defined
---line 1114 of file Bibliography_2.bib
+--line 1163 of file Bibliography_2.bib
 Warning--entry type for "github" isn't style-file defined
---line 1119 of file Bibliography_2.bib
+--line 1168 of file Bibliography_2.bib
 Warning--entry type for "bioweb3D" isn't style-file defined
---line 1124 of file Bibliography_2.bib
+--line 1173 of file Bibliography_2.bib
 Warning--entry type for "security" isn't style-file defined
---line 1129 of file Bibliography_2.bib
+--line 1178 of file Bibliography_2.bib
 Warning--entry type for "caniuse" isn't style-file defined
---line 1134 of file Bibliography_2.bib
+--line 1183 of file Bibliography_2.bib
 Warning--entry type for "xmlref" isn't style-file defined
---line 1139 of file Bibliography_2.bib
+--line 1188 of file Bibliography_2.bib
+Warning--I didn't find a database entry for "Fiscer10"
+Warning--I didn't find a database entry for "randel13"
+Warning--I didn't find a database entry for "krcmery10"
+Warning--I didn't find a database entry for "brunet02"
 Warning--to sort, need author or key in xmlref
 Warning--to sort, need author or key in three
 Warning--to sort, need author or key in webgl
@@ -44,4 +49,5 @@ Warning--empty year in arendt124
 Warning--empty year in arendt124
 Warning--empty journal in guy08
 Warning--can't use both volume and number fields in macqueen67
-(There were 25 warnings)
+Warning--empty journal in williams80
+(There were 30 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{103}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -92,6 +92,23 @@ Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
 \newblock Accounting for technical noise in single-cell rna-seq experiments.
 \newblock \emph{Nature methods}, 2013.
 
+\bibitem[Briscoe et~al.(1999)Briscoe, Sussel, Serup, Hartigan-O'Connor,
+  Jessell, Rubenstein, and Ericson]{briscoe99}
+J~Briscoe, L~Sussel, P~Serup, D~Hartigan-O'Connor, TM~Jessell, JLR Rubenstein,
+  and J~Ericson.
+\newblock Homeobox gene nkx2. 2 and specification of neuronal identity by
+  graded sonic hedgehog signalling.
+\newblock \emph{Nature}, 398\penalty0 (6728):\penalty0 622--627, 1999.
+
+\bibitem[Brissova et~al.(2005)Brissova, Fowler, Nicholson, Chu, Hirshberg,
+  Harlan, and Powers]{brissova05}
+Marcela Brissova, Michael~J Fowler, Wendell~E Nicholson, Anita Chu, Boaz
+  Hirshberg, David~M Harlan, and Alvin~C Powers.
+\newblock Assessment of human pancreatic islet architecture and composition by
+  laser scanning confocal microscopy.
+\newblock \emph{Journal of Histochemistry \& Cytochemistry}, 53\penalty0
+  (9):\penalty0 1087--1097, 2005.
+
 \bibitem[Burges et~al.(2005)Burges, Shaked, Renshaw, Lazier, Deeds, Hamilton,
   and Hullender]{burges2005}
 Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole
@@ -121,6 +138,14 @@ M.~Dang and G.~Govaert.
 \newblock Spatial fuzzy clustering using {EM} and markov random fields.
 \newblock \emph{International Journal of System Research and Information
   Science}, 8\penalty0 (4):\penalty0 183--202, 1998.
+
+\bibitem[Demilly et~al.(2011)Demilly, Simionato, Ohayon, Kerner, Garc{\`e}s,
+  and Vervoort]{demilly11}
+Adrien Demilly, Elena Simionato, David Ohayon, Pierre Kerner, Alain Garc{\`e}s,
+  and Michel Vervoort.
+\newblock Coe genes are expressed in differentiating neurons in the central
+  nervous system of protostomes.
+\newblock \emph{PloS one}, 6\penalty0 (6):\penalty0 e21213, 2011.
 
 \bibitem[Dempster et~al.(1977)Dempster, Laird, Rubin, et~al.]{dempster77}
 Arthur~P Dempster, Nan~M Laird, Donald~B Rubin, et~al.
@@ -231,6 +256,12 @@ Carl Hauenschild, G~Czihak, A~Fischer, and R~Siewing.
 \newblock \emph{Platynereis dumerilii: mikroskopische Anatomie, Fortpflanzung,
   Entwicklung}.
 \newblock Fischer, 1969.
+
+\bibitem[Hellman(2009)]{hellman09}
+Bo~Hellman.
+\newblock Pulsatility of insulin release-a clinically important phenomenon.
+\newblock \emph{Upsala journal of medical sciences}, 114\penalty0 (4):\penalty0
+  193--205, 2009.
 
 \bibitem[Hutchinson et~al.(1995)Hutchinson, Jha, and Dixon]{hutchinson95}
 Thomas~H Hutchinson, Awadhesh~N Jha, and David~R Dixon.
@@ -384,6 +415,16 @@ Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
   expression and rna splicing.
 \newblock \emph{Genome research}, pages gr--161034, 2013.
 
+\bibitem[Marziliano et~al.(2007)Marziliano, Mannarino, Nespoli, Diegoli,
+  Pasotti, Malattia, Grasso, Pilotto, Porcu, Raisaro, et~al.]{marziliano07}
+Nicola Marziliano, Savina Mannarino, Luisa Nespoli, Marta Diegoli, Michele
+  Pasotti, Clara Malattia, Maurizia Grasso, Andrea Pilotto, Emanuele Porcu,
+  Arturo Raisaro, et~al.
+\newblock Barth syndrome associated with compound hemizygosity and
+  heterozygosity of the taz and ldb3 genes.
+\newblock \emph{American Journal of Medical Genetics Part A}, 143\penalty0
+  (9):\penalty0 907--915, 2007.
+
 \bibitem[McLachlan and Peel(2004)]{mclachlan04}
 Geoffrey McLachlan and David Peel.
 \newblock \emph{Finite mixture models}.
@@ -393,6 +434,15 @@ Geoffrey McLachlan and David Peel.
 G~Mendel.
 \newblock Versuche ber pflanzen-hybriden. verh.
 \newblock \emph{Naturforsch. Ver. Brnn}, 4:\penalty0 347, 1866.
+
+\bibitem[Michelson et~al.(1990)Michelson, Abmayr, Bate, Arias, and
+  Maniatis]{michelson90}
+Alan~M Michelson, Susan~M Abmayr, Michael Bate, A~Martinez Arias, and Tom
+  Maniatis.
+\newblock Expression of a myod family member prefigures muscle pattern in
+  drosophila embryos.
+\newblock \emph{Genes \& development}, 4\penalty0 (12a):\penalty0 2086--2097,
+  1990.
 
 \bibitem[Mitchell and Tjian(1989)]{mitchell89}
 Pamela~J Mitchell and Robert Tjian.
@@ -490,6 +540,14 @@ Daniel Ramsk{\"o}ld, Shujun Luo, Yu-Chieh Wang, Robin Li, Qiaolin Deng, Omid~R
 \newblock \emph{Nature biotechnology}, 30\penalty0 (8):\penalty0 777--782,
   2012.
 
+\bibitem[Rodriguez-Diaz et~al.(2011)Rodriguez-Diaz, Abdulreda, Formoso, Gans,
+  Ricordi, Berggren, and Caicedo]{rodriguez11}
+Rayner Rodriguez-Diaz, Midhat~H Abdulreda, Alexander~L Formoso, Itai Gans,
+  Camillo Ricordi, Per-Olof Berggren, and Alejandro Caicedo.
+\newblock Autonomic axons in the human endocrine pancreas show unique
+  innervation patterns.
+\newblock \emph{Cell metabolism}, 14\penalty0 (1):\penalty0 45, 2011.
+
 \bibitem[Rouse(1999)]{rouse99}
 Greg~W Rouse.
 \newblock Trochophore concepts: ciliary bands and the evolution of larvae in
@@ -568,6 +626,11 @@ Diethard Tautz and Christine Pfeifle.
   segmentation gene hunchback.
 \newblock \emph{Chromosoma}, 98\penalty0 (2):\penalty0 81--85, 1989.
 
+\bibitem[Terakita(2005)]{terakita05}
+Akihisa Terakita.
+\newblock The opsins.
+\newblock \emph{Genome biology}, 6\penalty0 (3):\penalty0 213, 2005.
+
 \bibitem[Tessmar-Raible and Arendt(2003)]{tessmar03}
 Kristin Tessmar-Raible and Detlev Arendt.
 \newblock Emerging systems: between vertebrates and arthropods, the
@@ -601,10 +664,24 @@ Zhong Wang, Mark Gerstein, and Michael Snyder.
 \newblock \emph{Nature Reviews Genetics}, 10\penalty0 (1):\penalty0 57--63,
   2009{\natexlab{b}}.
 
+\bibitem[Weintraub et~al.(1991)Weintraub, Davis, Tapscott, Thayer, Krause,
+  Benezra, Blackwell, Turner, Rupp, Hollenberg, et~al.]{weintraub91}
+Harold Weintraub, Robert Davis, Stephen Tapscott, Matthew Thayer, Michael
+  Krause, Robert Benezra, T~Keith Blackwell, David Turner, Ralph Rupp, Stanley
+  Hollenberg, et~al.
+\newblock The myod gene family: nodal point during specification of the muscle
+  cell lineage.
+\newblock \emph{Science}, 251\penalty0 (4995):\penalty0 761--766, 1991.
+
 \bibitem[Wilde(2007)]{Wilde07}
 Erik Wilde.
 \newblock Putting things to rest.
 \newblock \emph{Transport}, 15\penalty0 (November):\penalty0 567--583, 2007.
+
+\bibitem[Williams et~al.(1980)]{williams80}
+Peter~L Williams et~al.
+\newblock Gray's anatomy.
+\newblock 1980.
 
 \bibitem[Wu(1982)]{Wu82}
 Fa-Yueh Wu.
@@ -619,6 +696,11 @@ Liying Yan, Mingyu Yang, Hongshan Guo, Lu~Yang, Jun Wu, Rong Li, Ping Liu, Ying
 \newblock Single-cell rna-seq profiling of human preimplantation embryos and
   embryonic stem cells.
 \newblock \emph{Nature structural \& molecular biology}, 2013.
+
+\bibitem[Young et~al.(2013)Young, Woodford, and O'Dowd]{young13}
+Barbara Young, Phillip Woodford, and Geraldine O'Dowd.
+\newblock \emph{Wheater's functional histology: a text and colour atlas}.
+\newblock Elsevier Health Sciences, 2013.
 
 \bibitem[Yuille(1990)]{Yuille90}
 Alan~L Yuille.

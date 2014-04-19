@@ -1,18 +1,39 @@
 %
 \chapter{Introduction}\label{ch:background}
 %
-\section{Gene expression in complex tissues}\label{sec:gene_expression_background}
+    Complex tissues, like the brain are coherent structures composed by large numbers of cells. These cells are not identical to each other and a complex biological tissue can be viewed as an interconnected mosaic of cells having different functions, working together to achieve the global function of the organ. When looking closely at this mosaic of cells, it is easy to observe under a microscope \cite{young13} that the spatial organisation of the cells is not random. First, visually, cells composing the tissue may have different anatomical characteristics. Second, when observing the cells life, different cells in different parts of the complex tissue will exhibit different behaviour. In this context it is possible to classify all the cells of a complex tissue into different categories of cells that behave in the same way. These categories are known as \emph{cell types}. Consequently, the definition of a complex biological tissue may be an ``ensemble of cells belonging to different cell types and organized in sub-tissues".\\
+    
+     As an example, when considering the pancreas as shown in Figure \ref{fig:pancreas} this complex tissue exhibits an islet architecture \cite{brissova05} with the vast majority of cells belonging to a first cell type organised in spatial structures called \emph{acini} and islets of cells from an other cell type which are anatomically and functionally different called \emph{Langerhans islets}. Interestingly, these two cell types have very different function. Cells that compose the acini define the \emph{exocrine} pancreas and release their product out of the body, namely digestive enzymes into the digestive track \cite{rodriguez11} whereas the $\approx$ 1 million cells \cite{hellman09} from the Langerhans islets define the \emph{endocrine} pancreas releasing hormones such as Insulin or glucagon into the body via the bloodstream. Importantly, as defined above, the complex tissue called pancreas has a coherent overall function which is helping the digestion and controlling blood sugar level but when looking at the cell types level it is fascinating to see that a wide variety of functions are displayed.\\
      
-          \subsection{Spatial organization of complex biological tissues like the brain}
-     This section meant to ask some of the fundamental questions that intrinsically motivate the work presented in the rest of this thesis. Complex tissues, the most obvious example of which is the brain, can be viewed as an interconnected mosaic of cells having different functions, working together to achieve the global function of the organ.\\
+\begin{figure}[bth]
+\begin{center}
+  \includegraphics[width=0.8\linewidth]{gfx/chapter1/pancreas.png}
+\end{center}
+  \caption{Illustrated section of a dog's pancreas. Acini and Langerhans Islets are indicated by arrows. Public domain work published in \cite{williams80}}
+  \label{fig:pancreas}
+\end{figure}
+    
      
-     When looking closely at this mosaic of cells, it is easy to observe that the spatial organisation is not random. Indeed, cells that serve the same function will often be close to each other, thus defining functional tissues. However, the spatial coherency of those tissues is not necessarily always the same. Some cell types may consist of cells that are scattered inside another more spatially coherent tissue. To illustrate this, an interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?", the extensions created by the axons of neurons will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \cite{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
+    As shown in Figure \ref{fig:pancreas}, sub-tissues in complex biological tissues tend to be spatially coherent. In other words cells that belong to the same cell type are usually structured spatially and as a result as a general rule it seems sensible to assume that cells spatially close to one another have a greater probability to belong to the same cell type. However, the spatial coherency of these sub-tissues is not necessarily always the same. Some cell types may consist of cells that are scattered inside another more spatially coherent tissue. As shown schematically in Figure \ref{fig:neuron}, an interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?", the extensions created by the axons of neurons will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \cite{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
+    
+\begin{figure}[bth]
+\begin{center}
+  \includegraphics[width=0.8\linewidth]{gfx/chapter1/neuron.png}
+\end{center}
+  \caption{GFP staining of a pyramydal cell in mouse cortex showing dendrites and axons of a neuron linked and at the center the soma where the nucleus is located. This Figure has published under Creative Commons Generic license in \cite{lee06}.}
+  \label{fig:neuron}
+\end{figure}
+	
+    
      
-     Keeping this in mind could prove important to improve the results. This fact and its consequences on the work presented herein are detailed in chapters \ref{ch:HMRF}, \ref{ch:simulations} and \todo{add chapter 6}.\\
+     Keeping this in mind could prove important to improve the results. This fact and its consequences on the work presented herein are detailed in chapters \ref{ch:HMRF}, \ref{ch:simulations} and \ref{ch:biology}.\\
      
-     So far, organs and cell types have been defined by their anatomical traits. However, the functional heterogeneity of complex tissues goes further that simple anatomical traits. As a result, I will be interested in traits that fundamentally define how cells are functioning.
+     So far, organs and cell types have been defined by mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further that simple anatomical traits. For example, in the case of the endocrine pancreas presented above, the Langerhans islets anatomically look like they are composed of a single coherent cell type. However, when looking closely at the function of the cells composing them unveils a completely different story. Indeed, despite their apparent similarity, $\alpha$-cells release the hormone glucagon into the bloodstream, a signal to increase the sugar level in the blood, when $\beta$-cells release the hormone insulin which has the exact opposite effect \cite{costanzo06}.\\
      
-     \subsection{Generalities about gene expression and development}  
+     This very telling example shows that defining cell types based on their anatomical traits is clearly insufficient to characterize tissues.  As a result, I will be interested in traits that fundamentally define how cells are functioning.
+
+\section{Generalities about gene expression and development}\label{sec:gene_expression_background}     
+       
      Throughout this thesis the term \emph{cell} will be used to refer to eukaryotic cells and, more specifically, those of multicellular organisms. Every cell in a complex organism possesses the same genome, that is, the sum of all the genetic information contained in the cell (nucleus and other compartments). This fundamental homogeneity is in plain contradiction with the heterogeneity observed anatomically. If every cell has the exact same DNA, where does the great variability between cell types come from? In other words, what makes a neurone become a neurone and not a pancreatic cell? Answering this question defines the field of developmental biology.\\
      
      A short answer to many developmental biology questions actually is: same genome but different pattern of gene expression. As a central cellular activity, numerous traits exhibited by cells throughout their life from their differentiation to their death, are defined by the way they express some specific parts of their genomes.\\
@@ -23,16 +44,16 @@
 	
 	A portion of the RNA molecules are translated into proteins that can have very different purposes. Some will serve directly in the cellular life as functional/structural agents (elements of the ATP synthase for example \cite{boyer97}), others will be excreted by the cell and will serve a purpose at the scale of the organism \cite{kaiser84} others called transcription factors will have a regulatory effect on gene expression \cite{mitchell89}. In other words the expression of gene $G_a$, coding for protein $P_a$ might activate, accelerate, inactivate or decelerate the expression of gene $G_b$ and potentially others. This outlines the complex interdependent regulatory system that is gene expression, see Figure \ref{fig:cells}. For precise examples of gene regulatory networks, see \cite{gossen92, shinozaki03,fuqua01,balmer02}.\\
 	
+	
 \begin{figure}[bth]
-        \myfloatalign
-        \subfloat[Undifferentiated cell with a circular shape.]
-        {\label{fig:undiff_cell}
-        \includegraphics[width=.45\linewidth]{gfx/chapter1/cell.png}} \quad
-        \subfloat[Differentiated neuron, with typical axons development.]
-        {\label{fig:diff_cell}%
-         \includegraphics[width=.45\linewidth]{gfx/chapter1/neurone.png}}
-        \caption{Cell types anatomical heterogeneity, gene expression and protein translation and gene regulatory networks. The schematics shows that genes in the DNA are transcribed to RNA molecules that are further translated outside the nucleus into proteins. Those proteins can serve various purposes inside the cell or come back to the nucleus to regulate gene expression.}\label{fig:cells}
+\begin{center}
+  \includegraphics[width=0.8\linewidth]{gfx/chapter1/cell.png}
+\end{center}
+  \caption{Gene expression and protein translation and gene regulatory networks. The schematics shows that genes in the DNA are transcribed to RNA molecules that are further translated outside the nucleus into proteins. Those proteins can serve various purposes inside the cell or come back to the nucleus to regulate gene expression.}
+  \label{fig:cells}
 \end{figure}
+	
+	
 	
 	During development, different mechanisms exist that allow gene expression to become differential as cell divisions occur. This is how the asymmetrical axis (dorso-ventral, and basal-apical) of the body are defined. One of the main mechanisms involves signalling gradients. The first of these gradients has to come from the zygote which must contain some asymmetrically distributed chemical so that the first divisions lead to non identical cells.\\
 	
