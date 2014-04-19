@@ -24,8 +24,6 @@
   \label{fig:neuron}
 \end{figure}
 	
-    
-     
      Keeping this in mind could prove important to improve the results. This fact and its consequences on the work presented herein are detailed in chapters \ref{ch:HMRF}, \ref{ch:simulations} and \ref{ch:biology}.\\
      
      So far, organs and cell types have been defined by mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further that simple anatomical traits. For example, in the case of the endocrine pancreas presented above, the Langerhans islets anatomically look like they are composed of a single coherent cell type. However, when looking closely at the function of the cells composing them unveils a completely different story. Indeed, despite their apparent similarity, $\alpha$-cells release the hormone glucagon into the bloodstream, a signal to increase the sugar level in the blood, when $\beta$-cells release the hormone insulin which has the exact opposite effect \cite{costanzo06}.\\
@@ -72,7 +70,18 @@
      
     Once isolated from a population of cells, transcripts undergo fragmentation to obtain an average length of 200-300 nucleotides. The next step is the reverse transcription, which creates a complementary DNA (cDNA) library using viral reverse transcriptase enzymes. After amplification using quantitative Polymerase Chain Reaction (qPCR), the cDNA library is ready to be sequenced by NGS technology.\\
     
-    The sequencing generates a large dataset of small reads, which need to be mapped back onto the reference genome of the considered species, providing this genome is available. In this case, the resulting dataset will reflect a snapshot of the whole transciptome in the studied cell population. In a case where the reference genome is not fully available, an alternative option is to map the reads back to a list of known gene sequences. The resulting dataset will represent a quantitative image of the considered genes in the cell population at one point in time.\\
+    NGS technologies refers to numerous experimental techniques used to acquire the DNA sequences from a sample with a high throughput. I will not extensively describe all of these methods within this thesis but succinctly present some of them. 
+    
+\begin{itemize}
+	\item Massively parallel signature sequencing (MPSS) \cite{brenner00} is the first NGS developed in the 1990s. The method revolves around beads that capture the DNA and adaptors biding and subsequently sequenced.
+	
+	\item 454 pyrosequencing \cite{margulies05} is a sequencing technique that revolves around the luciferase a light emitting protein to detect and sequence the nucleotide while the DNA molecules are amplified via Polymerase Chain Reaction (PCR)
+	
+	\item Illumina sequencing \cite{bentley08} is one of the mainly used NGS technology nowadays. Similarly to 454 pyrosequencing, dyes are used to detect the nucleotides of ``DNA colonies" while they are amplified inside picoliter volume wells.
+    
+\end{itemize}     
+    
+    All the described sequencing methods generate large datasets of small reads, which need to be mapped back onto the reference genome of the considered species, providing this genome is available. In this case, the resulting dataset will reflect a snapshot of the whole transciptome in the studied cell population. In a case where the reference genome is not fully available, an alternative option is to map the reads back to a list of known gene sequences. The resulting dataset will represent a quantitative image of the considered genes in the cell population at one point in time.\\
     
     Because of technical limitations in this sequencing protocol, until very recently the starting quantity of RNA had to be relatively important (this issue is discussed further in \ref{sec:single_cell_rnaseq}). This is why most of the published RNA sequencing studies use a population of cell as a starting point. This however, means that the gene expression landscape obtained as an output will represent an averaged expression over all the cells used as an input.\\
     
