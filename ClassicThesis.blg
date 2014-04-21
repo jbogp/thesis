@@ -12,25 +12,22 @@ A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: FrontBackmatter/Colophon.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
-Database file #1: Bibliography_2.bib
+Database file #1: Bibliography.bib
 Warning--entry type for "three" isn't style-file defined
---line 1158 of file Bibliography_2.bib
+--line 1238 of file Bibliography.bib
 Warning--entry type for "webgl" isn't style-file defined
---line 1163 of file Bibliography_2.bib
+--line 1243 of file Bibliography.bib
 Warning--entry type for "github" isn't style-file defined
---line 1168 of file Bibliography_2.bib
+--line 1248 of file Bibliography.bib
 Warning--entry type for "bioweb3D" isn't style-file defined
---line 1173 of file Bibliography_2.bib
+--line 1253 of file Bibliography.bib
 Warning--entry type for "security" isn't style-file defined
---line 1178 of file Bibliography_2.bib
+--line 1258 of file Bibliography.bib
 Warning--entry type for "caniuse" isn't style-file defined
---line 1183 of file Bibliography_2.bib
+--line 1263 of file Bibliography.bib
 Warning--entry type for "xmlref" isn't style-file defined
---line 1188 of file Bibliography_2.bib
+--line 1268 of file Bibliography.bib
 Warning--I didn't find a database entry for "Fiscer10"
-Warning--I didn't find a database entry for "randel13"
-Warning--I didn't find a database entry for "krcmery10"
-Warning--I didn't find a database entry for "brunet02"
 Warning--to sort, need author or key in xmlref
 Warning--to sort, need author or key in three
 Warning--to sort, need author or key in webgl
@@ -50,4 +47,4 @@ Warning--empty year in arendt124
 Warning--empty journal in guy08
 Warning--can't use both volume and number fields in macqueen67
 Warning--empty journal in williams80
-(There were 30 warnings)
+(There were 27 warnings)

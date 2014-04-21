@@ -171,7 +171,7 @@ When computing $t_{i\,h}^{l+1}$, the mean fields approximation yields the follow
 \label{eq:fixedpoint}
 t_{i\,h}^{l+1} \approx \frac{f_{h} (y_i;\boldsymbol{\theta}_{h}^l)\; exp\{\beta_h^l \: \sum_{j \in N(i)} t_{j\,h}^{l+1}\}}{\sum_{u=1}^K \: f_{u} (y_i;\boldsymbol{\theta}_{u}^l)\; exp\{\beta_u^l \: \sum_{j \in N(i)} t_{j\,u}^{l+1}\}}
 \end{align}
-\todo{write the fixed point algorithm}
+
 
 For the normalizing constant $W(\boldsymbol{\beta})$, by applying the mean-field approximation, using equation (\ref{eq:Energy}), $W(\boldsymbol{\beta})$ can be written as:
 
@@ -198,10 +198,10 @@ Once the new partition is created, the values of $\Theta$ that maximize the mode
 \end{align*}
 
 In order to maximize $\boldsymbol{\beta}^{l+1}$, an iterative approach such as the gradient ascent algorithm, the positive version of the gradient descent algorithm \cite{burges2005} was used for each $\beta_h^{l+1}, h \in [1,K]$ over the function $R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)$. \\
-\todo{write the gradient ascent algorithm}
 
 
-The described EM algorithm, summarized in \todo{write EM algo} leads, after convergence, to a partition over $K$ clusters that finds a local maximum of the model's expectation. Importantly, the maximum reached is only a local one as indeed the EM algorithm does not guarantee to reach the global maximum of a function. It is interesting to note that this fact makes the initialization of the algorithm a crucial step. I will discuss this further in chapter \ref{ch:simulations}.\\
+
+The described EM algorithm, summarized in leads, after convergence, to a partition over $K$ clusters that finds a local maximum of the model's expectation. Importantly, the maximum reached is only a local one as indeed the EM algorithm does not guarantee to reach the global maximum of a function. It is interesting to note that this fact makes the initialization of the algorithm a crucial step. I will discuss this further in chapter \ref{ch:simulations}.\\
 
 
 \section{Estimating K}
@@ -218,7 +218,7 @@ Because $Log\;L(\boldsymbol{\psi})$ monotonically increases with the number of p
 - 2\; log\:L(\boldsymbol{\psi}) + P\:log\:N
 \end{align*}
 
-By computing the final likelihood for a large range of possible $K$ values, the minimal resulting BIC will be chosen as the optimal number of classes, $\hat{K}$. When applied to the biological data however, this approach is not ideal as I will describe later in this thesis (see \todo{ref biological BIC}) but yields good results when applied to simulated data (see simulations \todo{ref next chapter}).\\
+By computing the final likelihood for a large range of possible $K$ values, the minimal resulting BIC will be chosen as the optimal number of classes, $\hat{K}$. When applied to the biological data however, this approach is not ideal as I will describe later in this thesis (see chapter \ref{ch:biology}) but yields good results when applied to simulated data (see chapter \ref{ch:simulations}).\\
 
 \section{Summary}
 The goal was to allocate the $S=32,203$ ``cubes" described above in chapter \ref{ch:singlecell} into $K$ clusters, where $K$ is unknown, using the binarised matrix of $M=86$ gene expression measurements, $Y$. To incorporate spatial information into the clustering scheme, I assumed that $Z$, the (latent) vector of length $S$ that describes the allocation of cells to clusters, satisfies a first-order Markov Random Field (MRF), where the probability that a cell is allocated to a given state depends only upon the states of its immediate neighbours (Figure \ref{fig:graph}). Additionally, within cluster $h$ $(h \in [1,K])$, I assumed that the expression of gene $m$ follows a Bernoulli distribution with parameter $\theta_{m,h}$. The $M \times K$ matrix  $\Theta$ denotes the full set of Bernoulli parameters. In a typical MRF, the degree of spatial cohesion is determined by a single parameter $\beta$, which is assumed to be constant for all clusters \cite{subudhi14,zhang14}. However, in the context of tissue organisation, it is reasonable to expect that the degree of spatial cohesion will differ between clusters; consequently,  a separate value of $\beta$ is estimated for each of the $K$ clusters.\\

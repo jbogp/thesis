@@ -1,4 +1,4 @@
-\begin{thebibliography}{103}
+\begin{thebibliography}{111}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -66,6 +66,15 @@ WILLIAM~P Bartlett and GARY~A Banker.
 \newblock \emph{The Journal of neuroscience}, 4\penalty0 (8):\penalty0
   1944--1953, 1984.
 
+\bibitem[Bentley et~al.(2008)Bentley, Balasubramanian, Swerdlow, Smith, Milton,
+  Brown, Hall, Evers, Barnes, Bignell, et~al.]{bentley08}
+David~R Bentley, Shankar Balasubramanian, Harold~P Swerdlow, Geoffrey~P Smith,
+  John Milton, Clive~G Brown, Kevin~P Hall, Dirk~J Evers, Colin~L Barnes,
+  Helen~R Bignell, et~al.
+\newblock Accurate whole human genome sequencing using reversible terminator
+  chemistry.
+\newblock \emph{Nature}, 456\penalty0 (7218):\penalty0 53--59, 2008.
+
 \bibitem[Besag(1975)]{Besag75}
 Julian Besag.
 \newblock Statistical analysis of non-lattice data.
@@ -92,6 +101,15 @@ Philip Brennecke, Simon Anders, Jong~Kyoung Kim, Aleksandra~A Ko{\l}odziejczyk,
 \newblock Accounting for technical noise in single-cell rna-seq experiments.
 \newblock \emph{Nature methods}, 2013.
 
+\bibitem[Brenner et~al.(2000)Brenner, Johnson, Bridgham, Golda, Lloyd, Johnson,
+  Luo, McCurdy, Foy, Ewan, et~al.]{brenner00}
+Sydney Brenner, Maria Johnson, John Bridgham, George Golda, David~H Lloyd,
+  Davida Johnson, Shujun Luo, Sarah McCurdy, Michael Foy, Mark Ewan, et~al.
+\newblock Gene expression analysis by massively parallel signature sequencing
+  (mpss) on microbead arrays.
+\newblock \emph{Nature biotechnology}, 18\penalty0 (6):\penalty0 630--634,
+  2000.
+
 \bibitem[Briscoe et~al.(1999)Briscoe, Sussel, Serup, Hartigan-O'Connor,
   Jessell, Rubenstein, and Ericson]{briscoe99}
 J~Briscoe, L~Sussel, P~Serup, D~Hartigan-O'Connor, TM~Jessell, JLR Rubenstein,
@@ -108,6 +126,12 @@ Marcela Brissova, Michael~J Fowler, Wendell~E Nicholson, Anita Chu, Boaz
   laser scanning confocal microscopy.
 \newblock \emph{Journal of Histochemistry \& Cytochemistry}, 53\penalty0
   (9):\penalty0 1087--1097, 2005.
+
+\bibitem[Brunet and Pattyn(2002)]{brunet02}
+JF~Brunet and A~Pattyn.
+\newblock Phox2 genes-from patterning to connectivity.
+\newblock \emph{Current opinion in genetics \& development}, 12\penalty0
+  (4):\penalty0 435, 2002.
 
 \bibitem[Burges et~al.(2005)Burges, Shaked, Renshaw, Lazier, Deeds, Hamilton,
   and Hullender]{burges2005}
@@ -132,6 +156,10 @@ RJ~Colello and RW~Guillery.
 \newblock The early development of retinal ganglion cells with uncrossed axons
   in the mouse: retinal position and axonal course.
 \newblock \emph{Development}, 108\penalty0 (3):\penalty0 515--523, 1990.
+
+\bibitem[Costanzo et~al.(2006)Costanzo, Save, and Friend]{costanzo06}
+Linda~S Costanzo, You Save, and Tell~A Friend.
+\newblock Brs physiology (board review series), 2006.
 
 \bibitem[Dang and Govaert(1998)]{Dang98}
 M.~Dang and G.~Govaert.
@@ -341,6 +369,12 @@ Zbynek Kozmik, Jana Ruzickova, Kristyna Jonasova, Yoshifumi Matsumoto, Pavel
 \newblock \emph{Proceedings of the National Academy of Sciences}, 105\penalty0
   (26):\penalty0 8989--8993, 2008.
 
+\bibitem[Krcmery et~al.(2010)Krcmery, Camarata, Kulisz, and Simon]{krcmery10}
+Jennifer Krcmery, Troy Camarata, Andre Kulisz, and Hans-Georg Simon.
+\newblock Nucleocytoplasmic functions of the {PDZ}-{LIM} protein family: new
+  insights into organ development.
+\newblock \emph{Bioessays}, 32\penalty0 (2):\penalty0 100--108, 2010.
+
 \bibitem[Kulkarni et~al.(2012)Kulkarni, Doijade, Devrukhkar, Zilpe, and
   Surana]{Dinesh12}
 Dinesh~B. Kulkarni, Mahesh~M. Doijade, Chetan~S. Devrukhkar, Ganesh~R. Zilpe,
@@ -358,6 +392,12 @@ JE~Landegent, De~Wal, N~Jansen In, RA~Baan, JHJ Hoeijmakers, and M~Van
   hybridocytochemical detection of specific nucleic acid sequences.
 \newblock \emph{Experimental cell research}, 153\penalty0 (1):\penalty0 61--72,
   1984.
+
+\bibitem[Lee(2006)]{lee06}
+Wei-Chung~Allen Lee.
+\newblock \emph{Cellular and molecular analysis of neuronal structure
+  plasticity in the mammalian cortex}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2006.
 
 \bibitem[Lein et~al.(2007)Lein, Hawrylycz, Ao, Ayres, Bensinger, Bernard, Boe,
   Boguski, Brockway, Byrnes, Chen, Chen, Chen, Chin, Chong, Crook, Czaplinska,
@@ -406,6 +446,14 @@ James MacQueen et~al.
   observations.
 \newblock In \emph{Proceedings of the fifth Berkeley symposium on mathematical
   statistics and probability}, volume~1, page~14. California, USA, 1967.
+
+\bibitem[Margulies et~al.(2005)Margulies, Egholm, Altman, Attiya, Bader,
+  Bemben, Berka, Braverman, Chen, Chen, et~al.]{margulies05}
+Marcel Margulies, Michael Egholm, William~E Altman, Said Attiya, Joel~S Bader,
+  Lisa~A Bemben, Jan Berka, Michael~S Braverman, Yi-Ju Chen, Zhoutao Chen,
+  et~al.
+\newblock Genome sequencing in microfabricated high-density picolitre reactors.
+\newblock \emph{Nature}, 437\penalty0 (7057):\penalty0 376--380, 2005.
 
 \bibitem[Marinov et~al.(2013)Marinov, Williams, McCue, Schroth, Gertz, Myers,
   and Wold]{marinov13}
@@ -539,6 +587,15 @@ Daniel Ramsk{\"o}ld, Shujun Luo, Yu-Chieh Wang, Robin Li, Qiaolin Deng, Omid~R
   circulating tumor cells.
 \newblock \emph{Nature biotechnology}, 30\penalty0 (8):\penalty0 777--782,
   2012.
+
+\bibitem[Randel et~al.(2013)Randel, Bezares-Calder{\'o}n, G{\"u}hmann, Shahidi,
+  and J{\'e}kely]{randel13}
+Nadine Randel, Luis~A Bezares-Calder{\'o}n, Martin G{\"u}hmann, R{\'e}za
+  Shahidi, and G{\'a}sp{\'a}r J{\'e}kely.
+\newblock Expression dynamics and protein localization of rhabdomeric opsins in
+  platynereis larvae.
+\newblock \emph{Integrative and comparative biology}, 53\penalty0 (1):\penalty0
+  7--16, 2013.
 
 \bibitem[Rodriguez-Diaz et~al.(2011)Rodriguez-Diaz, Abdulreda, Formoso, Gans,
   Ricordi, Berggren, and Caicedo]{rodriguez11}
