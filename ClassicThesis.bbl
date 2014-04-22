@@ -556,7 +556,8 @@ Hanchuan Peng, Zongcai Ruan, Fuhui Long, Julie~H Simpson, and Eugene~W Myers.
 \newblock \emph{Nature Biotechnology}, 28\penalty0 (4):\penalty0 348--353,
   2010.
 \newblock URL
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=pmcentrez&rendertype=abstract}.
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=%
+pmcentrez&rendertype=abstract}.
 
 \bibitem[Pettit and Marioni(2013)]{Pettit13}
 Jean-Baptiste Pettit and John~C Marioni.
