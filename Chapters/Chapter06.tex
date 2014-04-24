@@ -4,7 +4,7 @@
 
 
 	\section{Choosing K with the BIC on biological data}
-	After validating the HRMF method using simulated data as detailed in Chapter \ref{ch:simulations}, I present the clustering results when applied to the single cell expression dataset in \platy{}'s brain. Before analysing the results, the first step is to choose $K$. To this end, as presented in Chapter \ref{ch:HMRF} I applied the BIC method.\\
+	After validating the HMRF method using simulated data as detailed in Chapter \ref{ch:simulations}, I present the clustering results when applied to the single cell expression dataset in \platy{}'s brain. Before analysing the results, the first step is to choose $K$. To this end, as presented in Chapter \ref{ch:HMRF} I applied the BIC method.\\
 	
 	However, as shown in Figure \ref{fig:realBIC} (blue dots), the BIC does not reach a clear minimum but instead reaches a plateau after a given number of clusters. This is most likely due to the highly, but not perfectly symmetrical nature of the brain: with a small $K$, the same ``tissue" on both the left and the right hand side of the brain will belong to the same cluster. However, because the two sides of the brain are not perfectly symmetrical, as $K$ increases the left and right part of the same ``tissue" will be clustered separately. As a result, the likelihood continues to increase sufficiently to explain the flattened BIC curve.\\
 	
