@@ -1,7 +1,7 @@
 %************************************************
 \chapter{Hidden Markov Random fields for biological data clustering}\label{ch:HMRF} 
 %************************************************
-This chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in chapter \ref{ch:singlecell}, into $K$ clusters ($K \in [2,\infty[$). Subsequently, we will describe our approach for estimating $K$.
+This chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in chapter \ref{ch:singlecell}, into $K$ clusters ($K \in {2, 3,...}$). Subsequently, we will describe our approach for estimating $K$.
 
 \section{Markov random fields}
 
@@ -10,16 +10,16 @@ Let $S$ be a finite set of sites, each of which represents one ``cube" of data. 
 
 With prior biological data, one can manually create the spatial dependency graph by linking nodes together that are known to be functionally similar. In the case of this study however, no such prior knowledge being available, it is necessary to define the spatial dependences in a different way.\\
 
-The central hypothesis while developing this method is to assume that ``cubes" that are close to one another are more likely to belong to the same cell type (i.e cluster). Consequently, these spatial dependencies will be incorporated into a \emph{neighbouring graph} where  ``cubes" close to each other will be joined be edges.\\
+The central hypothesis while developing this method is to assume that ``cubes" that are close to one another are more likely to belong to the same cell type (i.e cluster). Consequently, these spatial dependencies will be incorporated into a \emph{neighbourhood graph} where  ``cubes" close to each other will be joined.\\
 
-In the case of this study, because of the cell model used the graph will be a regular grid. In this context, there are several ways to translate the spatial relationship into a neighbouring graphs depending on the number of neighbours considered for each site. As shown in Figure \ref{fig:graph}, the choice between a first or a second order neighbourhood system is purely technical. However, having more neighbours for each site will increase the complexity and ultimately the computational burden. Indeed, in $G$, a \emph{clique} $C_1$ is a subset of nodes that are all interconnected, i.e it is possible to go from any nodes in $C_1$ to any other node in $C_1$ by simply following one single edge.\\
+In the case of this study, because of the cell model used the graph will be a regular grid. In this context, there are several ways to translate the spatial relationship into a neighbourhood graphs depending on the number of neighbours considered for each site. As shown in Figure \ref{fig:graph}, the choice between a first or a second order neighbourhood system is purely technical. However, having more neighbours for each site will increase the complexity and ultimately the computational burden. Indeed, in $G$, a \emph{clique} $c$ is a subset of nodes that are all interconnected, i.e it is possible to go from any nodes in $c$ to any other node in $c$ by simply following one single edge.\\
 
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter4/graph.png}}
-\caption{{\bf First order and second order neighbouring systems.} In the first order neighbouring system, each site in the graph is linked to a maximum of 6 other sites in 3D while in the second order neighbouring system each site can be linked to a maximum of 14 other sites. The Markov property on the graph implies that the state of any node (the red one for example) can be fully determined by knowing the state of its neighbours (the orange ones).}\label{fig:graph}
+\caption{{\bf First order and second order neighbourhood systems.} In the first order neighbourhood system, each site in the graph is linked to a maximum of 6 other sites in 3D while in the second order neighbourhood system each site can be linked to a maximum of 14 other sites. The Markov property on the graph implies that the state of any node (the red one for example) can be fully determined by knowing the state of its neighbours (the orange ones).}\label{fig:graph}
 	\end{figure}
 
-	Let $C$ be the set of cliques of $G$. In a first order neighbouring system, $C$ is therefore the set of all sites alone and all the pairs of sites that are neighbours of one another. These are first and second order cliques, containing one or two sites. In a second order neighbouring graph however, the set of all cliques in $G$ also contains 3rd and 4th order cliques. Because the method implies iterating over the set of all cliques of the graph as I will detail in the next paragraphs, I decided to use a first order neighbourhood system to decrease the computational burden.
+	Let $C$ be the set of cliques of $G$. In a first order neighbourhood system, $C$ is therefore the set of all sites alone and all the pairs of sites that are neighbours of one another. These are first and second order cliques, containing one or two sites. In a second order neighbourhood graph however, the set of all cliques in $G$ also contains 3rd and 4th order cliques. Because the method implies iterating over the set of all cliques of the graph as I will detail in the next paragraphs, I decided to use a first order neighbourhood system to decrease the computational burden.
 
 
 	\subsection{Field distribution}
@@ -40,7 +40,7 @@ P_G (\boldsymbol{z;\beta}) &= W(\boldsymbol{\beta})^{-1} \exp{(-H(\boldsymbol{z;
 &= \frac{e^{-H(\boldsymbol{z;\beta})}}{\sum\limits_{\boldsymbol{z'}} e^{-H(\boldsymbol{z;\beta})}}
 \end{align}
 
-with $H(\boldsymbol{z})$ the Energy function summed over the cliques $C$ of the graph $G$. Since we are working with a first order neighbouring system, $C$ is the set of all pairs of sites $(i,j)$ that are neighbours. We chose to consider $H$ as a function of vector $\boldsymbol{\beta} = (\beta_1, \hdots, \beta_K)$ containing $K$ parameters as detailed in the next paragraph, and $v_{i,j}$ a potential function set to 1 in our method because we are working on a regular grid graph,  if the distances between sites were heterogeneous we could have used this function to weight the spatial dependence between sites. 
+with $H(\boldsymbol{z})$ the Energy function summed over the cliques $C$ of the graph $G$. Since we are working with a first order neighbourhood system, $C$ is the set of all pairs of sites $(i,j)$ that are neighbours. We chose to consider $H$ as a function of vector $\boldsymbol{\beta} = (\beta_1, \hdots, \beta_K)$ containing $K$ parameters as detailed in the next paragraph, and $v_{i,j}$ a potential function set to 1 in our method because we are working on a regular grid graph,  if the distances between sites were heterogeneous we could have used this function to weight the spatial dependence between sites. 
 
 \begin{align}
 \label{eq:Energy}
