@@ -85,25 +85,28 @@
 \contentsline {section}{\numberline {5.6}summary}{93}{section.5.6}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {HMRF clustering in the brain of \emph {{P}latynereis dumerillii}{}}}{95}{chapter.6}
 \contentsline {section}{\numberline {6.1}Choosing K with the BIC on biological data}{95}{section.6.1}
-\contentsline {section}{\numberline {6.2}Downstream analysis opportunities offered by the model}{96}{section.6.2}
+\contentsline {section}{\numberline {6.2}Parameters interpretation}{96}{section.6.2}
 \contentsline {section}{\numberline {6.3}Finding known biological structures to validate the method}{97}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}\emph {{P}. dumerillii}{}'s eyes}{97}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Mushroom bodies}{97}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Motor regions}{98}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Generating functional hypothesis about unknown biological tissues}{99}{section.6.4}
+\contentsline {section}{\numberline {6.4}Generating functional hypotheses about unknown biological tissues}{99}{section.6.4}
 \contentsline {section}{\numberline {6.5}Summary}{101}{section.6.5}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusions and future work}}{103}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{103}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Summary}{103}{subsection.7.1.1}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{105}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{107}{appendix.A}
-\contentsline {section}{\numberline {A.1}Dataset file specification}{107}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}JSON format}{107}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}XML format}{107}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}CSV format}{109}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Information layer file specification}{110}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}JSON format}{110}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}XML format}{111}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{112}{lstnumber.5.26}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusions and future work}}{105}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{105}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Summary}{105}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Future work}{107}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}HMRF future developments}{107}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Single cell RNA-seq back-mapping}{108}{subsection.7.2.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{109}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{111}{appendix.A}
+\contentsline {section}{\numberline {A.1}Dataset file specification}{111}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}JSON format}{111}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}XML format}{111}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}CSV format}{113}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Information layer file specification}{114}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}JSON format}{114}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}XML format}{115}{subsection.A.2.2}
+\contentsline {paragraph}{CSV format}{116}{lstnumber.5.26}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{115}{dummy.7}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{119}{dummy.7}

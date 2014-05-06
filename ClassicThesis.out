@@ -88,23 +88,26 @@
 \BOOKMARK [1][-]{section.5.6}{5.6 summary}{chapter.5}% 88
 \BOOKMARK [0][]{chapter.6}{6 HMRF clustering in the brain of Platynereis dumerillii}{part.1}% 89
 \BOOKMARK [1][-]{section.6.1}{6.1 Choosing K with the BIC on biological data}{chapter.6}% 90
-\BOOKMARK [1][-]{section.6.2}{6.2 Downstream analysis opportunities offered by the model}{chapter.6}% 91
+\BOOKMARK [1][-]{section.6.2}{6.2 Parameters interpretation}{chapter.6}% 91
 \BOOKMARK [1][-]{section.6.3}{6.3 Finding known biological structures to validate the method}{chapter.6}% 92
 \BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 P. dumerillii's eyes}{section.6.3}% 93
 \BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Mushroom bodies}{section.6.3}% 94
 \BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Motor regions}{section.6.3}% 95
-\BOOKMARK [1][-]{section.6.4}{6.4 Generating functional hypothesis about unknown biological tissues}{chapter.6}% 96
+\BOOKMARK [1][-]{section.6.4}{6.4 Generating functional hypotheses about unknown biological tissues}{chapter.6}% 96
 \BOOKMARK [1][-]{section.6.5}{6.5 Summary}{chapter.6}% 97
 \BOOKMARK [0][]{chapter.7}{7 Conclusions and future work}{part.1}% 98
 \BOOKMARK [1][-]{section.7.1}{7.1 Conclusions}{chapter.7}% 99
 \BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Summary}{section.7.1}% 100
-\BOOKMARK [-1][]{part.2}{Appendix}{}% 101
-\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}% 102
-\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}% 103
-\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}% 104
-\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}% 105
-\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}% 106
-\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}% 107
-\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}% 108
-\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}% 109
-\BOOKMARK [0][]{dummy.7}{Bibliography}{part.2}% 110
+\BOOKMARK [1][-]{section.7.2}{7.2 Future work}{chapter.7}% 101
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 HMRF future developments}{section.7.2}% 102
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Single cell RNA-seq back-mapping}{section.7.2}% 103
+\BOOKMARK [-1][]{part.2}{Appendix}{}% 104
+\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}% 105
+\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}% 106
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}% 107
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}% 108
+\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}% 109
+\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}% 110
+\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}% 111
+\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}% 112
+\BOOKMARK [0][]{dummy.7}{Bibliography}{part.2}% 113
