@@ -1,7 +1,7 @@
 %************************************************
 \chapter{Hidden Markov Random fields for biological data clustering}\label{ch:HMRF} 
 %************************************************
-This chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in chapter \ref{ch:singlecell}, into $K$ clusters ($K \in {2, 3,...}$). Subsequently, we will describe our approach for estimating $K$.
+This Chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in Chapter \ref{ch:singlecell}, into $K$ clusters ($K \in {2, 3,...}$). Subsequently, we will describe our approach for estimating $K$.
 
 \section{Markov random fields}
 
@@ -16,21 +16,21 @@ In the case of this study, because of the cell model used the graph will be a re
 
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter4/graph.png}}
-\caption{{\bf First order and second order neighbourhood systems.} In the first order neighbourhood system, each site in the graph is linked to a maximum of 6 other sites in 3D while in the second order neighbourhood system each site can be linked to a maximum of 14 other sites. The Markov property on the graph implies that the state of any node (the red one for example) can be fully determined by knowing the state of its neighbours (the orange ones).}\label{fig:graph}
+\caption{{\bf First order and second order neighbourhood systems.} In the first order neighbourhood system, each site in the graph is linked to a maximum of 6 other sites in 3D while in the second order neighbourhood system each site can be linked to a maximum of 14 other sites. The Markov property on the graph implies that the state of any node (the orange one for example) can be fully determined by knowing the state of its neighbours (the grey ones).}\label{fig:graph}
 	\end{figure}
 
 	Let $C$ be the set of cliques of $G$. In a first order neighbourhood system, $C$ is therefore the set of all sites alone and all the pairs of sites that are neighbours of one another. These are first and second order cliques, containing one or two sites. In a second order neighbourhood graph however, the set of all cliques in $G$ also contains 3rd and 4th order cliques. Because the method implies iterating over the set of all cliques of the graph as I will detail in the next paragraphs, I decided to use a first order neighbourhood system to decrease the computational burden.
 
 
 	\subsection{Field distribution}
-Let a Random Field $Z$ be defined as a set of random variables $Z = \{Z_i , \forall i \in S\}$ where $Z_i \in [1,K]$. For every site $i \in S$, let $N(i)$ represent the set of its neighbours (see \ref{sec:neighbours}) and $\boldsymbol{z_{S-\{i\}}}$ a realization of the field restricted to $S-\{i\} = \{j \in S, j \neq i\}$. $Z$ is a \emph{Markov Random Field} if and only if it follows the Markov property at every site :
+Let a Random Field $Z$ be defined as a set of random variables $Z = \{Z_i , \forall i \in S\}$ where $Z_i \in {1,...,K}$. For every site $i \in S$, let $N(i)$ represent the set of its neighbours (see \ref{sec:neighbours}) and $\boldsymbol{z_{S-\{i\}}}$ a realization of the field restricted to $S-\{i\} = \{j \in S, j \neq i\}$. $Z$ is a \emph{Markov Random Field} if and only if it follows the Markov property at every site :
 
 \begin{align}
 \label{eq:markov1}
 \forall i \in S, P_G (z_i \mid z_{S-\{i\}}) = P_G (z_i \mid z_j , j \in N(i))
 \end{align}
 
-Equation (\ref{eq:markov1}) states that the realization of the field, $z_{i}$ at any site $i \in S$ can be fully determined using only the state of its neighbours $N(i)$. In other words the probability that a ``cube" is in a given state depends only upon the state of its neighbours.\\
+Equation (\ref{eq:markov1}) states that the realization of the field, $z_{i}$ at any site $i \in S$ can be fully determined using only the state of its neighbours $N(i)$. In other words the probability that a ``cube'' is in a given state depends only upon the state of its neighbours.\\
 
 The Hammersley-Clifford theorem state that if $Z$ is a Markov Random Field, the joint distribution of the field $P_G$ follows a Gibbs distribution such that :
 
@@ -44,7 +44,7 @@ with $H(\boldsymbol{z})$ the Energy function summed over the cliques $C$ of the 
 
 \begin{align}
 \label{eq:Energy}
-H(\boldsymbol{z}) = - \sum\limits_{i \in S}\beta_{z_i}\sum_{\substack{i,j\\neighbours}}v_{i,j}\times\boldsymbol{1}_{[z_i = z_j]} 
+H(\boldsymbol{z}) = - \sum\limits_{i \in S}\beta_{z_i}\sum_{\substack{j \in N(i)}}v_{i,j}\times\boldsymbol{1}_{[z_i = z_j]} 
 \end{align}
 
 The denominator in (\ref{eq:prior}) where $\boldsymbol{z'}$ represents all the possible realizations of the field is a normalizing constant referred to as $W(\boldsymbol{\beta})$.\\
@@ -58,13 +58,13 @@ This model is closely related to a K-colour Potts model \cite{Wu82}. However, th
 
  Interestingly, equation (\ref{eq:Energy}) is an decreasing function of every component of $\boldsymbol{\beta}$. Indeed, for a particular cluster $h \in K$, a high value of $\beta_h$ will accentuate the increase of the likelihood of the model through equation \ref{eq:prior} when cluster $h$ is spatially coherent. In other words, when a site has all its neighbours clustered in cluster $h$, classifying the site in cluster $h$ as well -making cluster $h$ spatially more coherent- will have an impact on the likelihood of the model proportional to the value of $\beta_h$. This Energy function thus favours spatially regular partitions and a higher value of $\beta_h$, with $1 \leq h \leq K $ will amplify the smoothing effect, or coherence over cluster $h$.\\
  
- The reason why the model was extended to a multiple $\boldsymbol{\beta}$ parameter model, is inherent to the data used in this thesis. The first motivation is purely cytological. Indeed, in a biological context, it is expected that some tissues will be more spatially coherent than others. As mentioned in chapter\ref{ch:background} and visualized in Figure \ref{fig:cells}, tissues composed of different cell types may interact differently with their neighbours. For example, differentiated neural cells with long axons are likely to be in contact with numerous other cell types they go through.\\
+ The reason why the model was extended to a multiple $\boldsymbol{\beta}$ parameter model, is inherent to the data used in this thesis. The first motivation is purely cytological. Indeed, in a biological context, it is expected that some tissues will be more spatially coherent than others. As mentioned in Chapter\ref{ch:background} and visualized in Figure \ref{fig:cells}, tissues composed of different cell types may interact differently with their neighbours. For example, differentiated neural cells with long axons are likely to be in contact with numerous other cell types they go through.\\
  
-  The second motivation for the extended model finds its root in the cell model described in \ref{sec:single_cell_insitu}. Indeed, as described in Figure \ref{fig:cubeserrors}, some ``cubes" may have inconsistent gene expression patterns. This sort of errors in the data will introduce spatial incoherency in the gene expression patterns. I also mentioned in chapter \ref{ch:singlecell}, that the rate of errors linked to the experimental protocol may be dependent upon the cell type considered. Indeed, the errors described in Figure \ref{fig:cubeserrors} are respectively more likely to arise in cell types with small and big cells. Therefore, I believe that allowing one spatial parameter for each cluster enables a better smoothing of these experimental errors by accounting for cell type specificity.\\
+  The second motivation for the extended model finds its root in the cell model described in \ref{sec:single_cell_insitu}. Indeed, as described in Figure \ref{fig:cubeserrors}, some ``cubes'' may have inconsistent gene expression patterns. This sort of errors in the data will introduce spatial incoherency in the gene expression patterns. I also mentioned in Chapter \ref{ch:singlecell}, that the rate of errors linked to the experimental protocol may be dependent upon the cell type considered. Indeed, the errors described in Figure \ref{fig:cubeserrors} are respectively more likely to arise in cell types with small and big cells. Therefore, I believe that allowing one spatial parameter for each cluster enables a better smoothing of these experimental errors by accounting for cell type specificity.\\
  
  \subsection{Field parameters}
 
-The field distribution contains $K$ unknown parameters $\boldsymbol{\beta} = (\beta_{1},...,\beta_{K}$ that have to be estimated by the model. It is important to note that $W(\boldsymbol{\beta})$ is summed over all possible realizations of the field $Z$, which is an exponentially complex sum as the cardinality of $S$ rises. Therefore the computation of the normalizing factor becomes intractable very quickly. To address this problem, we are going to need to make some approximations in order to compute this quantity (see Mean Field Approximations).\\
+The field distribution contains $K$ unknown parameters $\boldsymbol{\beta} = (\beta_{1},...,\beta_{K})$ that have to be estimated by the model. It is important to note that $W(\boldsymbol{\beta})$ is summed over all possible realizations of the field $Z$, which is an exponentially complex sum as the cardinality of $S$ rises. Therefore the computation of the normalizing factor becomes intractable very quickly. To address this problem, we are going to need to make some approximations in order to compute this quantity (see Mean Field Approximations).\\
 
 \section{The emission model}
 
@@ -81,7 +81,7 @@ p(\boldsymbol{y} \mid \boldsymbol{z} ; \Theta) &= \prod_{i \in S} p(y_i \mid z_i
 
 Equation \ref{eq:independence} defines one unknown parameter per cluster: $\Theta = (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})$. It is interesting to note that this part of the model is equivalent to an independent mixture model \cite{mclachlan04}. Indeed, Markov random fields can be viewed as independent mixture models where $Z$ is a set of independent, identically distributed random variables, which happens when $\beta = 0$.\\
 
-Given a particular cluster $h \in [1,K]$ and M the set of considered genes, the expression of each gene $m \in M$ in cluster $h$ is modelled by a Bernoulli distribution with parameter $\theta_{h,m}$. This leads to one unknown Bernoulli parameter per gene per cluster so that :
+Given a particular cluster $h \in {1,...,K}$ and M the set of considered genes, the expression of each gene $m \in M$ in cluster $h$ is modelled by a Bernoulli distribution with parameter $\theta_{h,m}$. This leads to one unknown Bernoulli parameter per gene per cluster so that :
 
 \begin{align*}
 \Theta &= (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})\\
@@ -105,11 +105,11 @@ Looking at both fields $Z$ and $Y \mid Z$ together, the complete likelihood of t
 \begin{align}
 \label{eq:likelihood}
 P_G(\boldsymbol{y},\boldsymbol{z} \mid \Theta, \boldsymbol{\beta}) &= f(\boldsymbol{y} \mid \boldsymbol{z}, \Theta)P_G(\boldsymbol{z} \mid \boldsymbol{\beta})\nonumber\\
-&= W(\boldsymbol{\beta})exp\{{-H(\boldsymbol{z} \mid \boldsymbol{\beta})} + \sum\limits_{i \in S}log(f_i(y_i \mid z_i, \theta_zi))\}
+&= W(\boldsymbol{\beta})^{-1}exp\{{-H(\boldsymbol{z} \mid \boldsymbol{\beta})} + \sum\limits_{i \in S}log(f_i(y_i \mid z_i, \theta_{zi}))\}
 \end{align}
 
-Because equation (\ref{eq:likelihood}) is a Gibbs distribution, using the Hammersley-Clifford theorem we can conclude that the conditional field $Y$ given $Z =\boldsymbol{z}$ is another a Markov Random Field with the Energy function 
-\[H(\boldsymbol{z} \mid \boldsymbol{y}, \boldsymbol{\beta}, \Theta) = H(\boldsymbol{z} \mid \boldsymbol{\beta}) - \sum\limits_{i \in S} log(f_i(y_i \mid z_i, \Theta))\]
+Because equation (\ref{eq:likelihood}) is a Gibbs distribution, using the Hammersley-Clifford theorem we can conclude that the conditional field $Z, Y$ is another a Markov Random Field with the Energy function 
+\[H(\boldsymbol{z}. \boldsymbol{y} \mid \boldsymbol{\beta}, \Theta) = H(\boldsymbol{z} \mid \boldsymbol{\beta}) - \sum\limits_{i \in S} log(f_i(y_i \mid z_i, \Theta))\]
 
 In our case, the goal is to recover the unknown realization of $Z: \boldsymbol{z}$. To this end we need to maximize the values of all the parameters of the model $\boldsymbol{\psi} = (\boldsymbol{\Theta}, \boldsymbol{\beta})$, and to chose the optimal number of clusters, $K$.
 
@@ -119,7 +119,7 @@ As mentioned before, the aim is to assign each cell $i$ to one of the $K$ possib
 	\subsection{Initialization}
 The first step of the algorithm is to initialize the model's parameter. To this end, it is possible to directly assign values for $\boldsymbol{\psi}^{0}$, or to generate an initial clustering $\boldsymbol{z}^{0}$ from which the initial $\boldsymbol{\psi}^{0}$ will be derived.\\
 
-I decided to use a combination of both approach, with arbitrary values assigned to $\boldsymbol{\beta}^{0}$, typically $0$, and the use of an initial clustering to compute the values of $\boldsymbol{\Theta}^{0}$. Indeed, for $h \in [1,K], m \in M$, because of the emission model, each $\theta_{h,m}$ is the probability of gene $m$ to be expressed in cluster $h$. Consequently, given a clustering $\boldsymbol{z}^{0}$ with function $Expr_{h,m}$ the number of cells expressing gene $m$ in cluster $h$ and function $Num_h$ the total number of cells in cluster $h$:
+I decided to use a combination of both approach, with arbitrary values assigned to $\boldsymbol{\beta}^{0}$, typically $0$, and the use of an initial clustering to compute the values of $\boldsymbol{\Theta}^{0}$. Indeed, for $h \in {1,...,K}, m \in M$, because of the emission model, each $\theta_{h,m}$ is the probability of gene $m$ to be expressed in cluster $h$. Consequently, given a clustering $\boldsymbol{z}^{0}$ with function $Expr_{h,m}$ the number of cells expressing gene $m$ in cluster $h$ and function $Num_h$ the total number of cells in cluster $h$:
 
 \begin{align*}
 \theta_{m,h}^{0} = \frac{Expr_{h,m}}{Num_h}
@@ -149,17 +149,17 @@ R_y(\Theta\mid \boldsymbol{\psi}^l) &= \sum\limits_{\boldsymbol{z}} p(\boldsymbo
 &= \sum\limits_{i \in S} \sum\limits_{h=1}^{K}\; \left[log\: f_{h} (y_i  ; \Theta) \right] \; p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
 \end{align*}  
 
-Therefore, we know that in the M step will will need to compute the following probably:
+Therefore, we know that in the M step I will need to compute the following probability:
 
 \begin{align*}
-t_{i\,h}^{m+1} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
+t_{i\,h}^{l+1} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
 \end{align*}
 
-Computing this conditional probability is problematic because of the dependence between neighbouring ``cubes", and computing an exact value is computationally expensive. Indeed, each point being dependent upon its neighbours, and the neighbours being themselves dependent upon their neighbours, unsurprisingly computing these conditional probabilities becomes exponentially complex as the number of connected nodes in the graph grow. Additionally for $R_z$, as mentioned previously, it is also necessary to compute the value of the normalizing constant $W(\boldsymbol{\beta})$.\\
+Computing this conditional probability is problematic because of the dependence between neighbouring ``cubes'', and computing an exact value is computationally expensive. Indeed, each point being dependent upon its neighbours, and the neighbours being themselves dependent upon their neighbours, unsurprisingly computing these conditional probabilities becomes exponentially complex as the number of connected nodes in the graph grow. Additionally for $R_z$, as mentioned previously, it is also necessary to compute the value of the normalizing constant $W(\boldsymbol{\beta})$.\\
 
 To compute those quantities, approximations are needed. Methods to do so include Besag's pseudo-likelihood \cite{Besag75} to compute $W(\boldsymbol{\beta})$, and simulating the posterior distribution of $Z$ given $\boldsymbol{y}$ with the parameters at iteration $l$, with a Gibbs sampler to estimate $t_{i\,h}^{l+1}$ \cite{Chalmond89}.\\
 
-However, another method exists, the mean field approximation originally proposed in the field of statistical mechanics. Since then, it has been used in a variety of fields including computer vision \cite{Yuille90} and more recently to approximate the distribution of both $W(\boldsymbol{\beta})$ (with a single $\beta$) and $t_{i\,h}^{m+1}$ \cite{Zhang92}. I present here the extension of this method to a model with one $\beta$ parameter per cluster.
+However, another method exists, the mean field approximation originally proposed in the field of statistical mechanics. Since then, it has been used in a variety of fields including computer vision \cite{Yuille90} and more recently to approximate the distribution of both $W(\boldsymbol{\beta})$ (with a single $\beta$) and $t_{i\,h}^{l+1}$ \cite{Zhang92}. I present here the extension of this method to a model with one $\beta$ parameter per cluster.
 
 \section{Mean field approximations}
 
@@ -176,7 +176,7 @@ t_{i\,h}^{l+1} \approx \frac{f_{h} (y_i;\boldsymbol{\theta}_{h}^l)\; exp\{\beta_
 For the normalizing constant $W(\boldsymbol{\beta})$, by applying the mean-field approximation, using equation (\ref{eq:Energy}), $W(\boldsymbol{\beta})$ can be written as:
 
 \begin{align*}
-W(\boldsymbol{\beta}) = \sum\limits_{\boldsymbol{z'}} exp(-H(\boldsymbol{z'})) \approx \sum\limits_{i \in S}\;\sum\limits_{\boldsymbol{z_i}} exp(-H(\boldsymbol{z_i})) = \sum\limits_{i \in S}\;\sum\limits_{\boldsymbol{z_i}} exp(\beta_{z_i}\sum\limits_{N(i)}[z_i=z_j])
+W(\boldsymbol{\beta}) = \sum\limits_{\boldsymbol{z'}} exp(-H(\boldsymbol{z'})) \approx \sum\limits_{i \in S}\;\sum\limits_{\boldsymbol{z_i}} exp(-H(\boldsymbol{z_i})) = \sum\limits_{i \in S}\;\sum\limits_{\boldsymbol{z_i}} exp(\beta_{z_i}\sum\limits_{j \in N(i)}1[z_i=z_j])
 \end{align*}
 
 With this new set of equations, it becomes possible to estimate all quantities needed in the E step in order to compute the model's expectation.\\
@@ -191,7 +191,7 @@ After the E step, maximizing $\boldsymbol{\psi}$ is relatively straightforward. 
 
 For $\Theta$, once the the $t_{i\,h}^{l} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})$ have been computed during the E-step, those probabilities may be used to assign each cell to its most probable cluster at step $l$. This step classifies this method as hard clustering, this is a technical choice but of course the probabilities $t_{i\,h}^{l}$ could instead be used to compute a fuzzy clustering criterion for instance, the Hathaway's fuzzy clustering criterion as described in \cite{Dang98}.\\
  
-Once the new partition is created, the values of $\Theta$ that maximize the model's expectation can be computed iteratively for cluster $h \in [1,K]$ and gene $m \in M$. Specifically if $Expr_{h,m}$ denotes the number of cells expressing gene $m$ in cluster $h$ and $Num_h$ denotes the total number of cells in cluster $h$, we can write:
+Once the new partition is created, the values of $\Theta$ that maximize the model's expectation can be computed iteratively for cluster $h \in {1,...,K}$ and gene $m \in M$. Specifically if $Expr_{h,m}$ denotes the number of cells expressing gene $m$ in cluster $h$ and $Num_h$ denotes the total number of cells in cluster $h$, we can write:
 
 \begin{align*}
 \theta_{m,h}^{l+1} = arg\:\underset{\Theta}{max}\:R_y(\Theta\mid \boldsymbol{\psi}^l) = \frac{Expr_{h,m}}{Num_h}
@@ -201,7 +201,7 @@ In order to maximize $\boldsymbol{\beta}^{l+1}$, an iterative approach such as t
 
 
 
-The described EM algorithm, summarized in leads, after convergence, to a partition over $K$ clusters that finds a local maximum of the model's expectation. Importantly, the maximum reached is only a local one as indeed the EM algorithm does not guarantee to reach the global maximum of a function. It is interesting to note that this fact makes the initialization of the algorithm a crucial step. I will discuss this further in chapter \ref{ch:simulations}.\\
+The described EM algorithm leads, after convergence, to a partition over $K$ clusters that finds a local maximum of the model's expectation. Importantly, the maximum reached is only a local one as indeed the EM algorithm does not guarantee to reach the global maximum of a function. It is interesting to note that this fact makes the initialization of the algorithm a crucial step. I will discuss this further in Chapter \ref{ch:simulations}.\\
 
 
 \section{Estimating K}
@@ -211,21 +211,21 @@ Without any prior knowledge, choosing the right number of clusters $K$ is challe
 log\;L(\boldsymbol{\psi}) = 	log\;P_G(\boldsymbol{y},\boldsymbol{z} \mid \Theta, \boldsymbol{\beta})
 \end{align*}
 
-Because $Log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model. We employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) as:
+Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model, we employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) as:
 
 \begin{align*}
 \label{eq:BIC}
 - 2\; log\:L(\boldsymbol{\psi}) + P\:log\:N
 \end{align*}
 
-By computing the final likelihood for a large range of possible $K$ values, the minimal resulting BIC will be chosen as the optimal number of classes, $\hat{K}$. When applied to the biological data however, this approach is not ideal as I will describe later in this thesis (see chapter \ref{ch:biology}) but yields good results when applied to simulated data (see chapter \ref{ch:simulations}).\\
+By computing the final likelihood for a large range of possible $K$ values, the minimal resulting BIC will be chosen as the optimal number of classes, $\hat{K}$. When applied to the biological data however, this approach is not ideal as I will describe later in this thesis (see Chapter \ref{ch:biology}) but yields good results when applied to simulated data (see Chapter \ref{ch:simulations}).\\
 
 \section{Summary}
-The goal was to allocate the $S=32,203$ ``cubes" described above in chapter \ref{ch:singlecell} into $K$ clusters, where $K$ is unknown, using the binarised matrix of $M=86$ gene expression measurements, $Y$. To incorporate spatial information into the clustering scheme, I assumed that $Z$, the (latent) vector of length $S$ that describes the allocation of cells to clusters, satisfies a first-order Markov Random Field (MRF), where the probability that a cell is allocated to a given state depends only upon the states of its immediate neighbours (Figure \ref{fig:graph}). Additionally, within cluster $h$ $(h \in [1,K])$, I assumed that the expression of gene $m$ follows a Bernoulli distribution with parameter $\theta_{m,h}$. The $M \times K$ matrix  $\Theta$ denotes the full set of Bernoulli parameters. In a typical MRF, the degree of spatial cohesion is determined by a single parameter $\beta$, which is assumed to be constant for all clusters \cite{subudhi14,zhang14}. However, in the context of tissue organisation, it is reasonable to expect that the degree of spatial cohesion will differ between clusters; consequently,  a separate value of $\beta$ is estimated for each of the $K$ clusters.\\
+The goal was to allocate the $S=32,203$ ``cubes'' described above in Chapter \ref{ch:singlecell} into $K$ clusters, where $K$ is unknown, using the binarised matrix of $M=86$ gene expression measurements, $Y$. To incorporate spatial information into the clustering scheme, I assumed that $Z$, the (latent) vector of length $S$ that describes the allocation of cells to clusters, satisfies a first-order Markov Random Field (MRF), where the probability that a cell is allocated to a given state depends only upon the states of its immediate neighbours (Figure \ref{fig:graph}). Additionally, within cluster $h$ $(h \in {1,...,K})$, I assumed that the expression of gene $m$ follows a Bernoulli distribution with parameter $\theta_{m,h}$. The $M \times K$ matrix  $\Theta$ denotes the full set of Bernoulli parameters. In a typical MRF, the degree of spatial cohesion is determined by a single parameter $\beta$, which is assumed to be constant for all clusters \cite{subudhi14,zhang14}. However, in the context of tissue organisation, it is reasonable to expect that the degree of spatial cohesion will differ between clusters; consequently,  a separate value of $\beta$ is estimated for each of the $K$ clusters.\\
 
 To estimate the parameters of the model an Expectation-Maximisation (EM) based approach has been used in conjunction with mean-field approximations to infer intractable values \cite{Celeux01}. Finally, to choose the optimal number of clusters, $K$, I used the Bayesian Information Criterion (BIC).\\
 
-The next step is to validate the method's behaviour and to assess the quality of the results compared to the other non-spatial clustering schemes described in chapter \ref{ch:non_spatial_clustering_visualization}.
+The next step is to validate the method's behaviour and to assess the quality of the results compared to the other non-spatial clustering schemes described in Chapter \ref{ch:non_spatial_clustering_visualization}.
 
 %*****************************************
 %*****************************************

@@ -19,7 +19,7 @@
 	\end{figure} 
 	
 	
-	The main output of the method is a list of $S=32.203$ cluster assignments, that is, the cluster each ``cube" of the in-situ hybridization data belongs to. With this output and the spatial coordinates of each cube, it is easy to use the tool bioWeb3D presented in Chapter \ref{ch:non_spatial_clustering_visualization} to visualize the clusters in the brain. However, downstream analysis solely based on the spatial localization of the clusters is insufficient, and it is possible to take advantage of the model's output parameter values to analyse and interpret the biological meaning of the resulting clusters.
+	The main output of the method is a list of $S=32.203$ cluster assignments, that is, the cluster each ``cube'' of the in-situ hybridization data belongs to. With this output and the spatial coordinates of each cube, it is easy to use the tool bioWeb3D presented in Chapter \ref{ch:non_spatial_clustering_visualization} to visualize the clusters in the brain. However, downstream analysis solely based on the spatial localization of the clusters is insufficient, and it is possible to take advantage of the model's output parameter values to analyse and interpret the biological meaning of the resulting clusters.
 
 	\section{Parameters interpretation}
 	Parameter $\Theta$ can be used to shed some light on the biological meaning of the inferred clusters. As described in the previous chapters, for $h \in K$ and $m \in M$, $\hat{\theta_{h,m}}$ is the probability that gene $m$ is expressed in a given cell contained in cluster $h$. Therefore, the values of $\Theta$ provide a link between the mathematical model and downstream biological interpretation.\\
@@ -77,7 +77,7 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 		
 	\begin{figure}[h]
 \centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter6/muscle_stain.png}}
-\caption{{\bf Developing motor region in the brain of Platynereis visualized in-situ by phalloidin staining.} The figure is reproduced from \cite{Fischer10}. vlm: ventral longitudinal muscle; dlm: dorsal longitudinal muscle.}
+\caption{{\bf Developing motor region in the brain of Platynereis visualized in-situ by phalloidin staining.} This Figure is reproduced from \cite{Fischer10}. vlm: ventral longitudinal muscle; dlm: dorsal longitudinal muscle.}
 \label{fig:muscles_stain}
 	\end{figure}
 	
@@ -101,7 +101,7 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	
 I applied the HMRF clustering method described in Chapter \ref{ch:HMRF} to the binarized in-situ hybridization data presented in Chapter \ref{ch:singlecell}. I described how the BIC method was adapted to chose the optimal number of clusters $K = 33$.\\
 
-In order to analyse the resulting clusters, I developed a scoring method based on a ``specificity" matrix which extracts the most specific genes for each cluster. Thanks to the 3D visualization tool described in chapter \ref{ch:non_spatial_clustering_visualization}, and the most specifically expressed genes for each cluster, I was able to validate the method biologically by localizing 3 well studied regions of the brain. Additionally I checked that the top 3 genes were consistent with the known biology of \platy{}.\\
+In order to analyse the resulting clusters, I developed a scoring method based on a ``specificity'' matrix which extracts the most specific genes for each cluster. Thanks to the 3D visualization tool described in Chapter \ref{ch:non_spatial_clustering_visualization}, and the most specifically expressed genes for each cluster, I was able to validate the method biologically by localizing 3 well studied regions of the brain. Additionally I checked that the top 3 genes were consistent with the known biology of \platy{}.\\
 
 Furthermore, I demonstrated how my approach allows the generation of functional hypothesis about regions that are not well known. In particular, I discussed a previously unstudied tissue that may consist of developing neurons directly linking the eyes to the developing muscles.
 
