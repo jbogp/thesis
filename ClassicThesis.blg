@@ -1,6 +1,7 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.6)
-The top-level auxiliary file: ClassicThesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ClassicThesis.aux
 A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
+A level-1 auxiliary file: FrontBackmatter/Abstract.aux
+A level-1 auxiliary file: FrontBackmatter/Acknowledgments.aux
 A level-1 auxiliary file: FrontBackmatter/Contents.aux
 A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
@@ -15,19 +16,19 @@ A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 The style file: plainnat.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "three" isn't style-file defined
---line 1238 of file Bibliography.bib
+--line 1294 of file Bibliography.bib
 Warning--entry type for "webgl" isn't style-file defined
---line 1243 of file Bibliography.bib
+--line 1299 of file Bibliography.bib
 Warning--entry type for "github" isn't style-file defined
---line 1248 of file Bibliography.bib
+--line 1304 of file Bibliography.bib
 Warning--entry type for "bioweb3D" isn't style-file defined
---line 1253 of file Bibliography.bib
+--line 1309 of file Bibliography.bib
 Warning--entry type for "security" isn't style-file defined
---line 1258 of file Bibliography.bib
+--line 1314 of file Bibliography.bib
 Warning--entry type for "caniuse" isn't style-file defined
---line 1263 of file Bibliography.bib
+--line 1319 of file Bibliography.bib
 Warning--entry type for "xmlref" isn't style-file defined
---line 1268 of file Bibliography.bib
+--line 1324 of file Bibliography.bib
 Warning--to sort, need author or key in xmlref
 Warning--to sort, need author or key in three
 Warning--to sort, need author or key in webgl
@@ -44,48 +45,9 @@ Warning--empty year in webgl
 Warning--empty year in xmlref
 Warning--empty year in arendt124
 Warning--empty year in arendt124
+Warning--empty journal in durston89
 Warning--empty journal in guy08
 Warning--can't use both volume and number fields in macqueen67
+Warning--empty journal in wang92
 Warning--empty journal in williams80
-You've used 111 entries,
-            2774 wiz_defined-function locations,
-            1281 strings with 28752 characters,
-and the built_in function-call counts, 63105 in all, are:
-= -- 5367
-> -- 5183
-< -- 48
-+ -- 1756
-- -- 1644
-* -- 5740
-:= -- 10088
-add.period$ -- 333
-call.type$ -- 111
-change.case$ -- 749
-chr.to.int$ -- 110
-cite$ -- 248
-duplicate$ -- 2150
-empty$ -- 4189
-format.name$ -- 1786
-if$ -- 12834
-int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 106
-newline$ -- 561
-num.names$ -- 416
-pop$ -- 1657
-preamble$ -- 1
-purify$ -- 644
-quote$ -- 0
-skip$ -- 1850
-stack$ -- 0
-substring$ -- 2263
-swap$ -- 147
-text.length$ -- 5
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 1196
-warning$ -- 19
-while$ -- 481
-width$ -- 0
-write$ -- 1420
-(There were 26 warnings)
+(There were 28 warnings)

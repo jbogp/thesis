@@ -1,4 +1,4 @@
-\begin{thebibliography}{111}
+\begin{thebibliography}{117}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,9 +36,7 @@ Xml applications and initiatives.
 \bibitem[Anders and Huber(2010)]{anders10}
 Simon Anders and Wolfgang Huber.
 \newblock Differential expression analysis for sequence count data.
-\newblock \emph{Genome Biology}, 11:\penalty0 R106, 2010.
-\newblock \doi{10.1186/gb-2010-11-10-r106}.
-\newblock URL \url{http://genomebiology.com/2010/11/10/R106/}.
+\newblock \emph{Genome biol}, 11\penalty0 (10):\penalty0 R106, 2010.
 
 \bibitem[Arbelaez et~al.(2011)Arbelaez, Maire, Fowlkes, and Malik]{arbelaez11}
 Pablo Arbelaez, Michael Maire, Charless Fowlkes, and Jitendra Malik.
@@ -65,6 +63,12 @@ WILLIAM~P Bartlett and GARY~A Banker.
   intercellular contacts.
 \newblock \emph{The Journal of neuroscience}, 4\penalty0 (8):\penalty0
   1944--1953, 1984.
+
+\bibitem[Belloni and Chernozhukov(2009)]{belloni09}
+Alexandre Belloni and Victor Chernozhukov.
+\newblock On the computational complexity of mcmc-based estimators in large
+  samples.
+\newblock \emph{The Annals of Statistics}, pages 2011--2055, 2009.
 
 \bibitem[Bentley et~al.(2008)Bentley, Balasubramanian, Swerdlow, Smith, Milton,
   Brown, Hall, Evers, Barnes, Bignell, et~al.]{bentley08}
@@ -151,6 +155,15 @@ B~CHALMOND.
 \newblock An iterative gibbsian technique for reconstruction of m-ary images.
 \newblock \emph{Pattern recognition}, 22\penalty0 (6):\penalty0 747--761, 1989.
 
+\bibitem[Chang et~al.(2002)Chang, Chi, Dudoit, Bondre, van~de Rijn, Botstein,
+  and Brown]{chang02}
+Howard~Y Chang, Jen-Tsan Chi, Sandrine Dudoit, Chanda Bondre, Matt van~de Rijn,
+  David Botstein, and Patrick~O Brown.
+\newblock Diversity, topographic differentiation, and positional memory in
+  human fibroblasts.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
+  (20):\penalty0 12877--12882, 2002.
+
 \bibitem[Colello and Guillery(1990)]{colello90}
 RJ~Colello and RW~Guillery.
 \newblock The early development of retinal ganglion cells with uncrossed axons
@@ -202,6 +215,14 @@ Adriaan~WC Dorresteijn.
   embryogenesis of platynereis dumerilii.
 \newblock \emph{Roux's archives of developmental biology}, 199\penalty0
   (1):\penalty0 14--30, 1990.
+
+\bibitem[Durston et~al.(1989)Durston, Timmermans, Hage, Hendriks, De~Vries,
+  Heideveld, and Nieuwkoop]{durston89}
+AJ~Durston, JPM Timmermans, WJ~Hage, HFJ Hendriks, NJ~De~Vries, M~Heideveld,
+  and PD~Nieuwkoop.
+\newblock Retinoic acid causes an anteroposterior transformation in the
+  developing central nervous system.
+\newblock 1989.
 
 \bibitem[Fan et~al.(2001)Fan, Yau, Elmagarmid, and Aref]{fan01}
 Jianping Fan, David~KY Yau, Ahmed~K Elmagarmid, and Walid~G Aref.
@@ -338,6 +359,12 @@ Paul Jaccard.
   des Alpes et du Jura}.
 \newblock Impr. Corbaz, 1901.
 
+\bibitem[Jaenisch and Bird(2003)]{jaenisch03}
+Rudolf Jaenisch and Adrian Bird.
+\newblock Epigenetic regulation of gene expression: how the genome integrates
+  intrinsic and environmental signals.
+\newblock \emph{Nature genetics}, 33:\penalty0 245--254, 2003.
+
 \bibitem[John et~al.(1969)John, Birnstiel, and Jones]{john69}
 HA~John, ML~Birnstiel, and KW~Jones.
 \newblock Rna-dna hybrids at the cytological level.
@@ -463,6 +490,14 @@ Georgi~K Marinov, Brian~A Williams, Kenneth McCue, Gary~P Schroth, Jason Gertz,
   expression and rna splicing.
 \newblock \emph{Genome research}, pages gr--161034, 2013.
 
+\bibitem[Marioni et~al.(2008)Marioni, Mason, Mane, Stephens, and
+  Gilad]{marioni08}
+John~C Marioni, Christopher~E Mason, Shrikant~M Mane, Matthew Stephens, and
+  Yoav Gilad.
+\newblock Rna-seq: an assessment of technical reproducibility and comparison
+  with gene expression arrays.
+\newblock \emph{Genome research}, 18\penalty0 (9):\penalty0 1509--1517, 2008.
+
 \bibitem[Marziliano et~al.(2007)Marziliano, Mannarino, Nespoli, Diegoli,
   Pasotti, Malattia, Grasso, Pilotto, Porcu, Raisaro, et~al.]{marziliano07}
 Nicola Marziliano, Savina Mannarino, Luisa Nespoli, Marta Diegoli, Michele
@@ -556,8 +591,7 @@ Hanchuan Peng, Zongcai Ruan, Fuhui Long, Julie~H Simpson, and Eugene~W Myers.
 \newblock \emph{Nature Biotechnology}, 28\penalty0 (4):\penalty0 348--353,
   2010.
 \newblock URL
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=%
-pmcentrez&rendertype=abstract}.
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=pmcentrez&rendertype=abstract}.
 
 \bibitem[Pettit and Marioni(2013)]{Pettit13}
 Jean-Baptiste Pettit and John~C Marioni.
@@ -709,6 +743,12 @@ Raju Tomer, Alexandru~S Denes, Kristin Tessmar-Raible, and Detlev Arendt.
 \newblock Profiling by image registration reveals common origin of annelid
   mushroom bodies and vertebrate pallium.
 \newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
+
+\bibitem[Wang et~al.(1992)Wang, Watkins, and Malbon]{wang92}
+Hsien-yu Wang, David~C Watkins, and Craig~C Malbon.
+\newblock Antisense oligodeoxynucleotides to gs protein $\alpha$-subunit
+  sequence accelerate differentiation of fibroblasts to adipocytes.
+\newblock 1992.
 
 \bibitem[Wang et~al.(2009{\natexlab{a}})Wang, Liang, and Zhang]{Wang093D}
 Qi~Wang, Qun Liang, and Xiuqing Zhang.
