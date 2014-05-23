@@ -3,16 +3,26 @@
 %************************************************
 This Chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes" as described in Chapter \ref{ch:singlecell}, into $K$ clusters ($K \in {2, 3,...}$). Subsequently, we will describe our approach for estimating $K$.
 
+	\section{background}
+	Markov random fields (MRF) are statistical models that provide a way of modeling entities composed of multiple discrete sites such as images where each site is a pixel or in our case a biological tissue where each site is a single cell, in a context-dependent way \cite{li09}. MRF based methods find their roots in the field of statistical mechanics as the Ising model \cite{Ising25} and its generalization, the Potts model \cite{Wu82}. Since then, they have been and are still mainly used in the field of image analysis, and the literature about them is ever growing \cite{rozanov82,li95}. More specifically MRF methods are found in a wide range of applications such as image restoration and segmentation \cite{zhang01}, surface reconstruction \cite{paulsen10}, edge detection \cite{zerubia93}, texture analysis \cite{clausi04}, optical flow \cite{heitz93}, active contours \cite{martin05}, deformable templates \cite{mignotte01}, data fusion \cite{wright89} and perceptual grouping \cite{fields97}.\\
+	
+	MRF have also been used in a variety of biological applications from analysing medical imaging data \cite{zhang01,held97,descombes98} to analysing networks of genomic data \cite{wei07}. In the context of the shift from the tissue to the single cell scale in transcriptomics assays described in the previous chapters, MRF based method represent a natural way to model gene expression in single cells while accounting for the relationship between sites.\\
+	
+	 Mathematically, MRF models are built around two complementary sub-models. On the one hand, the field represents the sites and their spatial structure central to the MRF theory. It is given a mathematically sound form through the Hammersley-Clifford (1971) theorem which sates that the influence between sites in a field following the Markov properties follows a Gibbs distribution dependent upon an Energy function in which the spatial coherency parameters of the model are incorporated. This theorem gives strong mathematical bases for modeling spatially dependent data. In this part of the model, some essential technical choices have to be made namely the \emph{neighbourhood system} and the \emph{Energy function} used. On the other hand, the emission model represents the data and the observations, introducing a certain number of parameters depending on the type of data modeled.\\
+	 
+	 In the next paragraphs I will present the technical choices made to apply this mathematical framework to the single cell in-situ hybridization dataset of \platy{}'s brain. I will also present the implementation of a EM algorithm used to find the maximum a posteriori (MAP) estimates of the model's parameters, classifying this method into the MAP-MRF framework.
+
 \section{Markov random fields}
+	
 
 	\subsection{Neighbourhood systems}\label{sec:neighbours}
-Let $S$ be a finite set of sites, each of which represents one ``cube" of data. Given the 3D coordinates of each site, the first challenge that needs to be overcome in order to use the spatial characteristics of the data in the clustering scheme is to express the data and their spatial relationship in mathematically formal manner. To this end, starting from the spatial coordinates in 3D of each ``cube", instead of a list of isolated measurements, it is possible to build a connecting graph representing the same data and the spatial dependence between the ``cubes". In the context of this study, each node of the graph will represent a ``cube" in the single cell expression data. Nodes that are linked together by an edge will be spatially dependent upon each other.\\
+Let $S$ be a finite set of sites, each of which represents one ``cube" of data. Given the 3D coordinates of each site, the first challenge that needs to be overcome in order to use the spatial characteristics of the data in the clustering scheme is to express the data and their spatial relationship in a mathematically formal manner. To this end, starting from the spatial coordinates in 3D of each ``cube", instead of a list of isolated measurements, it is possible to build a connecting graph representing the same data and the spatial dependence between the ``cubes". In the context of this study, each node of the graph will represent a ``cube" in the single cell expression data. Nodes that are linked together by an edge will be spatially dependent upon each other.\\
 
-With prior biological data, one can manually create the spatial dependency graph by linking nodes together that are known to be functionally similar. In the case of this study however, no such prior knowledge being available, it is necessary to define the spatial dependences in a different way.\\
+With prior biological data, one can manually create the spatial dependency graph by linking nodes together that are known to be functionally similar. In the case of this study, however, no such prior knowledge being available, it is necessary to define the spatial dependences in a different way.\\
 
 The central hypothesis while developing this method is to assume that ``cubes" that are close to one another are more likely to belong to the same cell type (i.e cluster). Consequently, these spatial dependencies will be incorporated into a \emph{neighbourhood graph} where  ``cubes" close to each other will be joined.\\
 
-In the case of this study, because of the cell model used the graph will be a regular grid. In this context, there are several ways to translate the spatial relationship into a neighbourhood graphs depending on the number of neighbours considered for each site. As shown in Figure \ref{fig:graph}, the choice between a first or a second order neighbourhood system is purely technical. However, having more neighbours for each site will increase the complexity and ultimately the computational burden. Indeed, in $G$, a \emph{clique} $c$ is a subset of nodes that are all interconnected, i.e it is possible to go from any nodes in $c$ to any other node in $c$ by simply following one single edge.\\
+In the case of this study, because of the cell model used the graph will be a regular grid. In this context, there are several ways to translate the spatial relationship into neighbourhood graphs depending upon the number of neighbours considered for each site. As shown in Figure \ref{fig:graph}, the choice between a first or a second order neighbourhood system is purely technical. However, having more neighbours for each site will increase the complexity and ultimately the computational burden. Within $G$, a \emph{clique} $c$ is a subset of nodes that are all interconnected, i.e it is possible to go from any nodes in $c$ to any other node in $c$ by simply following one single edge.\\
 
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter4/graph.png}}
@@ -32,7 +42,7 @@ Let a Random Field $Z$ be defined as a set of random variables $Z = \{Z_i , \for
 
 Equation (\ref{eq:markov1}) states that the realization of the field, $z_{i}$ at any site $i \in S$ can be fully determined using only the state of its neighbours $N(i)$. In other words the probability that a ``cube'' is in a given state depends only upon the state of its neighbours.\\
 
-The Hammersley-Clifford theorem state that if $Z$ is a Markov Random Field, the joint distribution of the field $P_G$ follows a Gibbs distribution such that :
+The Hammersley-Clifford theorem states that if $Z$ is a Markov Random Field, the joint distribution of the field $P_G$ follows a Gibbs distribution such that :
 
 \begin{align}
 \label{eq:prior}
@@ -40,14 +50,14 @@ P_G (\boldsymbol{z;\beta}) &= W(\boldsymbol{\beta})^{-1} \exp{(-H(\boldsymbol{z;
 &= \frac{e^{-H(\boldsymbol{z;\beta})}}{\sum\limits_{\boldsymbol{z'}} e^{-H(\boldsymbol{z;\beta})}}
 \end{align}
 
-with $H(\boldsymbol{z})$ the Energy function summed over the cliques $C$ of the graph $G$. Since we are working with a first order neighbourhood system, $C$ is the set of all pairs of sites $(i,j)$ that are neighbours. We chose to consider $H$ as a function of vector $\boldsymbol{\beta} = (\beta_1, \hdots, \beta_K)$ containing $K$ parameters as detailed in the next paragraph, and $v_{i,j}$ a potential function set to 1 in our method because we are working on a regular grid graph,  if the distances between sites were heterogeneous we could have used this function to weight the spatial dependence between sites. 
+with $H(\boldsymbol{z})$ the Energy function summed over the cliques $C$ of the graph $G$. Since we are working with a first order neighbourhood system, $C$ is the set of all pairs of sites $(i,j)$ that are neighbours. We chose to consider $H$ as a function of a vector $\boldsymbol{\beta} = (\beta_1, \hdots, \beta_K)$ containing $K$ parameters as detailed in the next paragraph, and $v_{i,j}$ a potential function set to 1 in our method because we are working on a regular grid graph. If the distances between sites were heterogeneous we could have used this function to weight the spatial dependence between sites. Given this set up, we can write
 
 \begin{align}
 \label{eq:Energy}
 H(\boldsymbol{z}) = - \sum\limits_{i \in S}\beta_{z_i}\sum_{\substack{j \in N(i)}}v_{i,j}\times\boldsymbol{1}_{[z_i = z_j]} 
 \end{align}
 
-The denominator in (\ref{eq:prior}) where $\boldsymbol{z'}$ represents all the possible realizations of the field is a normalizing constant referred to as $W(\boldsymbol{\beta})$.\\
+The denominator in (\ref{eq:prior}), where $\boldsymbol{z'}$ represents all the possible realizations of the field, is a normalizing constant referred to as $W(\boldsymbol{\beta})$.\\
 
 	\subsection{Single and multiple beta models in a biological context}
 This model is closely related to a K-colour Potts model \cite{Wu82}. However, the unusual nature of the data used in this thesis led to the idea of extending the model commonly used in the field of image segmentation. In particular, the K-colour Potts model defines a single spatial coherency parameter $\beta$ that is shared by all clusters \cite{subudhi14,zhang14}. Importantly, the method presented here was extended by assigning one $\beta$ per cluster so that:
@@ -56,11 +66,11 @@ This model is closely related to a K-colour Potts model \cite{Wu82}. However, th
 \boldsymbol{\beta} = (\beta_{1},...,\beta_{K})
 \end{equation*}
 
- Interestingly, equation (\ref{eq:Energy}) is an decreasing function of every component of $\boldsymbol{\beta}$. Indeed, for a particular cluster $h \in K$, a high value of $\beta_h$ will accentuate the increase of the likelihood of the model through equation \ref{eq:prior} when cluster $h$ is spatially coherent. In other words, when a site has all its neighbours clustered in cluster $h$, classifying the site in cluster $h$ as well -making cluster $h$ spatially more coherent- will have an impact on the likelihood of the model proportional to the value of $\beta_h$. This Energy function thus favours spatially regular partitions and a higher value of $\beta_h$, with $1 \leq h \leq K $ will amplify the smoothing effect, or coherence over cluster $h$.\\
+ Interestingly, equation (\ref{eq:Energy}) is an decreasing function of every component of $\boldsymbol{\beta}$. Indeed, for a particular cluster $h \in K$, a high value of $\beta_h$ will accentuate the increase of the likelihood of the model through equation (\ref{eq:prior}) when cluster $h$ is spatially coherent. In other words, when a site has all its neighbours clustered in cluster $h$, classifying the site in cluster $h$, as well as making cluster $h$ spatially more coherent- will have an impact on the likelihood of the model proportional to the value of $\beta_h$. This Energy function thus favours spatially regular partitions and a higher value of $\beta_h$, with $1 \leq h \leq K $ will amplify the smoothing effect, or coherence over cluster $h$.\\
  
- The reason why the model was extended to a multiple $\boldsymbol{\beta}$ parameter model, is inherent to the data used in this thesis. The first motivation is purely cytological. Indeed, in a biological context, it is expected that some tissues will be more spatially coherent than others. As mentioned in Chapter\ref{ch:background} and visualized in Figure \ref{fig:cells}, tissues composed of different cell types may interact differently with their neighbours. For example, differentiated neural cells with long axons are likely to be in contact with numerous other cell types they go through.\\
+ The reason why the model was extended with a multiple $\boldsymbol{\beta}$ parameter, is inherent to the data used in this thesis. The first motivation is purely cytological: In a biological context, it is expected that some tissues will be more spatially coherent than others. As mentioned in the Introduction and visualized in Figure \ref{fig:cells}, tissues composed of different cell types may interact differently with their neighbours. For example, differentiated neural cells with long axons are likely to be in contact with numerous other cell types that they pass through.\\
  
-  The second motivation for the extended model finds its root in the cell model described in \ref{sec:single_cell_insitu}. Indeed, as described in Figure \ref{fig:cubeserrors}, some ``cubes'' may have inconsistent gene expression patterns. This sort of errors in the data will introduce spatial incoherency in the gene expression patterns. I also mentioned in Chapter \ref{ch:singlecell}, that the rate of errors linked to the experimental protocol may be dependent upon the cell type considered. Indeed, the errors described in Figure \ref{fig:cubeserrors} are respectively more likely to arise in cell types with small and big cells. Therefore, I believe that allowing one spatial parameter for each cluster enables a better smoothing of these experimental errors by accounting for cell type specificity.\\
+  The second motivation for the extended model finds its root in the cell model described in \ref{sec:single_cell_insitu}. As described in Figure \ref{fig:cubeserrors}, some ``cubes'' may have inconsistent gene expression patterns. This type of error in the data will introduce spatial incoherency in the gene expression patterns. I also mentioned in Chapter \ref{ch:singlecell} that the rate of errors linked to the experimental protocol may be dependent upon the cell type considered. Indeed, the errors described in Figure \ref{fig:cubeserrors} are respectively more likely to arise in cell types with small and big cells. Therefore, I believe that allowing one spatial parameter for each cluster enables a better smoothing of these experimental errors by accounting for cell type specificity.\\
  
  \subsection{Field parameters}
 
@@ -100,7 +110,7 @@ f_i(y_i \mid z_i ; \Theta) &= f_i(y_i \mid z_i ; \boldsymbol{\theta_{z_i}}) \non
 &= \prod_{m \in M} \theta_{z_i,m}^{y_{i,m}} \times (1-\theta_{z_i,m}^{1-y_{i,m}})
 \end{align}
 
-Looking at both fields $Z$ and $Y \mid Z$ together, the complete likelihood of the model is expressed as :
+Looking at both fields $Z$ and $Y, Z$ together, the complete likelihood of the model is expressed as :
 
 \begin{align}
 \label{eq:likelihood}
@@ -109,17 +119,17 @@ P_G(\boldsymbol{y},\boldsymbol{z} \mid \Theta, \boldsymbol{\beta}) &= f(\boldsym
 \end{align}
 
 Because equation (\ref{eq:likelihood}) is a Gibbs distribution, using the Hammersley-Clifford theorem we can conclude that the conditional field $Z, Y$ is another a Markov Random Field with the Energy function 
-\[H(\boldsymbol{z}. \boldsymbol{y} \mid \boldsymbol{\beta}, \Theta) = H(\boldsymbol{z} \mid \boldsymbol{\beta}) - \sum\limits_{i \in S} log(f_i(y_i \mid z_i, \Theta))\]
+\[H(\boldsymbol{z}, \boldsymbol{y} \mid \boldsymbol{\beta}, \Theta) = H(\boldsymbol{z} \mid \boldsymbol{\beta}) - \sum\limits_{i \in S} log(f_i(y_i \mid z_i, \Theta))\]
 
 In our case, the goal is to recover the unknown realization of $Z: \boldsymbol{z}$. To this end we need to maximize the values of all the parameters of the model $\boldsymbol{\psi} = (\boldsymbol{\Theta}, \boldsymbol{\beta})$, and to chose the optimal number of clusters, $K$.
 
 \section{Parameter estimation using the EM algorithm}
-As mentioned before, the aim is to assign each cell $i$ to one of the $K$ possible clusters. To do so, it is interesting to consider the Maximum Posterior Marginal (MPM) that maximizes $P(Z_{i}=h|\boldsymbol{y}, \boldsymbol{\psi})$, where the $\boldsymbol{\psi}$ are unknown and need to be estimated. To this end, the Expectation Maximisation \cite{dempster77} (EM) principle can be applied. The EM algorithm consists in the Expectation step (E) where the expectation of the model's likelihood with the current parameters is computed and the Maximization step (M) where the parameters values that maximize the model's expectation computed in the E step are found. The two steps are repeated until a convergence factor is reached.\\
+As mentioned before, the aim is to assign each cell $i$ to one of the $K$ possible clusters. To do so, it is interesting to consider the Maximum Posterior Marginal (MPM) that maximizes $P(Z_{i}=h|\boldsymbol{y}, \boldsymbol{\psi})$, where the $\boldsymbol{\psi}$ are unknown and need to be estimated. To this end, the Expectation Maximisation \cite{dempster77} (EM) principle can be applied. The EM algorithm consists in the Expectation step (E) where the expectation of the model's likelihood with the current parameters is computed and the Maximization step (M) where the latent variables that maximize the model's expectation computed in the E step are found. The two steps are repeated until a convergence factor is reached.\\
 
 	\subsection{Initialization}
 The first step of the algorithm is to initialize the model's parameter. To this end, it is possible to directly assign values for $\boldsymbol{\psi}^{0}$, or to generate an initial clustering $\boldsymbol{z}^{0}$ from which the initial $\boldsymbol{\psi}^{0}$ will be derived.\\
 
-I decided to use a combination of both approach, with arbitrary values assigned to $\boldsymbol{\beta}^{0}$, typically $0$, and the use of an initial clustering to compute the values of $\boldsymbol{\Theta}^{0}$. Indeed, for $h \in {1,...,K}, m \in M$, because of the emission model, each $\theta_{h,m}$ is the probability of gene $m$ to be expressed in cluster $h$. Consequently, given a clustering $\boldsymbol{z}^{0}$ with function $Expr_{h,m}$ the number of cells expressing gene $m$ in cluster $h$ and function $Num_h$ the total number of cells in cluster $h$:
+I decided to use a combination of both approach, with arbitrary values assigned to $\boldsymbol{\beta}^{0}$, typically $0$, and the use of an initial clustering to compute the values of $\boldsymbol{\Theta}^{0}$. Indeed, for $h \in {1,...,K}, m \in M$, because of the emission model, each $\theta_{h,m}$ is the probability that $m$ is expressed in cluster $h$. Consequently, given a clustering $\boldsymbol{z}^{0}$ with function $Expr_{h,m}$ the number of cells expressing gene $m$ in cluster $h$ and function $Num_h$ the total number of cells in cluster $h$ I set:
 
 \begin{align*}
 \theta_{m,h}^{0} = \frac{Expr_{h,m}}{Num_h}
@@ -132,14 +142,14 @@ In the E step the parameters are fixed and the expectation of the model's likeli
 \begin{align}
 Q(\boldsymbol{\psi} \mid \boldsymbol{\psi}^{l}) &= \sum\limits_{\boldsymbol{z}} p(\boldsymbol{z} \mid \boldsymbol{y} ; \boldsymbol{\psi}^{l}) log\:p(\boldsymbol{y},\boldsymbol{z};\boldsymbol{\psi}) \nonumber
 \end{align}
-Which can be further decomposed in :
+Which can be further decomposed as :
 \begin{align}
 \label{eq:decomposed}
 Q(\boldsymbol{\psi} \mid \boldsymbol{\psi}^{l}) &= \underbrace{\sum\limits_{\boldsymbol{z}} p(\boldsymbol{z} \mid \boldsymbol{y} ; \boldsymbol{\psi}^{l}) log\:p(\boldsymbol{y} \mid \boldsymbol{z} ; \Theta)}_{R_y(\Theta\mid \boldsymbol{\psi}^l)} 
  + \underbrace{\sum\limits_{\boldsymbol{z}} p(\boldsymbol{z} \mid \boldsymbol{y} ; \boldsymbol{\psi}^{l}) log\:p(\boldsymbol{z} \mid \boldsymbol{\beta})}_{R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)}
 \end{align}
 
-Equation (\ref{eq:decomposed}) allows to consider separately $R_y$ and $R_z$.
+Equation (\ref{eq:decomposed}) allows me to separately optimise $R_y$ and $R_z$.
 
 
 $R_y$ can be re-written using equation(\ref{eq:independence}) as:
@@ -149,7 +159,7 @@ R_y(\Theta\mid \boldsymbol{\psi}^l) &= \sum\limits_{\boldsymbol{z}} p(\boldsymbo
 &= \sum\limits_{i \in S} \sum\limits_{h=1}^{K}\; \left[log\: f_{h} (y_i  ; \Theta) \right] \; p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
 \end{align*}  
 
-Therefore, we know that in the M step I will need to compute the following probability:
+Therefore, in the M step I will need to compute the following probability:
 
 \begin{align*}
 t_{i\,h}^{l+1} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
@@ -189,7 +199,7 @@ After the E step, maximizing $\boldsymbol{\psi}$ is relatively straightforward. 
 \boldsymbol{\beta}^{l+1} &= arg\:\underset{\boldsymbol{\beta}}{max}\:R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)
 \end{align*}
 
-For $\Theta$, once the the $t_{i\,h}^{l} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})$ have been computed during the E-step, those probabilities may be used to assign each cell to its most probable cluster at step $l$. This step classifies this method as hard clustering, this is a technical choice but of course the probabilities $t_{i\,h}^{l}$ could instead be used to compute a fuzzy clustering criterion for instance, the Hathaway's fuzzy clustering criterion as described in \cite{Dang98}.\\
+For $\Theta$, once the the $t_{i\,h}^{l} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})$ have been computed during the E-step, those probabilities may be used to assign each cell to its most probable cluster at step $l$. This is as hard clustering approach, which is a technical choice but of course the probabilities $t_{i\,h}^{l}$ could instead be used to compute a fuzzy clustering criterion for instance, the Hathaway's fuzzy clustering criterion as described in \cite{Dang98}.\\
  
 Once the new partition is created, the values of $\Theta$ that maximize the model's expectation can be computed iteratively for cluster $h \in {1,...,K}$ and gene $m \in M$. Specifically if $Expr_{h,m}$ denotes the number of cells expressing gene $m$ in cluster $h$ and $Num_h$ denotes the total number of cells in cluster $h$, we can write:
 
@@ -211,7 +221,7 @@ Without any prior knowledge, choosing the right number of clusters $K$ is challe
 log\;L(\boldsymbol{\psi}) = 	log\;P_G(\boldsymbol{y},\boldsymbol{z} \mid \Theta, \boldsymbol{\beta})
 \end{align*}
 
-Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model, we employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) as:
+Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model (i.e the number of cubes), we employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) \cite{burnham04} as:
 
 \begin{align*}
 \label{eq:BIC}

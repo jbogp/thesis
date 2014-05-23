@@ -18,9 +18,9 @@ Simulating data with a spatial component is a non-trivial problem. Existing meth
 	
 	Once the parameters values are available it is relatively straight forward to simulate a vector of gene expression for the $N_h$ sites in each cluster.
 	\subsection{Introducing a known spatial context}\label{subsec:simul_spatial}
-	Each simulated data point is then assigned to the same spatial location as the corresponding ``cube'' in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. By using simulated gene expression data equivalent in the same spatial context as the true data, the hypothesis is that the set of parameters $\boldsymbol{\beta}$ will stay relatively stable when the simulated data is clustered. Consequently, the values of $\boldsymbol{\beta}$ obtained after clustering the true data may be used as reference values.
+	Each simulated data point is then assigned to the same spatial location as the corresponding ``cube'' in the biological dataset, meaning that both the simulated and the biological datasets have the same neighbouring graph. By using simulated gene expression data equivalent in the same spatial context as the true data, the hypothesis is that the set of parameters $\boldsymbol{\beta}$ will stay relatively stable when the simulated data are clustered. Consequently, the values of $\boldsymbol{\beta}$ obtained after clustering the true data may be used as reference values.
 	\subsection{Expected results}\label{subsec:expected_simul_results}
-	Given this simulation scheme, the expected result after clustering the simulated data, is a strong conservation between the ``true'' values $\hat{\boldsymbol{\psi}}$ obtained from clustering the biological data and the estimated values $\widetilde{\boldsymbol{\psi}}$ obtained after clustering the simulated data.\\
+	Given this simulation scheme, the expected result after clustering the simulated data is a strong conservation between the ``true'' values $\hat{\boldsymbol{\psi}}$ obtained from clustering the biological data and the estimated values $\widetilde{\boldsymbol{\psi}}$ obtained after clustering the simulated data.\\
 
 \section{Comparing clustering results using the Jaccard similarity coefficient}
 	\subsection{Theoretical problem in comparing clustering results}
@@ -31,7 +31,6 @@ J(A,B) = \frac{|A \cap B|}{|A \cup B|}
 Although theoretically very simple, in practice computing this metric is not trivial. Indeed, depending on the clustering method used and on the initialization, even if the clustering results are 100\% identical, they may be misaligned.\\
 
 This means that for method $A$ \emph{cluster~1} could for example be \emph{cluster~5} in method $B$. In order to compute the Jaccard coefficient and compare clustering results, it is necessary to be able to align different sets. This problem may be solved by computing the Jaccard coefficient for all possible combinations of clusters between $A$ and $B$. However, computationally when $K$ increases, computing the Jaccard coefficient for this exponentially increasing number of combinations quickly becomes expensive. Consequently, I developed a similarity specificity matrix approach as described in the next paragraph to align the clustering results before computing the Jaccard coefficient.
-
 
 	\subsection{Alignment via similarity-specificity matrix}
 The ``count'' matrix $D$ and the ``similarity/specificity'' matrix $H$ for comparing two clustering outputs, $z$ and $z'$, each with $K$ clusters, so that $z = \bigcup_{h \in [1,K]} c_h $ and $z' = \bigcup_{h \in [1,K]} c'_h$ are defined as:
@@ -53,19 +52,19 @@ Now that I have established a method to compare cluster sets, I need to validate
 
 
 \section{Validation of parameters estimation and model selection}
-	\subsection{Estimation of $\boldsymbol{\Theta}$}
+	\subsection{Estimation of $\Theta$}
 	To validate the consistency in estimating the values of $\boldsymbol{\Theta}$, I compare the ``true'' values used to simulate the data with the values obtained after clustering the simulated data.\\
 	
-	A simple example with $K=6$ is presented in Figure \ref{fig:theta_valid}: each cell of the heatmaps $HM_{h,h'}$ with $h,h' \in K$ represents the mean of the vector of pairwise differences $\theta_{h,m} - \theta_{h',m}$. Figure \ref{fig:theta_valid_non_aligned} shows these values before alignment and Figure \ref{fig:theta_valid_aligned} after. As expected, after alignment the small values are aligned in the diagonal showing that each cluster $h'$ exhibits highly similar values of $\boldsymbol{\Theta}$ compared to its corresponding cluster $h$ in the reference.\\
+	A simple example with $K=6$ is presented in Figure \ref{fig:theta_valid}: each cell of the heatmaps $HM_{h,h'}$ with $h,h' \in K$ represents the mean of the vector of absolute pairwise differences $\theta_{h,m} - \theta_{h',m}$. Figure \ref{fig:theta_valid_non_aligned} shows these values before alignment and Figure \ref{fig:theta_valid_aligned} after. As expected, after alignment the small values are aligned in the diagonal showing that each cluster $h'$ exhibits highly similar values of $\boldsymbol{\Theta}$ compared to its corresponding cluster $h$ in the reference.\\
 	 
-\begin{figure}[bth]
+\begin{figure}[H]
         \myfloatalign
         \subfloat[``Proximity'' between values of $\boldsymbol{\Theta}$ before alignment]
         {\label{fig:theta_valid_non_aligned}
-        \includegraphics[width=.45\linewidth]{gfx/chapter5/heatmap6.png}} \quad
+        \includegraphics[width=.8\linewidth]{gfx/chapter5/heatmap6.png}} \\
         \subfloat[``Proximity'' between values of $\boldsymbol{\Theta}$ after alignment]
         {\label{fig:theta_valid_aligned}%
-         \includegraphics[width=.45\linewidth]{gfx/chapter5/heatmap6_aligned.png}}
+         \includegraphics[width=.8\linewidth]{gfx/chapter5/heatmap6_aligned.png}}
         \caption{Validating the estimation of $\boldsymbol{\Theta}$ for $K=6$. On the x axis are shown the 6 clusters obtained after clustering the simulated data. On the y axis are shown the 6 ``true'' reference clusters. Each cell of the heatmap corresponds to the mean of the absolute pairwise (with respect to the 86 genes considered) difference between ``true'' and simulated $\boldsymbol{\Theta}$ values. A small number means that the difference between the reference $\boldsymbol{\Theta}$ values and the ones obtained after clustering the simulated data is very small.}\label{fig:theta_valid}
 \end{figure}
 	
@@ -73,11 +72,11 @@ Now that I have established a method to compare cluster sets, I need to validate
 	
 
 	\subsection{Estimation of $\beta$}\label{subsec:beta_estimation}
-	To determine how accurately the values of $\boldsymbol{\beta}$ are estimated, I compare the true and inferred mean values of $\boldsymbol{\beta}$ for different values of $K$, as shown in Figure \ref{fig:beta_validation} (red and green dots). I chose to compare the mean values instead of comparing $\boldsymbol{\beta}$ in a pairwise manner because of the alignment errors described in the previous paragraph. Indeed, for example if one true cluster is split in two after clustering the simulated data, there isn't a simple rule about how the value of $\beta$ should be distributed between the two resulting cluster. In this context using the mean value allows a consistent comparison of the overall value of $\boldsymbol{\beta}$, even though the sensibility for extreme values is lost.\\
+	To determine how accurately the values of $\boldsymbol{\beta}$ are estimated, I compare the true and inferred mean values of $\boldsymbol{\beta}$ for different values of $K$, as shown in Figure \ref{fig:beta_validation} (red and green dots). I chose to compare the mean values instead of comparing $\boldsymbol{\beta}$ in a pairwise manner because of the alignment errors described in the previous paragraph. Indeed, for example if one true cluster is split in two after clustering the simulated data, there isn't a simple rule about how the value of $\beta$ should be distributed between the two resulting cluster. In this context using the mean value allows a consistent comparison of the overall value of $\boldsymbol{\beta}$, even though the sensitivity for extreme values is lost.\\
 
-	 Analysing Figure \ref{fig:beta_validation}, I observe that the values of $\boldsymbol{\beta}$ increase with $K$, which is to be expected since more clusters implies the existence of more transition areas (sites where neighbours do not belong to the same cluster). Because the inner spatial structure of the data is conserved regardless of $K$, this males an increase of each component of $\boldsymbol{\beta}$ necessary to maintain the optimal spatial coherency of the full model.\\
+	 Analysing Figure \ref{fig:beta_validation}, I observe that the values of $\boldsymbol{\beta}$ increase with $K$, which is to be expected since more clusters implies the existence of more transition areas (sites where neighbours do not belong to the same cluster). Because the inner spatial structure of the data is conserved regardless of $K$, this makes an increase of each component of $\boldsymbol{\beta}$ necessary to maintain the optimal spatial coherency of the full model.\\
 	
-	Interestingly, Figure \ref{fig:beta_validation} also shows a slight but consistent underestimation of $\boldsymbol{\beta}$. This can be explained by noting that the simulation scheme used may reduce the spatial coherency within clusters. Specifically, as illustrated in Figure \ref{fig:beta_error}, clusters may not display homogeneous expression of a given gene: instead, depending upon the value of $\theta$, a gene will be expressed only in a fraction of cells. In reality, the cells in which such genes are expressed may have a coherent spatial structure within the biological cluster that is lost in the simulation, thus explaining the consistently smaller value for $\boldsymbol{\beta}$ that are estimated.\\
+	Interestingly, Figure \ref{fig:beta_validation} also shows a slight but consistent underestimation of $\boldsymbol{\beta}$. This can be explained by noting that the simulation scheme used may reduce the spatial coherency within clusters. Specifically, as illustrated in Figure \ref{fig:beta_error}, clusters may not display homogeneous expression of a given gene: instead. Depending upon the value of $\theta$, a gene will be expressed only in a fraction of cells. In reality, the cells in which such genes are expressed may have a coherent spatial structure within the biological cluster that is lost in the simulation, thus explaining the consistently smaller value for $\boldsymbol{\beta}$ that are estimated.\\
 	
 	 To explore this further, I performed a second simulation using the parameter values estimated from the first simulation as a reference. In this context no further loss of spatial coherency was expected, which was indeed confirmed as shown by the blue curve in Figure \ref{fig:beta_validation}.\\
 	
@@ -88,7 +87,7 @@ Now that I have established a method to compare cluster sets, I need to validate
 	\end{figure}
 	
 	\begin{figure}[H]
-\centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter5/beta_error.png}}
+\centerline{\includegraphics[width=\linewidth]{gfx/chapter5/beta_error.png}}
 \caption{{\bf Decrease in spatial coherency due to the simulation scheme.} For an example cluster $h$, gene $m$ may only be expressed in half of the cells. This will yield $\theta_{h,m} = 0.5$. However, in the biological data, the cells expressing gene $m$ may be spatially coherent (i.e., located close to one another), leading to a reduced area of expression discontinuity (the green line). By contrast, in the simulated data the expression of such a gene will lose its spatial coherency, leading to an increased area of expression discontinuity. The number of cells having a neighbour with some differences in the gene expression pattern is directly linked to the value of $\beta_h$ through the energy function described in Chapter \ref{ch:HMRF}. This explains the underestimation of $\boldsymbol{\beta}$ observed in Figure \ref{fig:beta_validation}.}
 \label{fig:beta_error}
 	\end{figure}
@@ -110,7 +109,7 @@ As pointed out previously, initialization is a key step of the HMRF clustering. 
 	\subsection{The EM principle and local maximum}
 As explained in Chapter \ref{ch:HMRF}, the HMRF clustering I developed relies on a Maximum Posterior Marginal (MPM) approach, and the EM algorithm is used to estimate the unknown parameter values. The likelihood function that needs to be maximised may possess a varied set of stationary points. Thus, convergence to the global maximum with the EM algorithm, depends strongly on the parameters initialisation. To overcome this problem, different initialisation strategies have been proposed and investigated (see for instance \cite{biernacki03,karlis03,mclachlan04}).\\
 
-Indeed, if the procedure is initialized with a set of clusters that are close to a local maximum in the likelihood function, the EM algorithm will converge to this local maximum and will never reach the global maximum of the model.
+In particular, if the procedure is initialized with a set of clusters that are close to a local maximum in the likelihood function, the EM algorithm will converge to this local maximum and will never reach the global maximum of the model.
 
 	\subsection{Random initialization vs Hclust initialization}
 	To shed some light on the initialization scheme issue I compared two theoretically opposed initialization schemes :
@@ -121,7 +120,7 @@ Indeed, if the procedure is initialized with a set of clusters that are close to
 
 The results are shown in Figure \ref{fig:methodComparison} (black and green dots on panel A). Looking at the effect of the initialization scheme on the quality of the resulting clusters via the Jaccard coefficient for $K \in [4,70]$ it is clear that, unsurprisingly, considering that the EM algorithm does not guarantee to reach the global maximum, the random initialization scheme performs better than the directed initialization scheme. Indeed, for the HMRF randomly initialized, the average Jaccard coefficient is around $0.8$ when it averages only $0.6$ when initialized with hClust.\\
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 \centerline{\includegraphics[width=0.9\linewidth]{gfx/chapter5/method_comparison.png}}
 \caption{{\bf Jaccard coefficient between true and resulting clusters on the simulated data with different methods and initializations.} Panel A compares the performance of the MRF method with a random initialization with an independent mixture model also with a random initialization, the MRF method initialized with the hClust classification and hClust alone on data simulated with a spatial component. Panel B shows the Jaccard coefficient for the MRF method and independent mixture model both with a random initialization; in this case both methods are applied to simulated data that lacks a spatial component.}
 \label{fig:methodComparison}
@@ -139,7 +138,7 @@ Following this observation, for the rest of this thesis and especially in Chapte
 	
 	
 	\subsection{Computing time}
-	I have assessed in the previous paragraph that the developed HMRF clustering method yields better results in terms of clustering than the other tested methods. However, the fact that the method takes into consideration the spatial dependencies between data points means that it is will be computationally more expensive than non spatial methods, especially as the number of sites increases.\\
+	I have demonstrated in the previous paragraph that the HMRF clustering method yields better results in terms of clustering than the other tested methods. However, the fact that the method takes into consideration the spatial dependencies between data points means that it will be computationally more expensive than non spatial methods, especially as the number of sites increases.\\
 	
 	The number of clusters $K$ also has an important influence on the computing time. Given a fixed number of sites $S=32.203$, I ran the HMRF, and the mixture model methods on simulated datasets for $K \in [4,60]$ and have obtained, the computing times shown in Figure \ref{fig:computing_time} (on the same machine).\\
 	
@@ -154,9 +153,12 @@ Following this observation, for the rest of this thesis and especially in Chapte
 	\end{figure}
 	
 \section{summary}
-In this Chapter, I have presented the simulation study conducted to evaluate the performances of the HMRF clustering method described in Chapter \ref{ch:HMRF}. First, I have described the method used to simulate data with known spatial characteristics. Subsequently, I validated that all the parameters of the model were estimated correctly and consistently by the EM algorithm. I then discussed the performance of the method regarding the initialization scheme, and concluded that a selected random initialization yielded the best results. Finally I used the simulated data to compare the performances of the HMRF method compared to other clustering methods, the result of which was that even though the method is quite costly in terms of computing time when the number of clusters increases, it clearly outperforms both the independent mixture model and the hClust clustering methods in terms of accuracy.\\
+In this Chapter, I have presented the simulation study conducted to evaluate the performances of the HMRF clustering method described in Chapter \ref{ch:HMRF}. First, I have described the method used to simulate data with known spatial characteristics. Subsequently, I validated that all the parameters of the model were estimated correctly and consistently by the EM algorithm. I then discussed the performance of the method regarding the initialization scheme, and concluded that a random initialization yielded the best results. Finally I used the simulated data to compare the performances of the HMRF method compared to other clustering methods, the result of which was that even though the method is quite costly in terms of computing time when the number of clusters increases, it clearly outperforms both the independent mixture model and the hClust clustering methods in terms of accuracy.\\
 
 Having validated the method, I will present in the next Chapter the results obtained when the HMRF clustering was applied to the single cell in-situ hybridization data described in Chapter \ref{ch:singlecell}.
+
+
+
 
 
 %*****************************************
