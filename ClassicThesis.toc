@@ -10,9 +10,9 @@
 \contentsline {section}{\numberline {1.3}Platynereis dumerilii, an ideal organism for studying brain evolution}{34}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}General description}{34}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Larval development}{36}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Platynereis' nervous development until 48hpf}{38}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.3}Platynereis' nervous development until 48hpf}{37}{subsection.1.3.3}
 \contentsline {subsection}{\numberline {1.3.4}Building a image library of gene expression for Platynereis}{39}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}Summary}{41}{section.1.4}
+\contentsline {section}{\numberline {1.4}Summary}{40}{section.1.4}
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {From tissue to single cell transcriptomics, a paradigm shift}}{43}{chapter.2}
 \contentsline {section}{\numberline {2.1}Spatially referenced single cell-like in-situ hybridization data}{43}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Dividing images into ''cells''}{43}{subsection.2.1.1}
@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {2.3}About the quantitative trait of single cell expression data}{47}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Light contamination in in-situ hybridization data}{47}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Technical noise in single cell RNA-seq data}{49}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Binarizing in-situ hybrdization datasets}{50}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Binarizing in-situ hybridization datasets}{49}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Preliminary results on single cell RNA-seq in \emph {{P}. dumerillii}{}'s brain}{53}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Single cell RNA-seq in Platynereis' brain}{53}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Mapping RNA-seq data back to PrimR in-situ hybridization assays}{55}{subsection.2.4.2}
@@ -62,7 +62,9 @@
 \contentsline {section}{\numberline {4.5}Mean field approximations}{87}{section.4.5}
 \contentsline {section}{\numberline {4.6}M step}{87}{section.4.6}
 \contentsline {section}{\numberline {4.7}Estimating K}{88}{section.4.7}
-\contentsline {section}{\numberline {4.8}Summary}{89}{section.4.8}
+\contentsline {section}{\numberline {4.8}Algorithmic overview}{89}{section.4.8}
+\contentsline {section}{\numberline {4.9}Implementation}{89}{section.4.9}
+\contentsline {section}{\numberline {4.10}Summary}{89}{section.4.10}
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Method validation and performance analysis on simulated data}}{91}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulating data with a spatial component }{91}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Simulating non-spatial gene expression data}{92}{subsection.5.1.1}
@@ -91,22 +93,22 @@
 \contentsline {subsection}{\numberline {6.3.3}Motor regions}{112}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Generating functional hypotheses about unknown biological tissues}{114}{section.6.4}
 \contentsline {section}{\numberline {6.5}Method sensitivity compared to other clustering methods}{115}{section.6.5}
-\contentsline {section}{\numberline {6.6}Summary}{116}{section.6.6}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusions and future work}}{117}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{117}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Summary}{117}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Future work}{119}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Single cell RNA-seq back-mapping}{119}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}HMRF future developments}{119}{subsection.7.2.2}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{121}{part.2}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{123}{appendix.A}
-\contentsline {section}{\numberline {A.1}Dataset file specification}{123}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}JSON format}{123}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}XML format}{123}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}CSV format}{125}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Information layer file specification}{126}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}JSON format}{126}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}XML format}{127}{subsection.A.2.2}
-\contentsline {paragraph}{CSV format}{128}{lstnumber.A.5.26}
+\contentsline {section}{\numberline {6.6}Summary}{117}{section.6.6}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusions and future work}}{119}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{119}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Summary}{119}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Future work}{121}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Single cell RNA-seq back-mapping}{121}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}HMRF future developments}{121}{subsection.7.2.2}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{125}{part.2}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Input file formats for bioWeb3D}}{127}{appendix.A}
+\contentsline {section}{\numberline {A.1}Dataset file specification}{127}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}JSON format}{127}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}XML format}{127}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}CSV format}{129}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Information layer file specification}{130}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}JSON format}{130}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}XML format}{131}{subsection.A.2.2}
+\contentsline {paragraph}{CSV format}{132}{lstnumber.5.26}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{131}{dummy.7}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{135}{dummy.7}
