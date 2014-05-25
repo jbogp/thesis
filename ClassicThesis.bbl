@@ -1,988 +1,874 @@
-\begin{thebibliography}{134}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{100}
 
-\bibitem[can()]{caniuse}
-Compatibility table for {W}eb{GL}.
-\newblock URL \url{http://caniuse.com/webgl}.
-
-\bibitem[git()]{github}
-bio{W}eb3{D} on github.
-\newblock URL \url{http://github.com/jbogp/bio{W}eb3{D}}.
-
-\bibitem[sec()]{security}
-United {S}tates {C}omputer {E}mergency {R}eadiness {T}eam.
-\newblock URL \url{http://www.kb.cert.org/vuls/id/636312}.
-
-\bibitem[thr()]{three}
-Three.js - {J}ava{S}cript 3{D} library.
-\newblock URL \url{http://mrdoob.github.com/three.js/}.
-
-\bibitem[web()]{webgl}
-Web{GL} 1.0 {S}pecification.
-\newblock URL \url{https://www.khronos.org/registry/webgl/specs/1.0/}.
-
-\bibitem[xml()]{xmlref}
-Xml {A}pplications and {I}nitiatives.
-\newblock URL \url{http://xml.coverpages.org/xml{A}pplications.html}.
-
-\bibitem[Anders and {H}uber(2010)]{anders10}
-{S}imon Anders and {W}olfgang {H}uber.
+\bibitem{anders10}
+{\sc Anders, S., and {H}uber, W.}
 \newblock Differential expression analysis for sequence count data.
-\newblock \emph{Genome biol}, 11\penalty0 (10):\penalty0 R106, 2010.
+\newblock {\em Genome biol 11}, 10 (2010), R106.
 
-\bibitem[Arbelaez et~al.(2011)Arbelaez, {M}aire, {F}owlkes, and
-  {M}alik]{arbelaez11}
-{P}ablo Arbelaez, {M}ichael {M}aire, {C}harless {F}owlkes, and {J}itendra
-  {M}alik.
+\bibitem{arbelaez11}
+{\sc Arbelaez, P., {M}aire, M., {F}owlkes, C., and {M}alik, J.}
 \newblock Contour detection and hierarchical image segmentation.
-\newblock \emph{Pattern {A}nalysis and {M}achine {I}ntelligence, {IEEE}
-  {T}ransactions on}, 33\penalty0 (5):\penalty0 898--916, 2011.
+\newblock {\em Pattern {A}nalysis and {M}achine {I}ntelligence, {IEEE}
+  {T}ransactions on 33}, 5 (2011), 898--916.
 
-\bibitem[Arendt()]{arendt124}
-{D}etlev Arendt.
+\bibitem{arendt124}
+{\sc Arendt, D.}
 \newblock Platynereis dumerilii: a "living fossil" elucidating the evolution of
   genomes and of the {CNS}.
-\newblock \emph{Theory in {B}iosciences}, 124:\penalty0 185--197.
+\newblock {\em Theory in {B}iosciences 124\/} (2002), 185--197.
 
-\bibitem[Balmer and {B}lomhoff(2002)]{balmer02}
-{J}ames~{E} Balmer and {R}une {B}lomhoff.
+\bibitem{balmer02}
+{\sc Balmer, J.~E., and {B}lomhoff, R.}
 \newblock Gene expression regulation by retinoic acid.
-\newblock \emph{Journal of lipid research}, 43\penalty0 (11):\penalty0
-  1773--1808, 2002.
+\newblock {\em Journal of lipid research 43}, 11 (2002), 1773--1808.
 
-\bibitem[Bartlett and {B}anker(1984)]{bartlett84}
-{WILLIAM}~{P} Bartlett and {GARY}~{A} {B}anker.
+\bibitem{bartlett84}
+{\sc Bartlett, W.~P., and {B}anker, G.~A.}
 \newblock An electron microscopic study of the development of axons and
   dendrites by hippocampal neurons in culture. {I}. {C}ells which develop
   without intercellular contacts.
-\newblock \emph{The {J}ournal of neuroscience}, 4\penalty0 (8):\penalty0
-  1944--1953, 1984.
+\newblock {\em The {J}ournal of neuroscience 4}, 8 (1984), 1944--1953.
 
-\bibitem[Belloni and {C}hernozhukov(2009)]{belloni09}
-{A}lexandre Belloni and {V}ictor {C}hernozhukov.
+\bibitem{belloni09}
+{\sc Belloni, A., and {C}hernozhukov, V.}
 \newblock On the computational complexity of {MCMC}-based estimators in large
   samples.
-\newblock \emph{The {A}nnals of {S}tatistics}, pages 2011--2055, 2009.
+\newblock {\em The {A}nnals of {S}tatistics\/} (2009), 2011--2055.
 
-\bibitem[Bentley et~al.(2008)Bentley, {B}alasubramanian, {S}werdlow, {S}mith,
-  {M}ilton, {B}rown, {H}all, {E}vers, {B}arnes, {B}ignell, et~al.]{bentley08}
-{D}avid~{R} Bentley, {S}hankar {B}alasubramanian, {H}arold~{P} {S}werdlow,
-  {G}eoffrey~{P} {S}mith, {J}ohn {M}ilton, {C}live~{G} {B}rown, {K}evin~{P}
-  {H}all, {D}irk~{J} {E}vers, {C}olin~{L} {B}arnes, {H}elen~{R} {B}ignell,
-  et~al.
+\bibitem{bentley08}
+{\sc Bentley, D.~R., {B}alasubramanian, S., {S}werdlow, H.~P., {S}mith, G.~P.,
+  {M}ilton, J., {B}rown, C.~G., {H}all, K.~P., {E}vers, D.~J., {B}arnes, C.~L.,
+  {B}ignell, H.~R., et~al.}
 \newblock Accurate whole human genome sequencing using reversible terminator
   chemistry.
-\newblock \emph{Nature}, 456\penalty0 (7218):\penalty0 53--59, 2008.
+\newblock {\em Nature 456}, 7218 (2008), 53--59.
 
-\bibitem[Besag(1975)]{Besag75}
-{J}ulian Besag.
+\bibitem{Besag75}
+{\sc Besag, J.}
 \newblock Statistical analysis of non-lattice data.
-\newblock \emph{The statistician}, pages 179--195, 1975.
+\newblock {\em The statistician\/} (1975), 179--195.
 
-\bibitem[Biernacki et~al.(2003)Biernacki, {C}eleux, and {G}ovaert]{biernacki03}
-{C}hristophe Biernacki, {G}illes {C}eleux, and {G}{\'e}rard {G}ovaert.
+\bibitem{biernacki03}
+{\sc Biernacki, C., {C}eleux, G., and {G}ovaert, G.}
 \newblock Choosing starting values for the {EM} algorithm for getting the
   highest likelihood in multivariate {G}aussian mixture models.
-\newblock \emph{Computational {S}tatistics \& {D}ata {A}nalysis}, 41\penalty0
-  (3):\penalty0 561--575, 2003.
+\newblock {\em Computational {S}tatistics \& {D}ata {A}nalysis 41}, 3 (2003),
+  561--575.
 
-\bibitem[Boyer(1997)]{boyer97}
-{P}aul~{D} Boyer.
+\bibitem{boyer97}
+{\sc Boyer, P.~D.}
 \newblock The {ATP} synthase-a splendid molecular machine.
-\newblock \emph{Annual review of biochemistry}, 66\penalty0 (1):\penalty0
-  717--749, 1997.
+\newblock {\em Annual review of biochemistry 66}, 1 (1997), 717--749.
 
-\bibitem[Breasted(1930)]{breasted30}
-{J}ames~{H}enry Breasted.
-\newblock \emph{The {E}dwin {S}mith {S}urgical {P}apyrus: published in
-  facsimile and hieroglyphic transliteration with translation and commentary in
-  two volumes}, volume~3.
+\bibitem{breasted30}
+{\sc Breasted, J.~H.}
+\newblock {\em The {E}dwin {S}mith {S}urgical {P}apyrus: published in facsimile
+  and hieroglyphic transliteration with translation and commentary in two
+  volumes}, vol.~3.
 \newblock Chic. {UP}, 1930.
 
-\bibitem[Brennecke et~al.(2013)Brennecke, {A}nders, {K}im, {K}o{\l}odziejczyk,
-  {Z}hang, {P}roserpio, {B}aying, {B}enes, {T}eichmann, {M}arioni,
-  et~al.]{brennecke13}
-{P}hilip Brennecke, {S}imon {A}nders, {J}ong~{K}young {K}im, {A}leksandra~{A}
-  {K}o{\l}odziejczyk, {X}iuwei {Z}hang, {V}alentina {P}roserpio, {B}ianka
-  {B}aying, {V}ladimir {B}enes, {S}arah~{A} {T}eichmann, {J}ohn~{C} {M}arioni,
-  et~al.
+\bibitem{brennecke13}
+{\sc Brennecke, P., {A}nders, S., {K}im, J.~K., {K}o{\l}odziejczyk, A.~A.,
+  {Z}hang, X., {P}roserpio, V., {B}aying, B., {B}enes, V., {T}eichmann, S.~A.,
+  {M}arioni, J.~C., et~al.}
 \newblock Accounting for technical noise in single-cell {RNA}-seq experiments.
-\newblock \emph{Nature methods}, 2013.
+\newblock {\em Nature methods\/} (2013).
 
-\bibitem[Briscoe et~al.(1999)Briscoe, {S}ussel, {S}erup, {H}artigan
-  {O}'{C}onnor, {J}essell, {R}ubenstein, and {E}ricson]{briscoe99}
-{J} Briscoe, {L} {S}ussel, {P} {S}erup, {D} {H}artigan {O}'{C}onnor, {TM}
-  {J}essell, {JLR} {R}ubenstein, and {J} {E}ricson.
+\bibitem{briscoe99}
+{\sc Briscoe, J., {S}ussel, L., {S}erup, P., {H}artigan {O}'{C}onnor, D.,
+  {J}essell, T., {R}ubenstein, J., and {E}ricson, J.}
 \newblock Homeobox gene {N}kx2. 2 and specification of neuronal identity by
   graded {S}onic hedgehog signalling.
-\newblock \emph{Nature}, 398\penalty0 (6728):\penalty0 622--627, 1999.
+\newblock {\em Nature 398}, 6728 (1999), 622--627.
 
-\bibitem[Brissova et~al.(2005)Brissova, {F}owler, {N}icholson, {C}hu,
-  {H}irshberg, {H}arlan, and {P}owers]{brissova05}
-{M}arcela Brissova, {M}ichael~{J} {F}owler, {W}endell~{E} {N}icholson, {A}nita
-  {C}hu, {B}oaz {H}irshberg, {D}avid~{M} {H}arlan, and {A}lvin~{C} {P}owers.
+\bibitem{brissova05}
+{\sc Brissova, M., {F}owler, M.~J., {N}icholson, W.~E., {C}hu, A., {H}irshberg,
+  B., {H}arlan, D.~M., and {P}owers, A.~C.}
 \newblock Assessment of human pancreatic islet architecture and composition by
   laser scanning confocal microscopy.
-\newblock \emph{Journal of {H}istochemistry \& {C}ytochemistry}, 53\penalty0
-  (9):\penalty0 1087--1097, 2005.
+\newblock {\em Journal of {H}istochemistry \& {C}ytochemistry 53}, 9 (2005),
+  1087--1097.
 
-\bibitem[Brunet and {P}attyn(2002)]{brunet02}
-{JF} Brunet and {A} {P}attyn.
+\bibitem{brunet02}
+{\sc Brunet, J., and {P}attyn, A.}
 \newblock Phox2 genes-from patterning to connectivity.
-\newblock \emph{Current opinion in genetics \& development}, 12\penalty0
-  (4):\penalty0 435, 2002.
+\newblock {\em Current opinion in genetics \& development 12}, 4 (2002), 435.
 
-\bibitem[Burges et~al.(2005)Burges, {S}haked, {R}enshaw, {L}azier, {D}eeds,
-  {H}amilton, and {H}ullender]{burges2005}
-{C}hris Burges, {T}al {S}haked, {E}rin {R}enshaw, {A}ri {L}azier, {M}att
-  {D}eeds, {N}icole {H}amilton, and {G}reg {H}ullender.
+\bibitem{burges2005}
+{\sc Burges, C., {S}haked, T., {R}enshaw, E., {L}azier, A., {D}eeds, M.,
+  {H}amilton, N., and {H}ullender, G.}
 \newblock Learning to rank using gradient descent.
-\newblock In \emph{Proceedings of the 22nd international conference on
-  {M}achine learning}, pages 89--96. ACM, 2005.
+\newblock In {\em Proceedings of the 22nd international conference on {M}achine
+  learning\/} (2005), ACM, pp.~89--96.
 
-\bibitem[Burnham and {A}nderson(2004)]{burnham04}
-{K}enneth~{P} Burnham and {D}avid~{R} {A}nderson.
+\bibitem{burnham04}
+{\sc Burnham, K.~P., and {A}nderson, D.~R.}
 \newblock Multimodel inference understanding {AIC} and {BIC} in model
   selection.
-\newblock \emph{Sociological methods \& research}, 33\penalty0 (2):\penalty0
-  261--304, 2004.
+\newblock {\em Sociological methods \& research 33}, 2 (2004), 261--304.
 
-\bibitem[{C}eleux et~al.(2001){C}eleux, {F}lorence {F}orbes, and {N}athalie
-  {P}eyrard]{Celeux01}
-Gilles {C}eleux, {F}lorence {F}orbes, and {N}athalie {P}eyrard.
+\bibitem{three}
+{\sc Cabello, R.}
+\newblock Three.js - {J}ava{S}cript 3{D} library.
+\newblock \url{http://mrdoob.github.com/three.js/}.
+\newblock Accessed: 2013.
+
+\bibitem{Celeux01}
+{\sc {C}eleux, G., {F}lorence {F}orbes, and {N}athalie {P}eyrard}.
 \newblock Em procedures using mean field-like approximations for {M}arkov
   model-based image segmentation, 2001.
 
-\bibitem[CHALMOND(1989)]{Chalmond89}
-{B} CHALMOND.
+\bibitem{Chalmond89}
+{\sc Chalmond, B.}
 \newblock An iterative {G}ibbsian technique for reconstruction of m-ary images.
-\newblock \emph{Pattern recognition}, 22\penalty0 (6):\penalty0 747--761, 1989.
+\newblock {\em Pattern recognition 22}, 6 (1989), 747--761.
 
-\bibitem[Chang et~al.(2002)Chang, {C}hi, {D}udoit, {B}ondre, van~de {R}ijn,
-  {B}otstein, and {B}rown]{chang02}
-{H}oward~{Y} Chang, {J}en-{T}san {C}hi, {S}andrine {D}udoit, {C}handa {B}ondre,
-  {M}att van~de {R}ijn, {D}avid {B}otstein, and {P}atrick~{O} {B}rown.
+\bibitem{chang02}
+{\sc Chang, H.~Y., {C}hi, J.-T., {D}udoit, S., {B}ondre, C., van~de {R}ijn, M.,
+  {B}otstein, D., and {B}rown, P.~O.}
 \newblock Diversity, topographic differentiation, and positional memory in
   human fibroblasts.
-\newblock \emph{Proceedings of the {N}ational {A}cademy of {S}ciences},
-  99\penalty0 (20):\penalty0 12877--12882, 2002.
+\newblock {\em Proceedings of the {N}ational {A}cademy of {S}ciences 99}, 20
+  (2002), 12877--12882.
 
-\bibitem[Clausi and {Y}ue(2004)]{clausi04}
-{D}avid~{A} Clausi and {B}ing {Y}ue.
+\bibitem{clausi04}
+{\sc Clausi, D.~A., and {Y}ue, B.}
 \newblock Comparing cooccurrence probabilities and {M}arkov random fields for
   texture analysis of {SAR} sea ice imagery.
-\newblock \emph{Geoscience and {R}emote {S}ensing, {IEEE} {T}ransactions on},
-  42\penalty0 (1):\penalty0 215--228, 2004.
+\newblock {\em Geoscience and {R}emote {S}ensing, {IEEE} {T}ransactions on 42},
+  1 (2004), 215--228.
 
-\bibitem[Colello and {G}uillery(1990)]{colello90}
-{RJ} Colello and {RW} {G}uillery.
+\bibitem{colello90}
+{\sc Colello, R., and {G}uillery, R.}
 \newblock The early development of retinal ganglion cells with uncrossed axons
   in the mouse: retinal position and axonal course.
-\newblock \emph{Development}, 108\penalty0 (3):\penalty0 515--523, 1990.
+\newblock {\em Development 108}, 3 (1990), 515--523.
 
-\bibitem[Costanzo et~al.(2006)Costanzo, {S}ave, and {F}riend]{costanzo06}
-{L}inda~{S} Costanzo, {Y}ou {S}ave, and {T}ell~{A} {F}riend.
+\bibitem{costanzo06}
+{\sc Costanzo, L.~S., {S}ave, Y., and {F}riend, T.~A.}
 \newblock Brs {P}hysiology ({B}oard {R}eview {S}eries), 2006.
 
-\bibitem[Dang and {G}ovaert(1998)]{Dang98}
-{M}. Dang and {G}. {G}ovaert.
+\bibitem{Dang98}
+{\sc Dang, M., and {G}ovaert, G.}
 \newblock Spatial {F}uzzy {C}lustering using {EM} and {M}arkov {R}andom
   {F}ields.
-\newblock \emph{International {J}ournal of {S}ystem {R}esearch and
-  {I}nformation {S}cience}, 8\penalty0 (4):\penalty0 183--202, 1998.
+\newblock {\em International {J}ournal of {S}ystem {R}esearch and {I}nformation
+  {S}cience 8}, 4 (1998), 183--202.
 
-\bibitem[Demilly et~al.(2011)Demilly, {S}imionato, {O}hayon, {K}erner,
-  {G}arc{\`e}s, and {V}ervoort]{demilly11}
-{A}drien Demilly, {E}lena {S}imionato, {D}avid {O}hayon, {P}ierre {K}erner,
-  {A}lain {G}arc{\`e}s, and {M}ichel {V}ervoort.
+\bibitem{demilly11}
+{\sc Demilly, A., {S}imionato, E., {O}hayon, D., {K}erner, P., {G}arc{\`e}s,
+  A., and {V}ervoort, M.}
 \newblock Coe genes are expressed in differentiating neurons in the central
   nervous system of protostomes.
-\newblock \emph{Plo{S} one}, 6\penalty0 (6):\penalty0 e21213, 2011.
+\newblock {\em Plo{S} one 6}, 6 (2011), e21213.
 
-\bibitem[Dempster et~al.(1977)Dempster, {L}aird, {R}ubin, et~al.]{dempster77}
-{A}rthur~{P} Dempster, {N}an~{M} {L}aird, {D}onald~{B} {R}ubin, et~al.
+\bibitem{dempster77}
+{\sc Dempster, A.~P., {L}aird, N.~M., {R}ubin, D.~B., et~al.}
 \newblock Maximum likelihood from incomplete data via the {EM} algorithm.
-\newblock \emph{Journal of the {R}oyal statistical {S}ociety}, 39\penalty0
-  (1):\penalty0 1--38, 1977.
+\newblock {\em Journal of the {R}oyal statistical {S}ociety 39}, 1 (1977),
+  1--38.
 
-\bibitem[Denes et~al.(2007)Denes, {J}{\'e}kely, {S}teinmetz, {R}aible,
-  {S}nyman, {P}rud'homme, {F}errier, {B}alavoine, and {A}rendt]{denes07}
-{A}lexandru~{S} Denes, {G}{\'a}sp{\'a}r {J}{\'e}kely, {P}atrick~{RH}
-  {S}teinmetz, {F}lorian {R}aible, {H}eidi {S}nyman, {B}enjamin {P}rud'homme,
-  {D}avid~{EK} {F}errier, {G}uillaume {B}alavoine, and {D}etlev {A}rendt.
+\bibitem{denes07}
+{\sc Denes, A.~S., {J}{\'e}kely, G., {S}teinmetz, P.~R., {R}aible, F.,
+  {S}nyman, H., {P}rud'homme, B., {F}errier, D.~E., {B}alavoine, G., and
+  {A}rendt, D.}
 \newblock Molecular architecture of annelid nerve cord supports common origin
   of nervous system centralization in bilateria.
-\newblock \emph{Cell}, 129\penalty0 (2):\penalty0 277--288, 2007.
+\newblock {\em Cell 129}, 2 (2007), 277--288.
 
-\bibitem[Deng et~al.(2014)Deng, {R}amsk{\"o}ld, {R}einius, and
-  {S}andberg]{deng14}
-{Q}iaolin Deng, {D}aniel {R}amsk{\"o}ld, {B}j{\"o}rn {R}einius, and {R}ickard
-  {S}andberg.
+\bibitem{deng14}
+{\sc Deng, Q., {R}amsk{\"o}ld, D., {R}einius, B., and {S}andberg, R.}
 \newblock Single-{C}ell {RNA}-{S}eq {R}eveals {D}ynamic, {R}andom {M}onoallelic
   {G}ene {E}xpression in {M}ammalian {C}ells.
-\newblock \emph{Science}, 343\penalty0 (6167):\penalty0 193--196, 2014.
+\newblock {\em Science 343}, 6167 (2014), 193--196.
 
-\bibitem[Descombes et~al.(1998)Descombes, {K}ruggel, and von
-  {C}ramon]{descombes98}
-{X}avier Descombes, {F}rithjof {K}ruggel, and {D}~{Y}ves von {C}ramon.
+\bibitem{descombes98}
+{\sc Descombes, X., {K}ruggel, F., and von {C}ramon, D.~Y.}
 \newblock Spatio-temporal f{MRI} analysis using {M}arkov random fields.
-\newblock \emph{Medical {I}maging, {IEEE} {T}ransactions on}, 17\penalty0
-  (6):\penalty0 1028--1039, 1998.
+\newblock {\em Medical {I}maging, {IEEE} {T}ransactions on 17}, 6 (1998),
+  1028--1039.
 
-\bibitem[Dorresteijn(1990)]{dorresteijn90}
-{A}driaan~{WC} Dorresteijn.
+\bibitem{caniuse}
+{\sc Deveria, A.}
+\newblock Compatibility table for {W}eb{GL}.
+\newblock http://caniuse.com/webgl.
+
+\bibitem{dorresteijn90}
+{\sc Dorresteijn, A.~W.}
 \newblock Quantitative analysis of cellular differentiation during early
   embryogenesis of {P}latynereis dumerilii.
-\newblock \emph{Roux's archives of developmental biology}, 199\penalty0
-  (1):\penalty0 14--30, 1990.
+\newblock {\em Roux's archives of developmental biology 199}, 1 (1990), 14--30.
 
-\bibitem[Durruthy-{D}urruthy et~al.(2014)Durruthy-{D}urruthy, {G}ottlieb,
-  {H}artman, {W}aldhaus, {L}aske, {A}ltman, and {H}eller]{durruthy14}
-{R}obert Durruthy-{D}urruthy, {A}ssaf {G}ottlieb, {B}yron~{H} {H}artman,
-  {J}{\"o}rg {W}aldhaus, {R}oman~{D} {L}aske, {R}uss {A}ltman, and {S}tefan
-  {H}eller.
+\bibitem{durruthy14}
+{\sc Durruthy-{D}urruthy, R., {G}ottlieb, A., {H}artman, B.~H., {W}aldhaus, J.,
+  {L}aske, R.~D., {A}ltman, R., and {H}eller, S.}
 \newblock Reconstruction of the {M}ouse {O}tocyst and {E}arly {N}euroblast
   {L}ineage at {S}ingle-{C}ell {R}esolution.
-\newblock \emph{Cell}, 157\penalty0 (4):\penalty0 964--978, 2014.
+\newblock {\em Cell 157}, 4 (2014), 964--978.
 
-\bibitem[Durston et~al.(1989)Durston, {T}immermans, {H}age, {H}endriks, {D}e
-  {V}ries, {H}eideveld, and {N}ieuwkoop]{durston89}
-{AJ} Durston, {JPM} {T}immermans, {WJ} {H}age, {HFJ} {H}endriks, {NJ} {D}e
-  {V}ries, {M} {H}eideveld, and {PD} {N}ieuwkoop.
+\bibitem{durston89}
+{\sc Durston, A., {T}immermans, J., {H}age, W., {H}endriks, H., {D}e {V}ries,
+  N., {H}eideveld, M., and {N}ieuwkoop, P.}
 \newblock Retinoic acid causes an anteroposterior transformation in the
   developing central nervous system.
-\newblock 1989.
+\newblock {\em Nature 340\/} (1989), 140--144.
 
-\bibitem[Fan et~al.(2001)Fan, {Y}au, {E}lmagarmid, and {A}ref]{fan01}
-{J}ianping Fan, {D}avid~{KY} {Y}au, {A}hmed~{K} {E}lmagarmid, and {W}alid~{G}
-  {A}ref.
+\bibitem{fan01}
+{\sc Fan, J., {Y}au, D.~K., {E}lmagarmid, A.~K., and {A}ref, W.~G.}
 \newblock Automatic image segmentation by integrating color-edge extraction and
   seeded region growing.
-\newblock \emph{Image {P}rocessing, {IEEE} {T}ransactions on}, 10\penalty0
-  (10):\penalty0 1454--1466, 2001.
+\newblock {\em Image {P}rocessing, {IEEE} {T}ransactions on 10}, 10 (2001),
+  1454--1466.
 
-\bibitem[Feingold et~al.(2004)Feingold, {G}ood, {G}uyer, {K}amholz, {L}iefer,
-  {W}etterstrand, {C}ollins, {G}ingeras, {K}ampa, {S}ekinger,
-  et~al.]{feingold04}
-{EA} Feingold, {PJ} {G}ood, {MS} {G}uyer, {S} {K}amholz, {L} {L}iefer, {K}
-  {W}etterstrand, {FS} {C}ollins, {TR} {G}ingeras, {D} {K}ampa, {EA}
-  {S}ekinger, et~al.
+\bibitem{feingold04}
+{\sc Feingold, E., {G}ood, P., {G}uyer, M., {K}amholz, S., {L}iefer, L.,
+  {W}etterstrand, K., {C}ollins, F., {G}ingeras, T., {K}ampa, D., {S}ekinger,
+  E., et~al.}
 \newblock The {ENCODE} ({ENC}yclopedia of {DNA} elements) project.
-\newblock \emph{Science}, 306\penalty0 (5696):\penalty0 636--640, 2004.
+\newblock {\em Science 306}, 5696 (2004), 636--640.
 
-\bibitem[Fields(1997)]{fields97}
-{S}egments {U}sing {M}arkov~{R}andom Fields.
+\bibitem{fields97}
+{\sc Fields, S. U. M.~R.}
 \newblock Perceptual grouping of contour segments using markov random fields.
-\newblock \emph{Pattern {R}ecognition and {I}mage {A}nalysis}, 7\penalty0
-  (1):\penalty0 11--17, 1997.
+\newblock {\em Pattern {R}ecognition and {I}mage {A}nalysis 7}, 1 (1997),
+  11--17.
 
-\bibitem[Fischer and {D}orresteijn(2004)]{fischer04}
-{A}lbrecht Fischer and {A}driaan {D}orresteijn.
+\bibitem{fischer04}
+{\sc Fischer, A., and {D}orresteijn, A.}
 \newblock The polychaete {P}latynereis dumerilii ({A}nnelida): a laboratory
   animal with spiralian cleavage, lifelong segment proliferation and a mixed
   benthic/pelagic life cycle.
-\newblock \emph{Bioessays}, 26\penalty0 (3):\penalty0 314--325, 2004.
+\newblock {\em Bioessays 26}, 3 (2004), 314--325.
 
-\bibitem[Fischer et~al.(2010)Fischer, {H}enrich, and {A}rendt]{Fischer10}
-{A}ntje Fischer, {T}horsten {H}enrich, and {D}etlev {A}rendt.
+\bibitem{Fischer10}
+{\sc Fischer, A., {H}enrich, T., and {A}rendt, D.}
 \newblock The normal development of {P}latynereis dumerilii ({N}ereididae,
   {A}nnelida).
-\newblock \emph{Frontiers in zoology}, 7\penalty0 (1):\penalty0 31, 2010.
+\newblock {\em Frontiers in zoology 7}, 1 (2010), 31.
 
-\bibitem[Freeman et~al.(2007)Freeman, {G}oldovsky, {B}rosch, {V}an {D}ongen,
-  {M}azi{\`e}re, {G}rocock, {F}reilich, {T}hornton, and {E}nright]{Freeman07}
-{T}om~{C} Freeman, {L}eon {G}oldovsky, {M}arkus {B}rosch, {S}tijn {V}an
-  {D}ongen, {P}ierre {M}azi{\`e}re, {R}ussell~{J} {G}rocock, {S}hiri
-  {F}reilich, {J}anet {T}hornton, and {A}nton~{J} {E}nright.
+\bibitem{Freeman07}
+{\sc Freeman, T.~C., {G}oldovsky, L., {B}rosch, M., {V}an {D}ongen, S.,
+  {M}azi{\`e}re, P., {G}rocock, R.~J., {F}reilich, S., {T}hornton, J., and
+  {E}nright, A.~J.}
 \newblock Construction, visualisation, and clustering of transcription networks
   from microarray expression data.
-\newblock \emph{PLo{S} computational biology}, 3\penalty0 (10):\penalty0 e206,
-  2007.
+\newblock {\em PLo{S} computational biology 3}, 10 (2007), e206.
 
-\bibitem[Fuqua et~al.(2001)Fuqua, {P}arsek, and {G}reenberg]{fuqua01}
-{C}lay Fuqua, {M}atthew~{R} {P}arsek, and {E}~{P}eter {G}reenberg.
+\bibitem{webgl}
+{\sc Fundation, M.}
+\newblock Web{GL} 1.0 {S}pecification.
+\newblock \url{https://www.khronos.org/registry/webgl/specs/1.0/}.
+\newblock Accessed: 2013.
+
+\bibitem{fuqua01}
+{\sc Fuqua, C., {P}arsek, M.~R., and {G}reenberg, E.~P.}
 \newblock Regulation of gene expression by cell-to-cell communication:
   acyl-homoserine lactone quorum sensing.
-\newblock \emph{Annual review of genetics}, 35\penalty0 (1):\penalty0 439--468,
-  2001.
+\newblock {\em Annual review of genetics 35}, 1 (2001), 439--468.
 
-\bibitem[GOODWIN(1998)]{goodwin98}
-{DONALD}~{W} GOODWIN.
+\bibitem{goodwin98}
+{\sc Goodwin, D.~W.}
 \newblock The {G}reatest {B}enefit to {M}ankind: {A} {M}edical {H}istory of
   {H}umanity.
-\newblock \emph{American {J}ournal of {P}sychiatry}, 155\penalty0
-  (12):\penalty0 1795--1796, 1998.
+\newblock {\em American {J}ournal of {P}sychiatry 155}, 12 (1998), 1795--1796.
 
-\bibitem[Gossen and {B}ujard(1992)]{gossen92}
-{M}anfred Gossen and {H}ermann {B}ujard.
+\bibitem{gossen92}
+{\sc Gossen, M., and {B}ujard, H.}
 \newblock Tight control of gene expression in mammalian cells by
   tetracycline-responsive promoters.
-\newblock \emph{Proceedings of the {N}ational {A}cademy of {S}ciences},
-  89\penalty0 (12):\penalty0 5547--5551, 1992.
+\newblock {\em Proceedings of the {N}ational {A}cademy of {S}ciences 89}, 12
+  (1992), 5547--5551.
 
-\bibitem[Guy(2008)]{guy08}
-{K}eren Guy.
-\newblock Development and molecular characterization of adult and larval eyes
-  in {P}latynereis dumerilii ({P}olychaeta, {A}nnelida, {L}ophotrochozoa).
-\newblock 2008.
+\bibitem{guy08}
+{\sc Guy, K.}
+\newblock {\em Development and molecular characterization of adult and larval
+  eyes in {P}latynereis dumerilii ({P}olychaeta, {A}nnelida,
+  {L}ophotrochozoa)}.
+\newblock PhD thesis, University of Heidelberg, 2008.
 
-\bibitem[H{\"a}cker(1898)]{hacker98}
-{V}alentin H{\"a}cker.
-\newblock \emph{Die pelagischen {P}olychaeten-und {A}chaetenlarven der
+\bibitem{hacker98}
+{\sc H{\"a}cker, V.}
+\newblock {\em Die pelagischen {P}olychaeten-und {A}chaetenlarven der
   {P}lankton-expedition...}
 \newblock Lipsius \& {T}ischer, 1898.
 
-\bibitem[Hardege(1999)]{hardege99}
-{J}{\"o}rg~{D} Hardege.
+\bibitem{hardege99}
+{\sc Hardege, J.~D.}
 \newblock Nereidid polychaetes as model organisms for marine chemical ecology.
-\newblock \emph{Hydrobiologia}, 402:\penalty0 145--161, 1999.
+\newblock {\em Hydrobiologia 402\/} (1999), 145--161.
 
-\bibitem[{H}artshorn(2002)]{Hartshorn02}
-{M}.~{J}. {H}artshorn.
+\bibitem{Hartshorn02}
+{\sc {H}artshorn, M.~J.}
 \newblock {{A}stex{V}iewer: a visualisation aid for structure-based drug
   design}.
-\newblock \emph{{J}. {C}omput. {A}ided {M}ol. {D}es.}, 16\penalty0
-  (12):\penalty0 871--881, {D}ec 2002.
+\newblock {\em {J}. {C}omput. {A}ided {M}ol. {D}es. 16}, 12 ({D}ec 2002),
+  871--881.
 
-\bibitem[Hauenschild et~al.(1969)Hauenschild, {C}zihak, {F}ischer, and
-  {S}iewing]{hauenschild69}
-{C}arl Hauenschild, {G} {C}zihak, {A} {F}ischer, and {R} {S}iewing.
-\newblock \emph{Platynereis dumerilii: mikroskopische {A}natomie,
+\bibitem{hauenschild69}
+{\sc Hauenschild, C., {C}zihak, G., {F}ischer, A., and {S}iewing, R.}
+\newblock {\em Platynereis dumerilii: mikroskopische {A}natomie,
   {F}ortpflanzung, {E}ntwicklung}.
 \newblock Fischer, 1969.
 
-\bibitem[Heitz and {B}outhemy(1993)]{heitz93}
-{F}abrice Heitz and {P}atrick {B}outhemy.
+\bibitem{heitz93}
+{\sc Heitz, F., and {B}outhemy, P.}
 \newblock Multimodal estimation of discontinuous optical flow using {M}arkov
   random fields.
-\newblock \emph{Pattern {A}nalysis and {M}achine {I}ntelligence, {IEEE}
-  {T}ransactions on}, 15\penalty0 (12):\penalty0 1217--1232, 1993.
+\newblock {\em Pattern {A}nalysis and {M}achine {I}ntelligence, {IEEE}
+  {T}ransactions on 15}, 12 (1993), 1217--1232.
 
-\bibitem[Held et~al.(1997)Held, {K}ops, {K}rause, {W}ells, {K}ikinis, and
-  {M}uller {G}artner]{held97}
-{K}arsten Held, {E}~{R}ota {K}ops, {B}ernd~{J} {K}rause, {WMIII} {W}ells, {R}on
-  {K}ikinis, and {H}-{W} {M}uller {G}artner.
+\bibitem{held97}
+{\sc Held, K., {K}ops, E.~R., {K}rause, B.~J., {W}ells, W., {K}ikinis, R., and
+  {M}uller {G}artner, H.-W.}
 \newblock Markov random field segmentation of brain {MR} images.
-\newblock \emph{Medical {I}maging, {IEEE} {T}ransactions on}, 16\penalty0
-  (6):\penalty0 878--886, 1997.
+\newblock {\em Medical {I}maging, {IEEE} {T}ransactions on 16}, 6 (1997),
+  878--886.
 
-\bibitem[Hellman(2009)]{hellman09}
-{B}o Hellman.
+\bibitem{hellman09}
+{\sc Hellman, B.}
 \newblock Pulsatility of insulin release-a clinically important phenomenon.
-\newblock \emph{Upsala journal of medical sciences}, 114\penalty0 (4):\penalty0
-  193--205, 2009.
+\newblock {\em Upsala journal of medical sciences 114}, 4 (2009), 193--205.
 
-\bibitem[Hutchinson et~al.(1995)Hutchinson, {J}ha, and {D}ixon]{hutchinson95}
-{T}homas~{H} Hutchinson, {A}wadhesh~{N} {J}ha, and {D}avid~{R} {D}ixon.
+\bibitem{hutchinson95}
+{\sc Hutchinson, T.~H., {J}ha, A.~N., and {D}ixon, D.~R.}
 \newblock The polychaete {P}latynereis dumerilii ({A}udouin and
   {M}ilne-{E}dwards): a new species for assessing the hazardous potential of
   chemicals in the marine environment.
-\newblock \emph{Ecotoxicology and environmental safety}, 31\penalty0
-  (3):\penalty0 271--281, 1995.
+\newblock {\em Ecotoxicology and environmental safety 31}, 3 (1995), 271--281.
 
-\bibitem[Iscove et~al.(2002)Iscove, {B}arbara, {G}u, {G}ibson, {M}odi, and
-  {W}inegarden]{iscove02}
-{N}orman~{N} Iscove, {M}ary {B}arbara, {M}arie {G}u, {M}eredith {G}ibson,
-  {C}arolyn {M}odi, and {N}eil {W}inegarden.
+\bibitem{iscove02}
+{\sc Iscove, N.~N., {B}arbara, M., {G}u, M., {G}ibson, M., {M}odi, C., and
+  {W}inegarden, N.}
 \newblock Representation is faithfully preserved in global c{DNA} amplified
   exponentially from sub-picogram quantities of m{RNA}.
-\newblock \emph{Nature biotechnology}, 20\penalty0 (9):\penalty0 940--943,
-  2002.
+\newblock {\em Nature biotechnology 20}, 9 (2002), 940--943.
 
-\bibitem[Ising(1925)]{Ising25}
-{E}rnst Ising.
+\bibitem{Ising25}
+{\sc Ising, E.}
 \newblock {Beitrag zur {T}heorie des {F}erromagnetismus}.
-\newblock \emph{Zeitschrift f\"{u}r {P}hysik {A} {H}adrons and {N}uclei},
-  31\penalty0 (1):\penalty0 253--258, February 1925.
-\newblock ISSN 0044-3328.
-\newblock \doi{10.1007/bf02980577}.
-\newblock URL \url{http://dx.doi.org/10.1007/bf02980577}.
+\newblock {\em Zeitschrift f\"{u}r {P}hysik {A} {H}adrons and {N}uclei 31}, 1
+  (Feb. 1925), 253--258.
 
-\bibitem[Islam et~al.(2011)Islam, {K}j{\"a}llquist, {M}oliner, {Z}ajac, {F}an,
-  {L}{\"o}nnerberg, and {L}innarsson]{islam11}
-{S}aiful Islam, {U}na {K}j{\"a}llquist, {A}nnalena {M}oliner, {P}awel {Z}ajac,
-  {J}ian-{B}ing {F}an, {P}eter {L}{\"o}nnerberg, and {S}ten {L}innarsson.
+\bibitem{islam11}
+{\sc Islam, S., {K}j{\"a}llquist, U., {M}oliner, A., {Z}ajac, P., {F}an, J.-B.,
+  {L}{\"o}nnerberg, P., and {L}innarsson, S.}
 \newblock Characterization of the single-cell transcriptional landscape by
   highly multiplex {RNA}-seq.
-\newblock \emph{Genome research}, 21\penalty0 (7):\penalty0 1160--1167, 2011.
+\newblock {\em Genome research 21}, 7 (2011), 1160--1167.
 
-\bibitem[Islam et~al.(2013)Islam, {Z}eisel, {J}oost, {L}a {M}anno, {Z}ajac,
-  {K}asper, {L}{\"o}nnerberg, and {L}innarsson]{islam13}
-{S}aiful Islam, {A}mit {Z}eisel, {S}imon {J}oost, {G}ioele {L}a {M}anno,
-  {P}awel {Z}ajac, {M}aria {K}asper, {P}eter {L}{\"o}nnerberg, and {S}ten
-  {L}innarsson.
+\bibitem{islam13}
+{\sc Islam, S., {Z}eisel, A., {J}oost, S., {L}a {M}anno, G., {Z}ajac, P.,
+  {K}asper, M., {L}{\"o}nnerberg, P., and {L}innarsson, S.}
 \newblock Quantitative single-cell {RNA}-seq with unique molecular identifiers.
-\newblock \emph{Nature methods}, 2013.
+\newblock {\em Nature methods\/} (2013).
 
-\bibitem[Jaccard(1901)]{jaccard1901}
-{P}aul Jaccard.
-\newblock \emph{Etude comparative de la distribution florale dans une portion
+\bibitem{jaccard1901}
+{\sc Jaccard, P.}
+\newblock {\em Etude comparative de la distribution florale dans une portion
   des {A}lpes et du {J}ura}.
 \newblock Impr. {C}orbaz, 1901.
 
-\bibitem[Jaenisch and {B}ird(2003)]{jaenisch03}
-{R}udolf Jaenisch and {A}drian {B}ird.
+\bibitem{jaenisch03}
+{\sc Jaenisch, R., and {B}ird, A.}
 \newblock Epigenetic regulation of gene expression: how the genome integrates
   intrinsic and environmental signals.
-\newblock \emph{Nature genetics}, 33:\penalty0 245--254, 2003.
+\newblock {\em Nature genetics 33\/} (2003), 245--254.
 
-\bibitem[John et~al.(1969)John, {B}irnstiel, and {J}ones]{john69}
-{HA} John, {ML} {B}irnstiel, and {KW} {J}ones.
-\newblock Rna-{DNA} hybrids at the cytological level.
-\newblock \emph{Nature}, 223\penalty0 (5206):\penalty0 582, 1969.
+\bibitem{john69}
+{\sc John, H., {B}irnstiel, M., and {J}ones, K.}
+\newblock {RNA}-{DNA} hybrids at the cytological level.
+\newblock {\em Nature 223}, 5206 (1969), 582.
 
-\bibitem[Johnson(1967)]{johnson67}
-{S}tephen~{C} Johnson.
+\bibitem{johnson67}
+{\sc Johnson, S.~C.}
 \newblock Hierarchical clustering schemes.
-\newblock \emph{Psychometrika}, 32\penalty0 (3):\penalty0 241--254, 1967.
+\newblock {\em Psychometrika 32}, 3 (1967), 241--254.
 
-\bibitem[Kaiser and {K}ezdy(1984)]{kaiser84}
-{ET} Kaiser and {FJ} {K}ezdy.
+\bibitem{kaiser84}
+{\sc Kaiser, E., and {K}ezdy, F.}
 \newblock Amphiphilic secondary structure: design of peptide hormones.
-\newblock \emph{Science}, 223\penalty0 (4633):\penalty0 249--255, 1984.
+\newblock {\em Science 223}, 4633 (1984), 249--255.
 
-\bibitem[Karlis and {X}ekalaki(2003)]{karlis03}
-{D}imitris Karlis and {E}vdokia {X}ekalaki.
+\bibitem{karlis03}
+{\sc Karlis, D., and {X}ekalaki, E.}
 \newblock Choosing initial values for the {EM} algorithm for finite mixtures.
-\newblock \emph{Computational {S}tatistics \& {D}ata {A}nalysis}, 41\penalty0
-  (3):\penalty0 577--590, 2003.
+\newblock {\em Computational {S}tatistics \& {D}ata {A}nalysis 41}, 3 (2003),
+  577--590.
 
-\bibitem[Kozmik et~al.(2008)Kozmik, {R}uzickova, {J}onasova, {M}atsumoto,
-  {V}opalensky, {K}ozmikova, {S}trnad, {K}awamura, {P}iatigorsky, {P}aces,
-  et~al.]{kozmik08}
-{Z}bynek Kozmik, {J}ana {R}uzickova, {K}ristyna {J}onasova, {Y}oshifumi
-  {M}atsumoto, {P}avel {V}opalensky, {I}ryna {K}ozmikova, {H}ynek {S}trnad,
-  {S}hoji {K}awamura, {J}oram {P}iatigorsky, {V}aclav {P}aces, et~al.
+\bibitem{kozmik08}
+{\sc Kozmik, Z., {R}uzickova, J., {J}onasova, K., {M}atsumoto, Y.,
+  {V}opalensky, P., {K}ozmikova, I., {S}trnad, H., {K}awamura, S.,
+  {P}iatigorsky, J., {P}aces, V., et~al.}
 \newblock Assembly of the cnidarian camera-type eye from vertebrate-like
   components.
-\newblock \emph{Proceedings of the {N}ational {A}cademy of {S}ciences},
-  105\penalty0 (26):\penalty0 8989--8993, 2008.
+\newblock {\em Proceedings of the {N}ational {A}cademy of {S}ciences 105}, 26
+  (2008), 8989--8993.
 
-\bibitem[Krcmery et~al.(2010)Krcmery, {C}amarata, {K}ulisz, and
-  {S}imon]{krcmery10}
-{J}ennifer Krcmery, {T}roy {C}amarata, {A}ndre {K}ulisz, and {H}ans-{G}eorg
-  {S}imon.
+\bibitem{krcmery10}
+{\sc Krcmery, J., {C}amarata, T., {K}ulisz, A., and {S}imon, H.-G.}
 \newblock Nucleocytoplasmic functions of the {PDZ}-{LIM} protein family: new
   insights into organ development.
-\newblock \emph{Bioessays}, 32\penalty0 (2):\penalty0 100--108, 2010.
+\newblock {\em Bioessays 32}, 2 (2010), 100--108.
 
-\bibitem[{K}ulkarni et~al.(2012){K}ulkarni, {M}ahesh {M}.~{D}oijade, {C}hetan
-  {S}.~{D}evrukhkar, {G}anesh {R}.~{Z}ilpe, and {R}ajesh
-  {R}.~{S}urana]{Dinesh12}
-Dinesh~{B}. {K}ulkarni, {M}ahesh {M}.~{D}oijade, {C}hetan {S}.~{D}evrukhkar,
-  {G}anesh {R}.~{Z}ilpe, and {R}ajesh {R}.~{S}urana.
+\bibitem{Dinesh12}
+{\sc {K}ulkarni, D.~B., {M}ahesh {M}.~{D}oijade, {C}hetan {S}.~{D}evrukhkar,
+  {G}anesh {R}.~{Z}ilpe, and {R}ajesh {R}.~{S}urana}.
 \newblock Article: {N}etra{RIS} - a {W}eb based {DICOM} {V}iewer.
-\newblock \emph{International {J}ournal of {C}omputer {A}pplications},
-  48\penalty0 (24):\penalty0 40--44, June 2012.
+\newblock {\em International {J}ournal of {C}omputer {A}pplications 48}, 24
+  (June 2012), 40--44.
 \newblock Published by {F}oundation of {C}omputer {S}cience, {N}ew {Y}ork,
   {USA}.
 
-\bibitem[Landegent et~al.(1984)Landegent, {W}al, {I}n, {B}aan, {H}oeijmakers,
-  and {V}an~{D}er {P}loeg]{landegent84}
-{JE} Landegent, {D}e {W}al, {N}~{J}ansen {I}n, {RA} {B}aan, {JHJ}
-  {H}oeijmakers, and {M} {V}an~{D}er {P}loeg.
+\bibitem{landegent84}
+{\sc Landegent, J., {W}al, D., {I}n, N.~J., {B}aan, R., {H}oeijmakers, J., and
+  {V}an~{D}er {P}loeg, M.}
 \newblock 2-{A}cetylaminofluorene-modified probes for the indirect
   hybridocytochemical detection of specific nucleic acid sequences.
-\newblock \emph{Experimental cell research}, 153\penalty0 (1):\penalty0 61--72,
-  1984.
+\newblock {\em Experimental cell research 153}, 1 (1984), 61--72.
 
-\bibitem[Langmead and {S}alzberg(2012)]{langmead12}
-{B}en Langmead and {S}teven~{L} {S}alzberg.
+\bibitem{langmead12}
+{\sc Langmead, B., and {S}alzberg, S.~L.}
 \newblock Fast gapped-read alignment with {B}owtie 2.
-\newblock \emph{Nature methods}, 9\penalty0 (4):\penalty0 357--359, 2012.
+\newblock {\em Nature methods 9}, 4 (2012), 357--359.
 
-\bibitem[Lee(2006)]{lee06}
-{W}ei-{C}hung~{A}llen Lee.
-\newblock \emph{Cellular and molecular analysis of neuronal structure
-  plasticity in the mammalian cortex}.
+\bibitem{lee06}
+{\sc Lee, W.-C.~A.}
+\newblock {\em Cellular and molecular analysis of neuronal structure plasticity
+  in the mammalian cortex}.
 \newblock PhD thesis, Massachusetts {I}nstitute of {T}echnology, 2006.
 
-\bibitem[{L}ein et~al.(2007){L}ein, {H}awrylycz, {A}o, {A}yres, {B}ensinger,
-  {B}ernard, {B}oe, {B}oguski, {B}rockway, {B}yrnes, {C}hen, {C}hen, {C}hen,
-  {C}hin, {C}hong, {C}rook, {C}zaplinska, {D}ang, {D}atta, {D}ee, {D}esaki,
-  {D}esta, {D}iep, {D}olbeare, {D}onelan, {D}ong, {D}ougherty, {D}uncan,
-  {E}bbert, {E}ichele, {E}stin, {F}aber, {F}acer, {F}ields, {F}ischer, {F}liss,
-  {F}rensley, {G}ates, {G}lattfelder, {H}alverson, {H}art, {H}ohmann, {H}owell,
-  {J}eung, {J}ohnson, {K}arr, {K}awal, {K}idney, {K}napik, {K}uan, {L}ake,
-  {L}aramee, {L}arsen, {L}au, {L}emon, {L}iang, {L}iu, {L}uong, {M}ichaels,
-  {M}organ, {M}organ, {M}ortrud, {M}osqueda, {N}g, {N}g, {O}rta, {O}verly,
-  {P}ak, {P}arry, {P}athak, {P}earson, {P}uchalski, {R}iley, {R}ockett,
-  {R}owland, {R}oyall, {R}uiz, {S}arno, {S}chaffnit, {S}hapovalova, {S}ivisay,
-  {S}laughterbeck, {S}mith, {S}mith, {S}mith, {S}odt, {S}tewart, {S}tumpf,
-  {S}unkin, {S}utram, {T}am, {T}eemer, {T}haller, {T}hompson, {V}arnam,
-  {V}isel, {W}hitlock, {W}ohnoutka, {W}olkey, {W}ong, {W}ood, {Y}aylaoglu,
-  {Y}oung, {Y}oungstrom, {Y}uan, {Z}hang, {Z}wingman, and {J}ones]{Lein07}
-{E}.~{S}. {L}ein, {M}.~{J}. {H}awrylycz, {N}. {A}o, {M}. {A}yres, {A}.
-  {B}ensinger, {A}. {B}ernard, {A}.~{F}. {B}oe, {M}.~{S}. {B}oguski, {K}.~{S}.
-  {B}rockway, {E}.~{J}. {B}yrnes, {L}. {C}hen, {L}. {C}hen, {T}.~{M}. {C}hen,
-  {M}.~{C}. {C}hin, {J}. {C}hong, {B}.~{E}. {C}rook, {A}. {C}zaplinska,
-  {C}.~{N}. {D}ang, {S}. {D}atta, {N}.~{R}. {D}ee, {A}.~{L}. {D}esaki, {T}.
-  {D}esta, {E}. {D}iep, {T}.~{A}. {D}olbeare, {M}.~{J}. {D}onelan, {H}.~{W}.
-  {D}ong, {J}.~{G}. {D}ougherty, {B}.~{J}. {D}uncan, {A}.~{J}. {E}bbert, {G}.
-  {E}ichele, {L}.~{K}. {E}stin, {C}. {F}aber, {B}.~{A}. {F}acer, {R}. {F}ields,
-  {S}.~{R}. {F}ischer, {T}.~{P}. {F}liss, {C}. {F}rensley, {S}.~{N}. {G}ates,
-  {K}.~{J}. {G}lattfelder, {K}.~{R}. {H}alverson, {M}.~{R}. {H}art, {J}.~{G}.
-  {H}ohmann, {M}.~{P}. {H}owell, {D}.~{P}. {J}eung, {R}.~{A}. {J}ohnson,
-  {P}.~{T}. {K}arr, {R}. {K}awal, {J}.~{M}. {K}idney, {R}.~{H}. {K}napik,
-  {C}.~{L}. {K}uan, {J}.~{H}. {L}ake, {A}.~{R}. {L}aramee, {K}.~{D}. {L}arsen,
-  {C}. {L}au, {T}.~{A}. {L}emon, {A}.~{J}. {L}iang, {Y}. {L}iu, {L}.~{T}.
-  {L}uong, {J}. {M}ichaels, {J}.~{J}. {M}organ, {R}.~{J}. {M}organ, {M}.~{T}.
-  {M}ortrud, {N}.~{F}. {M}osqueda, {L}.~{L}. {N}g, {R}. {N}g, {G}.~{J}. {O}rta,
-  {C}.~{C}. {O}verly, {T}.~{H}. {P}ak, {S}.~{E}. {P}arry, {S}.~{D}. {P}athak,
-  {O}.~{C}. {P}earson, {R}.~{B}. {P}uchalski, {Z}.~{L}. {R}iley, {H}.~{R}.
-  {R}ockett, {S}.~{A}. {R}owland, {J}.~{J}. {R}oyall, {M}.~{J}. {R}uiz,
-  {N}.~{R}. {S}arno, {K}. {S}chaffnit, {N}.~{V}. {S}hapovalova, {T}. {S}ivisay,
-  {C}.~{R}. {S}laughterbeck, {S}.~{C}. {S}mith, {K}.~{A}. {S}mith, {B}.~{I}.
-  {S}mith, {A}.~{J}. {S}odt, {N}.~{N}. {S}tewart, {K}.~{R}. {S}tumpf, {S}.~{M}.
-  {S}unkin, {M}. {S}utram, {A}. {T}am, {C}.~{D}. {T}eemer, {C}. {T}haller,
-  {C}.~{L}. {T}hompson, {L}.~{R}. {V}arnam, {A}. {V}isel, {R}.~{M}. {W}hitlock,
-  {P}.~{E}. {W}ohnoutka, {C}.~{K}. {W}olkey, {V}.~{Y}. {W}ong, {M}. {W}ood,
-  {M}.~{B}. {Y}aylaoglu, {R}.~{C}. {Y}oung, {B}.~{L}. {Y}oungstrom, {X}.~{F}.
-  {Y}uan, {B}. {Z}hang, {T}.~{A}. {Z}wingman, and {A}.~{R}. {J}ones.
+\bibitem{Lein07}
+{\sc {L}ein, E.~S., {H}awrylycz, M.~J., {A}o, N., {A}yres, M., {B}ensinger, A.,
+  {B}ernard, A., {B}oe, A.~F., {B}oguski, M.~S., {B}rockway, K.~S., {B}yrnes,
+  E.~J., {C}hen, L., {C}hen, L., {C}hen, T.~M., {C}hin, M.~C., {C}hong, J.,
+  {C}rook, B.~E., {C}zaplinska, A., {D}ang, C.~N., {D}atta, S., {D}ee, N.~R.,
+  {D}esaki, A.~L., {D}esta, T., {D}iep, E., {D}olbeare, T.~A., {D}onelan,
+  M.~J., {D}ong, H.~W., {D}ougherty, J.~G., {D}uncan, B.~J., {E}bbert, A.~J.,
+  {E}ichele, G., {E}stin, L.~K., {F}aber, C., {F}acer, B.~A., {F}ields, R.,
+  {F}ischer, S.~R., {F}liss, T.~P., {F}rensley, C., {G}ates, S.~N.,
+  {G}lattfelder, K.~J., {H}alverson, K.~R., {H}art, M.~R., {H}ohmann, J.~G.,
+  {H}owell, M.~P., {J}eung, D.~P., {J}ohnson, R.~A., {K}arr, P.~T., {K}awal,
+  R., {K}idney, J.~M., {K}napik, R.~H., {K}uan, C.~L., {L}ake, J.~H.,
+  {L}aramee, A.~R., {L}arsen, K.~D., {L}au, C., {L}emon, T.~A., {L}iang, A.~J.,
+  {L}iu, Y., {L}uong, L.~T., {M}ichaels, J., {M}organ, J.~J., {M}organ, R.~J.,
+  {M}ortrud, M.~T., {M}osqueda, N.~F., {N}g, L.~L., {N}g, R., {O}rta, G.~J.,
+  {O}verly, C.~C., {P}ak, T.~H., {P}arry, S.~E., {P}athak, S.~D., {P}earson,
+  O.~C., {P}uchalski, R.~B., {R}iley, Z.~L., {R}ockett, H.~R., {R}owland,
+  S.~A., {R}oyall, J.~J., {R}uiz, M.~J., {S}arno, N.~R., {S}chaffnit, K.,
+  {S}hapovalova, N.~V., {S}ivisay, T., {S}laughterbeck, C.~R., {S}mith, S.~C.,
+  {S}mith, K.~A., {S}mith, B.~I., {S}odt, A.~J., {S}tewart, N.~N., {S}tumpf,
+  K.~R., {S}unkin, S.~M., {S}utram, M., {T}am, A., {T}eemer, C.~D., {T}haller,
+  C., {T}hompson, C.~L., {V}arnam, L.~R., {V}isel, A., {W}hitlock, R.~M.,
+  {W}ohnoutka, P.~E., {W}olkey, C.~K., {W}ong, V.~Y., {W}ood, M., {Y}aylaoglu,
+  M.~B., {Y}oung, R.~C., {Y}oungstrom, B.~L., {Y}uan, X.~F., {Z}hang, B.,
+  {Z}wingman, T.~A., and {J}ones, A.~R.}
 \newblock {{G}enome-wide atlas of gene expression in the adult mouse brain}.
-\newblock \emph{{N}ature}, 445\penalty0 (7124):\penalty0 168--176, {J}an 2007.
+\newblock {\em {N}ature 445}, 7124 ({J}an 2007), 168--176.
 
-\bibitem[Li et~al.(1995)Li, {K}allergi, {C}larke, {J}ain, and {C}lark]{li95}
-{HD} Li, {M} {K}allergi, {LP} {C}larke, {VK} {J}ain, and {RA} {C}lark.
+\bibitem{li95}
+{\sc Li, H., {K}allergi, M., {C}larke, L., {J}ain, V., and {C}lark, R.}
 \newblock Markov random field for tumor detection in digital mammography.
-\newblock \emph{Medical {I}maging, {IEEE} {T}ransactions on}, 14\penalty0
-  (3):\penalty0 565--576, 1995.
+\newblock {\em Medical {I}maging, {IEEE} {T}ransactions on 14}, 3 (1995),
+  565--576.
 
-\bibitem[Li and {S}ingh(2009)]{li09}
-{S}tan~{Z} Li and {S} {S}ingh.
-\newblock \emph{Markov random field modeling in image analysis}, volume~3.
+\bibitem{li09}
+{\sc Li, S.~Z., and {S}ingh, S.}
+\newblock {\em Markov random field modeling in image analysis}, vol.~3.
 \newblock Springer, 2009.
 
-\bibitem[Mac{Q}ueen et~al.(1967)]{macqueen67}
-{J}ames Mac{Q}ueen et~al.
+\bibitem{macqueen67}
+{\sc Mac{Q}ueen, J., et~al.}
 \newblock Some methods for classification and analysis of multivariate
   observations.
-\newblock In \emph{Proceedings of the fifth {B}erkeley symposium on
-  mathematical statistics and probability}, volume~1, page~14. California,
-  {USA}, 1967.
+\newblock In {\em Proceedings of the fifth {B}erkeley symposium on mathematical
+  statistics and probability\/} (1967), p.~14.
 
-\bibitem[Margulies et~al.(2005)Margulies, {E}gholm, {A}ltman, {A}ttiya,
-  {B}ader, {B}emben, {B}erka, {B}raverman, {C}hen, {C}hen, et~al.]{margulies05}
-{M}arcel Margulies, {M}ichael {E}gholm, {W}illiam~{E} {A}ltman, {S}aid
-  {A}ttiya, {J}oel~{S} {B}ader, {L}isa~{A} {B}emben, {J}an {B}erka,
-  {M}ichael~{S} {B}raverman, {Y}i-{J}u {C}hen, {Z}houtao {C}hen, et~al.
+\bibitem{margulies05}
+{\sc Margulies, M., {E}gholm, M., {A}ltman, W.~E., {A}ttiya, S., {B}ader,
+  J.~S., {B}emben, L.~A., {B}erka, J., {B}raverman, M.~S., {C}hen, Y.-J.,
+  {C}hen, Z., et~al.}
 \newblock Genome sequencing in microfabricated high-density picolitre reactors.
-\newblock \emph{Nature}, 437\penalty0 (7057):\penalty0 376--380, 2005.
+\newblock {\em Nature 437}, 7057 (2005), 376--380.
 
-\bibitem[Marinov et~al.(2013)Marinov, {W}illiams, {M}c{C}ue, {S}chroth,
-  {G}ertz, {M}yers, and {W}old]{marinov13}
-{G}eorgi~{K} Marinov, {B}rian~{A} {W}illiams, {K}enneth {M}c{C}ue, {G}ary~{P}
-  {S}chroth, {J}ason {G}ertz, {R}ichard~{M} {M}yers, and {B}arbara~{J} {W}old.
+\bibitem{marinov13}
+{\sc Marinov, G.~K., {W}illiams, B.~A., {M}c{C}ue, K., {S}chroth, G.~P.,
+  {G}ertz, J., {M}yers, R.~M., and {W}old, B.~J.}
 \newblock From single-cell to cell-pool transcriptomes: stochasticity in gene
   expression and {RNA} splicing.
-\newblock \emph{Genome research}, pages gr--161034, 2013.
+\newblock {\em Genome research\/} (2013), gr--161034.
 
-\bibitem[Marioni et~al.(2008)Marioni, {M}ason, {M}ane, {S}tephens, and
-  {G}ilad]{marioni08}
-{J}ohn~{C} Marioni, {C}hristopher~{E} {M}ason, {S}hrikant~{M} {M}ane, {M}atthew
-  {S}tephens, and {Y}oav {G}ilad.
+\bibitem{marioni08}
+{\sc Marioni, J.~C., {M}ason, C.~E., {M}ane, S.~M., {S}tephens, M., and
+  {G}ilad, Y.}
 \newblock Rna-seq: an assessment of technical reproducibility and comparison
   with gene expression arrays.
-\newblock \emph{Genome research}, 18\penalty0 (9):\penalty0 1509--1517, 2008.
+\newblock {\em Genome research 18}, 9 (2008), 1509--1517.
 
-\bibitem[Mart{\i}n-{F}ern{\'a}ndez and {A}lberola {L}opez(2005)]{martin05}
-{M}arcos Mart{\i}n-{F}ern{\'a}ndez and {C}arlos {A}lberola {L}opez.
+\bibitem{martin05}
+{\sc Mart{\i}n-{F}ern{\'a}ndez, M., and {A}lberola {L}opez, C.}
 \newblock An approach for contour detection of human kidneys from ultrasound
   images using {M}arkov random fields and active contours.
-\newblock \emph{Medical {I}mage {A}nalysis}, 9\penalty0 (1):\penalty0 1--23,
-  2005.
+\newblock {\em Medical {I}mage {A}nalysis 9}, 1 (2005), 1--23.
 
-\bibitem[Marziliano et~al.(2007)Marziliano, {M}annarino, {N}espoli, {D}iegoli,
-  {P}asotti, {M}alattia, {G}rasso, {P}ilotto, {P}orcu, {R}aisaro,
-  et~al.]{marziliano07}
-{N}icola Marziliano, {S}avina {M}annarino, {L}uisa {N}espoli, {M}arta
-  {D}iegoli, {M}ichele {P}asotti, {C}lara {M}alattia, {M}aurizia {G}rasso,
-  {A}ndrea {P}ilotto, {E}manuele {P}orcu, {A}rturo {R}aisaro, et~al.
+\bibitem{marziliano07}
+{\sc Marziliano, N., {M}annarino, S., {N}espoli, L., {D}iegoli, M., {P}asotti,
+  M., {M}alattia, C., {G}rasso, M., {P}ilotto, A., {P}orcu, E., {R}aisaro, A.,
+  et~al.}
 \newblock Barth syndrome associated with compound hemizygosity and
   heterozygosity of the {TAZ} and {LDB}3 genes.
-\newblock \emph{American {J}ournal of {M}edical {G}enetics {P}art {A}},
-  143\penalty0 (9):\penalty0 907--915, 2007.
+\newblock {\em American {J}ournal of {M}edical {G}enetics {P}art {A} 143}, 9
+  (2007), 907--915.
 
-\bibitem[Mc{L}achlan and {P}eel(2004)]{mclachlan04}
-{G}eoffrey Mc{L}achlan and {D}avid {P}eel.
-\newblock \emph{Finite mixture models}.
+\bibitem{mclachlan04}
+{\sc Mc{L}achlan, G., and {P}eel, D.}
+\newblock {\em Finite mixture models}.
 \newblock John {W}iley \& {S}ons, 2004.
 
-\bibitem[Mendel(1866)]{mendel66}
-{G} Mendel.
+\bibitem{mendel66}
+{\sc Mendel, G.}
 \newblock Versuche ber {P}flanzen-{H}ybriden. {V}erh.
-\newblock \emph{Naturforsch. {V}er. {B}rnn}, 4:\penalty0 347, 1866.
+\newblock {\em Naturforsch. {V}er. {B}rnn 4\/} (1866), 347.
 
-\bibitem[Michelson et~al.(1990)Michelson, {A}bmayr, {B}ate, {A}rias, and
-  {M}aniatis]{michelson90}
-{A}lan~{M} Michelson, {S}usan~{M} {A}bmayr, {M}ichael {B}ate, {A}~{M}artinez
-  {A}rias, and {T}om {M}aniatis.
+\bibitem{michelson90}
+{\sc Michelson, A.~M., {A}bmayr, S.~M., {B}ate, M., {A}rias, A.~M., and
+  {M}aniatis, T.}
 \newblock Expression of a {M}yo{D} family member prefigures muscle pattern in
   {D}rosophila embryos.
-\newblock \emph{Genes \& development}, 4\penalty0 (12a):\penalty0 2086--2097,
-  1990.
+\newblock {\em Genes \& development 4}, 12a (1990), 2086--2097.
 
-\bibitem[Mignotte et~al.(2001)Mignotte, {M}eunier, and {T}ardif]{mignotte01}
-{M}ax Mignotte, {J}ean {M}eunier, and {J}ean-{C}laude {T}ardif.
+\bibitem{mignotte01}
+{\sc Mignotte, M., {M}eunier, J., and {T}ardif, J.-C.}
 \newblock Endocardial boundary e timation and tracking in echocardiographic
   images using deformable template and markov random fields.
-\newblock \emph{Pattern {A}nalysis \& {A}pplications}, 4\penalty0 (4):\penalty0
-  256--271, 2001.
+\newblock {\em Pattern {A}nalysis \& {A}pplications 4}, 4 (2001), 256--271.
 
-\bibitem[Mitchell and {T}jian(1989)]{mitchell89}
-{P}amela~{J} Mitchell and {R}obert {T}jian.
+\bibitem{mitchell89}
+{\sc Mitchell, P.~J., and {T}jian, R.}
 \newblock Transcriptional regulation in mammalian cells by sequence-specific
   {DNA} binding proteins.
-\newblock \emph{Science}, 245\penalty0 (4916):\penalty0 371--378, 1989.
+\newblock {\em Science 245}, 4916 (1989), 371--378.
 
-\bibitem[Morin et~al.(2008)Morin, {B}ainbridge, {F}ejes, {H}irst, {K}rzywinski,
-  {P}ugh, {M}c{D}onald, {V}arhol, {J}ones, and {M}arra]{morin08}
-{R}yan~{D} Morin, {M}atthew {B}ainbridge, {A}nthony {F}ejes, {M}artin {H}irst,
-  {M}artin {K}rzywinski, {T}revor~{J} {P}ugh, {H}elen {M}c{D}onald, {R}ichard
-  {V}arhol, {S}teven~{JM} {J}ones, and {M}arco~{A} {M}arra.
+\bibitem{morin08}
+{\sc Morin, R.~D., {B}ainbridge, M., {F}ejes, A., {H}irst, M., {K}rzywinski,
+  M., {P}ugh, T.~J., {M}c{D}onald, H., {V}arhol, R., {J}ones, S.~J., and
+  {M}arra, M.~A.}
 \newblock Profiling the {H}e{L}a {S}3 transcriptome using randomly primed
   c{DNA} and massively parallel short-read sequencing.
-\newblock \emph{Biotechniques}, 45\penalty0 (1):\penalty0 81, 2008.
+\newblock {\em Biotechniques 45}, 1 (2008), 81.
 
-\bibitem[Mortazavi et~al.(2008)Mortazavi, {W}illiams, {M}c{C}ue, {S}chaeffer,
-  and {W}old]{mortazavi08}
-{A}li Mortazavi, {B}rian~{A} {W}illiams, {K}enneth {M}c{C}ue, {L}orian
-  {S}chaeffer, and {B}arbara {W}old.
+\bibitem{mortazavi08}
+{\sc Mortazavi, A., {W}illiams, B.~A., {M}c{C}ue, K., {S}chaeffer, L., and
+  {W}old, B.}
 \newblock Mapping and quantifying mammalian transcriptomes by {RNA}-{S}eq.
-\newblock \emph{Nature methods}, 5\penalty0 (7):\penalty0 621--628, 2008.
+\newblock {\em Nature methods 5}, 7 (2008), 621--628.
 
-\bibitem[Nederlof et~al.(1989)Nederlof, {R}obinson, {A}buknesha, {W}iegant,
-  {H}opman, {T}anke, and {R}aap]{nederlof89}
-{PM} Nederlof, {D} {R}obinson, {R} {A}buknesha, {J} {W}iegant, {AHN} {H}opman,
-  {HJ} {T}anke, and {AK} {R}aap.
+\bibitem{nederlof89}
+{\sc Nederlof, P., {R}obinson, D., {A}buknesha, R., {W}iegant, J., {H}opman,
+  A., {T}anke, H., and {R}aap, A.}
 \newblock Three-color fluorescence in situ hybridization for the simultaneous
   detection of multiple nucleic acid sequences.
-\newblock \emph{Cytometry}, 10\penalty0 (1):\penalty0 20--27, 1989.
+\newblock {\em Cytometry 10}, 1 (1989), 20--27.
 
-\bibitem[Nielsen(2004)]{nielsen04}
-{C}laus Nielsen.
+\bibitem{nielsen04}
+{\sc Nielsen, C.}
 \newblock Trochophora larvae: {C}ell-lineages, ciliary bands, and body regions.
   1. {A}nnelida and {M}ollusca.
-\newblock \emph{Journal of {E}xperimental {Z}oology {P}art {B}: {M}olecular and
-  {D}evelopmental {E}volution}, 302\penalty0 (1):\penalty0 35--68, 2004.
+\newblock {\em Journal of {E}xperimental {Z}oology {P}art {B}: {M}olecular and
+  {D}evelopmental {E}volution 302}, 1 (2004), 35--68.
 
-\bibitem[Ozsolak and {M}ilos(2010)]{ozsolak10}
-{F}atih Ozsolak and {P}atrice~{M} {M}ilos.
+\bibitem{ozsolak10}
+{\sc Ozsolak, F., and {M}ilos, P.~M.}
 \newblock Rna sequencing: advances, challenges and opportunities.
-\newblock \emph{Nature {R}eviews {G}enetics}, 12\penalty0 (2):\penalty0 87--98,
-  2010.
+\newblock {\em Nature {R}eviews {G}enetics 12}, 2 (2010), 87--98.
 
-\bibitem[Pardue and {G}all(1969)]{pardue69}
-{M}ary~{L}ou Pardue and {J}oseph~{G} {G}all.
+\bibitem{pardue69}
+{\sc Pardue, M.~L., and {G}all, J.~G.}
 \newblock Molecular hybridization of radioactive {DNA} to the {DNA} of
   cytological preparations.
-\newblock \emph{Proceedings of the {N}ational {A}cademy of {S}ciences},
-  64\penalty0 (2):\penalty0 600--604, 1969.
+\newblock {\em Proceedings of the {N}ational {A}cademy of {S}ciences 64}, 2
+  (1969), 600--604.
 
-\bibitem[Paulsen et~al.(2010)Paulsen, {B}aerentzen, and {L}arsen]{paulsen10}
-{R}asmus~{R} Paulsen, {J}akob~{A}ndreas {B}aerentzen, and {R}asmus {L}arsen.
+\bibitem{paulsen10}
+{\sc Paulsen, R.~R., {B}aerentzen, J.~A., and {L}arsen, R.}
 \newblock Markov random field surface reconstruction.
-\newblock \emph{Visualization and {C}omputer {G}raphics, {IEEE} {T}ransactions
-  on}, 16\penalty0 (4):\penalty0 636--646, 2010.
+\newblock {\em Visualization and {C}omputer {G}raphics, {IEEE} {T}ransactions
+  on 16}, 4 (2010), 636--646.
 
-\bibitem[{P}avlopoulos et~al.(2008){P}avlopoulos, {O}'{D}onoghue, {S}atagopam,
-  {S}oldatos, {P}afilis, and {S}chneider]{Pavlopoulos08}
-{G}.~{A}. {P}avlopoulos, {S}.~{I}. {O}'{D}onoghue, {V}.~{P}. {S}atagopam,
-  {T}.~{G}. {S}oldatos, {E}. {P}afilis, and {R}. {S}chneider.
+\bibitem{Pavlopoulos08}
+{\sc {P}avlopoulos, G.~A., {O}'{D}onoghue, S.~I., {S}atagopam, V.~P.,
+  {S}oldatos, T.~G., {P}afilis, E., and {S}chneider, R.}
 \newblock {{A}rena3{D}: visualization of biological networks in 3{D}}.
-\newblock \emph{{BMC} {S}yst {B}iol}, 2:\penalty0 104, 2008.
+\newblock {\em {BMC} {S}yst {B}iol 2\/} (2008), 104.
 
-\bibitem[Peng et~al.(2010)Peng, {R}uan, {L}ong, {S}impson, and {M}yers]{Peng10}
-{H}anchuan Peng, {Z}ongcai {R}uan, {F}uhui {L}ong, {J}ulie~{H} {S}impson, and
-  {E}ugene~{W} {M}yers.
+\bibitem{Peng10}
+{\sc Peng, H., {R}uan, Z., {L}ong, F., {S}impson, J.~H., and {M}yers, E.~W.}
 \newblock V3{D} enables real-time 3{D} visualization and quantitative analysis
   of large-scale biological image data sets.
-\newblock \emph{Nature {B}iotechnology}, 28\penalty0 (4):\penalty0 348--353,
-  2010.
-\newblock URL
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2857929&tool=pmcentrez&rendertype=abstract}.
+\newblock {\em Nature {B}iotechnology 28}, 4 (2010), 348--353.
 
-\bibitem[Pettit and {M}arioni(2013)]{Pettit13}
-{J}ean-{B}aptiste Pettit and {J}ohn~{C} {M}arioni.
+\bibitem{github}
+{\sc Pettit, J.-B.}
+\newblock bio{W}eb3{D} on github.
+\newblock \url{http://github.com/jbogp/bio{W}eb3{D}}.
+
+\bibitem{bioWeb3D}
+{\sc Pettit, J.-B.}
+\newblock bio{W}eb3{D} online.
+\newblock \url{http://www.ebi.ac.uk/~jbpettit/bio{W}eb3{D}}.
+
+\bibitem{Pettit13}
+{\sc Pettit, J.-B., and {M}arioni, J.~C.}
 \newblock bio{W}eb3{D}: an online web{GL} 3{D} data visualisation tool.
-\newblock \emph{BMC bioinformatics}, 14\penalty0 (1):\penalty0 185, 2013.
+\newblock {\em BMC bioinformatics 14}, 1 (2013), 185.
 
-\bibitem[Pinkel et~al.(1988)Pinkel, {L}andegent, {C}ollins, {F}uscoe,
-  {S}egraves, {L}ucas, and {G}ray]{pinkel88}
-{D} Pinkel, {J} {L}andegent, {C} {C}ollins, {J} {F}uscoe, {R} {S}egraves, {J}
-  {L}ucas, and {J} {G}ray.
+\bibitem{pinkel88}
+{\sc Pinkel, D., {L}andegent, J., {C}ollins, C., {F}uscoe, J., {S}egraves, R.,
+  {L}ucas, J., and {G}ray, J.}
 \newblock Fluorescence in situ hybridization with human chromosome-specific
   libraries: detection of trisomy 21 and translocations of chromosome 4.
-\newblock \emph{Proceedings of the {N}ational {A}cademy of {S}ciences},
-  85\penalty0 (23):\penalty0 9138--9142, 1988.
+\newblock {\em Proceedings of the {N}ational {A}cademy of {S}ciences 85}, 23
+  (1988), 9138--9142.
 
-\bibitem[Poulsen et~al.(1993)Poulsen, {B}allard, and {S}tahl]{poulsen93}
-{L}ars~{K} Poulsen, {G}wyn {B}allard, and {D}avid~{A} {S}tahl.
+\bibitem{poulsen93}
+{\sc Poulsen, L.~K., {B}allard, G., and {S}tahl, D.~A.}
 \newblock Use of r{RNA} fluorescence in situ hybridization for measuring the
   activity of single cells in young and established biofilms.
-\newblock \emph{Applied and {E}nvironmental {M}icrobiology}, 59\penalty0
-  (5):\penalty0 1354--1360, 1993.
+\newblock {\em Applied and {E}nvironmental {M}icrobiology 59}, 5 (1993),
+  1354--1360.
 
-\bibitem[Ramsk{\"o}ld et~al.(2012)Ramsk{\"o}ld, {L}uo, {W}ang, {L}i, {D}eng,
-  {F}aridani, {D}aniels, {K}hrebtukova, {L}oring, {L}aurent,
-  et~al.]{ramskold12}
-{D}aniel Ramsk{\"o}ld, {S}hujun {L}uo, {Y}u-{C}hieh {W}ang, {R}obin {L}i,
-  {Q}iaolin {D}eng, {O}mid~{R} {F}aridani, {G}regory~{A} {D}aniels, {I}rina
-  {K}hrebtukova, {J}eanne~{F} {L}oring, {L}ouise~{C} {L}aurent, et~al.
+\bibitem{ramskold12}
+{\sc Ramsk{\"o}ld, D., {L}uo, S., {W}ang, Y.-C., {L}i, R., {D}eng, Q.,
+  {F}aridani, O.~R., {D}aniels, G.~A., {K}hrebtukova, I., {L}oring, J.~F.,
+  {L}aurent, L.~C., et~al.}
 \newblock Full-length m{RNA}-{S}eq from single-cell levels of {RNA} and
   individual circulating tumor cells.
-\newblock \emph{Nature biotechnology}, 30\penalty0 (8):\penalty0 777--782,
-  2012.
+\newblock {\em Nature biotechnology 30}, 8 (2012), 777--782.
 
-\bibitem[Randel et~al.(2013)Randel, {B}ezares {C}alder{\'o}n, {G}{\"u}hmann,
-  {S}hahidi, and {J}{\'e}kely]{randel13}
-{N}adine Randel, {L}uis~{A} {B}ezares {C}alder{\'o}n, {M}artin {G}{\"u}hmann,
-  {R}{\'e}za {S}hahidi, and {G}{\'a}sp{\'a}r {J}{\'e}kely.
+\bibitem{randel13}
+{\sc Randel, N., {B}ezares {C}alder{\'o}n, L.~A., {G}{\"u}hmann, M., {S}hahidi,
+  R., and {J}{\'e}kely, G.}
 \newblock Expression dynamics and protein localization of rhabdomeric opsins in
   {P}latynereis larvae.
-\newblock \emph{Integrative and comparative biology}, 53\penalty0 (1):\penalty0
-  7--16, 2013.
+\newblock {\em Integrative and comparative biology 53}, 1 (2013), 7--16.
 
-\bibitem[Rodriguez-{D}iaz et~al.(2011)Rodriguez-{D}iaz, {A}bdulreda, {F}ormoso,
-  {G}ans, {R}icordi, {B}erggren, and {C}aicedo]{rodriguez11}
-{R}ayner Rodriguez-{D}iaz, {M}idhat~{H} {A}bdulreda, {A}lexander~{L} {F}ormoso,
-  {I}tai {G}ans, {C}amillo {R}icordi, {P}er-{O}lof {B}erggren, and {A}lejandro
-  {C}aicedo.
+\bibitem{rodriguez11}
+{\sc Rodriguez-{D}iaz, R., {A}bdulreda, M.~H., {F}ormoso, A.~L., {G}ans, I.,
+  {R}icordi, C., {B}erggren, P.-O., and {C}aicedo, A.}
 \newblock Autonomic {A}xons in the {H}uman {E}ndocrine {P}ancreas {S}how
   {U}nique {I}nnervation {P}atterns.
-\newblock \emph{Cell metabolism}, 14\penalty0 (1):\penalty0 45, 2011.
+\newblock {\em Cell metabolism 14}, 1 (2011), 45.
 
-\bibitem[Rouse(1999)]{rouse99}
-{G}reg~{W} Rouse.
+\bibitem{rouse99}
+{\sc Rouse, G.~W.}
 \newblock Trochophore concepts: ciliary bands and the evolution of larvae in
   spiralian {M}etazoa.
-\newblock \emph{Biological {J}ournal of the {L}innean {S}ociety}, 66\penalty0
-  (4):\penalty0 411--464, 1999.
+\newblock {\em Biological {J}ournal of the {L}innean {S}ociety 66}, 4 (1999),
+  411--464.
 
-\bibitem[Rozanov(1982)]{rozanov82}
-{Y}u~{A} Rozanov.
-\newblock \emph{Markov random fields}.
+\bibitem{rozanov82}
+{\sc Rozanov, Y.~A.}
+\newblock {\em Markov random fields}.
 \newblock Springer, 1982.
 
-\bibitem[{R}ubel et~al.(2010){R}ubel, {W}eber, {H}uang, {B}ethel, {B}iggin,
-  {F}owlkes, {L}uengo {H}endriks, {K}eranen, {E}isen, {K}nowles, {M}alik,
-  {H}agen, and {H}amann]{Rubel10}
-{O}. {R}ubel, {G}.~{H}. {W}eber, {M}.~{Y}. {H}uang, {E}.~{W}. {B}ethel,
-  {M}.~{D}. {B}iggin, {C}.~{C}. {F}owlkes, {C}.~{L}. {L}uengo {H}endriks,
-  {S}.~{V}. {K}eranen, {M}.~{B}. {E}isen, {D}.~{W}. {K}nowles, {J}. {M}alik,
-  {H}. {H}agen, and {B}. {H}amann.
+\bibitem{Rubel10}
+{\sc {R}ubel, O., {W}eber, G.~H., {H}uang, M.~Y., {B}ethel, E.~W., {B}iggin,
+  M.~D., {F}owlkes, C.~C., {L}uengo {H}endriks, C.~L., {K}eranen, S.~V.,
+  {E}isen, M.~B., {K}nowles, D.~W., {M}alik, J., {H}agen, H., and {H}amann, B.}
 \newblock {{I}ntegrating data clustering and visualization for the analysis of
   3{D} gene expression data}.
-\newblock \emph{{IEEE}/{ACM} {T}rans {C}omput {B}iol {B}ioinform}, 7\penalty0
-  (1):\penalty0 64--79, 2010.
+\newblock {\em {IEEE}/{ACM} {T}rans {C}omput {B}iol {B}ioinform 7}, 1 (2010),
+  64--79.
 
-\bibitem[Shannon et~al.(2003)Shannon, {M}arkiel, {O}zier, {B}aliga, {W}ang,
-  {R}amage, {A}min, {S}chwikowski, and {I}deker]{Shannon03}
-{P}aul Shannon, {A}ndrew {M}arkiel, {O}wen {O}zier, {N}itin~{S} {B}aliga,
-  {J}onathan~{T} {W}ang, {D}aniel {R}amage, {N}ada {A}min, {B}enno
-  {S}chwikowski, and {T}rey {I}deker.
+\bibitem{Shannon03}
+{\sc Shannon, P., {M}arkiel, A., {O}zier, O., {B}aliga, N.~S., {W}ang, J.~T.,
+  {R}amage, D., {A}min, N., {S}chwikowski, B., and {I}deker, T.}
 \newblock Cytoscape: a software environment for integrated models of
   biomolecular interaction networks.
-\newblock \emph{Genome {R}esearch}, 13:\penalty0 2498--504, 2003.
+\newblock {\em Genome {R}esearch 13\/} (2003), 2498--504.
 
-\bibitem[Shinozaki et~al.(2003)Shinozaki, {Y}amaguchi {S}hinozaki, and
-  {S}eki]{shinozaki03}
-{K}azuo Shinozaki, {K}azuko {Y}amaguchi {S}hinozaki, and {M}otoaki {S}eki.
+\bibitem{shinozaki03}
+{\sc Shinozaki, K., {Y}amaguchi {S}hinozaki, K., and {S}eki, M.}
 \newblock Regulatory network of gene expression in the drought and cold stress
   responses.
-\newblock \emph{Current opinion in plant biology}, 6\penalty0 (5):\penalty0
-  410--417, 2003.
+\newblock {\em Current opinion in plant biology 6}, 5 (2003), 410--417.
 
-\bibitem[Singer(1957)]{singer57}
-{C}harles Singer.
-\newblock A short history of anatomy from the {G}reeks to {H}arvey.
-\newblock 1957.
+\bibitem{singer57}
+{\sc Singer, C.}
+\newblock {\em A short history of anatomy from the {G}reeks to {H}arvey}.
+\newblock New {Y}ork: {D}over {P}ubl. ins., 1957, 1957.
 
-\bibitem[Southern(1975)]{southern75}
-{E}dwin~{M}ellor Southern.
+\bibitem{southern75}
+{\sc Southern, E.~M.}
 \newblock Detection of specific sequences among {DNA} fragments separated by
   gel electrophoresis.
-\newblock \emph{Journal of molecular biology}, 98\penalty0 (3):\penalty0
-  503--517, 1975.
+\newblock {\em Journal of molecular biology 98}, 3 (1975), 503--517.
 
-\bibitem[St{\aa}hlberg et~al.(2013)St{\aa}hlberg, {R}usnakova, and
-  {K}ubista]{staahlberg13}
-{A}nders St{\aa}hlberg, {V}endula {R}usnakova, and {M}ikael {K}ubista.
+\bibitem{staahlberg13}
+{\sc St{\aa}hlberg, A., {R}usnakova, V., and {K}ubista, M.}
 \newblock The added value of single-cell gene expression profiling.
-\newblock \emph{Briefings in functional genomics}, 12\penalty0 (2):\penalty0
-  81--89, 2013.
+\newblock {\em Briefings in functional genomics 12}, 2 (2013), 81--89.
 
-\bibitem[Stalling et~al.(2005)Stalling, {W}esterhoff, {H}ege,
-  et~al.]{Stalling05}
-{D}etlev Stalling, {M}alte {W}esterhoff, {H}ans-{C}hristian {H}ege, et~al.
+\bibitem{Stalling05}
+{\sc Stalling, D., {W}esterhoff, M., {H}ege, H.-C., et~al.}
 \newblock Amira: {A} highly interactive system for visual data analysis.
-\newblock \emph{The visualization handbook}, 38:\penalty0 749--67, 2005.
+\newblock {\em The visualization handbook 38\/} (2005), 749--67.
 
-\bibitem[Subudhi et~al.(2014)Subudhi, {B}ovolo, {G}hosh, and
-  {B}ruzzone]{subudhi14}
-{B}adri~{N}arayan Subudhi, {F}rancesca {B}ovolo, {A}shish {G}hosh, and
-  {L}orenzo {B}ruzzone.
+\bibitem{subudhi14}
+{\sc Subudhi, B.~N., {B}ovolo, F., {G}hosh, A., and {B}ruzzone, L.}
 \newblock Spatio-contextual fuzzy clustering with {M}arkov random field model
   for change detection in remotely sensed images.
-\newblock \emph{Optics \& {L}aser {T}echnology}, 57:\penalty0 284--292, 2014.
+\newblock {\em Optics \& {L}aser {T}echnology 57\/} (2014), 284--292.
 
-\bibitem[SWIGER and {TUCKER}(1996)]{swiger96}
-{RR} SWIGER and {JD} {TUCKER}.
+\bibitem{swiger96}
+{\sc Swiger, R., and {Tucker}, J.}
 \newblock Fluorescence in situ hybridization: {A} brief review.
-\newblock \emph{Environmental and molecular mutagenesis}, 27\penalty0
-  (4):\penalty0 245--254, 1996.
+\newblock {\em Environmental and molecular mutagenesis 27}, 4 (1996), 245--254.
 
-\bibitem[Tang et~al.(2009)Tang, {B}arbacioru, {W}ang, {N}ordman, {L}ee, {X}u,
-  {W}ang, {B}odeau, {T}uch, {S}iddiqui, et~al.]{tang09}
-{F}uchou Tang, {C}atalin {B}arbacioru, {Y}angzhou {W}ang, {E}llen {N}ordman,
-  {C}larence {L}ee, {N}anlan {X}u, {X}iaohui {W}ang, {J}ohn {B}odeau,
-  {B}rian~{B} {T}uch, {A}sim {S}iddiqui, et~al.
+\bibitem{tang09}
+{\sc Tang, F., {B}arbacioru, C., {W}ang, Y., {N}ordman, E., {L}ee, C., {X}u,
+  N., {W}ang, X., {B}odeau, J., {T}uch, B.~B., {S}iddiqui, A., et~al.}
 \newblock m{RNA}-{S}eq whole-transcriptome analysis of a single cell.
-\newblock \emph{Nature methods}, 6\penalty0 (5):\penalty0 377--382, 2009.
+\newblock {\em Nature methods 6}, 5 (2009), 377--382.
 
-\bibitem[Tautz and {P}feifle(1989)]{tautz89}
-{D}iethard Tautz and {C}hristine {P}feifle.
+\bibitem{tautz89}
+{\sc Tautz, D., and {P}feifle, C.}
 \newblock A non-radioactive in situ hybridization method for the localization
   of specific {RNA}s in {D}rosophila embryos reveals translational control of
   the segmentation gene hunchback.
-\newblock \emph{Chromosoma}, 98\penalty0 (2):\penalty0 81--85, 1989.
+\newblock {\em Chromosoma 98}, 2 (1989), 81--85.
 
-\bibitem[Terakita(2005)]{terakita05}
-{A}kihisa Terakita.
+\bibitem{terakita05}
+{\sc Terakita, A.}
 \newblock The opsins.
-\newblock \emph{Genome biology}, 6\penalty0 (3):\penalty0 213, 2005.
+\newblock {\em Genome biology 6}, 3 (2005), 213.
 
-\bibitem[Tessmar-{R}aible and {A}rendt(2003)]{tessmar03}
-{K}ristin Tessmar-{R}aible and {D}etlev {A}rendt.
+\bibitem{tessmar03}
+{\sc Tessmar-{R}aible, K., and {A}rendt, D.}
 \newblock Emerging systems: between vertebrates and arthropods, the
   {L}ophotrochozoa.
-\newblock \emph{Current opinion in genetics \& development}, 13\penalty0
-  (4):\penalty0 331--340, 2003.
+\newblock {\em Current opinion in genetics \& development 13}, 4 (2003),
+  331--340.
 
-\bibitem[Tessmar-{R}aible et~al.(2007)Tessmar-{R}aible, {R}aible,
-  {C}hristodoulou, {G}uy, {R}embold, {H}ausen, and {A}rendt]{tessmar07}
-{K}ristin Tessmar-{R}aible, {F}lorian {R}aible, {F}oteini {C}hristodoulou,
-  {K}eren {G}uy, {M}artina {R}embold, {H}arald {H}ausen, and {D}etlev {A}rendt.
+\bibitem{tessmar07}
+{\sc Tessmar-{R}aible, K., {R}aible, F., {C}hristodoulou, F., {G}uy, K.,
+  {R}embold, M., {H}ausen, H., and {A}rendt, D.}
 \newblock Conserved sensory-neurosecretory cell types in annelid and fish
   forebrain: insights into hypothalamus evolution.
-\newblock \emph{Cell}, 129\penalty0 (7):\penalty0 1389--1400, 2007.
+\newblock {\em Cell 129}, 7 (2007), 1389--1400.
 
-\bibitem[Tomer et~al.(2010)Tomer, {D}enes, {T}essmar {R}aible, and
-  {A}rendt]{Tomer10}
-{R}aju Tomer, {A}lexandru~{S} {D}enes, {K}ristin {T}essmar {R}aible, and
-  {D}etlev {A}rendt.
+\bibitem{Tomer10}
+{\sc Tomer, R., {D}enes, A.~S., {T}essmar {R}aible, K., and {A}rendt, D.}
 \newblock Profiling by image registration reveals common origin of annelid
   mushroom bodies and vertebrate pallium.
-\newblock \emph{Cell}, 142\penalty0 (5):\penalty0 800--809, 2010.
+\newblock {\em Cell 142}, 5 (2010), 800--809.
 
-\bibitem[Wang et~al.(1992)Wang, {W}atkins, and {M}albon]{wang92}
-{H}sien-yu Wang, {D}avid~{C} {W}atkins, and {C}raig~{C} {M}albon.
+\bibitem{security}
+{\sc USCERT}.
+\newblock United {S}tates {C}omputer {E}mergency {R}eadiness {T}eam.
+\newblock \url{http://www.kb.cert.org/vuls/id/636312}.
+\newblock Accessed: 2013.
+
+\bibitem{wang92}
+{\sc Wang, H.-y., {W}atkins, D.~C., and {M}albon, C.~C.}
 \newblock Antisense oligodeoxynucleotides to {G}s protein $\alpha$-subunit
   sequence accelerate differentiation of fibroblasts to adipocytes.
-\newblock 1992.
+\newblock {\em Nature 358}, 6384 (1992), 334.
 
-\bibitem[Wang et~al.(2009)Wang, {G}erstein, and {S}nyder]{wang09}
-{Z}hong Wang, {M}ark {G}erstein, and {M}ichael {S}nyder.
+\bibitem{Wang093D}
+{\sc Wang, Q., {L}iang, Q., and {Z}hang, X.}
+\newblock 3{D} {G}enome {T}uner: {C}ompare {M}ultiple {C}ircular {G}enomes in a
+  3{D} {C}ontext.
+\newblock {\em Genomics {P}roteomics {B}ioinformatics 7}, 3 (2009), 143--146.
+
+\bibitem{wang09}
+{\sc Wang, Z., {G}erstein, M., and {S}nyder, M.}
 \newblock Rna-{S}eq: a revolutionary tool for transcriptomics.
-\newblock \emph{Nature {R}eviews {G}enetics}, 10\penalty0 (1):\penalty0 57--63,
-  2009.
+\newblock {\em Nature {R}eviews {G}enetics 10}, 1 (2009), 57--63.
 
-\bibitem[Wei and {L}i(2007)]{wei07}
-{Z}hi Wei and {H}ongzhe {L}i.
+\bibitem{wei07}
+{\sc Wei, Z., and {L}i, H.}
 \newblock A {M}arkov random field model for network-based analysis of genomic
   data.
-\newblock \emph{Bioinformatics}, 23\penalty0 (12):\penalty0 1537--1544, 2007.
+\newblock {\em Bioinformatics 23}, 12 (2007), 1537--1544.
 
-\bibitem[Weintraub et~al.(1991)Weintraub, {D}avis, {T}apscott, {T}hayer,
-  {K}rause, {B}enezra, {B}lackwell, {T}urner, {R}upp, {H}ollenberg,
-  et~al.]{weintraub91}
-{H}arold Weintraub, {R}obert {D}avis, {S}tephen {T}apscott, {M}atthew {T}hayer,
-  {M}ichael {K}rause, {R}obert {B}enezra, {T}~{K}eith {B}lackwell, {D}avid
-  {T}urner, {R}alph {R}upp, {S}tanley {H}ollenberg, et~al.
+\bibitem{weintraub91}
+{\sc Weintraub, H., {D}avis, R., {T}apscott, S., {T}hayer, M., {K}rause, M.,
+  {B}enezra, R., {B}lackwell, T.~K., {T}urner, D., {R}upp, R., {H}ollenberg,
+  S., et~al.}
 \newblock The myo{D} gene family: nodal point during specification of the
   muscle cell lineage.
-\newblock \emph{Science}, 251\penalty0 (4995):\penalty0 761--766, 1991.
+\newblock {\em Science 251}, 4995 (1991), 761--766.
 
-\bibitem[Wilde(2007)]{Wilde07}
-{E}rik Wilde.
+\bibitem{Wilde07}
+{\sc Wilde, E.}
 \newblock Putting {T}hings to {REST}.
-\newblock \emph{Transport}, 15\penalty0 (November):\penalty0 567--583, 2007.
+\newblock {\em Transport 15}, November (2007), 567--583.
 
-\bibitem[Williams et~al.(1980)]{williams80}
-{P}eter~{L} Williams et~al.
-\newblock Gray's anatomy.
-\newblock 1980.
+\bibitem{williams80}
+{\sc Williams, P.~L., et~al.}
+\newblock {\em Gray's anatomy}.
+\newblock London: {C}hurchill {L}ivingstone, 1980, 1980.
 
-\bibitem[Wright(1989)]{wright89}
-{WA} Wright.
+\bibitem{wright89}
+{\sc Wright, W.}
 \newblock A {M}arkov random field approach to data fusion and colour
   segmentation.
-\newblock \emph{Image and vision computing}, 7\penalty0 (2):\penalty0 144--150,
-  1989.
+\newblock {\em Image and vision computing 7}, 2 (1989), 144--150.
 
-\bibitem[Wu(1982)]{Wu82}
-{F}a-{Y}ueh Wu.
+\bibitem{Wu82}
+{\sc Wu, F.-Y.}
 \newblock The potts model.
-\newblock \emph{Reviews of modern physics}, 54\penalty0 (1):\penalty0 235,
-  1982.
+\newblock {\em Reviews of modern physics 54}, 1 (1982), 235.
 
-\bibitem[Yan et~al.(2013)Yan, {Y}ang, {G}uo, {Y}ang, {W}u, {L}i, {L}iu, {L}ian,
-  {Z}heng, {Y}an, et~al.]{yan13}
-{L}iying Yan, {M}ingyu {Y}ang, {H}ongshan {G}uo, {L}u {Y}ang, {J}un {W}u,
-  {R}ong {L}i, {P}ing {L}iu, {Y}ing {L}ian, {X}iaoying {Z}heng, {J}ie {Y}an,
-  et~al.
+\bibitem{yan13}
+{\sc Yan, L., {Y}ang, M., {G}uo, H., {Y}ang, L., {W}u, J., {L}i, R., {L}iu, P.,
+  {L}ian, Y., {Z}heng, X., {Y}an, J., et~al.}
 \newblock Single-cell {RNA}-{S}eq profiling of human preimplantation embryos
   and embryonic stem cells.
-\newblock \emph{Nature structural \& molecular biology}, 2013.
+\newblock {\em Nature structural \& molecular biology\/} (2013).
 
-\bibitem[Young et~al.(2013)Young, {W}oodford, and {O}'{D}owd]{young13}
-{B}arbara Young, {P}hillip {W}oodford, and {G}eraldine {O}'{D}owd.
-\newblock \emph{Wheater's functional histology: a text and colour atlas}.
+\bibitem{young13}
+{\sc Young, B., {W}oodford, P., and {O}'{D}owd, G.}
+\newblock {\em Wheater's functional histology: a text and colour atlas}.
 \newblock Elsevier {H}ealth {S}ciences, 2013.
 
-\bibitem[Yuille(1990)]{Yuille90}
-{A}lan~{L} Yuille.
+\bibitem{Yuille90}
+{\sc Yuille, A.~L.}
 \newblock Generalized deformable models, statistical physics, and matching
   problems.
-\newblock \emph{Neural {C}omputation}, 2\penalty0 (1):\penalty0 1--24, 1990.
+\newblock {\em Neural {C}omputation 2}, 1 (1990), 1--24.
 
-\bibitem[Zeeck et~al.(1998)Zeeck, {H}arder, and {B}eckmann]{zeeck98}
-{E}rich Zeeck, {T}ilman {H}arder, and {M}anfred {B}eckmann.
+\bibitem{zeeck98}
+{\sc Zeeck, E., {H}arder, T., and {B}eckmann, M.}
 \newblock Uric acid: the sperm-release pheromone of the marine polychaete
   {P}latynereis dumerilii.
-\newblock \emph{Journal of {C}hemical {E}cology}, 24\penalty0 (1):\penalty0
-  13--22, 1998.
+\newblock {\em Journal of {C}hemical {E}cology 24}, 1 (1998), 13--22.
 
-\bibitem[Zerubia and {C}hellappa(1993)]{zerubia93}
-{J}osiane Zerubia and {R}ama {C}hellappa.
+\bibitem{zerubia93}
+{\sc Zerubia, J., and {C}hellappa, R.}
 \newblock Mean field annealing using compound {G}auss-{M}arkov random fields
   for edge detection and image estimation.
-\newblock \emph{Neural {N}etworks, {IEEE} {T}ransactions on}, 4\penalty0
-  (4):\penalty0 703--709, 1993.
+\newblock {\em Neural {N}etworks, {IEEE} {T}ransactions on 4}, 4 (1993),
+  703--709.
 
-\bibitem[Zhang et~al.(2014)Zhang, {S}hi, {W}ang, {H}ao, and {M}iao]{zhang14}
-{H}ua Zhang, {W}enzhong {S}hi, {Y}unjia {W}ang, {M}ing {H}ao, and {Z}elang
-  {M}iao.
+\bibitem{zhang14}
+{\sc Zhang, H., {S}hi, W., {W}ang, Y., {H}ao, M., and {M}iao, Z.}
 \newblock Spatial-{A}ttraction-{B}ased {M}arkov {R}andom {F}ield {A}pproach for
   {C}lassification of {H}igh {S}patial {R}esolution {M}ultispectral {I}magery.
-\newblock \emph{Geoscience and {R}emote {S}ensing {L}etters, {IEEE}},
-  11\penalty0 (2):\penalty0 489--493, 2014.
+\newblock {\em Geoscience and {R}emote {S}ensing {L}etters, {IEEE} 11}, 2
+  (2014), 489--493.
 
-\bibitem[Zhang(1992)]{Zhang92}
-{J}un Zhang.
+\bibitem{Zhang92}
+{\sc Zhang, J.}
 \newblock The mean field theory in {EM} procedures for {M}arkov random fields.
-\newblock \emph{Signal {P}rocessing, {IEEE} {T}ransactions on}, 40\penalty0
-  (10):\penalty0 2570--2583, 1992.
+\newblock {\em Signal {P}rocessing, {IEEE} {T}ransactions on 40}, 10 (1992),
+  2570--2583.
 
-\bibitem[Zhang et~al.(2001)Zhang, {B}rady, and {S}mith]{zhang01}
-{Y}ongyue Zhang, {M}ichael {B}rady, and {S}tephen {S}mith.
+\bibitem{zhang01}
+{\sc Zhang, Y., {B}rady, M., and {S}mith, S.}
 \newblock Segmentation of brain {MR} images through a hidden {M}arkov random
   field model and the expectation-maximization algorithm.
-\newblock \emph{Medical {I}maging, {IEEE} {T}ransactions on}, 20\penalty0
-  (1):\penalty0 45--57, 2001.
+\newblock {\em Medical {I}maging, {IEEE} {T}ransactions on 20}, 1 (2001),
+  45--57.
 
 \end{thebibliography}

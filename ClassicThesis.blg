@@ -1,4 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ClassicThesis.aux
+The style file: acm.bst
 A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
 A level-1 auxiliary file: FrontBackmatter/Abstract.aux
 A level-1 auxiliary file: FrontBackmatter/Acknowledgments.aux
@@ -13,40 +14,6 @@ A level-1 auxiliary file: Chapters/Chapter06.aux
 A level-1 auxiliary file: Chapters/Chapter07.aux
 A level-1 auxiliary file: Chapters/supp_figures.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
-The style file: plainnat.bst
 Database file #1: Bibliography.bib
-Warning--entry type for "three" isn't style-file defined
---line 1494 of file Bibliography.bib
-Warning--entry type for "webgl" isn't style-file defined
---line 1499 of file Bibliography.bib
-Warning--entry type for "github" isn't style-file defined
---line 1504 of file Bibliography.bib
-Warning--entry type for "security" isn't style-file defined
---line 1514 of file Bibliography.bib
-Warning--entry type for "caniuse" isn't style-file defined
---line 1519 of file Bibliography.bib
-Warning--entry type for "xmlref" isn't style-file defined
---line 1524 of file Bibliography.bib
-Warning--I didn't find a database entry for "Wang093D"
-Warning--I didn't find a database entry for "bioWeb3D"
-Warning--to sort, need author or key in xmlref
-Warning--to sort, need author or key in three
-Warning--to sort, need author or key in webgl
-Warning--to sort, need author or key in github
-Warning--to sort, need author or key in security
-Warning--to sort, need author or key in caniuse
-Warning--empty year in caniuse
-Warning--empty year in github
-Warning--empty year in security
-Warning--empty year in three
-Warning--empty year in webgl
-Warning--empty year in xmlref
-Warning--empty year in arendt124
-Warning--empty year in arendt124
-Warning--empty journal in durston89
-Warning--empty journal in guy08
-Warning--can't use both volume and number fields in macqueen67
-Warning--empty journal in singer57
-Warning--empty journal in wang92
-Warning--empty journal in williams80
-(There were 28 warnings)
+Warning--I didn't find a database entry for "xmlref"
+(There was 1 warning)

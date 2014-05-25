@@ -4,9 +4,9 @@
 This Chapter gives a theoretical overview of a Hidden Markov Random Field based approach that is designed to cluster single cell in-situ hybridization gene expression data ``cubes'' as described in Chapter \ref{ch:singlecell}, into $K$ clusters ($K \in {2, 3,...}$). Subsequently, we will describe our approach for estimating $K$.
 
 	\section{background}
-	Markov random fields (MRF) are statistical models that provide a way of modeling entities composed of multiple discrete sites such as images where each site is a pixel or in our case a biological tissue where each site is a single cell, in a context-dependent way \cite{li09}. MRF based methods find their roots in the field of statistical mechanics as the Ising model \cite{Ising25} and its generalization, the Potts model \cite{Wu82}. Since then, they have been and are still mainly used in the field of image analysis, and the literature about them is ever growing \cite{rozanov82,li95}. More specifically MRF methods are found in a wide range of applications such as image restoration and segmentation \cite{zhang01}, surface reconstruction \cite{paulsen10}, edge detection \cite{zerubia93}, texture analysis \cite{clausi04}, optical flow \cite{heitz93}, active contours \cite{martin05}, deformable templates \cite{mignotte01}, data fusion \cite{wright89} and perceptual grouping \cite{fields97}.\\
+	Markov random fields (MRF) are statistical models that provide a way of modeling entities composed of multiple discrete sites such as images where each site is a pixel or in our case a biological tissue where each site is a single cell, in a context-dependent way \citep{li09}. MRF based methods find their roots in the field of statistical mechanics as the Ising model \citep{Ising25} and its generalization, the Potts model \citep{Wu82}. Since then, they have been and are still mainly used in the field of image analysis, and the literature about them is ever growing \citep{rozanov82,li95}. More specifically MRF methods are found in a wide range of applications such as image restoration and segmentation \citep{zhang01}, surface reconstruction \citep{paulsen10}, edge detection \citep{zerubia93}, texture analysis \citep{clausi04}, optical flow \citep{heitz93}, active contours \citep{martin05}, deformable templates \citep{mignotte01}, data fusion \citep{wright89} and perceptual grouping \citep{fields97}.\\
 	
-	MRF have also been used in a variety of biological applications from analysing medical imaging data \cite{zhang01,held97,descombes98} to analysing networks of genomic data \cite{wei07}. In the context of the shift from the tissue to the single cell scale in transcriptomics assays described in the previous chapters, MRF based method represent a natural way to model gene expression in single cells while accounting for the relationship between sites.\\
+	MRF have also been used in a variety of biological applications from analysing medical imaging data \citep{zhang01,held97,descombes98} to analysing networks of genomic data \citep{wei07}. In the context of the shift from the tissue to the single cell scale in transcriptomics assays described in the previous chapters, MRF based method represent a natural way to model gene expression in single cells while accounting for the relationship between sites.\\
 	
 	 Mathematically, MRF models are built around two complementary sub-models. On the one hand, the field represents the sites and their spatial structure central to the MRF theory. It is given a mathematically sound form through the Hammersley-Clifford (1971) theorem which sates that the influence between sites in a field following the Markov properties follows a Gibbs distribution dependent upon an Energy function in which the spatial coherency parameters of the model are incorporated. This theorem gives strong mathematical bases for modeling spatially dependent data. In this part of the model, some essential technical choices have to be made namely the \emph{neighbourhood system} and the \emph{Energy function} used. On the other hand, the emission model represents the data and the observations, introducing a certain number of parameters depending on the type of data modeled.\\
 	 
@@ -60,7 +60,7 @@ H(\boldsymbol{z}) = - \sum\limits_{i \in S}\beta_{z_i}\sum_{\substack{j \in N(i)
 The denominator in (\ref{eq:prior}), where $\boldsymbol{z'}$ represents all the possible realizations of the field, is a normalizing constant referred to as $W(\boldsymbol{\beta})$.\\
 
 	\subsection{Single and multiple beta models in a biological context}
-This model is closely related to a K-colour Potts model \cite{Wu82}. However, the unusual nature of the data used in this thesis led to the idea of extending the model commonly used in the field of image segmentation. In particular, the K-colour Potts model defines a single spatial coherency parameter $\beta$ that is shared by all clusters \cite{subudhi14,zhang14}. Importantly, the method presented here was extended by assigning one $\beta$ per cluster so that:
+This model is closely related to a K-colour Potts model \citep{Wu82}. However, the unusual nature of the data used in this thesis led to the idea of extending the model commonly used in the field of image segmentation. In particular, the K-colour Potts model defines a single spatial coherency parameter $\beta$ that is shared by all clusters \citep{subudhi14,zhang14}. Importantly, the method presented here was extended by assigning one $\beta$ per cluster so that:
 \begin{equation*}
 \label{eq:beta}
 \boldsymbol{\beta} = (\beta_{1},...,\beta_{K})
@@ -89,7 +89,7 @@ p(\boldsymbol{y} \mid \boldsymbol{z} ; \Theta) &= \prod_{i \in S} p(y_i \mid z_i
 &= \prod_{i \in S} f_{z_i} (y_i \mid z_i ; \Theta)
 \end{align}
 
-Equation \ref{eq:independence} defines one unknown parameter per cluster: $\Theta = (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})$. It is interesting to note that this part of the model is equivalent to an independent mixture model \cite{mclachlan04}. Indeed, Markov random fields can be viewed as independent mixture models where $Z$ is a set of independent, identically distributed random variables, which happens when $\beta = 0$.\\
+Equation \ref{eq:independence} defines one unknown parameter per cluster: $\Theta = (\boldsymbol{\theta_1},...,\boldsymbol{\theta_K})$. It is interesting to note that this part of the model is equivalent to an independent mixture model \citep{mclachlan04}. Indeed, Markov random fields can be viewed as independent mixture models where $Z$ is a set of independent, identically distributed random variables, which happens when $\beta = 0$.\\
 
 Given a particular cluster $h \in {1,...,K}$ and M the set of considered genes, the expression of each gene $m \in M$ in cluster $h$ is modelled by a Bernoulli distribution with parameter $\theta_{h,m}$. This leads to one unknown Bernoulli parameter per gene per cluster so that :
 
@@ -124,7 +124,7 @@ Because equation (\ref{eq:likelihood}) is a Gibbs distribution, using the Hammer
 In our case, the goal is to recover the unknown realization of $Z: \boldsymbol{z}$. To this end we need to maximize the values of all the parameters of the model $\boldsymbol{\psi} = (\boldsymbol{\Theta}, \boldsymbol{\beta})$, and to chose the optimal number of clusters, $K$.
 
 \section{Parameter estimation using the EM algorithm}
-As mentioned before, the aim is to assign each cell $i$ to one of the $K$ possible clusters. To do so, it is interesting to consider the Maximum Posterior Marginal (MPM) that maximizes $P(Z_{i}=h|\boldsymbol{y}, \boldsymbol{\psi})$, where the $\boldsymbol{\psi}$ are unknown and need to be estimated. To this end, the Expectation Maximisation \cite{dempster77} (EM) principle can be applied. The EM algorithm consists in the Expectation step (E) where the expectation of the model's likelihood with the current parameters is computed and the Maximization step (M) where the latent variables that maximize the model's expectation computed in the E step are found. The two steps are repeated until a convergence factor is reached.\\
+As mentioned before, the aim is to assign each cell $i$ to one of the $K$ possible clusters. To do so, it is interesting to consider the Maximum Posterior Marginal (MPM) that maximizes $P(Z_{i}=h|\boldsymbol{y}, \boldsymbol{\psi})$, where the $\boldsymbol{\psi}$ are unknown and need to be estimated. To this end, the Expectation Maximisation \citep{dempster77} (EM) principle can be applied. The EM algorithm consists in the Expectation step (E) where the expectation of the model's likelihood with the current parameters is computed and the Maximization step (M) where the latent variables that maximize the model's expectation computed in the E step are found. The two steps are repeated until a convergence factor is reached.\\
 
 	\subsection{Initialization}
 The first step of the algorithm is to initialize the model's parameter. To this end, it is possible to directly assign values for $\boldsymbol{\psi}^{0}$, or to generate an initial clustering $\boldsymbol{z}^{0}$ from which the initial $\boldsymbol{\psi}^{0}$ will be derived.\\
@@ -167,15 +167,15 @@ t_{i\,h}^{l+1} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})
 
 Computing this conditional probability is problematic because of the dependence between neighbouring ``cubes'', and computing an exact value is computationally expensive. Indeed, each point being dependent upon its neighbours, and the neighbours being themselves dependent upon their neighbours, unsurprisingly computing these conditional probabilities becomes exponentially complex as the number of connected nodes in the graph grow. Additionally for $R_z$, as mentioned previously, it is also necessary to compute the value of the normalizing constant $W(\boldsymbol{\beta})$.\\
 
-To compute those quantities, approximations are needed. Methods to do so include Besag's pseudo-likelihood \cite{Besag75} to compute $W(\boldsymbol{\beta})$, and simulating the posterior distribution of $Z$ given $\boldsymbol{y}$ with the parameters at iteration $l$, with a Gibbs sampler to estimate $t_{i\,h}^{l+1}$ \cite{Chalmond89}.\\
+To compute those quantities, approximations are needed. Methods to do so include Besag's pseudo-likelihood \citep{Besag75} to compute $W(\boldsymbol{\beta})$, and simulating the posterior distribution of $Z$ given $\boldsymbol{y}$ with the parameters at iteration $l$, with a Gibbs sampler to estimate $t_{i\,h}^{l+1}$ \citep{Chalmond89}.\\
 
-However, another method exists, the mean field approximation originally proposed in the field of statistical mechanics. Since then, it has been used in a variety of fields including computer vision \cite{Yuille90} and more recently to approximate the distribution of both $W(\boldsymbol{\beta})$ (with a single $\beta$) and $t_{i\,h}^{l+1}$ \cite{Zhang92}. I present here the extension of this method to a model with one $\beta$ parameter per cluster.
+However, another method exists, the mean field approximation originally proposed in the field of statistical mechanics. Since then, it has been used in a variety of fields including computer vision \citep{Yuille90} and more recently to approximate the distribution of both $W(\boldsymbol{\beta})$ (with a single $\beta$) and $t_{i\,h}^{l+1}$ \citep{Zhang92}. I present here the extension of this method to a model with one $\beta$ parameter per cluster.
 
 \section{Mean field approximations}
 
 The idea behind this approximation is to compute intractable quantities at any point $i \in S$ by setting all the other sites in the field to their mean values. Keeping in mind the Markov property expressed in equation (\ref{eq:markov1}), when considering a single site $i \in S$, setting all the other sites in the graph to a defined value is equivalent, in the case of an MRF, to setting only the values of $N(i)$.\\
 
-When computing $t_{i\,h}^{l+1}$, the mean fields approximation yields the following fixed point equation for $i \in S$ and $1 \leq h \leq K$ \cite{Dang98}:
+When computing $t_{i\,h}^{l+1}$, the mean fields approximation yields the following fixed point equation for $i \in S$ and $1 \leq h \leq K$ \citep{Dang98}:
 
 \begin{align}
 \label{eq:fixedpoint}
@@ -199,7 +199,7 @@ After the E step, maximizing $\boldsymbol{\psi}$ is relatively straightforward. 
 \boldsymbol{\beta}^{l+1} &= arg\:\underset{\boldsymbol{\beta}}{max}\:R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)
 \end{align*}
 
-For $\Theta$, once the the $t_{i\,h}^{l} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})$ have been computed during the E-step, those probabilities may be used to assign each cell to its most probable cluster at step $l$. This is as hard clustering approach, which is a technical choice but of course the probabilities $t_{i\,h}^{l}$ could instead be used to compute a fuzzy clustering criterion for instance, the Hathaway's fuzzy clustering criterion as described in \cite{Dang98}.\\
+For $\Theta$, once the the $t_{i\,h}^{l} = p(Z_i = h \mid \boldsymbol{y};\boldsymbol{\psi}^{l})$ have been computed during the E-step, those probabilities may be used to assign each cell to its most probable cluster at step $l$. This is as hard clustering approach, which is a technical choice but of course the probabilities $t_{i\,h}^{l}$ could instead be used to compute a fuzzy clustering criterion for instance, the Hathaway's fuzzy clustering criterion as described in \citep{Dang98}.\\
  
 Once the new partition is created, the values of $\Theta$ that maximize the model's expectation can be computed iteratively for cluster $h \in {1,...,K}$ and gene $m \in M$. Specifically if $Expr_{h,m}$ denotes the number of cells expressing gene $m$ in cluster $h$ and $Num_h$ denotes the total number of cells in cluster $h$, we can write:
 
@@ -207,7 +207,7 @@ Once the new partition is created, the values of $\Theta$ that maximize the mode
 \theta_{m,h}^{l+1} = arg\:\underset{\Theta}{max}\:R_y(\Theta\mid \boldsymbol{\psi}^l) = \frac{Expr_{h,m}}{Num_h}
 \end{align*}
 
-In order to maximize $\boldsymbol{\beta}^{l+1}$, an iterative approach such as the gradient ascent algorithm, the positive version of the gradient descent algorithm \cite{burges2005} was used for each $\beta_h^{l+1}, h \in [1,K]$ over the function $R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)$. \\
+In order to maximize $\boldsymbol{\beta}^{l+1}$, an iterative approach such as the gradient ascent algorithm, the positive version of the gradient descent algorithm \citep{burges2005} was used for each $\beta_h^{l+1}, h \in [1,K]$ over the function $R_z(\boldsymbol{\beta}\mid \boldsymbol{\psi}^l)$. \\
 
 
 
@@ -221,7 +221,7 @@ Without any prior knowledge, choosing the right number of clusters $K$ is challe
 log\;L(\boldsymbol{\psi}) = 	log\;P_G(\boldsymbol{y},\boldsymbol{z} \mid \Theta, \boldsymbol{\beta})
 \end{align*}
 
-Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model (i.e the number of cubes), we employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) \cite{burnham04} as:
+Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of parameters of the model (i.e the number of cubes), we employed a penalized likelihood approach to infer the number of clusters. Specifically, if $P$ is the total number of parameters in the model and $N$ the cardinality of $S$, I calculated the Bayesian Inference Criterion (BIC) \citep{burnham04} as:
 
 \begin{align*}
 \label{eq:BIC}
@@ -231,38 +231,90 @@ Because $log\;L(\boldsymbol{\psi})$ monotonically increases with the number of p
 By computing the final likelihood for a large range of possible $K$ values, the minimal resulting BIC will be chosen as the optimal number of classes, $\hat{K}$. When applied to the biological data however, this approach is not ideal as I will describe later in this thesis (see Chapter \ref{ch:biology}) but yields good results when applied to simulated data (see Chapter \ref{ch:simulations}).\\
 
 \section{Algorithmic overview}
-In this section I give an overview of how I implemented the main algorithms described in this Chapter, namely the EM algorithm and the gradient ascent algorithm.
-\begin{algorithm}                      % enter the algorithm environment
-\caption{EM algorithm}          % give the algorithm a caption
-\label{alg1}                           % and a label for \ref{} commands later in the document
-\begin{algorithmic}                    % enter the algorithmic environment
-    \IF{Initialization is provided}
-		\STATE Initialize $z^{(0)}$ with the file provided
-    \ELSE
-    	\STATE generate $R$ random initializations 
-    	\STATE select $init_r$ with the highest likelihood	
-    	\STATE Initialize $z^{(0)}$ with the file provided
-    \ENDIF
-    \STATE Compute $\Theta^{(0)}$
-    \PRINT{Init successful and initial likelihood}
-    \PRINT{Starting EM Procedure}
-    \WHILE{cluster changed at iter $(l-1)$ < convergence}
-		\STATE Perform E Step
-			\STATE Compute estimates of the densities using emission model
-			\STATE Compute $t_{ih}^{(l)}$ with fixed point algorithm
-			\STATE Assign each site to its most probable cluster using $t_{ih}^{(l)}$
-			
-    \ENDWHILE
-\end{algorithmic}
-\end{algorithm}
+In this section I give an overview of how I implemented the main algorithms described in this Chapter, namely the EM algorithm \ref{algo:EM} and the gradient ascent algorithm \ref{algo:grad}.
+
+\begin{lstlisting}[mathescape,caption=EM algorithm in C pseudo-code,label=algo:EM,language=C]
+/*retrieving parameters*/
+
+/*Starting initialization*/
+  /*Reading initialization file*/
+  if(initialization provided) {
+    Read initialization file
+    Assign cluster values to $z^{(0)}$
+  }
+  /*Random initialization*/
+  else {
+  	/*Generating $R$ random initializations*/
+    for($R$ runs) {
+      Generate random initialization
+      Compute likelihood
+    }
+    Select initialization with highest likelihood
+    Assign cluster values to $z^{(0)}$
+  }
+  
+/*
+*$z^{(0)}$ is now defined
+*Compute the initial parameters values
+*/
+  Compute $\Theta^{(0)}$ from $z^{(0)}$
+  Set $\beta^{(0)}$ to the user defined value
+  
+/*Start EM procedure*/
+  /*Alternate E step and M step until convergence is reached*/
+  while(Clusters changed < user defined convergence limit) {
+    /*E step*/
+    Compute densities from the emission model
+    Fixed point algorithm to compute $t_{ih}^{(l)}$
+    /*Create $z^{(l)}$*/
+    Assign each cell $C_i$ to new cluster using $t_{ih}^{(l)} = p(Z_{C_i} = h)$
+    
+    /*M step*/
+    Compute $\Theta^{(l+1)}$ from $z^{(l)}$
+    Gradient ascent algorithm to compute $\beta^{(l+1)}$
+  }
+
+/*Output clustering results*/
+\end{lstlisting}
+
+\begin{lstlisting}[mathescape,caption=Gradient ascent algorithm in C pseudo-code,label=algo:grad,language=C]
+/*Computing each $\beta_h$ sequentially*/
+  /*We use a fixed step*/
+  step = 0.1
+  Foreach(h in $K$) {
+    while(convergence is not reached) {
+      current likelihood = likelihood(model)
+      $\beta_{current}$ = $\beta_h$
+      $\beta_h$ = $\beta_{current}$ + step
+      Derivate Likelihood Plus = likelihood(model) - current likelihood
+      $\beta_h$ = $\beta_{current}$ - step
+      Derivate Likelihood Minus = likelihood(model) - current likelihood
+      
+      /*Which way to go?*/
+      if(Derivate Likelihood Plus > 0 || Derivate Likelihood Minus > 0) {
+        if(Derivate Likelihood Plus > Derivate Likelihood Minus) {
+          $\beta_h$ = $\beta_{current}$ + step
+        }
+        else {
+          $\beta_h$ = $\beta_{current}$ - step
+        }
+      }
+      else {
+        /*We reached convergence*/
+        $\beta_h$ = $\beta_{current}$
+        convergence is reached
+      }
+    }
+  }
+\end{lstlisting}
 
 \section{Implementation}
 I implemented the HMRF method in the programming language C. The source code, compiled binaries and a user manual are available on my Github profile \url{http://github.com/jbogp/MRF_Platynereis_2014}.
 
 \section{Summary}
-The goal was to allocate the $S=32,203$ ``cubes'' described above in Chapter \ref{ch:singlecell} into $K$ clusters, where $K$ is unknown, using the binarized matrix of $M=86$ gene expression measurements, $Y$. To incorporate spatial information into the clustering scheme, I assumed that $Z$, the (latent) vector of length $S$ that describes the allocation of cells to clusters, satisfies a first-order Markov Random Field (MRF), where the probability that a cell is allocated to a given state depends only upon the states of its immediate neighbours (Figure \ref{fig:graph}). Additionally, within cluster $h$ $(h \in {1,...,K})$, I assumed that the expression of gene $m$ follows a Bernoulli distribution with parameter $\theta_{m,h}$. The $M \times K$ matrix  $\Theta$ denotes the full set of Bernoulli parameters. In a typical MRF, the degree of spatial cohesion is determined by a single parameter $\beta$, which is assumed to be constant for all clusters \cite{subudhi14,zhang14}. However, in the context of tissue organisation, it is reasonable to expect that the degree of spatial cohesion will differ between clusters; consequently,  a separate value of $\beta$ is estimated for each of the $K$ clusters.\\
+The goal was to allocate the $S=32,203$ ``cubes'' described above in Chapter \ref{ch:singlecell} into $K$ clusters, where $K$ is unknown, using the binarized matrix of $M=86$ gene expression measurements, $Y$. To incorporate spatial information into the clustering scheme, I assumed that $Z$, the (latent) vector of length $S$ that describes the allocation of cells to clusters, satisfies a first-order Markov Random Field (MRF), where the probability that a cell is allocated to a given state depends only upon the states of its immediate neighbours (Figure \ref{fig:graph}). Additionally, within cluster $h$ $(h \in {1,...,K})$, I assumed that the expression of gene $m$ follows a Bernoulli distribution with parameter $\theta_{m,h}$. The $M \times K$ matrix  $\Theta$ denotes the full set of Bernoulli parameters. In a typical MRF, the degree of spatial cohesion is determined by a single parameter $\beta$, which is assumed to be constant for all clusters \citep{subudhi14,zhang14}. However, in the context of tissue organisation, it is reasonable to expect that the degree of spatial cohesion will differ between clusters; consequently,  a separate value of $\beta$ is estimated for each of the $K$ clusters.\\
 
-To estimate the parameters of the model an Expectation-Maximisation (EM) based approach has been used in conjunction with mean-field approximations to infer intractable values \cite{Celeux01}. Finally, to choose the optimal number of clusters, $K$, I used the Bayesian Information Criterion (BIC).\\
+To estimate the parameters of the model an Expectation-Maximisation (EM) based approach has been used in conjunction with mean-field approximations to infer intractable values \citep{Celeux01}. Finally, to choose the optimal number of clusters, $K$, I used the Bayesian Information Criterion (BIC).\\
 
 The next step is to validate the method's behaviour and to assess the quality of the results compared to the other non-spatial clustering schemes described in Chapter \ref{ch:non_spatial_clustering_visualization}.
 

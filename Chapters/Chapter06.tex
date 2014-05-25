@@ -34,7 +34,7 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	\section{Finding known biological structures to validate the method}
 	To validate the downstream analysis approach presented, I first considered some well characterised regions within the {\it{Platynereis}} brain.
 		\subsection{\platy{}'s eyes}
-		Arguably the best-studied regions of the brain in {\it{Platynereis}} are the eyes: the brain has 4 eyes, two larval and two adult, and their locations and expression fingerprints are well known. As shown in Figure \ref{fig:valideyesclust}, our approach generates two spatially coherent clusters that correspond to each of these regions. Importantly, the best scoring genes that characterise these clusters are biologically meaningful: {\it{rOpsin}} and {\it{rOpsin3}}, both members of the well-described \emph{opsin} family of photosensitive molecules \cite{terakita05,randel13}, best distinguish the adult eye and larval eyes respectively, consistent with the in-situ data images shown in Figure \ref{fig:valideyesinsitu}.
+		Arguably the best-studied regions of the brain in {\it{Platynereis}} are the eyes: the brain has 4 eyes, two larval and two adult, and their locations and expression fingerprints are well known. As shown in Figure \ref{fig:valideyesclust}, our approach generates two spatially coherent clusters that correspond to each of these regions. Importantly, the best scoring genes that characterise these clusters are biologically meaningful: {\it{rOpsin}} and {\it{rOpsin3}}, both members of the well-described \emph{opsin} family of photosensitive molecules \citep{terakita05,randel13}, best distinguish the adult eye and larval eyes respectively, consistent with the in-situ data images shown in Figure \ref{fig:valideyesinsitu}.
 	\begin{figure}[H]
 \centerline{\includegraphics[width=1\linewidth]{gfx/chapter6/eyes.png}}
 \caption{{\bf Eyes in the brain of Platynereis as clustered by the HMRF method.} Adult (blue cluster) and larval (yellow cluster) eyes in separate clusters with their top 3 most representative genes.}
@@ -44,13 +44,13 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	
 	\begin{figure}[H]
 \centerline{\includegraphics[width=1\linewidth]{gfx/chapter6/insitu.png}}
-\caption{{\bf In-situ hybridization image for rOpsin and rOpsin3 in the full brain at 48hpf (Apical view).} Z-projection of the expression of rOpsin (red) in both the adult eyes and the larval eyes, rOpsin3 (green) specifically in the larval eyes and co-expression areas in some areas of the larval eyes in the full brain of {\it{Platynereis}} at 48hpf. The white circle is a schematic outline of the brain.  This image been obtained directly from the data obtained in \cite{Tomer10}.}
+\caption{{\bf In-situ hybridization image for rOpsin and rOpsin3 in the full brain at 48hpf (Apical view).} Z-projection of the expression of rOpsin (red) in both the adult eyes and the larval eyes, rOpsin3 (green) specifically in the larval eyes and co-expression areas in some areas of the larval eyes in the full brain of {\it{Platynereis}} at 48hpf. The white circle is a schematic outline of the brain.  This image been obtained directly from the data obtained in \citep{Tomer10}.}
 \label{fig:valideyesinsitu}
 	\end{figure}
 	
 	
 		\subsection{Mushroom bodies}
-		As well as the eyes, a second region of the {\it{Platynereis}} brain, the mushroom bodies (which corresponds to the pallium, a layers of neurons that cover the upper surface of the cerebrum in vertebrates \cite{Tomer10}), are also clearly identified by our approach (Figure \ref{fig:validmush}). They have been described anatomically and molecularly in \platy{} in \cite{Tomer10}. In this paper the authors define the mushroom bodies as a ventral regions, define by a subset of the expression pattern of gene \emph{BF1} and by the same genes as the top scoring genes that define my cluster, \emph{Emx, Wnt8}. As shown schematically in Figure \ref{fig:validmushtom} from \cite{Tomer10}, the localization of the mushroom bodies (MB) is coherent with the inferred cluster in Figure \ref{fig:validmush}.
+		As well as the eyes, a second region of the {\it{Platynereis}} brain, the mushroom bodies (which corresponds to the pallium, a layers of neurons that cover the upper surface of the cerebrum in vertebrates \citep{Tomer10}), are also clearly identified by our approach (Figure \ref{fig:validmush}). They have been described anatomically and molecularly in \platy{} in \citep{Tomer10}. In this paper the authors define the mushroom bodies as a ventral regions, define by a subset of the expression pattern of gene \emph{BF1} and by the same genes as the top scoring genes that define my cluster, \emph{Emx, Wnt8}. As shown schematically in Figure \ref{fig:validmushtom} from \citep{Tomer10}, the localization of the mushroom bodies (MB) is coherent with the inferred cluster in Figure \ref{fig:validmush}.
 		
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter6/mush.png}}
@@ -60,11 +60,11 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter6/mush_tomer.png}}
-\caption{{\bf Schematic representation of the mushroom bodies in the brain of Platynereis by \cite{Tomer10}.} MB: mushroom bodies}
+\caption{{\bf Schematic representation of the mushroom bodies in the brain of Platynereis by \citep{Tomer10}.} MB: mushroom bodies}
 \label{fig:validmushtom}
 	\end{figure}
 		\subsection{Motor regions}
-		Experimentally, when the brain is dissociated from the rest of the larvae, the most basal part contains the developing motor regions. These motor regions are clustered together as shown in Figure \ref{fig:muscles}. Indeed, the green cluster defines a region on the basal side of the larvae that can be associated both by its localization and by its most representative genes ({\it{MyoD}} \cite{weintraub91,michelson90} and {\it{LDB3}} \cite{krcmery10,marziliano07}) with the starting point of the developing muscles of the adult animal. {\it{MyoD}} has been shown to play a key role in the differentiation of muscles during development in vertebrates and invertebrates \cite{weintraub91,michelson90} and {\it{LDB3}} codes for the protein LDB3, which interacts with the myozenin gene family that has been implicated in muscle development in vertebrates \cite{marziliano07}.\\
+		Experimentally, when the brain is dissociated from the rest of the larvae, the most basal part contains the developing motor regions. These motor regions are clustered together as shown in Figure \ref{fig:muscles}. Indeed, the green cluster defines a region on the basal side of the larvae that can be associated both by its localization and by its most representative genes ({\it{MyoD}} \citep{weintraub91,michelson90} and {\it{LDB3}} \citep{krcmery10,marziliano07}) with the starting point of the developing muscles of the adult animal. {\it{MyoD}} has been shown to play a key role in the differentiation of muscles during development in vertebrates and invertebrates \citep{weintraub91,michelson90} and {\it{LDB3}} codes for the protein LDB3, which interacts with the myozenin gene family that has been implicated in muscle development in vertebrates \citep{marziliano07}.\\
 		
 	\begin{figure}[h]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter6/muscles.png}}
@@ -72,12 +72,12 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 \label{fig:muscles}
 	\end{figure}
 		
-		Again, it is possible to cross-validate the function of this region against previous studies. In this case, \cite{Fischer10} used muscle specific phalloidin staining at 48hpf to visualize the developing motor region in the larvae's brain, the result of which is reproduced from \cite{Fischer10} in Figure \ref{fig:muscles_stain}. 
+		Again, it is possible to cross-validate the function of this region against previous studies. In this case, \citep{Fischer10} used muscle specific phalloidin staining at 48hpf to visualize the developing motor region in the larvae's brain, the result of which is reproduced from \citep{Fischer10} in Figure \ref{fig:muscles_stain}. 
 		
 		
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.6\linewidth]{gfx/chapter6/muscle_stain.png}}
-\caption{{\bf Developing motor region in the brain of Platynereis visualized in-situ by phalloidin staining.} This Figure is reproduced from \cite{Fischer10}. vlm: ventral longitudinal muscle; dlm: dorsal longitudinal muscle.}
+\caption{{\bf Developing motor region in the brain of Platynereis visualized in-situ by phalloidin staining.} This Figure is reproduced from \citep{Fischer10}. vlm: ventral longitudinal muscle; dlm: dorsal longitudinal muscle.}
 \label{fig:muscles_stain}
 	\end{figure}
 	
@@ -90,11 +90,11 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	
 	\begin{figure}[H]
 \centerline{\includegraphics[width=0.8\linewidth]{gfx/chapter6/eyes_muscles.png}}
-\caption{{\bf A putative tissue of developing neurons between the eyes and the larvae's developing muscles.} The yellow and red clusters are the eyes as seen in Figure \ref{fig:valideyesclust}. The green cluster represents the developing muscles on the basal side of the larvae, as the location and the most specific genes strongly suggest. The pink cluster is a putative tissue that makes an interesting link between the eyes and the muscles. The most representative gene of this tissue is Phox2, a homeodomain protein required for the generation of visceral motor-neurons in \emph{Drosophila} \cite{briscoe99}}
+\caption{{\bf A putative tissue of developing neurons between the eyes and the larvae's developing muscles.} The yellow and red clusters are the eyes as seen in Figure \ref{fig:valideyesclust}. The green cluster represents the developing muscles on the basal side of the larvae, as the location and the most specific genes strongly suggest. The pink cluster is a putative tissue that makes an interesting link between the eyes and the muscles. The most representative gene of this tissue is Phox2, a homeodomain protein required for the generation of visceral motor-neurons in \emph{Drosophila} \citep{briscoe99}}
 \label{fig:eyes_muscles}
 	\end{figure}
 
-	Given the location of the eyes (Figure \ref{fig:valideyesclust}) and the developing muscles (Figure \ref{fig:muscles}), the location of the pink cluster in Figure \ref{fig:eyes_muscles} is interesting. This cluster surrounds the larval eyes, the adult eyes and reaches the developing muscles described above. Looking at the most representative genes for this pink cluster, it is interesting to note the presence of {\it{Phox2}}, a homeodomain protein that has been shown to be necessary for the generation of visceral motor-neurons (neurons of the central nervous system that project their axons to directly or indirectly control muscles) as described generally in \cite{brunet02} and in \emph{Drosophila} \cite{briscoe99}. The second most representative gene, {\it{COE}}, has also been shown to play a role in \emph{Platynereis} and \emph{Drosophila} neural tissue development \cite{demilly11}. In this context, although we lack biological validation, we can hypothesise that the cells within this particular cluster could be developing neurons that link the eyes to the muscles of \emph{Platynereis}.\\
+	Given the location of the eyes (Figure \ref{fig:valideyesclust}) and the developing muscles (Figure \ref{fig:muscles}), the location of the pink cluster in Figure \ref{fig:eyes_muscles} is interesting. This cluster surrounds the larval eyes, the adult eyes and reaches the developing muscles described above. Looking at the most representative genes for this pink cluster, it is interesting to note the presence of {\it{Phox2}}, a homeodomain protein that has been shown to be necessary for the generation of visceral motor-neurons (neurons of the central nervous system that project their axons to directly or indirectly control muscles) as described generally in \citep{brunet02} and in \emph{Drosophila} \citep{briscoe99}. The second most representative gene, {\it{COE}}, has also been shown to play a role in \emph{Platynereis} and \emph{Drosophila} neural tissue development \citep{demilly11}. In this context, although we lack biological validation, we can hypothesise that the cells within this particular cluster could be developing neurons that link the eyes to the muscles of \emph{Platynereis}.\\
 	
 	 Although this hypothesis remains purely speculative and would need validation in the laboratory, this example is an interesting proof-of-concept that this clustering method can prove useful for hypothesis generation. Indeed, the analysis of the parameter values and the spatial localization attached to the clusters has allowed me to place with a reasonable level of confidence a functional hypothesis about a tissue that was not clearly defined either spatially or functionally. \\
 	 
