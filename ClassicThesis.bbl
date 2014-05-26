@@ -29,6 +29,12 @@
   without intercellular contacts.
 \newblock {\em The {J}ournal of neuroscience 4}, 8 (1984), 1944--1953.
 
+\bibitem{beckmann97}
+{\sc Beckmann, M., Niederacher, D., Schn{\"u}rch, H.-G., Gusterson, B.~A., and
+  Bender, H.~G.}
+\newblock Multistep carcinogenesis of breast cancer and tumour heterogeneity.
+\newblock {\em Journal of molecular medicine 75}, 6 (1997), 429--439.
+
 \bibitem{belloni09}
 {\sc Belloni, A., and {C}hernozhukov, V.}
 \newblock On the computational complexity of {MCMC}-based estimators in large
@@ -143,6 +149,11 @@
 \newblock The early development of retinal ganglion cells with uncrossed axons
   in the mouse: retinal position and axonal course.
 \newblock {\em Development 108}, 3 (1990), 515--523.
+
+\bibitem{cooper00}
+{\sc Cooper, G.~M., and Hausman, R.~E.}
+\newblock {\em The cell}.
+\newblock Sinauer Associates Sunderland, 2000.
 
 \bibitem{costanzo06}
 {\sc Costanzo, L.~S., {S}ave, Y., and {F}riend, T.~A.}
@@ -510,6 +521,11 @@
   images using {M}arkov random fields and active contours.
 \newblock {\em Medical {I}mage {A}nalysis 9}, 1 (2005), 1--23.
 
+\bibitem{marusyk12}
+{\sc Marusyk, A., Almendro, V., and Polyak, K.}
+\newblock Intra-tumour heterogeneity: a looking glass for cancer?
+\newblock {\em Nature Reviews Cancer 12}, 5 (2012), 323--334.
+
 \bibitem{marziliano07}
 {\sc Marziliano, N., {M}annarino, S., {N}espoli, L., {D}iegoli, M., {P}asotti,
   M., {M}alattia, C., {G}rasso, M., {P}ilotto, A., {P}orcu, E., {R}aisaro, A.,
@@ -523,6 +539,11 @@
 {\sc Mc{L}achlan, G., and {P}eel, D.}
 \newblock {\em Finite mixture models}.
 \newblock John {W}iley \& {S}ons, 2004.
+
+\bibitem{meacham13}
+{\sc Meacham, C.~E., and Morrison, S.~J.}
+\newblock Tumour heterogeneity and cancer cell plasticity.
+\newblock {\em Nature 501}, 7467 (2013), 328--337.
 
 \bibitem{mendel66}
 {\sc Mendel, G.}

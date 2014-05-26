@@ -99,9 +99,9 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 	 Although this hypothesis remains purely speculative and would need validation in the laboratory, this example is an interesting proof-of-concept that this clustering method can prove useful for hypothesis generation. Indeed, the analysis of the parameter values and the spatial localization attached to the clusters has allowed me to place with a reasonable level of confidence a functional hypothesis about a tissue that was not clearly defined either spatially or functionally. \\
 	 
 \section{Method sensitivity compared to other clustering methods}
-	To complement the comparison work described in Chapter \ref{ch:simulations}, I decided to assess for the biological tissues outlined in the previous paragraphs the sensitivity of the HMRF method compared to the independent mixture model EM and to hClust.\\
+	To complement the comparison work described in Chapter \ref{ch:simulations}, I decided to assess, for the biological tissues outlined in the previous paragraphs, the sensitivity of the HMRF method compared to the independent mixture model EM and to hClust.\\
 	
-	In Figure \ref{fig:hclust_clust} are shown the clusters obtained with the hClust method. Some of the regions are conserved across clustering techniques, in particular the eyes. however the hClsut results are much less precise than those of the HMRF method. In particular the both the adult and the larval eyes are clustered alongside a second region that has no biological meaning (red and yellow cluster in Figure \ref{fig:hclust_clust}). Furthermore, the developing muscles are not picked up at all by hClust.
+	In Figure \ref{fig:hclust_clust} are shown the clusters obtained with the hClust method. Some of the regions are conserved across clustering techniques, in particular the eyes. however the hClust results are much less precise than those of the HMRF method. In particular the both the adult and the larval eyes are clustered alongside a second region that has no biological meaning (red and yellow cluster in Figure \ref{fig:hclust_clust}). Furthermore, the developing muscles are not picked up at all by hClust.
 	
 	\begin{figure}[H]
 \centerline{\includegraphics[width=\linewidth]{gfx/chapter6/hclust.png}}
@@ -109,7 +109,7 @@ For each gene, $m$, and cluster, $h$, $s_{hm}$ is large if gene $m$ is specific 
 \label{fig:hclust_clust}
 	\end{figure}
 	
-	In Figure \ref{fig:mixture_clust} are shown the clusters obtained with the independent mixture model method. It is generally close to the results obtained with the HMRF. However, the resulting picture is extremely noisy. Furthermore, for the muscles region, this noise is linked to biological imprecisions. Indeed, the developing muscles as shown biologically in figure \ref{fig:muscles_stain} do not present a either a dorsal or ventral region in the middle. 
+	In Figure \ref{fig:mixture_clust} are shown the clusters obtained with the independent mixture model method. It is generally closer to the results obtained with the HMRF. However, the resulting picture is extremely noisy. Furthermore, for the muscles region, this noise is linked to biological imprecisions. Indeed, contrary to the cluster outputted by the mixture model method, as shown in the in-situ staining presented in Figure \ref{fig:muscles_stain}, biologically, \platy{}'s larvea at 48hpf does not present a either a dorsal or ventral region in the middle of the symmetry axis. 
 	
 	\begin{figure}[H]
 \centerline{\includegraphics[width=\linewidth]{gfx/chapter6/mixture.png}}

@@ -1,10 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ClassicThesis.aux
 The style file: acm.bst
 A level-1 auxiliary file: FrontBackmatter/Titlepage.aux
+A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 A level-1 auxiliary file: FrontBackmatter/Abstract.aux
 A level-1 auxiliary file: FrontBackmatter/Acknowledgments.aux
 A level-1 auxiliary file: FrontBackmatter/Contents.aux
-A level-1 auxiliary file: FrontBackmatter/Declaration.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
 A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
@@ -13,7 +13,6 @@ A level-1 auxiliary file: Chapters/Chapter05.aux
 A level-1 auxiliary file: Chapters/Chapter06.aux
 A level-1 auxiliary file: Chapters/Chapter07.aux
 A level-1 auxiliary file: Chapters/supp_figures.aux
+A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 Database file #1: Bibliography.bib
-Warning--I didn't find a database entry for "xmlref"
-(There was 1 warning)

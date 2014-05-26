@@ -12,7 +12,7 @@ At the time of writing, the field of transciptomics is undergoing a major revolu
 
 The original contribution presented in Chapter \ref{ch:singlecell} alongside methods to process single cell gene expression data, has been to propose a way to combine these two gene expression assays in order to create spatially referenced full transcriptomes by mapping single cell RNA-seq results onto a spatial gene expression library generated via in-situ hybridization assays. I have demonstrated the efficiency of the method on a preliminary dataset of single cell RNA-seq data in the brain of \platy{}. This is very recent, and an ongoing effort with my collaborators. However, so far I have been able to map around 75\% of sequenced single cells to a restricted area in the brain defined by the in-situ data. At the time of writing, a manuscript to submit this work as a research paper is being prepared.\\
 
-I have presented in Chapter \ref{ch:non_spatial_clustering_visualization} some background about clustering single cells based on their gene expression patterns and outlined the question of visualization to analyse spatially referenced data in a 3D tissue. To answer this question I have presented a software tool that I have developed: ``bioweb3D''. This tool enables scientists who are not visualization experts to easily visualize 3 dimensional data in their web browser without the need to install any software on their computer or to send any data to a remote server. This tool, although fairly basic, has been of great use for my own work and as a result multiple Figures (\ref{fig:cell_localization}, \ref{fig:eyes_muscles}, \ref{fig:muscles}) in this thesis are screen shots of ``bioweb3D''. I was also pleased following publication of this tool in \emph{Bioinformatics} \citep{Pettit13} to see a few users (around 20 each month) regularly visiting and using ``bioweb3D''.\\
+I have presented in Chapter \ref{ch:non_spatial_clustering_visualization} some background about clustering single cells based on their gene expression patterns and outlined the question of visualization to analyse spatially referenced data in a 3D tissue. To answer this question I have presented a software tool that I have developed: ``bioweb3D''. This tool enables scientists who are not visualization experts to easily visualize 3 dimensional data in their web browser without the need to install any software on their computer or to send any data to a remote server. This tool, although fairly basic, has been of great use for my own work and as a result multiple Figures (\ref{fig:cell_localization}, \ref{fig:eyes_muscles}, \ref{fig:muscles}) in this thesis are screen shots of ``bioweb3D''. I was also pleased following publication of this tool in \emph{BMC Bioinformatics} \citep{Pettit13} to see a few users (around 20 each month) regularly visiting and using ``bioweb3D''.\\
 
 
 I have introduced in Chapter \ref{ch:HMRF}, what has been my main contribution to the field of transcriptomics during the time of my PhD. The HMRF clustering method I have adapted and extended and applied to the single cell gene expression data was chosen to answer the question of defining cell types from a bottom up approach at the scale of a very complex tissue where the number of cell types is unknown. The method's main ability is to account for the spatial characteristics of the sites in order to favour spatially smooth clustering results. Not only does this spatial smoothness help the visual downstream analysis, I also hypothesize that considering cells that are spatially near one another to be more likely to belong to the same cell type as biologically relevant and potentially important for reducing the impact of experimental noise on the clustering results.\\
@@ -29,6 +29,16 @@ I have introduced in Chapter \ref{ch:HMRF}, what has been my main contribution t
   \subsection{Single cell RNA-seq back-mapping}
   The single cell back-mapping method detailed in Chapter \ref{ch:singlecell} is the most recent work presented in this thesis. It is an ongoing project with new data available every month. Consequently, the results shown are preliminary and I expect that the method will be developed much further over the next few months. In particular, a combinatorial approach for selecting the most specific genes used in the spatial mapping is currently being investigated.
   
+  \subsection{bioWeb3D}
+  As mentioned in Chapter \ref{ch:non_spatial_clustering_visualization}, I am fortunate enough to have a few active users using bioWeb3D regularly all over the world. Being open source, the tool is maintained and updated by me and a few contributors.\\
+  
+   Some ideas for future developments have been discussed recently including the ability to make the information layers ``hoverable''. In other words, make each coloured cluster in the 3D representation reactive to the mouse passing over and displaying information/statistics about the hovered entity.\\
+   
+   Other suggested developments include the ability to save the data on the server temporarily (with a fixed lifespan before the server automatically deletes it) which would allow users to share visualization via a simple URL. This would be an interesting area to explore even though I always developed bioWeb3D with the users' data security in mind. In that regard, not storing or even receiving any data server side was the absolute insurance of data confidentiality.\\
+   
+   Finally the idea of allowing surfaces, textures and sprites in bioWeb3D has been suggested. This of course would make the tool much more complete and allow far more advanced visualization. It would also make it more complex which is in contradiction with the starting idea which was to create a 3D visualization tool for non expert users that wanted a quick way to have a 3D representation of their data without having to go through a large user manual.
+  
+  
   \subsection{HMRF future developments}
   The main areas where the HMRF method needs to be improved is that of adapting the emission model described in Chapter \ref{ch:HMRF} to whole transcriptomes and quantitative gene expression data. Indeed, as explained in Chapter \ref{ch:singlecell}, my work has been focused on clustering binarized data for 89 key developmental genes.\\
   
@@ -43,6 +53,13 @@ I have introduced in Chapter \ref{ch:HMRF}, what has been my main contribution t
   Another possible way to deal with this problem would be to try to extend Markov random fields without the conditional independence hypothesis.\\
   
    Such an approach may prove unnecessary, as it is possible that the errors introduced by some genes' inter-dependence will represent a negligible bias compared to the signal brought by thousands of genes. Simulation studies may be able to decide this issue. 
+   
+\subsection{Final words}
+    The different parts of the work presented in this thesis will hopefully be used in different contexts than the brain of \platy{}. In particular the HMRF clustering method may prove useful to study intra-tumour heterogeneity, a crucial area of research to avoid cancer resurgence \citep{meacham13,marusyk12,beckmann97}, when single cell spatially referenced data is available.\\
+    
+I tried to present throughout this thesis the work realized during these four years in a scientifically relevant way and not by following the time line of the projects which was mainly dependent upon data availability. I hope I demonstrated how this work answered consistently some of the questions linked to the spatial context of single cell gene expression assays and why it is important to take it into account.\\
+
+
 
 
 

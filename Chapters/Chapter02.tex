@@ -67,7 +67,7 @@
   
 \begin{figure}[h]
         \myfloatalign
-        \subfloat[500 pg input RNA.]
+        \subfloat[5000 pg input RNA.]
         {\includegraphics[width=.45\linewidth]{gfx/chapter2/5000pg.png}} \quad
         \subfloat[500 pg input RNA.]
         {\includegraphics[width=.45\linewidth]{gfx/chapter2/500pg.png}} \\
@@ -97,10 +97,10 @@
 \begin{figure}[h]
         \myfloatalign
         \subfloat[Z-stack of gene Smad23 showing an experimental artefact (round very bright spot in the middle).]
-        {\label{fig:hist_rna}
+        {\label{fig:artefact1}
         \includegraphics[width=.45\linewidth]{gfx/chapter2/smad23.png}} \quad
         \subfloat[Z-stack of gene Syt showing an experimental artefact (round very bright spot in the middle).]
-        {\label{fig:density_rna}%
+        {\label{fig:artefact2}%
          \includegraphics[width=.45\linewidth]{gfx/chapter2/syt.png}}
         \caption{Confocal microscopy experimental artefact for 2 genes of the original $169$ studied genes.}\label{fig:artefact}
 \end{figure}
@@ -198,7 +198,7 @@ where $\left\|C\right\| = 72 $ is the number of cells considered. Subsequently, 
         \caption{Regions defined by the expression overlap of the top 3 scoring genes in \citep{Tomer10} binarized in-situ hybridization data. The red colour shows the co-expression of the three considered genes, the blue areas are those where one or more of the three considrered genes are expressed but not all, in grey are the areas where none of the considered genes are expressed. The 4 figures are from a apical view with the dorsal side on top.}\label{fig:cell_localization}
 \end{figure}
 
-Overall, the results of this back-mapping method look very promising. Although at the time of writing, this work is still in progress in collaboration with Kaia Achim and Detlev Arendt, I have been able so far to map-back 27 of the 38 live single cells to a defined area of overlapping expression in the brain using the top 3 or 4 most specific genes. The cells were mapped to an average of 100 cubes defining a spatially coherent region. Interestingly later in this thesis, in Chapter \ref{ch:biology}, I find that the optimal number of clusters corresponding to potential cell types is 33 for the same dataset of 32.203 sites, which makes an average around 300 ``cubes'' per cell types, the same order of magnitude as the regions the single cells are mapped to.  \\
+Overall, the results of this back-mapping method look very promising. Although at the time of writing, this work is still in progress in collaboration with Kaia Achim and Detlev Arendt, I have been able so far to map-back 27 of the 38 live single cells to a defined area of overlapping expression in the brain using the top 3 or 4 most specific genes. The cells were mapped to an average of 100 cubes defining a spatially coherent region. \\
 
 I decided to check the probability of obtaining such a result by chance. To this end, I randomly generated 1000 ``top 3'' genes out of the 86 genes considered in the in-situ hybridization data. For each of these ``top 3'' randomly generated genes, I computed the number of cubes in the in-situ hybridization dataset where the 3 genes were co-expressed.\\
 
