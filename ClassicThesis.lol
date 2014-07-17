@@ -1,8 +1,9 @@
 \deactivateaddvspace 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {lstlisting}{\numberline {1}EM algorithm in C pseudo-code}{47}{lstlisting.1}
-\contentsline {lstlisting}{\numberline {2}Gradient ascent algorithm in C pseudo-code}{48}{lstlisting.2}
+\addvspace {10\p@ }
+\contentsline {lstlisting}{\numberline {1}EM algorithm in C pseudo-code}{55}{lstlisting.1}
+\contentsline {lstlisting}{\numberline {2}Gradient ascent algorithm in C pseudo-code}{56}{lstlisting.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

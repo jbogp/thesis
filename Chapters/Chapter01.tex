@@ -1,6 +1,8 @@
 %
 \chapter{Introduction}\label{ch:background}
 %
+
+\section{Biological context and general questions}
 	
 	The work presented in this thesis revolves around several key biological concepts such as \emph{tissue}, \emph{cell type}, \emph{spatial coherency} and \emph{gene expression}. I define these notions in the Introduction and give an overview of the organism central to my work - \platyfull{}.\\
 	
@@ -8,32 +10,23 @@
     
     As science developed and the scale of the smallest biological unit was reduced to the cell, organs were described as complex tissues: coherent structures composed of large numbers of cells. These cells are not identical to one another. First, visually, cells composing the tissue may have different physical characteristics. Second, when observing the cells in vivo, different cells in different parts of the complex tissue will exhibit different behaviour. Consequently, biological \emph{tissues} can be viewed as an interconnected mosaic of cells having different functions and working together to assume the global function of the tissue. When looking closely at this mosaic, it is sometimes possible to observe under a microscope \citep{young13} that the cells' spatial organisation is not random, thus leading to a classification of cells with respect to their appearance and behaviour. These categories are known as \emph{cell types}. Consequently, the definition of a complex biological tissue may be an ensemble of cells belonging to different cell types grouped in the same spatial structure.  If historically \emph{function} and physical characteristics of the organ were directly linked, microscopes and the observation of cells behaviour within a particular tissue changed this one to one relationship.\\
     
-        
-     As an example, the pancreas shown in Figure \ref{fig:pancreas} exhibits an islet architecture \citep{brissova05} with the vast majority of cells belonging to a first cell type organised in spatial structures called \emph{acini} as well as islets of cells from an other cell type called \emph{Langerhans islets} which are anatomically and functionally different.\\
-     
-      Interestingly, these two cell types have very different functions. Cells that compose the acini define the \emph{exocrine} pancreas and release their product (digestive enzymes) out of the body into the digestive track \citep{rodriguez11} whereas the $\approx$ 1 million cells \citep{hellman09} from the Langerhans islets define the \emph{endocrine} pancreas releasing hormones such as insulin or glucagon into the body via the bloodstream. Importantly, as defined above, the pancreas has a coherent overall function which is the control of the digestive process. But when looking at the cell type level it is fascinating to observe that a wide variety of functions are displayed.\\
-     
-\begin{figure}[bth]
-\begin{center}
-  \includegraphics[width=0.8\linewidth]{gfx/chapter1/pancreas.png}
-\end{center}
-  \caption{Illustrated section of a dog's pancreas. Acini and Langerhans Islets are indicated by arrows. Public domain work published in \citep{williams80}}
-  \label{fig:pancreas}
-\end{figure}
+    The developing brain of the organism around which this thesis is built, \platyfull{} (presented in details in the next section), can be defined as a whole as being the central nervous system of the animal. This global functional definition encapsulates all the sub-functions of all the sub-tissues in the brain. For instance, when changing the scale of study from the organ to the tissue level, one can anatomically distinguish very different tissues (e.g photosentisive regions in the eyes and developing neurons).\\
+    
+    Interestingly, the cells making up specialized sub-tissues in the brain, belong to the same organ but have very different function. For example, photosensitive regions are composed of extremely specialized cells which display the ability to react to light stimulation \cite{arendt02} while developing neurons are part of the complex network that allows information to be transmitted and process in the brain \cite{Fischer10}.Importantly, as defined above, the brain has a coherent overall function, but when looking at the cell type level it is fascinating to observe that a wide variety of functions are displayed. Hence, my definition of a \emph{complex biological tissue} will be spatially coherent ensemble of cells organised in sub-tissues, each of which possesses a specific function.\\
     
      
-    As shown in Figure \ref{fig:pancreas}, sub-tissues in complex biological tissues tend to be spatially coherent. In other words cells that belong to the same cell type are usually structured spatially and as a result it seems sensible to assume that cells spatially close to one another have a greater probability of belonging to the same cell type. However, the spatial coherency of these sub-tissues is not always the same. Some cell types may consist of individual cells that are scattered inside another more spatially coherent tissue. An interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and that of cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?'', the extensions created by the axons of neurons (as shown in Figure \ref{fig:neuron}) will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \citep{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
+    The sub-tissues in complex biological tissues tend to be spatially coherent. In other words cells that belong to the same cell type are usually structured spatially and as a result it seems sensible to assume that cells spatially close to one another have a greater probability of belonging to the same cell type. However, the spatial coherency of these sub-tissues is not always the same. Some cell types may consist of individual cells that are scattered inside another more spatially coherent tissue. An interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and that of cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?'', the extensions created by the axons of neurons (as shown in Figure \ref{fig:neuron}) will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \citep{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
     
 \begin{figure}[bth]
 \begin{center}
   \includegraphics[width=0.8\linewidth]{gfx/chapter1/neuron.png}
 \end{center}
-  \caption{GFP staining of a pyramydal cell in mouse cortex showing dendrites and axons of a neuron linked and at the center the soma where the nucleus is located. This Figure has been published under Creative Commons Generic license in \citep{lee06}.}
+  \caption{GFP staining of a pyramydal cell in mouse cortex showing dendrites and axons of a neuron linked and at the center the soma where the nucleus is located.In \platy{} the developed neurons display the same spatial characteristics. This Figure has been published under Creative Commons Generic license in \citep{lee06}.}
   \label{fig:neuron}
 \end{figure}
 	
      
-    Organs and cell types have been defined mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further than simple anatomical traits. In the case of the endocrine pancreas presented above, the Langerhans islets anatomically look like they are composed of a single coherent cell type. However, looking closely at the function of the cells composing them unveils a completely different story. Indeed, despite their apparent similarity, $\alpha$-cells release the hormone glucagon into the bloodstream, a signal to increase the sugar level in the blood, while $\beta$-cells release the hormone insulin which has the exact opposite effect \citep{costanzo06}.\\
+    Organs and cell types have been defined mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further than simple anatomical traits. In the case of the neurons presented above all display the same appearance in different parts of the brain as neuronal tissue makes up a good portion of the brain. However, looking closely at the function of the cells composing different parts of the brain composed of neurons unveils a completely different story. Indeed, despite their apparent similarity, some of them will for instance react to the neurotransmitter \emph{acetylcholin} while others will use \emph{glutamate} (example in the human brain \cite{hefti86,van93}, this difference is extremely important in terms of function.\\
      
      This very telling example shows that defining cell types based on their anatomical traits is clearly insufficient to characterize tissues.  As a result, I will now discuss a trait that fundamentally defines how cells are functioning, namely \emph{gene expression}. 
 
@@ -167,18 +160,6 @@
      The data used in the rest of this thesis will not encapsulate the whole larvae, just the developing brain (see Figure \ref{fig:platynereis_larvae_scheme}) thus excluding the ventral part of the nervous system. The best studied areas of the developing brain are the larval eyes, the developing adult eyes and the apical organ on the dorsal side. On the ventral side are located the mushroom bodies, a pair of structures that are known to play a role in olfactory learning and memory in insects and annelids \citep{Tomer10}.\\
      
      Consequently, even at this early stage in a relatively ``simple'' organism, the brain quickly becomes an extremely complex tissue. Cell types diverge and functional areas are formed. Before trying to understand more about \platy{}'s brain organization, it is interesting to ask the more general question of how complex tissues such as the brain are defined spatially.
-     
-     \subsection{Building a image library of gene expression for Platynereis}
-     During his PhD, Raju Tomer and other members of the Arendt lab in EMBL, used wholemount in-situ hybridization to create an image library of gene expression in the brain of \platy{}. They were able to record gene expression in the full brain at 48hpf for 169 genes. In practice, each individual larvae was dissected to isolate the region containing the developing brain. Each brain was then stained with two different fluorescent probes corresponding to two messenger RNAs (mRNA). One of the genes is considered a reference, as it is always hybridized in all the assays (the main reference gene used was \emph{Emx}) alongside another gene of interest, see Figure \ref{fig:insitu}. Each brain was then visualized with laser confocal microscopy to reveal the gene expression patterns in the brain slice by slice, generating at the same time 3D coordinates for each slice.\\
-     
-     As mentioned previously, the larval development of \platy{} is highly similar in every individual larvae. In the case of this study where WiSH was performed on many independent animals, the stereotypical development of \platy{} has proven essential. Indeed, having the same reference gene localized in all assays allowed Tomer \emph{et al.} to align all other gene expression patterns onto this scaffold. The result is an image library of 169 gene expression patters in the full brain of \platy{} with a exploitable spatial reference that allows for a very precise mapping.\\
-    
-    \begin{figure}[bth]
-\centerline{\includegraphics[width=1.3\linewidth]{gfx/chapter1/insitu.png}}
-\caption{Wholemount in-situ hybridization ssays used to create a 169 genes catalogue of gene expression in the brain of \platy{}. From the live tissue cut into thin fixed layers, every slice is stained with a reference gene and a gene of interest that will reveal areas of expression under fluorescent microscopy. The process repeated 169 times for key genes in \platy{} neural development has been generated by \citep{Tomer10}}\label{fig:insitu}
-	\end{figure}
-	
-	However useful and practical WiSH may be, such assays are limited in terms of the number of genes one is able to study. Indeed, each individual larvae only provides the expression of two genes, one being the reference. To overcome this problem, crucial developments in sequencing technologies have brought about a new way of studying the expression of the whole transciptomic landscape in a single assay, namely RNA sequencing.
 
 
     

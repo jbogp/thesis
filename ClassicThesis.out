@@ -6,113 +6,115 @@
 \BOOKMARK [1][-]{lol.1}{Listings}{declaration.0}% 6
 \BOOKMARK [-1][]{part.1}{Cell types and single cells, a very spatial relationship}{}% 7
 \BOOKMARK [0][]{chapter.1}{1 Introduction}{part.1}% 8
-\BOOKMARK [1][-]{section.1.1}{1.1 Generalities about gene expression and development}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.2}{1.2 Capturing gene expression in the laboratory}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 In-situ hybridization assays}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 RNA sequencing}{section.1.2}% 12
-\BOOKMARK [1][-]{section.1.3}{1.3 Platynereis dumerilii, an ideal organism for studying brain evolution}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 General description}{section.1.3}% 14
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Larval development}{section.1.3}% 15
-\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Platynereis' nervous development until 48hpf}{section.1.3}% 16
-\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Building a image library of gene expression for Platynereis}{section.1.3}% 17
-\BOOKMARK [1][-]{section.1.4}{1.4 Summary}{chapter.1}% 18
-\BOOKMARK [0][]{chapter.2}{2 Hidden Markov Random fields for biological data clustering}{part.1}% 19
-\BOOKMARK [1][-]{section.2.1}{2.1 background}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.2}{2.2 Markov random fields}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Neighbourhood systems}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Field distribution}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Single and multiple beta models in a biological context}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Field parameters}{section.2.2}% 25
-\BOOKMARK [1][-]{section.2.3}{2.3 The emission model}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Conditional independence in the observed data}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Full likelihood of the Hidden Markov random field model}{section.2.3}% 28
-\BOOKMARK [1][-]{section.2.4}{2.4 Parameter estimation using the EM algorithm}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Initialization}{section.2.4}% 30
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 E step}{section.2.4}% 31
-\BOOKMARK [1][-]{section.2.5}{2.5 Mean field approximations}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.6}{2.6 M step}{chapter.2}% 33
-\BOOKMARK [1][-]{section.2.7}{2.7 Estimating K}{chapter.2}% 34
-\BOOKMARK [1][-]{section.2.8}{2.8 Algorithmic overview}{chapter.2}% 35
-\BOOKMARK [1][-]{section.2.9}{2.9 Implementation}{chapter.2}% 36
-\BOOKMARK [1][-]{section.2.10}{2.10 Summary}{chapter.2}% 37
-\BOOKMARK [0][]{chapter.3}{3 Method validation and performance analysis on simulated data}{part.1}% 38
-\BOOKMARK [1][-]{section.3.1}{3.1 Simulating data with a spatial component }{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Simulating non-spatial gene expression data}{section.3.1}% 40
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Introducing a known spatial context}{section.3.1}% 41
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Expected results}{section.3.1}% 42
-\BOOKMARK [1][-]{section.3.2}{3.2 Comparing clustering results using the Jaccard similarity coefficient}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Theoretical problem in comparing clustering results}{section.3.2}% 44
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Alignment via similarity-specificity matrix}{section.3.2}% 45
-\BOOKMARK [1][-]{section.3.3}{3.3 Validation of parameters estimation and model selection}{chapter.3}% 46
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Estimation of }{section.3.3}% 47
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Estimation of }{section.3.3}% 48
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Choosing K}{section.3.3}% 49
-\BOOKMARK [1][-]{section.3.4}{3.4 Method performance and initialization}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 The EM principle and local maximum}{section.3.4}% 51
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Random initialization vs Hclust initialization}{section.3.4}% 52
-\BOOKMARK [1][-]{section.3.5}{3.5 Method performance compared to Hclust and independent mixture models}{chapter.3}% 53
-\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Quality of the clustering results}{section.3.5}% 54
-\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Computing time}{section.3.5}% 55
-\BOOKMARK [1][-]{section.3.6}{3.6 summary}{chapter.3}% 56
-\BOOKMARK [0][]{chapter.4}{4 HMRF clustering in the brain of Platynereis dumerilii}{part.1}% 57
-\BOOKMARK [1][-]{section.4.1}{4.1 Choosing K with the BIC on biological data}{chapter.4}% 58
-\BOOKMARK [1][-]{section.4.2}{4.2 Parameters interpretation}{chapter.4}% 59
-\BOOKMARK [1][-]{section.4.3}{4.3 Finding known biological structures to validate the method}{chapter.4}% 60
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 P. dumerilii's eyes}{section.4.3}% 61
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Mushroom bodies}{section.4.3}% 62
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Motor regions}{section.4.3}% 63
-\BOOKMARK [1][-]{section.4.4}{4.4 Generating functional hypotheses about unknown biological tissues}{chapter.4}% 64
-\BOOKMARK [1][-]{section.4.5}{4.5 Method sensitivity compared to other clustering methods}{chapter.4}% 65
-\BOOKMARK [1][-]{section.4.6}{4.6 Summary}{chapter.4}% 66
-\BOOKMARK [0][]{chapter.5}{5 Visualizing tissues from 3D single cell expression data}{part.1}% 67
-\BOOKMARK [1][-]{section.5.1}{5.1 Elements of clustering for biological tissues}{chapter.5}% 68
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Motivations}{section.5.1}% 69
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 General considerations about clustering}{section.5.1}% 70
-\BOOKMARK [1][-]{section.5.2}{5.2 Visualizing clustering results in 3D with bioWeb3D}{chapter.5}% 71
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Background}{section.5.2}% 72
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Implementation}{section.5.2}% 73
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Results}{section.5.2}% 74
-\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 Discussion}{section.5.2}% 75
-\BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Conclusions}{section.5.2}% 76
-\BOOKMARK [2][-]{subsection.5.2.6}{5.2.6 Availability and requirements}{section.5.2}% 77
-\BOOKMARK [1][-]{section.5.3}{5.3 Non spatial clustering methods}{chapter.5}% 78
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Hierarchical clustering}{section.5.3}% 79
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Other clustering methods adapted to gene expression data}{section.5.3}% 80
-\BOOKMARK [1][-]{section.5.4}{5.4 Discussion}{chapter.5}% 81
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Spatial clustering techniques}{section.5.4}% 82
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Hidden Markov random fields for clustering}{section.5.4}% 83
-\BOOKMARK [0][]{chapter.6}{6 From tissue to single cell transcriptomics, a paradigm shift}{part.1}% 84
-\BOOKMARK [1][-]{section.6.1}{6.1 Spatially referenced single cell-like in-situ hybridization data}{chapter.6}% 85
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Dividing images into ''cells''}{section.6.1}% 86
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 A simple cell model, the ''cube'' data}{section.6.1}% 87
-\BOOKMARK [1][-]{section.6.2}{6.2 Single cell RNA sequencing, building a map of the full transcriptome}{chapter.6}% 88
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Single cell RNA sequencing}{section.6.2}% 89
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Mapping back gene expression to a spatial reference}{section.6.2}% 90
-\BOOKMARK [1][-]{section.6.3}{6.3 About the quantitative trait of single cell expression data}{chapter.6}% 91
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Light contamination in in-situ hybridization data}{section.6.3}% 92
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Technical noise in single cell RNA-seq data}{section.6.3}% 93
-\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Binarizing in-situ hybridization datasets}{section.6.3}% 94
-\BOOKMARK [1][-]{section.6.4}{6.4 Preliminary results on single cell RNA-seq in P. dumerilii's brain}{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Single cell RNA-seq in Platynereis' brain}{section.6.4}% 96
-\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Mapping RNA-seq data back to PrimR in-situ hybridization assays}{section.6.4}% 97
-\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Binarizing whole transcriptomes}{section.6.4}% 98
-\BOOKMARK [1][-]{section.6.5}{6.5 Conclusions}{chapter.6}% 99
-\BOOKMARK [0][]{chapter.7}{7 Conclusions and future work}{part.1}% 100
-\BOOKMARK [1][-]{section.7.1}{7.1 Conclusions}{chapter.7}% 101
-\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Summary}{section.7.1}% 102
-\BOOKMARK [1][-]{section.7.2}{7.2 Future work}{chapter.7}% 103
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Single cell RNA-seq back-mapping}{section.7.2}% 104
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 bioWeb3D}{section.7.2}% 105
-\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 HMRF future developments}{section.7.2}% 106
-\BOOKMARK [2][-]{subsection.7.2.4}{7.2.4 Final words}{section.7.2}% 107
-\BOOKMARK [-1][]{part.2}{Appendix}{}% 108
-\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}% 109
-\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}% 110
-\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}% 111
-\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}% 112
-\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}% 113
-\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}% 114
-\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}% 115
-\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}% 116
-\BOOKMARK [0][]{appendix.B}{B Full list of the clusters obtained with the HMRF method}{part.2}% 117
-\BOOKMARK [0][]{dummy.5}{Bibliography}{part.2}% 118
+\BOOKMARK [1][-]{section.1.1}{1.1 Biological context and general questions}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{1.2 Generalities about gene expression and development}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.3}{1.3 Capturing gene expression in the laboratory}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 In-situ hybridization assays}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 RNA sequencing}{section.1.3}% 13
+\BOOKMARK [1][-]{section.1.4}{1.4 Platynereis dumerilii, an ideal organism for studying brain evolution}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 General description}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Larval development}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 Platynereis' nervous development until 48hpf}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{1.5 Summary}{chapter.1}% 18
+\BOOKMARK [0][]{chapter.2}{2 In-situ hybridization dataset presentation and preprocessing}{part.1}% 19
+\BOOKMARK [1][-]{section.2.1}{2.1 Building a image library of gene expression in P. dumerilii's brain}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.2}{2.2 Spatially referenced single cell-like in-situ hybridization data}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Dividing images into ''cells''}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 A simple cell model, the ''cube'' data}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{2.3 About the quantitative trait of single cell expression data}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Light contamination in in-situ hybridization data}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Binarizing in-situ hybridization datasets}{section.2.3}% 26
+\BOOKMARK [1][-]{section.2.4}{2.4 Conclusions}{chapter.2}% 27
+\BOOKMARK [0][]{chapter.3}{3 Hidden Markov Random fields for biological data clustering}{part.1}% 28
+\BOOKMARK [1][-]{section.3.1}{3.1 background}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{3.2 Markov random fields}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Neighbourhood systems}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Field distribution}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Single and multiple beta models in a biological context}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Field parameters}{section.3.2}% 34
+\BOOKMARK [1][-]{section.3.3}{3.3 The emission model}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Conditional independence in the observed data}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Full likelihood of the Hidden Markov random field model}{section.3.3}% 37
+\BOOKMARK [1][-]{section.3.4}{3.4 Parameter estimation using the EM algorithm}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Initialization}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 E step}{section.3.4}% 40
+\BOOKMARK [1][-]{section.3.5}{3.5 Mean field approximations}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.6}{3.6 M step}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.7}{3.7 Estimating K}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.8}{3.8 Algorithmic overview}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.9}{3.9 Implementation}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.10}{3.10 Summary}{chapter.3}% 46
+\BOOKMARK [0][]{chapter.4}{4 Method validation and performance analysis on simulated data}{part.1}% 47
+\BOOKMARK [1][-]{section.4.1}{4.1 Simulating data with a spatial component }{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Simulating non-spatial gene expression data}{section.4.1}% 49
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Introducing a known spatial context}{section.4.1}% 50
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Expected results}{section.4.1}% 51
+\BOOKMARK [1][-]{section.4.2}{4.2 Comparing clustering results using the Jaccard similarity coefficient}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Theoretical problem in comparing clustering results}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Alignment via similarity-specificity matrix}{section.4.2}% 54
+\BOOKMARK [1][-]{section.4.3}{4.3 Validation of parameters estimation and model selection}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Estimation of }{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Estimation of }{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Choosing K}{section.4.3}% 58
+\BOOKMARK [1][-]{section.4.4}{4.4 Method performance and initialization}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 The EM principle and local maximum}{section.4.4}% 60
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Random initialization vs Hclust initialization}{section.4.4}% 61
+\BOOKMARK [1][-]{section.4.5}{4.5 Method performance compared to Hclust and independent mixture models}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Quality of the clustering results}{section.4.5}% 63
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Computing time}{section.4.5}% 64
+\BOOKMARK [1][-]{section.4.6}{4.6 summary}{chapter.4}% 65
+\BOOKMARK [0][]{chapter.5}{5 HMRF clustering in the brain of Platynereis dumerilii}{part.1}% 66
+\BOOKMARK [1][-]{section.5.1}{5.1 Choosing K with the BIC on biological data}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.2}{5.2 Parameters interpretation}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.3}{5.3 Finding known biological structures to validate the method}{chapter.5}% 69
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 P. dumerilii's eyes}{section.5.3}% 70
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Mushroom bodies}{section.5.3}% 71
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Motor regions}{section.5.3}% 72
+\BOOKMARK [1][-]{section.5.4}{5.4 Generating functional hypotheses about unknown biological tissues}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.5}{5.5 Method sensitivity compared to other clustering methods}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.6}{5.6 Summary}{chapter.5}% 75
+\BOOKMARK [0][]{chapter.6}{6 Visualizing tissues from 3D single cell expression data}{part.1}% 76
+\BOOKMARK [1][-]{section.6.1}{6.1 Elements of clustering for biological tissues}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Motivations}{section.6.1}% 78
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 General considerations about clustering}{section.6.1}% 79
+\BOOKMARK [1][-]{section.6.2}{6.2 Visualizing clustering results in 3D with bioWeb3D}{chapter.6}% 80
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Background}{section.6.2}% 81
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Implementation}{section.6.2}% 82
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Results}{section.6.2}% 83
+\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 Discussion}{section.6.2}% 84
+\BOOKMARK [2][-]{subsection.6.2.5}{6.2.5 Conclusions}{section.6.2}% 85
+\BOOKMARK [2][-]{subsection.6.2.6}{6.2.6 Availability and requirements}{section.6.2}% 86
+\BOOKMARK [1][-]{section.6.3}{6.3 Non spatial clustering methods}{chapter.6}% 87
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Hierarchical clustering}{section.6.3}% 88
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Other clustering methods adapted to gene expression data}{section.6.3}% 89
+\BOOKMARK [1][-]{section.6.4}{6.4 Discussion}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Spatial clustering techniques}{section.6.4}% 91
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Hidden Markov random fields for clustering}{section.6.4}% 92
+\BOOKMARK [0][]{chapter.7}{7 Spatial back-mapping of single cell RNA-seq data}{part.1}% 93
+\BOOKMARK [1][-]{section.7.1}{7.1 Single cell RNA sequencing, building a map of the full transcriptome}{chapter.7}% 94
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Single cell RNA sequencing}{section.7.1}% 95
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Technical noise in single cell RNA-seq data}{section.7.1}% 96
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Mapping back gene expression to a spatial reference}{section.7.1}% 97
+\BOOKMARK [1][-]{section.7.2}{7.2 Preliminary results on single cell RNA-seq in P. dumerilii's brain}{chapter.7}% 98
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Single cell RNA-seq in Platynereis' brain}{section.7.2}% 99
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Mapping RNA-seq data back to PrimR in-situ hybridization assays}{section.7.2}% 100
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 Binarizing whole transcriptomes}{section.7.2}% 101
+\BOOKMARK [0][]{chapter.8}{8 Conclusions and future work}{part.1}% 102
+\BOOKMARK [1][-]{section.8.1}{8.1 Conclusions}{chapter.8}% 103
+\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Summary}{section.8.1}% 104
+\BOOKMARK [1][-]{section.8.2}{8.2 Future work}{chapter.8}% 105
+\BOOKMARK [2][-]{subsection.8.2.1}{8.2.1 Single cell RNA-seq back-mapping}{section.8.2}% 106
+\BOOKMARK [2][-]{subsection.8.2.2}{8.2.2 bioWeb3D}{section.8.2}% 107
+\BOOKMARK [2][-]{subsection.8.2.3}{8.2.3 HMRF future developments}{section.8.2}% 108
+\BOOKMARK [2][-]{subsection.8.2.4}{8.2.4 Final words}{section.8.2}% 109
+\BOOKMARK [-1][]{part.2}{Appendix}{}% 110
+\BOOKMARK [0][]{appendix.A}{A Input file formats for bioWeb3D}{part.2}% 111
+\BOOKMARK [1][-]{section.A.1}{A.1 Dataset file specification}{appendix.A}% 112
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 JSON format}{section.A.1}% 113
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 XML format}{section.A.1}% 114
+\BOOKMARK [2][-]{subsection.A.1.3}{A.1.3 CSV format}{section.A.1}% 115
+\BOOKMARK [1][-]{section.A.2}{A.2 Information layer file specification}{appendix.A}% 116
+\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 JSON format}{section.A.2}% 117
+\BOOKMARK [2][-]{subsection.A.2.2}{A.2.2 XML format}{section.A.2}% 118
+\BOOKMARK [0][]{appendix.B}{B Full list of the clusters obtained with the HMRF method}{part.2}% 119
+\BOOKMARK [0][]{dummy.5}{Bibliography}{part.2}% 120
