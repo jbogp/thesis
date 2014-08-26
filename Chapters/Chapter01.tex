@@ -4,20 +4,85 @@
 
 \section{Biological context and general questions}
 	
-	The work presented in this thesis revolves around several key biological concepts such as \emph{tissue}, \emph{cell type}, \emph{spatial coherency} and \emph{gene expression}. I define these notions in the Introduction and give an overview of the organism central to my work - \platyfull{}.\\
+	The work presented in this thesis revolves around several key biological concepts such as \emph{tissue}, \emph{cell type}, \emph{spatial coherency} and \emph{gene expression}. In the Introduction, I first give an overview of the model organism central to the work presented in this thesis, \platyfull{}, and then define the main biological questions addressed throughout this work.\\
 	
 	The global goal of this thesis is to study single cell gene expression while taking into account the spatial context of each cell. My main contribution is the development of a method that demonstrates that taking into account the spatial information improves the clustering of single cells into functional tissues.\\
+	
+	\subsection{Platynereis dumerilii, an ideal organism for studying brain evolution}\label{sec:platynereis}
+    	 \subsubsection{General description}
+     \platyfull{} is a marine annelid of the class Polychaeta, which has been established as one of the main marine animal models in the fields of evolutionary, and developmental biology as well as ecology, toxicology and neurobiology \citep{hutchinson95,tessmar03,hardege99,dorresteijn90,fischer04,Fischer10}.\\
+     
+     \platy{} populates shallow (no more than 3m deep) ocean floors around the world. It is commonly found in the Mediterranean sea, the north Atlantic coast of Europe as well as in the shallow seas surrounding Sri Lanka, Java and the Philippines. Eggs, embryos and larvae are roughly 160$\mu$m long while the adults can measure up to 6cm in length.
+     
+     
+\begin{figure}[bth]
+        \myfloatalign
+        \subfloat[Larval form of \platy{}. Image: MPI for Developmental Biology.]
+        {\label{fig:platynereis_larvae}
+        \includegraphics[width=.45\linewidth]{gfx/chapter1/platynereis_larva.jpg}} \quad
+        \subfloat[Adult \platy{}. Image: Arendt group, EMBL]
+        {\label{fig:platynereis_adult}%
+         \includegraphics[width=.45\linewidth]{gfx/chapter1/platynereis_adult.jpg}}
+        \caption{\platyfull{}'s larva and adult forms.}\label{fig:platynereis}
+\end{figure}
+     
+     There are several reasons why \platy{} has been chosen as a model by numerous laboratories. Indeed, evolutionary wise, \platy{} shows several interesting characteristics.  As a member of the bilaterians \platy{} has a defined bilateral symmetry. It belongs to the lophotrochozoan taxon of the bilaterians as opposed to most of the well established model animals which either belong to the ecdysozoans (\species{Caenorhabditis elegans}, \species{Drosophila melanogaster}) or the deuterostomes (mouse, human). \platy{}, as one of the only lophotrochozoan models is needed in order to use comparative approaches for studying the full range of bilaterians \citep{Fischer10}.\\
+     
+     \platy{} also exhibits an exceptionally slow evolving nature and it has even been described as a ``living fossil'' for that reason \citep{Fischer10}. Consequently, the numerous ancestral developmental characteristics of \platy{} partly reflect the common ancestor of all bilaterians. An interesting example described in \citep{denes07,tessmar07} is the conserved molecular topography of the genes responsible for the development of the central nervous system between \platy{} and all vertebrates. This slow evolving nature makes \platy{} a better comparison with vertebrates than fast evolving species like \emph{Drosophila} and nematodes where derived features can obscure evolutionary signal \citep{Fischer10,arendt124}.\\
+     
+     Experimentally speaking, model organisms are chosen for several characteristics that make them easy to use in the laboratory. These characteristics include, but are not limited to, the size of the animal, the conditions required for the organism to develop, gestation and development time as well as the ease with which a new generation can be produced.\\
+     
+     In this regard \platy{} is nearly an ideal animal. Even in their adult form, they are relatively small, they can easily be kept and bred in captivity producing offspring throughout the year \citep{fischer04}. Furthermore, the behavioural characteristics of \platy{}'s mating ritual have been well studied and can be reproduced on demand in the laboratory. The ``nuptial dance'' happens on the water surface. Males and females respectively release the sperm and eggs synchronously. This activity is synchronized by pheromones released into the water \citep{zeeck98}. Over 2000 individuals can be produced within a single batch. Every new individual will undergo embryonic then larval development before reaching \platy{}'s adult form.\\
+
+ 
+    	 \subsubsection{Larval development}
+    Similarly to the other polychaetes, the larval development of \platy{} can be decomposed into three main anatomical stages, as detailed in \citep{hauenschild69}: the trochophore, the metotrochophore and the nectochaete. The trochophore is spherical and moves thanks to an equatorial belt of ciliated cells as well as an apical organ displaying a ciliary tuft \citep{rouse99,nielsen04} as seen in Figure \ref{fig:platynereis_larvae} and schematically in Figure \ref{fig:platynereis_larvae_scheme}. The metotrochophore stage is characterized by the development of a slightly elongated segmented trunk compared to that of the trochophore \citep{hacker98}. The next developmental stage is referred to as the nectochaete larvae which resembles the adult (figure \ref{fig:platynereis_adult}) in many traits, especially with parapodial appendages used for swimming and crawling \citep{hacker98}.\\
+    
+\begin{figure}[bth]
+\begin{center}
+  \includegraphics[width=\linewidth]{gfx/chapter1/larvae48hpf.png}
+\end{center}
+  \caption{\platyfull{}'s larvea development at 48hpf (late trochophore). Red stripes indicate the area that forms the developing brain of the larvae.}
+  \label{fig:platynereis_larvae_scheme}
+\end{figure}
+    
+    Aside from this purely anatomical description, an additional staging system exists and has become the norm for current studies. The development is measured in \textit{hours post fertilization} (hpf) at $18^{\circ}C$.
+    
+    A key factor making \platy{} such an interesting model to work with is the fact that after fertilization, the $\approx 2000$ larva will start developing at the exact same time, in a synchronous fashion. Furthermore, the larval development of \platy{} follows a very stereotypical pattern with little variation from one individual to the other; this is true even between batches provided the temperature is kept constant \citep{fischer04,dorresteijn90}. An illustration of this synchronous development is shown in Figure \ref{fig:brain_comparison}. This is a very important feature as it allows biologists to repeat experiments on several individuals at a very close developmental stage even if they are from different batches.\\
+    
+\begin{figure}[bth]
+  \includegraphics[width=\linewidth]{gfx/chapter1/brain_comparison.png}
+  \caption{\platyfull{}'s stereotypical and synchronous development. In green and red are two different \platy{} individuals' with the same gene expression being highlighted. They show extremely similar patterns of development for the nervous system.}
+  \label{fig:brain_comparison}
+\end{figure}
+
+	 
+	 	 \subsubsection{Platynereis' nervous development until 48hpf}
+	 Describing the entire development of \platy{} does not fall within the scope of this thesis. Indeed, I will only be interested in the brain of \platy{}'s larvae at 48hpf. Therefore, it is important to have an anatomical idea of what the brain looks like at this time in development and what inherent characteristics will be the most interesting to investigate. \platy{}'s larval brain development is detailed in \citep{Fischer10}.\\
+	 
+     From the early trochophore (24-26hpf) neural system development starts taking place. The apical ganglion which contains one sertonergic cell and a few neurons linked to the nerve of the ciliary band of the larva called the prototroch forms at the apical tuft, (see Figure \ref{fig:platynereis_larvae_scheme}). This allows the first movements of the larvae thanks to the cialited cells of the prototroch.\\
+     
+     The mid-trochophore (26-40 hpf) sees the formation of the first cerebral commissure: a band of nerves interconnecting the ventral nerve cord and the brain, which is a typical feature of annelid neurobiology. During this phase the apical ganglion becomes bigger with three more serotonergic cells.\\
+     
+     The late trochophore (40-48hpf) sees the formation of the second commissure in the ventral nerve cord. It is at the end of this stage that the tissues of the brain become more complex with a notable increase in the number of neurites \citep{Fischer10}.\\
+     
+     The data used in the rest of this thesis will not encapsulate the whole larvae, just the developing brain (see Figure \ref{fig:platynereis_larvae_scheme}) thus excluding the ventral part of the nervous system. The best studied areas of the developing brain are the larval eyes, the developing adult eyes and the apical organ on the dorsal side. On the ventral side are located the mushroom bodies, a pair of structures that are known to play a role in olfactory learning and memory in insects and annelids \citep{Tomer10}.\\
+     
+     Consequently, even at this early stage in a relatively ``simple'' organism, the brain quickly becomes an extremely complex tissue. Cell types diverge and functional areas are formed. Before trying to understand more about \platy{}'s brain organization, it is interesting to ask the more general question of how complex tissues such as the brain are defined spatially.
+     
+     
+     \subsection{Defining complex biological tissues and cell types}
 	
     The first written study of human anatomy that has survived through time and is sometimes attributed to Imhotep - physician, high priest and architect during the Old Kingdom of Egypt (3000-2500 BC) is the Edwin Smith Papyrus \citep{goodwin98,breasted30}. Although mainly descriptive, some organs such as the heart or blood vessels were defined functionally. A more scientific approach to anatomy based on animal and human dissections and vivisections arose in ancient Greece and was led by scientists such as Alcmaeon (510 BC),  Empedocles (480 BC) and later Aristotle (356 BC) \citep{singer57}. In these early studies the global \emph{function} of each organ was often inferred by analysing the result of accidental, war related or intentional injuries \citep{singer57}.\\ 
     
     As science developed and the scale of the smallest biological unit was reduced to the cell, organs were described as complex tissues: coherent structures composed of large numbers of cells. These cells are not identical to one another. First, visually, cells composing the tissue may have different physical characteristics. Second, when observing the cells in vivo, different cells in different parts of the complex tissue will exhibit different behaviour. Consequently, biological \emph{tissues} can be viewed as an interconnected mosaic of cells having different functions and working together to assume the global function of the tissue. When looking closely at this mosaic, it is sometimes possible to observe under a microscope \citep{young13} that the cells' spatial organisation is not random, thus leading to a classification of cells with respect to their appearance and behaviour. These categories are known as \emph{cell types}. Consequently, the definition of a complex biological tissue may be an ensemble of cells belonging to different cell types grouped in the same spatial structure.  If historically \emph{function} and physical characteristics of the organ were directly linked, microscopes and the observation of cells behaviour within a particular tissue changed this one to one relationship.\\
     
-    The developing brain of the organism around which this thesis is built, \platyfull{} (presented in details in the next section), can be defined as a whole as being the central nervous system of the animal. This global functional definition encapsulates all the sub-functions of all the sub-tissues in the brain. For instance, when changing the scale of study from the organ to the tissue level, one can anatomically distinguish very different tissues (e.g photosentisive regions in the eyes and developing neurons).\\
+    As described in the previous section, the developing brain of \platyfull{} can be defined as a whole as being the central nervous system of the animal. This global functional definition encapsulates all the sub-functions of all the sub-tissues in the brain. For instance, when changing the scale of study from the organ to the tissue level, one can anatomically distinguish very different tissues (e.g photosentisive regions in the eyes and developing neurons).\\
     
-    Interestingly, the cells making up specialized sub-tissues in the brain, belong to the same organ but have very different function. For example, photosensitive regions are composed of extremely specialized cells which display the ability to react to light stimulation \cite{arendt02} while developing neurons are part of the complex network that allows information to be transmitted and process in the brain \cite{Fischer10}.Importantly, as defined above, the brain has a coherent overall function, but when looking at the cell type level it is fascinating to observe that a wide variety of functions are displayed. Hence, my definition of a \emph{complex biological tissue} will be spatially coherent ensemble of cells organised in sub-tissues, each of which possesses a specific function.\\
+    Interestingly, the cells making up specialized sub-tissues in the brain, belong to the same organ but have very different function. For example, photosensitive regions are composed of extremely specialized cells which display the ability to react to light stimulation \cite{arendt02} while developing neurons are part of the complex network that allows information to be transmitted and processed in the brain \cite{Fischer10}.Importantly, as defined above, the brain has a coherent overall function, but when looking at the cell type level it is fascinating to observe that a wide variety of functions are displayed. Hence, my definition of a \emph{complex biological tissue} will be a spatially coherent ensemble of cells organised in sub-tissues, each of which possesses a specific function.\\
     
      
-    The sub-tissues in complex biological tissues tend to be spatially coherent. In other words cells that belong to the same cell type are usually structured spatially and as a result it seems sensible to assume that cells spatially close to one another have a greater probability of belonging to the same cell type. However, the spatial coherency of these sub-tissues is not always the same. Some cell types may consist of individual cells that are scattered inside another more spatially coherent tissue. An interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and that of cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?'', the extensions created by the axons of neurons (as shown in Figure \ref{fig:neuron}) will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \citep{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
+    The sub-tissues in complex biological tissues tend to be spatially coherent. In other words, cells that belong to the same cell type are usually structured spatially and as a result it seems sensible to assume that single cells spatially close to one another have a greater probability of belonging to the same cell type. However, the spatial coherency of these sub-tissues is not always the same. Some cell types may consist of individual cells that are scattered inside another more spatially coherent tissue. An interesting example is the difference between the spatial coherency of cells forming the neuronal tissue in the brain and that of cells forming a well defined region in the brain like an exocrine gland. When asking the question: ``is it likely that this particular cell is fully surrounded by cells belonging to the same cell type?'', the extensions created by the axons of neurons (as shown in Figure \ref{fig:neuron}) will decrease this probability. Indeed, axons will grow through other types of tissues to reach their destination \citep{bartlett84,colello90}, making the overall spatial coherency of neural tissues smaller than very well spatially defined tissues.\\
     
 \begin{figure}[bth]
 \begin{center}
@@ -28,17 +93,17 @@
 \end{figure}
 	
      
-    Organs and cell types have been defined mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further than simple anatomical traits. In the case of the neurons presented above all display the same appearance in different parts of the brain as neuronal tissue makes up a good portion of the brain. However, looking closely at the function of the cells composing different parts of the brain composed of neurons unveils a completely different story. Indeed, despite their apparent similarity, some of them will for instance react to the neurotransmitter \emph{acetylcholin} while others will use \emph{glutamate} (example in the human brain \cite{hefti86,van93}, this difference is extremely important in terms of function.\\
+    Organs and cell types have been defined mainly by their anatomical traits. However, the functional heterogeneity of complex tissues goes further than simple anatomical traits. In the case of the neurons presented above, every one of them have roughly the same appearance in different parts of the brain as neuronal tissue makes up a good portion of cerebral volume. However, looking closely at the function of the neurons from different parts of the brain unveils a completely different story. Indeed, despite their apparent similarity, some of them will for instance react to the neurotransmitter \emph{acetylcholin} while others will use \emph{glutamate} (example in the human brain \cite{hefti86,van93}), this type of difference leads to very different functions.\\
      
      This very telling example shows that defining cell types based on their anatomical traits is clearly insufficient to characterize tissues.  As a result, I will now discuss a trait that fundamentally defines how cells are functioning, namely \emph{gene expression}. 
 
-\section{Generalities about gene expression and development}\label{sec:gene_expression_background}     
+\subsection{Generalities about gene expression and development}\label{sec:gene_expression_background}     
        
      Throughout this thesis the term \emph{cell} will be used to refer to eukaryotic cells and, more specifically, those of multicellular organisms. Every cell in a complex organism possesses the same genome, that is, the sum of all the genetic information contained in the cell (nucleus and other compartments). This fundamental homogeneity is in plain contradiction with the heterogeneity observed anatomically. If every cell has the exact same DNA, where does the great variability between cell types come from? In other words, what makes a neuron become a neuron and not a pancreatic cell? Answering this type of question defines the field of developmental biology.\\
      
      A short answer to many developmental biology questions actually is: same genome but different pattern of gene expression. As a central cellular activity, numerous traits exhibited by cells throughout their life from their differentiation to their death, are defined by the way they express some specific parts of their genomes.\\
 
-     To understand what gene expression is, the notion of \emph{gene} must first be defined. The precise definition of a gene remains controversial. The concept of a ``\emph{factor that conveys traits from parents to offspring}'' was laid down by Gregor Mendel in 1866 \citep{mendel66} when the accepted theory at the time was based on blending inheritance where the traits of the parents appeared mixed in the offspring following a continuous gradient. The most recently published definition of a gene followed the publication of the ENCODE project \citep{feingold04}. It states that a gene is ``\emph{a union of genomic sequences encoding a coherent set of potentially overlapping functional products.}''\\
+     To understand what gene expression is, the notion of \emph{gene} must first be defined. The precise definition of a gene remains controversial. The concept of a ``\emph{factor that conveys traits from parents to offspring}'' was laid down by Gregor Mendel in 1866 \citep{mendel66} when the accepted theory at the time was based on blending inheritance where the traits of the parents appeared mixed in the offspring following a continuous gradient. The most recently published definition of a gene followed the publication of the ENCODE project \citep{feingold04}. It states that a gene is ``\emph{a union of genomic sequences encoding a coherent set of potentially overlapping functional products.}''. This last definition being extremely vague demonstrates, I believe, the complexity hidden behind apparently simple concepts in biology. Throughout this thesis \emph{genes} will simply be considered as expressed portions of the genome.\\
 
 	Gene expression describes the way cells express their genes. Expression of a gene is the process of transcribing the DNA of that particular gene. It is interesting to note that there are several ways to look at gene expression. Indeed in a cell or tissue, at a given time point it is possible to examine whether a gene is expressed or not (binary expression) or how much a certain gene is expressed (quantitative expression). The product of gene expression is RNA molecules. Technically speaking, for transcription to occur in the nucleus a complex system of proteins will attach itself onto the DNA double helix. In the case of protein coding genes, this complex is the RNA polymerase II. Once this complex becomes attached to the promoter region of the gene, transcription can begin. The RNA polymerase complex will move along the gene and replicate the template strand of the DNA in a process known as elongation. The resulting RNA molecule will be a copy of the coding strand of the DNA created by creating the complementary sequence of the template strand. When the polymerase reaches an ``end codon'', transcription terminates and the RNA molecule is released and polyadenylated in order to protect the transcript from degradation in the cytoplasm \citep{cooper00}.\\
 	
@@ -100,69 +165,6 @@
     
     At this point I have defined some methods to study gene expression and why this information is crucial to understand the mechanisms of developmental biology. Experimentally speaking, biological studies rely upon numerous model organisms such as \species{Mus musculus}, \species{Caenorhabditis elegans}. The work presented in this thesis revolves around the marine annelid \platyfull{}. In the next section, I will introduce generalities about this interesting model organism and in particular how its neural system is ideal for studying brain development and evolution.
     
-    
-\section{Platynereis dumerilii, an ideal organism for studying brain evolution}\label{sec:platynereis}
-     \subsection{General description}
-     \platyfull{} is a marine annelid of the class Polychaeta, which has been established as one of the main marine animal models in the fields of evolutionary, and developmental biology as well as ecology, toxicology and neurobiology \citep{hutchinson95,tessmar03,hardege99,dorresteijn90,fischer04,Fischer10}.\\
-     
-     \platy{} populates shallow (no more than 3m deep) ocean floors around the world. It is commonly found in the Mediterranean sea, the north Atlantic coast of Europe as well as in the shallow seas surrounding Sri Lanka, Java and the Philippines. Eggs, embryos and larvae are roughly 160$\mu$m long while the adults can measure up to 6cm in length.
-     
-     
-\begin{figure}[bth]
-        \myfloatalign
-        \subfloat[Larval form of \platy{}. Image: MPI for Developmental Biology.]
-        {\label{fig:platynereis_larvae}
-        \includegraphics[width=.45\linewidth]{gfx/chapter1/platynereis_larva.jpg}} \quad
-        \subfloat[Adult \platy{}. Image: Arendt group, EMBL]
-        {\label{fig:platynereis_adult}%
-         \includegraphics[width=.45\linewidth]{gfx/chapter1/platynereis_adult.jpg}}
-        \caption{\platyfull{}'s larva and adult forms.}\label{fig:platynereis}
-\end{figure}
-     
-     There are several reasons why \platy{} has been chosen as a model by numerous laboratories. Indeed, evolutionary wise, \platy{} shows several interesting characteristics.  As a member of the bilaterians \platy{} has a defined bilateral symmetry. It belongs to the lophotrochozoan taxon of the bilaterians as opposed to most of the well established model animals which either belong to the ecdysozoans (\species{Caenorhabditis elegans}, \species{Drosophila melanogaster}) or the deuterostomes (mouse, human). \platy{}, as one of the only lophotrochozoan models is needed in order to use comparative approaches for studying the full range of bilaterians \citep{Fischer10}.\\
-     
-     \platy{} also exhibits an exceptionally slow evolving nature and it has even been described as a ``living fossil'' for that reason \citep{Fischer10}. Consequently, the numerous ancestral developmental characteristics of \platy{} partly reflect the common ancestor of all bilaterians. An interesting example described in \citep{denes07,tessmar07} is the conserved molecular topography of the genes responsible for the development of the central nervous system between \platy{} and all vertebrates. This slow evolving nature makes \platy{} a better comparison with vertebrates than fast evolving species like \emph{Drosophila} and nematodes where derived features can obscure evolutionary signal \citep{Fischer10,arendt124}.\\
-     
-     Experimentally speaking, model organisms are chosen for several characteristics that make them easy to use in the laboratory. These characteristics include, but are not limited to, the size of the animal, the conditions required for the organism to develop, gestation and development time as well as the ease with which a new generation can be produced.\\
-     
-     In this regard \platy{} is nearly an ideal animal. Even in their adult form, they are relatively small, they can easily be kept and bred in captivity producing offspring throughout the year \citep{fischer04}. Furthermore, the behavioural characteristics of \platy{}'s mating ritual have been well studied and can be reproduced on demand in the laboratory. The ``nuptial dance'' happens on the water surface. Males and females respectively release the sperm and eggs synchronously. This activity is synchronized by pheromones released into the water \citep{zeeck98}. Over 2000 individuals can be produced within a single batch. Every new individual will undergo embryonic then larval development before reaching \platy{}'s adult form.\\
-
- 
-     \subsection{Larval development}
-    Similarly to the other polychaetes, the larval development of \platy{} can be decomposed into three main anatomical stages, as detailed in \citep{hauenschild69}: the trochophore, the metotrochophore and the nectochaete. The trochophore is spherical and moves thanks to an equatorial belt of ciliated cells as well as an apical organ displaying a ciliary tuft \citep{rouse99,nielsen04} as seen in Figure \ref{fig:platynereis_larvae} and schematically in Figure \ref{fig:platynereis_larvae_scheme}. The metotrochophore stage is characterized by the development of a slightly elongated segmented trunk compared to that of the trochophore \citep{hacker98}. The next developmental stage is referred to as the nectochaete larvae which resembles the adult (figure \ref{fig:platynereis_adult}) in many traits, especially with parapodial appendages used for swimming and crawling \citep{hacker98}.\\
-    
-\begin{figure}[bth]
-\begin{center}
-  \includegraphics[width=\linewidth]{gfx/chapter1/larvae48hpf.png}
-\end{center}
-  \caption{\platyfull{}'s larvea development at 48hpf (late trochophore). Red stripes indicate the area that forms the developing brain of the larvae.}
-  \label{fig:platynereis_larvae_scheme}
-\end{figure}
-    
-    Aside from this purely anatomical description, an additional staging system exists and has become the norm for current studies. The development is measured in \textit{hours post fertilization} (hpf) at $18^{\circ}C$.
-    
-    A key factor making \platy{} such an interesting model to work with is the fact that after fertilization, the $\approx 2000$ larva will start developing at the exact same time, in a synchronous fashion. Furthermore, the larval development of \platy{} follows a very stereotypical pattern with little variation from one individual to the other; this is true even between batches provided the temperature is kept constant \citep{fischer04,dorresteijn90}. An illustration of this synchronous development is shown in Figure \ref{fig:brain_comparison}. This is a very important feature as it allows biologists to repeat experiments on several individuals at a very close developmental stage even if they are from different batches.\\
-    
-\begin{figure}[bth]
-  \includegraphics[width=\linewidth]{gfx/chapter1/brain_comparison.png}
-  \caption{\platyfull{}'s stereotypical and synchronous development. In green and red are two different \platy{} individuals' with the same gene expression being highlighted. They show extremely similar patterns of development for the nervous system.}
-  \label{fig:brain_comparison}
-\end{figure}
-
-	 
-	  \subsection{Platynereis' nervous development until 48hpf}
-	 Describing the entire development of \platy{} does not fall within the scope of this thesis. Indeed, I will only be interested in the brain of \platy{}'s larvae at 48hpf. Therefore, it is important to have an anatomical idea of what the brain looks like at this time in development and what inherent characteristics will be the most interesting to investigate. \platy{}'s larval brain development is detailed in \citep{Fischer10}.\\
-	 
-     From the early trochophore (24-26hpf) neural system development starts taking place. The apical ganglion which contains one sertonergic cell and a few neurons linked to the nerve of the ciliary band of the larva called the prototroch forms at the apical tuft, (see Figure \ref{fig:platynereis_larvae_scheme}). This allows the first movements of the larvae thanks to the cialited cells of the prototroch.\\
-     
-     The mid-trochophore (26-40 hpf) sees the formation of the first cerebral commissure: a band of nerves interconnecting the ventral nerve cord and the brain, which is a typical feature of annelid neurobiology. During this phase the apical ganglion becomes bigger with three more serotonergic cells.\\
-     
-     The late trochophore (40-48hpf) sees the formation of the second commissure in the ventral nerve cord. It is at the end of this stage that the tissues of the brain become more complex with a notable increase in the number of neurites \citep{Fischer10}.\\
-     
-     The data used in the rest of this thesis will not encapsulate the whole larvae, just the developing brain (see Figure \ref{fig:platynereis_larvae_scheme}) thus excluding the ventral part of the nervous system. The best studied areas of the developing brain are the larval eyes, the developing adult eyes and the apical organ on the dorsal side. On the ventral side are located the mushroom bodies, a pair of structures that are known to play a role in olfactory learning and memory in insects and annelids \citep{Tomer10}.\\
-     
-     Consequently, even at this early stage in a relatively ``simple'' organism, the brain quickly becomes an extremely complex tissue. Cell types diverge and functional areas are formed. Before trying to understand more about \platy{}'s brain organization, it is interesting to ask the more general question of how complex tissues such as the brain are defined spatially.
-
 
     
 \section{Summary}

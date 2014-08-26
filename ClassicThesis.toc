@@ -4,16 +4,17 @@
 \contentsline {part}{i\hspace {1em}\spacedlowsmallcaps {Cell types and single cells, a very spatial relationship}}{15}{part.1}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{17}{chapter.1}
 \contentsline {section}{\numberline {1.1}Biological context and general questions}{17}{section.1.1}
-\contentsline {section}{\numberline {1.2}Generalities about gene expression and development}{20}{section.1.2}
-\contentsline {section}{\numberline {1.3}Capturing gene expression in the laboratory}{22}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}In-situ hybridization assays}{22}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}RNA sequencing}{23}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Platynereis dumerilii, an ideal organism for studying brain evolution}{26}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}General description}{26}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Larval development}{28}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Platynereis' nervous development until 48hpf}{29}{subsection.1.4.3}
-\contentsline {section}{\numberline {1.5}Summary}{31}{section.1.5}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {In-situ hybridization dataset presentation and preprocessing}}{33}{chapter.2}
+\contentsline {subsection}{\numberline {1.1.1}Platynereis dumerilii, an ideal organism for studying brain evolution}{17}{subsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.1}General description}{17}{subsubsection.1.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Larval development}{19}{subsubsection.1.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.1.3}Platynereis' nervous development until 48hpf}{20}{subsubsection.1.1.1.3}
+\contentsline {subsection}{\numberline {1.1.2}Defining complex biological tissues and cell types}{22}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Generalities about gene expression and development}{24}{section.1.2}
+\contentsline {section}{\numberline {1.3}Capturing gene expression in the laboratory}{27}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}In-situ hybridization assays}{27}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}RNA sequencing}{28}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Summary}{31}{section.1.4}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Main Datasets used in this study and data preprocessing}}{33}{chapter.2}
 \contentsline {section}{\numberline {2.1}Building a image library of gene expression in \emph {{P}. dumerilii}{}'s brain}{33}{section.2.1}
 \contentsline {section}{\numberline {2.2}Spatially referenced single cell-like in-situ hybridization data}{34}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Dividing images into ''cells''}{34}{subsection.2.2.1}
