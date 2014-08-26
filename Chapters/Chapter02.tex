@@ -1,5 +1,5 @@
 %*****************************************
-\chapter{In-situ hybridization dataset presentation and preprocessing}\label{ch:singlecell}
+\chapter{Main Datasets used in this study and data preprocessing}\label{ch:singlecell}
 %*****************************************
 \section{Building a image library of gene expression in \platy{}'s brain}
      During his PhD, Raju Tomer and other members of the Arendt lab in EMBL, used wholemount in-situ hybridization to create an image library of gene expression in the brain of \platy{}. They were able to record gene expression in the full brain at 48hpf for 169 genes. In practice, each individual larvae was dissected to isolate the region containing the developing brain. Each brain was then stained with two different fluorescent probes corresponding to two messenger RNAs (mRNA). One of the genes is considered a reference, as it is always hybridized in all the assays (the main reference gene used was \emph{Emx}) alongside another gene of interest, see Figure \ref{fig:insitu}. Each brain was then visualized with laser confocal microscopy to reveal the gene expression patterns in the brain slice by slice, generating at the same time 3D coordinates for each slice.\\
@@ -52,10 +52,6 @@
   
   As shown in Figure \ref{fig:why_binarize}, the issue of light contamination seems to occur when using the 3 \microm{3} ``cube'' model. In this context, and because of the single cell scale of this study, considering the in-situ hybridization data as quantitative may introduce significant errors. In order to avoid this light contamination bias a solution is to transform the quantitative data into binary data where, for a given ``cube'', genes are simply expressed or not.
   
-
-
-
-	
 	
   \subsection{Binarizing in-situ hybridization datasets}
 	As shown in Figure \ref{fig:why_binarize} and discussed in the previous section \ref{sec:quantitative_single_cell}, the various problems linked to light contamination can be avoided by transforming the ``quantitative'' fluorescence information into binary data. In other words, if $S$ is the set of all ``cubes'' in the brain, $M$ the set of all the considered genes and $y_{i,m}$ the value retrieved from the in-situ hybridization data for ``cube'' $i \in S$ and gene $m \in M$, then  $y_{i,m} = 1$ if gene $m$ is expressed at site $i$, $y_{i,m} = 0$ otherwise. The binarization process itself is not trivial. Indeed, defining the light intensity threshold above which a gene is considered expressed is a complicated problem, especially for noisy data.\\
@@ -81,9 +77,6 @@
 \end{figure}
 	
 	Although the aforementioned method resulted in a high quality binary dataset, it has been possible only because the number of genes considered was small. This will not be the case when dealing with RNA-seq data.
-	
-
-
 
 \section{Conclusions}
 In this Chapter I have described how the scale of gene expression studies has shifted from the tissue level to the single cell level. For two experimental protocols the generation of such data was presented and I have explained why, at the time of writing, it is still not safe to assume that single cell transcritomics datasets are quantitative. To avoid this problem, turning those datasets into binary gene expression is an attractive solution. However the binarization process is not trivial and I have presented ways to obtain a high confidence dataset.\\
@@ -93,10 +86,6 @@ One notable advantage of in-situ hybridization assays is the fact that the spati
 As mentioned previously in the Introduction (\ref{ch:background}), if the ability to study the heterogeneity of cell populations at the single cell level offers incredible possibilities for the future of developmental biology and potentially of cancer research, the development of new statistical methods adapted to this single cell scale, allowing conclusions to be drawn at the tissue level, is crucial.\\
 
 The work presented hereafter aims to answer simple but important questions: can known functional tissues of a complex organ like the brain be defined and localized from single gene expression data? Can unknown regions in such a complex tissue be detected and finally, is it possible to hypothesize the functional role of those unknown regions based on single cell expression data?
-
-
-	
-	
 
 
 
