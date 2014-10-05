@@ -1,24 +1,6 @@
 %************************************************
 \chapter{Visualizing tissues from 3D single cell expression data}\label{ch:non_spatial_clustering_visualization} 
 %************************************************
-\section{Elements of clustering for biological tissues}
-	\subsection{Motivations}
-	Following the conclusions of Chapter \ref{ch:singlecell} in which I discussed the shift from the tissue to the single cell scale of study in developmental biological assays as well as the main challenges to analyse and interpret such data, the first question that seems natural to answer is the following: analysing single cell gene expression data only, is it possible to classify cells that are the most alike together and define the organization of complex biological tissues like the brain of \platyfull{}?\\
-	
-	This is fundamentally a clustering or a classification problem. Indeed, small units need to be put in a determined number of classes or clusters because they are alike in one way or another. As anatomical and functional information about some tissues in the brain of \platy{} is already available (see Chapter \ref{ch:background}), the obvious validation for any clustering/classification method developed is to check that the single cell level information leads to the definition of these known tissues. Once this has been validated, it seems important to determine whether the single cell expression data \emph{adds} to the known biology by redefining (subdividing for example) known tissues or finding new ones. Identifying putative cell type is already a major challenge but the question can be pushed further. As mentioned in the Introduction, because gene expression is a key process in a cell's life, studying the genes that characterize a cluster can provide insights into the functional role of the cells it contains.
-
-	\subsection{General considerations about clustering}
-	I mentioned before that methods developed to answer those questions could either be clustering or classification methods. In the field of machine learning, these two notions are fundamentally divergent. Clustering describes a method that assigns points to an unknown number (\emph{a priori}) of sets in an undirected way, while classification takes advantage of an already known classifier to assign, in a directed manner, new elements to a determined number of clusters.\\
-	
-	In my case, the number of tissues in the brain of \platy{} is unknown and there is no previous classification or sufficient biological knowledge of each and every cell to opt for a directed classifier. Therefore the methods presented hereafter will be clustering methods with respect to the machine learning definition of the word.\\
-	
-	As a general consideration about clustering, it is important to note that unless working on simple datasets, there is no perfect method. This is especially true when dealing with biological data, where the complexity and the noise level (see \ref{sec:quantitative_single_cell}) tend to be extremely high. \\
-	
-	To illustrate this notion, for the single cell expression data in \platy{}'s brain, the question of finding the ``true'' number of tissues is extremely complicated. Without any prior knowledge, the statistical methods to determine the number of clusters presented in this thesis will yield indications about what the optimal number of ``tissues'' is given the data and the model, which does not necessarily means that this number is biologically \emph{true}.\\
-	
-	For a complex dataset such as brain tissue, a crucial matter in the upstream and the downstream analysis is to be able to visualize the data. This is especially true when the considered tissue is in 3 dimensions. For example, an important part of the upstream analysis to clustering is visualizing the gene expression patterns in the brain in order to determine the right binarization thresholds. In downstream analysis, after developing a clustering method, seeing the resulting clusters and their localizations in the brain is also very important. To this effect, I developed a tool for 3D dataset visualization taking advantage of the latest developments in browser based technologies to create the software ``bioWeb3D''. This work has been published in \citep{Pettit13}.
-	
-	
 
 \section{Visualizing clustering results in 3D with bioWeb3D}
 	\subsection{Background}
@@ -45,9 +27,10 @@ The first file used by the application, referred to as the \emph{dataset file}, 
 
 Datasets can be viewed and compared in up to four ``worlds'' (each world refers to a separate visualisation sub-window) at the same time (see Figure \ref{fig:2worlds}). Although browser based, the application, fully written in Javascript, does not need to send any data to the host server. Instead, the modern internet browser's local file system reading capabilities are used through the HTML 5 FileReader functionality. This allows the application to handle, in a very short period of time, large datasets while ensuring that the privacy of the data is maintained.\\
 
-Although the focus is on making bioWeb3D simple and easy to use, some options are available to customise how datasets are represented. The application can be used to visualise sequential information, such as 3D protein structures, in which case a solid line can be drawn between the points (Figure \ref{fig:2worlds} (bottom)). In other situations, such as when a population of cells is considered, the points are viewed as individual particles. The information layers are visualised by colouring the 3D points according to the class that each point belongs to. \\
-
 bioWeb3D is fully written in HTML/Javascript. It relies heavily upon a relatively recent 3D javascript library called Three.js \citep{three}. This library is used as the main interface between WebGL (cross-platform, royalty-free web standard for a low-level 3D graphics API) \citep{webgl} and javascript. More specifically, bioWeb3D allows the generation and manipulation of simple Three.js objects. Indeed the primary challenge associated with the creation of bioWeb3D has been to design interactions between the 3D visualisation and the user interface in the most efficient way.\\
+
+
+Although the focus is on making bioWeb3D simple and easy to use, some options are available to customise how datasets are represented. The application can be used to visualise sequential information, such as 3D protein structures, in which case a solid line can be drawn between the points (Figure \ref{fig:2worlds} (bottom)). In other situations, such as when a population of cells is considered, the points are viewed as individual particles. The information layers are visualised by colouring the 3D points according to the class that each point belongs to. \\
 
 The 3D data are rendered using simple 2D quadrilaterals positioned in the 3D space according to their coordinates. This simple technique has been selected to keep bioWeb3D as light-weight as possible whilst ensuring good quality visualisation performance and fluidity.\\
 
@@ -94,44 +77,6 @@ bioWeb3D is designed to be a simple and quick way to view 3D data with a specifi
 
 	\subsection{Availability and requirements}
 The full source code is available on the Github page of the project \citep{github}. A live version of the software is online \citep{bioWeb3D}. You will require a graphical card and a browser with WebGL capabilities to run bioWeb3D.
-
-\section{Non spatial clustering methods}
-Being able to visualize clustering results will be key in analysing any method's output from a biological perspective. Of course the next step is to actually develop a clustering method that would be able to cluster binarized single cell gene expression data. I will briefly describe in the next paragraphs existing methods that are able to cluster single cells together based solely on gene expression patterns without considering the spatial structure of the data.
-	\subsection{Hierarchical clustering}
-	The first method I took an interest in was hierarchical clustering (hClust) \citep{johnson67}. Indeed, in the field of molecular biology and biology in general, this clustering method is extremely popular mainly because it is relatively straight forward to use, and because the obtained dendrogram helps the downstream analysis of the data.\\
-	
-	hClust relies on the computation of a distance matrix. To calculate this I considered the matrix $D$ of the in-situ hybridization data, with $86$ columns corresponding to the 86 genes considered and $32,203$ rows corresponding to every cell in the dataset. The computation of the distance matrix was performed using the \emph{dist} function in R with the \emph{euclidean} metric (or \emph{Manhattan} which is equivalent for a binary dataset) in order to compute the $32,203 \times 32,203$ matrix of distances between rows.\\
-	
-	It is interesting to note that this step, in addition to being computationally expensive, creates a very large object in memory making it a limiting factor for very large datasets. Based on this distance matrix, the hierarchical clustering can take place using the ``hclust'' function in R. With the ``complete'' option turned on, the resulting object will be a dendrogram  representing the hierarchical classification of all $32,203$ cells as shown in Figure \ref{fig:dendro}.\\
-	
-	\begin{figure}[h]
-\centerline{\includegraphics[width=\linewidth]{gfx/chapter3/dendro.png}}
-\caption{Dendrogram outputted by the hClust clustering method. This is the full dendrogram, to get the resulting clustering partition, the tree must be cut. The red line shows the cut needed to get 7 clusters out of the dendrogram. Importantly, a dendrogram does not provide any rationale about the best number of clusters.}\label{fig:dendro}
-	\end{figure}	
-	
-	Importantly, once this dendrogram is outputted, the hClust method gives no indication on where to ``cut'' the dendrogram to output the actual clustering results. This highlights a very important issue in all clustering methods, namely identifying the optimal number of clusters needed for a certain dataset when there is no prior information. For the rest of this thesis this crucial parameter will be referred to as $K$.\\
-
- 
-	\subsection{Other clustering methods adapted to gene expression data}
-	There are several other clustering methods that could be applied in order to create a partition of gene expression data. They include but are not limited to K-means clustering \citep{macqueen67} and independent mixture models \citep{dempster77}. Those methods are well suited to cluster gene expression data. However, they all fail to take into account the spatial information linked to the gene expression dataset.
-
-
-\section{Discussion}
-	\subsection{Spatial clustering techniques}
-	Using a clustering method that would in addition to the gene expression pattern of each cell, take into account its spatial localization, that is the context of each cell regarding the other cells around it, could theoretically improve the clustering performances for several reasons.\\
-	
-	As mentioned in the Introduction, many of the underlying processes implicated in tissue development the best example of which is the process of asymmetrical cell divisions, lead to highly structured spatial organization. In this context and without any other prior knowledge, not taking into account the spatial localization of each cell into the clustering scheme would seem to be an example of unexploited potentially important information. \\
-	
-	Furthermore, as discussed in Chapter \ref{ch:singlecell}, single cell gene expression datasets whether they are generated from in-situ hybridization (see details on Figure \ref{fig:cubeserrors}) or single cell RNA-seq (Figure \ref{fig:dilutions}), are prone to errors and incoherency. A clustering method that would be able to compensate ``erroneous'' data points by taking into account the spatial context of each cell, could potentially dramatically decrease the effect of noise level upon the clustering results. Additionally, from a downstream analysis perspective, as far as general hypothesis about clusters are concerned, less scattered clusters are easier to interpret when visualizing the results.\\
-
-
-	\subsection{Hidden Markov random fields for clustering}
-In order to utilise both the spatial and the gene expression information, it was decided to extend a graph theoretical approach developed for image segmentation to reconstruct noisy or blurred images \citep{Dang98}, a method that finds its roots in the field of statistical mechanics as the Ising model \citep{Ising25} and its generalization, the Potts model \citep{Wu82}. The core concept of this method is to use an Expectation-Maximization (EM) procedure to estimate the parameters of a Markov Random Field based model using mean-field approximations to estimate intractable values as described in \citep{Celeux01}.\\
-
-This approach exhibits several important advantages as will be described in detail in the next sections. Indeed, in addition to providing a way to take into account the spatial information in the clustering results, it also offers some nice features in terms of downstream analysis through the analysis of the optimal parameters upon convergence.\\
-
-In the next three sections, I will first describe the theoretical framework underlying this model followed by an assessment of the method's performances compared to other non spatial clustering method on simulated data. Finally I will show and analyse the clustering results obtained through the developed method on the single cell in-situ gene expression data in \platy{}'s brain described in Chapter \ref{ch:singlecell}.
-
 
 %*****************************************
 %*****************************************

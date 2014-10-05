@@ -17,6 +17,13 @@
   genomes and of the {CNS}.
 \newblock {\em Theory in {B}iosciences 124\/} (2002), 185--197.
 
+\bibitem{arendt02}
+{\sc Arendt, D., Tessmar, K., de~Campos-Baptista, M.-I.~M., Dorresteijn, A.,
+  and Wittbrodt, J.}
+\newblock Development of pigment-cup eyes in the polychaete platynereis
+  dumerilii and evolutionary conservation of larval eyes in bilateria.
+\newblock {\em Development 129}, 5 (2002), 1143--1154.
+
 \bibitem{balmer02}
 {\sc Balmer, J.~E., and {B}lomhoff, R.}
 \newblock Gene expression regulation by retinoic acid.
@@ -87,14 +94,6 @@
   graded {S}onic hedgehog signalling.
 \newblock {\em Nature 398}, 6728 (1999), 622--627.
 
-\bibitem{brissova05}
-{\sc Brissova, M., {F}owler, M.~J., {N}icholson, W.~E., {C}hu, A., {H}irshberg,
-  B., {H}arlan, D.~M., and {P}owers, A.~C.}
-\newblock Assessment of human pancreatic islet architecture and composition by
-  laser scanning confocal microscopy.
-\newblock {\em Journal of {H}istochemistry \& {C}ytochemistry 53}, 9 (2005),
-  1087--1097.
-
 \bibitem{brunet02}
 {\sc Brunet, J., and {P}attyn, A.}
 \newblock Phox2 genes-from patterning to connectivity.
@@ -154,10 +153,6 @@
 {\sc Cooper, G.~M., and Hausman, R.~E.}
 \newblock {\em The cell}.
 \newblock Sinauer Associates Sunderland, 2000.
-
-\bibitem{costanzo06}
-{\sc Costanzo, L.~S., {S}ave, Y., and {F}riend, T.~A.}
-\newblock Brs {P}hysiology ({B}oard {R}eview {S}eries), 2006.
 
 \bibitem{Dang98}
 {\sc Dang, M., and {G}ovaert, G.}
@@ -240,7 +235,7 @@
 
 \bibitem{fields97}
 {\sc Fields, S. U. M.~R.}
-\newblock Perceptual grouping of contour segments using markov random fields.
+\newblock Perceptual grouping of contour segments using {M}arkov random fields.
 \newblock {\em Pattern {R}ecognition and {I}mage {A}nalysis 7}, 1 (1997),
   11--17.
 
@@ -321,6 +316,12 @@
   {F}ortpflanzung, {E}ntwicklung}.
 \newblock Fischer, 1969.
 
+\bibitem{hefti86}
+{\sc Hefti, F., Hartikka, J., Salvatierra, A., Weiner, W.~J., and Mash, D.~C.}
+\newblock Localization of nerve growth factor receptors in cholinergic neurons
+  of the human basal forebrain.
+\newblock {\em Neuroscience letters 69}, 1 (1986), 37--41.
+
 \bibitem{heitz93}
 {\sc Heitz, F., and {B}outhemy, P.}
 \newblock Multimodal estimation of discontinuous optical flow using {M}arkov
@@ -334,11 +335,6 @@
 \newblock Markov random field segmentation of brain {MR} images.
 \newblock {\em Medical {I}maging, {IEEE} {T}ransactions on 16}, 6 (1997),
   878--886.
-
-\bibitem{hellman09}
-{\sc Hellman, B.}
-\newblock Pulsatility of insulin release-a clinically important phenomenon.
-\newblock {\em Upsala journal of medical sciences 114}, 4 (2009), 193--205.
 
 \bibitem{hutchinson95}
 {\sc Hutchinson, T.~H., {J}ha, A.~N., and {D}ixon, D.~R.}
@@ -511,8 +507,8 @@
 \bibitem{marioni08}
 {\sc Marioni, J.~C., {M}ason, C.~E., {M}ane, S.~M., {S}tephens, M., and
   {G}ilad, Y.}
-\newblock Rna-seq: an assessment of technical reproducibility and comparison
-  with gene expression arrays.
+\newblock R{N}{A}-seq: an assessment of technical reproducibility and
+  comparison with gene expression arrays.
 \newblock {\em Genome research 18}, 9 (2008), 1509--1517.
 
 \bibitem{martin05}
@@ -630,17 +626,24 @@
 \bibitem{github}
 {\sc Pettit, J.-B.}
 \newblock bio{W}eb3{D} on github.
-\newblock \url{http://github.com/jbogp/bio{W}eb3{D}}.
+\newblock \url{http://github.com/jbogp/bioWeb3D}.
 
 \bibitem{bioWeb3D}
 {\sc Pettit, J.-B.}
 \newblock bio{W}eb3{D} online.
-\newblock \url{http://www.ebi.ac.uk/~jbpettit/bio{W}eb3{D}}.
+\newblock \url{http://www.ebi.ac.uk/~jbpettit/bioWeb3D}.
 
 \bibitem{Pettit13}
 {\sc Pettit, J.-B., and {M}arioni, J.~C.}
 \newblock bio{W}eb3{D}: an online web{GL} 3{D} data visualisation tool.
 \newblock {\em BMC bioinformatics 14}, 1 (2013), 185.
+
+\bibitem{pettit14}
+{\sc Pettit, J.-B., Tomer, R., Achim, K., Richardson, S., Azizi, L., and
+  Marioni, J.}
+\newblock Identifying cell types from spatially referenced single-cell
+  expression datasets.
+\newblock {\em PLoS computational biology 10}, 9 (2014), e1003824.
 
 \bibitem{pinkel88}
 {\sc Pinkel, D., {L}andegent, J., {C}ollins, C., {F}uscoe, J., {S}egraves, R.,
@@ -671,13 +674,6 @@
 \newblock Expression dynamics and protein localization of rhabdomeric opsins in
   {P}latynereis larvae.
 \newblock {\em Integrative and comparative biology 53}, 1 (2013), 7--16.
-
-\bibitem{rodriguez11}
-{\sc Rodriguez-{D}iaz, R., {A}bdulreda, M.~H., {F}ormoso, A.~L., {G}ans, I.,
-  {R}icordi, C., {B}erggren, P.-O., and {C}aicedo, A.}
-\newblock Autonomic {A}xons in the {H}uman {E}ndocrine {P}ancreas {S}how
-  {U}nique {I}nnervation {P}atterns.
-\newblock {\em Cell metabolism 14}, 1 (2011), 45.
 
 \bibitem{rouse99}
 {\sc Rouse, G.~W.}
@@ -789,6 +785,11 @@
 \newblock \url{http://www.kb.cert.org/vuls/id/636312}.
 \newblock Accessed: 2013.
 
+\bibitem{van93}
+{\sc Van Den~Pol, A.~N., and Trombley, P.~Q.}
+\newblock Glutamate neurons in hypothalamus regulate excitatory transmission.
+\newblock {\em The Journal of neuroscience 13}, 7 (1993), 2829--2836.
+
 \bibitem{wang92}
 {\sc Wang, H.-y., {W}atkins, D.~C., and {M}albon, C.~C.}
 \newblock Antisense oligodeoxynucleotides to {G}s protein $\alpha$-subunit
@@ -825,11 +826,6 @@
 \newblock Putting {T}hings to {REST}.
 \newblock {\em Transport 15}, November (2007), 567--583.
 
-\bibitem{williams80}
-{\sc Williams, P.~L., et~al.}
-\newblock {\em Gray's anatomy}.
-\newblock London: {C}hurchill {L}ivingstone, 1980, 1980.
-
 \bibitem{wright89}
 {\sc Wright, W.}
 \newblock A {M}arkov random field approach to data fusion and colour
@@ -838,7 +834,7 @@
 
 \bibitem{Wu82}
 {\sc Wu, F.-Y.}
-\newblock The potts model.
+\newblock The {P}otts model.
 \newblock {\em Reviews of modern physics 54}, 1 (1982), 235.
 
 \bibitem{yan13}

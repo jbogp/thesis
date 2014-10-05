@@ -4,7 +4,7 @@
 \section{Building a image library of gene expression in \platy{}'s brain}
      During his PhD, Raju Tomer and other members of the Arendt lab in EMBL, used wholemount in-situ hybridization to create an image library of gene expression in the brain of \platy{}. They were able to record gene expression in the full brain at 48hpf for 169 genes. In practice, each individual larvae was dissected to isolate the region containing the developing brain. Each brain was then stained with two different fluorescent probes corresponding to two messenger RNAs (mRNA). One of the genes is considered a reference, as it is always hybridized in all the assays (the main reference gene used was \emph{Emx}) alongside another gene of interest, see Figure \ref{fig:insitu}. Each brain was then visualized with laser confocal microscopy to reveal the gene expression patterns in the brain slice by slice, generating at the same time 3D coordinates for each slice.\\
      
-     As mentioned previously, the larval development of \platy{} is highly similar in every individual larvae. In the case of this study where WiSH was performed on many independent animals, the stereotypical development of \platy{} has proven essential. Indeed, having the same reference gene localized in all assays allowed Tomer \emph{et al.} to align all other gene expression patterns onto this scaffold. The result is an image library of 169 gene expression patters in the full brain of \platy{} with a exploitable spatial reference that allows for a very precise mapping.\\
+     As mentioned in the Introduction, the larval development of \platy{} is highly similar in every individual larvae. In the case of this study where WiSH was performed on many independent animals, the stereotypical development of \platy{} has proven essential. Indeed, having the same reference gene localized in all assays allowed Tomer \emph{et al.} to align all other gene expression patterns onto this scaffold. The result is an image library of 169 gene expression patters in the full brain of \platy{} with a exploitable spatial reference that allows for a very precise mapping.\\
     
     \begin{figure}[bth]
 \centerline{\includegraphics[width=1.3\linewidth]{gfx/chapter1/insitu.png}}
@@ -77,15 +77,67 @@
 \end{figure}
 	
 	Although the aforementioned method resulted in a high quality binary dataset, it has been possible only because the number of genes considered was small. This will not be the case when dealing with RNA-seq data.
+	
+\section{Elements of clustering for biological tissues}
+	\subsection{Motivations}
+	Given the ability to study gene expression at the single cell level, the first question that seems natural to answer for developmental biology is the following: analysing single cell gene expression data only, is it possible to classify cells that are the most alike together and define the organization of complex biological tissues like the brain of \platyfull{}?\\
+	
+	This is fundamentally a clustering or a classification problem. Indeed, small units need to be put in a determined number of classes or clusters because they are alike in one way or another. As anatomical and functional information about some tissues in the brain of \platy{} is already available (see Chapter \ref{ch:background}), the obvious validation for any clustering/classification method developed is to check that the single cell level information leads to the definition of these known tissues. Once this has been validated, it seems important to determine whether the single cell expression data \emph{adds} to the known biology by redefining (subdividing for example) known tissues or finding new ones. Identifying putative cell type is already a major challenge but it may be possible to go further. As mentioned in the Introduction, because gene expression is a key process in a cell's life, studying the genes that characterize a cluster can provide insights into the functional role of the cells it contains.
+
+	\subsection{General considerations about clustering}
+	I mentioned before that methods developed to answer those questions could either be clustering or classification methods. In the field of machine learning, these two notions are fundamentally divergent. Clustering describes a method that assigns points to an unknown number (\emph{a priori}) of sets in an undirected way, while classification takes advantage of an already known labels to assign, in a directed manner, new elements to a determined number of clusters.\\
+	
+	In my case, the number of tissues in the brain of \platy{} is unknown and there is no previous classification or sufficient biological knowledge of each and every cell to opt for a directed classifier. Therefore the methods presented hereafter will be clustering methods with respect to the machine learning definition of the word.\\
+	
+	As a general consideration about clustering, it is important to note that unless working on simple datasets, there is no perfect method. This is especially true when dealing with biological data, where the complexity and the noise level (see \ref{sec:quantitative_single_cell}) tend to be extremely high. \\
+	
+	To illustrate this notion, for the single cell expression data in \platy{}'s brain, the question of finding the ``true'' number of tissues is extremely complicated. Without any prior knowledge, the statistical methods to determine the number of clusters presented in this thesis will yield indications about what the optimal number of ``tissues'' is given the data and the model, which does not necessarily means that this number is biologically \emph{true}.\\
+	
+	
+		\subsection{Hierarchical clustering}
+	The first method I took an interest in was hierarchical clustering (hClust) \citep{johnson67}. Indeed, in the field of molecular biology and biology in general, this clustering method is extremely popular mainly because it is relatively straight forward to use, and because the obtained dendrogram helps the downstream analysis of the data.\\
+	
+	hClust relies on the computation of a distance matrix. To calculate this I considered the matrix $D$ of the in-situ hybridization data, with $86$ columns corresponding to the 86 genes considered and $32,203$ rows corresponding to every cell in the dataset. The computation of the distance matrix was performed using the \emph{dist} function in R with the \emph{euclidean} metric (or \emph{Manhattan} which is equivalent for a binary dataset) in order to compute the $32,203 \times 32,203$ matrix of distances between rows.\\
+	
+	It is interesting to note that this step, in addition to being computationally expensive, creates a very large object in memory making it a limiting factor for very large datasets. Based on this distance matrix, the hierarchical clustering can take place using the ``hclust'' function in R. With the ``complete'' option turned on, the resulting object will be a dendrogram  representing the hierarchical classification of all $32,203$ cells as shown in Figure \ref{fig:dendro}.\\
+	
+	\begin{figure}[h]
+\centerline{\includegraphics[width=\linewidth]{gfx/chapter3/dendro.png}}
+\caption{Dendrogram outputted by the hClust clustering method. This is the full dendrogram, to get the resulting clustering partition, the tree must be cut. The red line shows the cut needed to get 7 clusters out of the dendrogram. Importantly, a dendrogram does not provide a clear rationale about the best number of clusters.}\label{fig:dendro}
+	\end{figure}	
+	
+	Importantly, once this dendrogram is outputted, the hClust method gives very little indication on where to ``cut'' the dendrogram to output the actual clustering results. This highlights a very important issue in all clustering methods, namely identifying the optimal number of clusters needed for a certain dataset when there is no prior information. For the rest of this thesis this crucial parameter will be referred to as $K$.\\
+
+ 
+	\subsection{Other clustering methods adapted to gene expression data}
+	There are several other clustering methods that could be applied in order to create a partition of gene expression data. They include but are not limited to K-means clustering \citep{macqueen67} and independent mixture models \citep{dempster77}. Those methods are well suited to cluster gene expression data. However, they all fail to take into account the spatial information linked to the gene expression dataset.
+
+
+\section{Discussion}
+	\subsection{Spatial clustering techniques}
+	Using a clustering method that would in addition to the gene expression pattern of each cell, take into account its spatial localization, that is the context of each cell regarding the other cells around it, I hypothesise that this supplementary information could theoretically improve the clustering performances for several reasons.\\
+	
+	As mentioned in the Introduction, many of the underlying processes implicated in tissue development the best example of which is the process of asymmetrical cell divisions, lead to highly structured spatial organization. In this context and without any other prior knowledge, not taking into account the spatial localization of each cell into the clustering scheme would seem to be an example of unexploited potentially important information. \\
+	
+	Single cell gene expression datasets whether they are generated from in-situ hybridization (see details on Figure \ref{fig:cubeserrors}) or single cell RNA-seq (Figure \ref{fig:dilutions}), are prone to errors and incoherency. A clustering method that would be able to compensate ``erroneous'' data points by taking into account the spatial context of each cell, could potentially dramatically decrease the effect of noise level upon the clustering results. Additionally, from a downstream analysis perspective, as far as general hypothesis about clusters are concerned, less scattered clusters are easier to interpret when visualizing the results.\\
+
+
+	\subsection{Hidden Markov random fields for clustering}
+In order to utilise both the spatial and the gene expression information, it was decided to extend a graph theoretical approach developed for image segmentation to reconstruct noisy or blurred images \citep{Dang98}, a method that finds its roots in the field of statistical mechanics as the Ising model \citep{Ising25} and its generalization, the Potts model \citep{Wu82}. The core concept of this method is to use an Expectation-Maximization (EM) procedure to estimate the parameters of a Markov Random Field based model using mean-field approximations to estimate intractable values as described in \citep{Celeux01}.\\
+
+This approach exhibits several important advantages as will be described in detail in the next sections. Indeed, in addition to providing a way to take into account the spatial information in the clustering results, it also offers some nice features in terms of downstream analysis through the analysis of the optimal parameters upon convergence.\\
+
+In the next three sections, I will first describe the theoretical framework underlying this model followed by an assessment of the method's performances compared to other non spatial clustering method on simulated data. Finally I will show and analyse the clustering results obtained through the developed method on the single cell in-situ gene expression data in \platy{}'s brain described previously.
+
 
 \section{Conclusions}
-In this Chapter I have described how the scale of gene expression studies has shifted from the tissue level to the single cell level. For two experimental protocols the generation of such data was presented and I have explained why, at the time of writing, it is still not safe to assume that single cell transcritomics datasets are quantitative. To avoid this problem, turning those datasets into binary gene expression is an attractive solution. However the binarization process is not trivial and I have presented ways to obtain a high confidence dataset.\\
-
-One notable advantage of in-situ hybridization assays is the fact that the spatial information stays attached to each gene expression fingerprint. Using this information, it was possible to allocate cells assayed via single cell RNA-seq to their spatial location in the brain using the most specifically expressed genes in every cell. \\
+I have described how a 3D image library of gene expression for 169 genes was built in the the brain of \platyfull{}. I described how a simple cell model was to be able to reached a single cell level resolution of gene expression. I have also explained why, at the time of writing, it is still not safe to assume that this dataset is quantitative. To avoid this problem, turning those datasets into binary gene expression is an attractive solution. However the binarization process is not trivial and I have presented ways to obtain a high confidence dataset.\\
 
 As mentioned previously in the Introduction (\ref{ch:background}), if the ability to study the heterogeneity of cell populations at the single cell level offers incredible possibilities for the future of developmental biology and potentially of cancer research, the development of new statistical methods adapted to this single cell scale, allowing conclusions to be drawn at the tissue level, is crucial.\\
 
-The work presented hereafter aims to answer simple but important questions: can known functional tissues of a complex organ like the brain be defined and localized from single gene expression data? Can unknown regions in such a complex tissue be detected and finally, is it possible to hypothesize the functional role of those unknown regions based on single cell expression data?
+I have presented some consideration about clustering, in particular I have described how a clustering method may answer the main biological questions this thesis aims to answer. I have described a non-spatial method, hierarchical clustering. \\
+
+The work presented hereafter aims to answer simple but important questions: can a spatial clustering method out perform a "standard" method like hClust? Can known functional tissues of a complex organ like the brain be defined and localized from single gene expression data? Can unknown regions in such a complex tissue be detected and finally, is it possible to hypothesize the functional role of those unknown regions based on single cell expression data?
 
 
 
